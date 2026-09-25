@@ -1,0 +1,1063 @@
+[
+ {
+  "id": "m10-p2",
+  "module": "m10",
+  "label": "lecture",
+  "prompt": "<p>Phosphorus (Z = 15): write its configuration and give its number of unpaired electrons.</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "config",
+     "species": "P",
+     "label": "configuration"
+    },
+    {
+     "type": "numeric",
+     "label": "unpaired electrons"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m10-p3",
+  "module": "m10",
+  "label": "lecture",
+  "prompt": "<p>Why does lithium's third electron go into 2s rather than 2p?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] 2s is smaller, so its electron sits closer to the nucleus overall.",
+    "[1] 2s penetrates closer to the nucleus (it's less shielded), so it's lower in energy.",
+    "[2] Hund's rule puts it there.",
+    "[3] Pauli forbids 2p for lithium."
+   ]
+  }
+ },
+ {
+  "id": "m10-p4",
+  "module": "m10",
+  "label": "lecture",
+  "prompt": "<p>Which element has the ground-state configuration [Ar]4s<sup>2</sup>3d<sup>3</sup>?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Ti (Z = 22)",
+    "[1] V (Z = 23)",
+    "[2] Cr (Z = 24)",
+    "[3] Sc (Z = 21)"
+   ]
+  }
+ },
+ {
+  "id": "m10-p5",
+  "module": "m10",
+  "label": "lecture",
+  "prompt": "<p>A student draws nitrogen's 2p electrons as [↑↓][↑][ ]. Which rule is broken?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Pauli exclusion principle",
+    "[1] Aufbau principle",
+    "[2] Hund's rule",
+    "[3] No rule is broken."
+   ]
+  }
+ },
+ {
+  "id": "m10-transfer",
+  "module": "m10",
+  "label": "lecture",
+  "prompt": "<p>An element's condensed configuration is [Ne]3s<sup>2</sup>3p<sup>5</sup>. Identify the element (symbol) and give its number of unpaired electrons.</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "text",
+     "kind": "text",
+     "placeholder": "symbol",
+     "label": "element symbol"
+    },
+    {
+     "type": "numeric",
+     "label": "unpaired electrons"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m10-m-recognize",
+  "module": "m10",
+  "label": "lecture",
+  "prompt": "<p>An element's last electron (by Aufbau) enters a 3d orbital. In which block of the periodic table is it?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] s block",
+    "[1] p block",
+    "[2] d block (groups 3–12)",
+    "[3] f block"
+   ]
+  }
+ },
+ {
+  "id": "m10-m-sanity",
+  "module": "m10",
+  "label": "lecture",
+  "prompt": "<p>A classmate writes calcium (Z = 20) as [Ar]3d<sup>2</sup>. What's wrong?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Nothing",
+    "[1] 4s is lower in energy than 3d, so Ca is [Ar]4s<sup>2</sup>.",
+    "[2] Calcium has only 18 electrons.",
+    "[3] It should be [Ar]4p<sup>2</sup>."
+   ]
+  }
+ },
+ {
+  "id": "m11-attempt",
+  "module": "m11",
+  "label": "lecture",
+  "prompt": "<p>Write the configuration of Fe<sup>3+</sup> and give its number of 3d electrons.</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "config",
+     "species": "Fe<sup>3+</sup>",
+     "label": "configuration"
+    },
+    {
+     "type": "numeric",
+     "label": "3d electrons"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m11-p1",
+  "module": "m11",
+  "label": "lecture",
+  "prompt": "<p>Write the configuration of Co<sup>2+</sup> (Co: Z = 27).</p>",
+  "answer_format": {
+   "type": "config",
+   "species": "Co<sup>2+</sup>"
+  }
+ },
+ {
+  "id": "m11-p2",
+  "module": "m11",
+  "label": "lecture",
+  "prompt": "<p>Write the configuration of S<sup>2−</sup> (S: Z = 16).</p>",
+  "answer_format": {
+   "type": "config",
+   "species": "S<sup>2−</sup>"
+  }
+ },
+ {
+  "id": "m11-p3",
+  "module": "m11",
+  "label": "lecture",
+  "prompt": "<p>How many 3d electrons does Mn<sup>2+</sup> have (Mn: Z = 25)?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m11-p4",
+  "module": "m11",
+  "label": "lecture",
+  "prompt": "<p>Which ion is <strong>not</strong> isoelectronic with neon (10 electrons)?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Na<sup>+</sup>",
+    "[1] O<sup>2−</sup>",
+    "[2] K<sup>+</sup>",
+    "[3] Mg<sup>2+</sup>"
+   ]
+  }
+ },
+ {
+  "id": "m11-transfer",
+  "module": "m11",
+  "label": "lecture",
+  "prompt": "<p>How many unpaired electrons does Ti<sup>2+</sup> have (Ti: Z = 22)?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m11-m-recognize",
+  "module": "m11",
+  "label": "lecture",
+  "prompt": "<p>Which of these needs the “remove the highest n first” rule?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The configuration of F<sup>−</sup>",
+    "[1] The configuration of Zn<sup>2+</sup>",
+    "[2] The configuration of a neutral Ne atom",
+    "[3] The configuration of S"
+   ]
+  }
+ },
+ {
+  "id": "m11-m-sanity",
+  "module": "m11",
+  "label": "lecture",
+  "prompt": "<p>A student writes Zn<sup>2+</sup> as [Ar]4s<sup>2</sup>3d<sup>8</sup>. What's the correction?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] It's correct.",
+    "[1] [Ar]3d<sup>10</sup>: the two 4s electrons leave first.",
+    "[2] [Ar]4s<sup>1</sup>3d<sup>9</sup>",
+    "[3] [Kr]"
+   ]
+  }
+ },
+ {
+  "id": "m12-attempt",
+  "module": "m12",
+  "label": "lecture",
+  "prompt": "<p>Rank from <strong>largest</strong> (1) to <strong>smallest</strong> (4) atomic radius: Na, Mg, K, Cl.</p>",
+  "answer_format": {
+   "type": "order",
+   "direction": "largest (1) to smallest (4)",
+   "items": [
+    "Na: Na",
+    "Mg: Mg",
+    "K: K",
+    "Cl: Cl"
+   ]
+  }
+ },
+ {
+  "id": "m12-p1",
+  "module": "m12",
+  "label": "lecture",
+  "prompt": "<p>Rank from largest (1) to smallest (4): Be, Mg, Ca, Ba.</p>",
+  "answer_format": {
+   "type": "order",
+   "direction": "largest (1) to smallest (4)",
+   "items": [
+    "Be: Be",
+    "Mg: Mg",
+    "Ca: Ca",
+    "Ba: Ba"
+   ]
+  }
+ },
+ {
+  "id": "m12-p2",
+  "module": "m12",
+  "label": "lecture",
+  "prompt": "<p>Which is larger: a Cl atom or a Cl<sup>−</sup> ion?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Cl atom",
+    "[1] Cl<sup>−</sup> ion",
+    "[2] Same size",
+    "[3] Can't tell"
+   ]
+  }
+ },
+ {
+  "id": "m12-p3",
+  "module": "m12",
+  "label": "lecture",
+  "prompt": "<p>These four ions all have 18 electrons. Rank them from largest (1) to smallest (4): S<sup>2−</sup>, Cl<sup>−</sup>, K<sup>+</sup>, Ca<sup>2+</sup>.</p>",
+  "answer_format": {
+   "type": "order",
+   "direction": "largest (1) to smallest (4)",
+   "items": [
+    "S2-: S<sup>2−</sup>",
+    "Cl-: Cl<sup>−</sup>",
+    "K+: K<sup>+</sup>",
+    "Ca2+: Ca<sup>2+</sup>"
+   ]
+  }
+ },
+ {
+  "id": "m12-p4",
+  "module": "m12",
+  "label": "lecture",
+  "prompt": "<p>Why is Li<sup>+</sup> (76 pm) so much smaller than Li (152 pm)?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Li<sup>+</sup> has more protons.",
+    "[1] Li<sup>+</sup> lost its only n = 2 electron; the remaining 1s<sup>2</sup> electrons sit much closer to the nucleus.",
+    "[2] Positive ions always double in size.",
+    "[3] The measurement is wrong."
+   ]
+  }
+ },
+ {
+  "id": "m12-transfer",
+  "module": "m12",
+  "label": "lecture",
+  "prompt": "<p>Se<sup>2−</sup>, Br<sup>−</sup>, Rb<sup>+</sup>, and Sr<sup>2+</sup> all have 36 electrons. Rank them from largest (1) to smallest (4). (Only two of these values appear in the lecture; reason from the trend.)</p>",
+  "answer_format": {
+   "type": "order",
+   "direction": "largest (1) to smallest (4)",
+   "items": [
+    "Se2-: Se<sup>2−</sup>",
+    "Br-: Br<sup>−</sup>",
+    "Rb+: Rb<sup>+</sup>",
+    "Sr2+: Sr<sup>2+</sup>"
+   ]
+  }
+ },
+ {
+  "id": "m12-m-recognize",
+  "module": "m12",
+  "label": "lecture",
+  "prompt": "<p>Which comparison is settled by “same electrons, more protons → smaller”?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Na vs. K",
+    "[1] Na<sup>+</sup> vs. F<sup>−</sup>",
+    "[2] Cl vs. Cl<sup>−</sup>",
+    "[3] Li vs. Ne"
+   ]
+  }
+ },
+ {
+  "id": "m12-m-sanity",
+  "module": "m12",
+  "label": "lecture",
+  "prompt": "<p>A table claims cesium atoms are smaller than lithium atoms. Plausible?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Yes; Cs has a higher Z, so it pulls harder.",
+    "[1] No; radius increases down a group (Cs 265 pm vs. Li 152 pm).",
+    "[2] Yes; metals shrink down a group.",
+    "[3] Can't compare atoms in the same group."
+   ]
+  }
+ },
+ {
+  "id": "m13-attempt",
+  "module": "m13",
+  "label": "lecture",
+  "prompt": "<p>An unknown period-3 element has IE<sub>1</sub> = 578, IE<sub>2</sub> = 1817, IE<sub>3</sub> = 2745, and IE<sub>4</sub> = 11,577 kJ/mol. (a) How many valence electrons does it have? (b) Identify the element (symbol).</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) valence electrons"
+    },
+    {
+     "type": "text",
+     "kind": "text",
+     "placeholder": "symbol",
+     "label": "(b) element"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m13-p1",
+  "module": "m13",
+  "label": "lecture",
+  "prompt": "<p>Which has the highest first ionization energy?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Na",
+    "[1] Mg",
+    "[2] Al",
+    "[3] Cl"
+   ]
+  }
+ },
+ {
+  "id": "m13-p2",
+  "module": "m13",
+  "label": "lecture",
+  "prompt": "<p>Why is oxygen's IE<sub>1</sub> (1314 kJ/mol) lower than nitrogen's (1402 kJ/mol), against the general trend?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Oxygen has fewer protons than nitrogen.",
+    "[1] The electron O loses is paired in a 2p orbital, and repulsion between the pair makes it easier to remove.",
+    "[2] Oxygen's electron comes from 2s.",
+    "[3] Nitrogen is a noble gas."
+   ]
+  }
+ },
+ {
+  "id": "m13-p3",
+  "module": "m13",
+  "label": "lecture",
+  "prompt": "<p>Using Table 3.2 (Day 7 p.10), carbon's biggest jump comes between IE<sub>n</sub> and IE<sub>n+1</sub>. What is n?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m13-p4",
+  "module": "m13",
+  "label": "lecture",
+  "prompt": "<p>The first electron affinity of Cl is −349 kJ/mol. What does the negative sign mean?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Energy is released when a gaseous Cl atom gains an electron.",
+    "[1] Energy must be supplied to add the electron.",
+    "[2] Cl loses an electron.",
+    "[3] The value is a typo."
+   ]
+  }
+ },
+ {
+  "id": "m13-p5",
+  "module": "m13",
+  "label": "lecture",
+  "prompt": "<p>According to the Day 7 p.11 table, which element has a <strong>positive</strong> EA<sub>1</sub>?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] C",
+    "[1] N",
+    "[2] O",
+    "[3] F"
+   ]
+  }
+ },
+ {
+  "id": "m13-p6",
+  "module": "m13",
+  "label": "lecture",
+  "prompt": "<p><span class='tag-preview'>Uses N<sub>A</sub>: textbook preview, §2.5</span> Use the Bohr model to calculate hydrogen's first ionization energy in kJ/mol, then compare it with the Day 7 p.9 value.</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "m13-transfer",
+  "module": "m13",
+  "label": "lecture",
+  "prompt": "<p>What is the longest wavelength of light (nm) that could ionize a gaseous sodium atom (IE<sub>1</sub> = 496 kJ/mol) with a single photon, M(g) + hν → M<sup>+</sup>(g) + e<sup>−</sup>?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "m13-m-recognize",
+  "module": "m13",
+  "label": "lecture",
+  "prompt": "<p>A problem gives IE<sub>1</sub> through IE<sub>5</sub> for an unknown element and asks for its group. What should you look for first?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The largest single IE value",
+    "[1] The largest ratio between successive IEs",
+    "[2] The smallest IE value",
+    "[3] The average of all the IEs"
+   ]
+  }
+ },
+ {
+  "id": "m13-m-sanity",
+  "module": "m13",
+  "label": "lecture",
+  "prompt": "<p>A student says “fluorine has the most negative electron affinity of all the elements.” Check against Day 7 p.11.</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Correct: F −328 is the most negative.",
+    "[1] Not quite: Cl (−349 kJ/mol) is more negative than F (−328).",
+    "[2] Noble gases have the most negative EAs.",
+    "[3] All EAs are positive."
+   ]
+  }
+ },
+ {
+  "id": "m14-attempt",
+  "module": "m14",
+  "label": "lecture",
+  "prompt": "<p>Calculate E<sub>el</sub> for one Na<sup>+</sup>–Cl<sup>−</sup> ion pair with the ions touching: d = 102 pm + 181 pm (the ionic radii on Day 7 p.8).</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit (type the unit too)"
+  }
+ },
+ {
+  "id": "m14-p1",
+  "module": "m14",
+  "label": "lecture",
+  "prompt": "<p>Calculate E<sub>el</sub> for one Mg<sup>2+</sup>–O<sup>2−</sup> pair with d = 72 pm + 140 pm.</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "m14-p2",
+  "module": "m14",
+  "label": "lecture",
+  "prompt": "<p>Rank these ion pairs by strength of attraction (most negative E<sub>el</sub> = 1): MgO (d = 0.212 nm), NaF (d = 0.235 nm), KCl (d = 0.319 nm).</p>",
+  "answer_format": {
+   "type": "order",
+   "direction": "strongest (1) to weakest (3)",
+   "items": [
+    "MgO: MgO",
+    "NaF: NaF",
+    "KCl: KCl"
+   ]
+  }
+ },
+ {
+  "id": "m14-p3",
+  "module": "m14",
+  "label": "lecture",
+  "prompt": "<p><span class='tag-preview'>Uses N<sub>A</sub>: textbook preview, §2.5</span> For KCl (d = 0.319 nm), calculate E<sub>el</sub> per <em>mole</em> of ion pairs in kJ/mol, and compare it with KCl's lattice energy (−720 kJ/mol, Day 7 p.17).</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "m14-p4",
+  "module": "m14",
+  "label": "lecture",
+  "prompt": "<p>Classify each substance's bonding using the Day 7 p.14 definitions.</p>",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] CaCl<sub>2</sub>",
+    "[1] CO<sub>2</sub>",
+    "[2] Fe (solid)",
+    "[3] KBr",
+    "[4] H<sub>2</sub>O"
+   ],
+   "options": [
+    "ionic: ionic",
+    "covalent: covalent",
+    "metallic: metallic"
+   ]
+  }
+ },
+ {
+  "id": "m14-p5",
+  "module": "m14",
+  "label": "lecture",
+  "prompt": "<p>Why is NaCl's lattice energy (−786 kJ/mol) more negative than its two-body E<sub>el</sub> estimate (about −492 kJ/mol)?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The ions are closer together in the lattice than in a pair.",
+    "[1] In the lattice, each ion is attracted by several oppositely charged neighbors, not just one.",
+    "[2] Lattices contain extra electrons.",
+    "[3] E<sub>el</sub> is positive for NaCl."
+   ]
+  }
+ },
+ {
+  "id": "m14-transfer",
+  "module": "m14",
+  "label": "lecture",
+  "prompt": "<p>CaO isn't in the Day 7 table. Predict which has the more negative lattice energy, CaO or KF, and give the main reason.</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] KF, because K and F are more reactive",
+    "[1] CaO, because Q<sub>1</sub>Q<sub>2</sub> = −4 for Ca<sup>2+</sup>/O<sup>2−</sup> vs. −1 for K<sup>+</sup>/F<sup>−</sup>",
+    "[2] They're about equal, since the ion sizes are similar",
+    "[3] KF, because F<sup>−</sup> is smaller than O<sup>2−</sup>"
+   ]
+  }
+ },
+ {
+  "id": "m14-m-recognize",
+  "module": "m14",
+  "label": "lecture",
+  "prompt": "<p>“Compare the attraction between Li<sup>+</sup> and F<sup>−</sup> with that between K<sup>+</sup> and Br<sup>−</sup>.” What decides it?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The charges differ, so compare Q<sub>1</sub>Q<sub>2</sub>.",
+    "[1] Same charges, so the smaller distance (LiF) gives the stronger attraction.",
+    "[2] Bond type: one is covalent.",
+    "[3] Molar mass"
+   ]
+  }
+ },
+ {
+  "id": "m14-m-sanity",
+  "module": "m14",
+  "label": "lecture",
+  "prompt": "<p>A student computes E<sub>el</sub> = +5.2 × 10<sup>−19</sup> J for Na<sup>+</sup> and Cl<sup>−</sup>. What's the problem?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Nothing; energies are positive.",
+    "[1] Sign error: Q<sub>1</sub>Q<sub>2</sub> = (+1)(−1) is negative, so E<sub>el</sub> must be negative.",
+    "[2] The distance must be in pm.",
+    "[3] Na<sup>+</sup> and Cl<sup>−</sup> repel."
+   ]
+  }
+ },
+ {
+  "id": "m15-attempt",
+  "module": "m15",
+  "label": "lecture",
+  "prompt": "<p>Write the formula and the name of the ionic compound formed by aluminum and sulfur.</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "text",
+     "kind": "formula",
+     "placeholder": "e.g., MgCl2",
+     "label": "formula"
+    },
+    {
+     "type": "text",
+     "kind": "text",
+     "placeholder": "name",
+     "label": "name"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m15-p1",
+  "module": "m15",
+  "label": "lecture",
+  "prompt": "<p>Formula of the ionic compound formed by calcium and chlorine?</p>",
+  "answer_format": {
+   "type": "text",
+   "kind": "formula",
+   "placeholder": "e.g., MgCl2"
+  }
+ },
+ {
+  "id": "m15-p2",
+  "module": "m15",
+  "label": "lecture",
+  "prompt": "<p>Formula of the ionic compound formed by potassium and sulfur?</p>",
+  "answer_format": {
+   "type": "text",
+   "kind": "formula",
+   "placeholder": "e.g., MgCl2"
+  }
+ },
+ {
+  "id": "m15-p3",
+  "module": "m15",
+  "label": "lecture",
+  "prompt": "<p>Name Na<sub>2</sub>O.</p>",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "m15-p4",
+  "module": "m15",
+  "label": "lecture",
+  "prompt": "<p>Name AlCl<sub>3</sub>.</p>",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "m15-p5",
+  "module": "m15",
+  "label": "lecture",
+  "prompt": "<p><span class='tag-conn'>Extends the Day 7 rule to group 15</span> Formula of the ionic compound formed by magnesium and nitrogen?</p>",
+  "answer_format": {
+   "type": "text",
+   "kind": "formula",
+   "placeholder": "e.g., MgCl2"
+  }
+ },
+ {
+  "id": "m15-p6",
+  "module": "m15",
+  "label": "lecture",
+  "prompt": "<p>Which is the correct name for CaF<sub>2</sub>?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] calcium difluoride",
+    "[1] calcium fluoride",
+    "[2] calcium fluorine",
+    "[3] fluorine calcide"
+   ]
+  }
+ },
+ {
+  "id": "m15-transfer",
+  "module": "m15",
+  "label": "lecture",
+  "prompt": "<p>An unknown metal M forms the oxide M<sub>2</sub>O<sub>3</sub>. (a) What is the charge on the M ion (enter a number)? (b) What formula would M form with chlorine?</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) charge on M"
+    },
+    {
+     "type": "text",
+     "kind": "formula",
+     "placeholder": "use M for the metal",
+     "label": "(b) formula with Cl"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m15-m-recognize",
+  "module": "m15",
+  "label": "lecture",
+  "prompt": "<p>Which ion does selenium (group 16) form?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Se<sup>+</sup>",
+    "[1] Se<sup>2−</sup>",
+    "[2] Se<sup>6+</sup>",
+    "[3] Se<sup>−</sup>"
+   ]
+  }
+ },
+ {
+  "id": "m15-m-sanity",
+  "module": "m15",
+  "label": "lecture",
+  "prompt": "<p>A student writes barium oxide as Ba<sub>2</sub>O<sub>2</sub>. What's the fix?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] It's correct.",
+    "[1] Reduce to the lowest ratio: BaO.",
+    "[2] BaO<sub>2</sub>",
+    "[3] Ba<sub>2</sub>O"
+   ]
+  }
+ },
+ {
+  "id": "x1",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>An electron (m = 9.109 × 10<sup>−31</sup> kg) moves at 3.00 × 10<sup>6</sup> m/s. What is its wavelength?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "x2",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>Light with ν = 5.00 × 10<sup>14</sup> s<sup>−1</sup> strikes a metal whose threshold energy is 2.50 × 10<sup>−19</sup> J. What is the kinetic energy of the ejected electrons?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "x3",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>Which set (n, ℓ, m<sub>ℓ</sub>, m<sub>s</sub>) could describe the outermost electron of a ground-state potassium atom?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] (4, 0, 0, +½)",
+    "[1] (4, 1, 0, +½)",
+    "[2] (3, 2, 0, +½)",
+    "[3] (4, 0, 1, +½)"
+   ]
+  }
+ },
+ {
+  "id": "x4",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>Rank by first ionization energy, highest (1) to lowest (4): Na, Mg, P, Cl.</p>",
+  "answer_format": {
+   "type": "order",
+   "direction": "highest (1) to lowest (4)",
+   "items": [
+    "Na: Na",
+    "Mg: Mg",
+    "P: P",
+    "Cl: Cl"
+   ]
+  }
+ },
+ {
+  "id": "x5",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>Formula of the compound formed by calcium and nitrogen?</p>",
+  "answer_format": {
+   "type": "text",
+   "kind": "formula",
+   "placeholder": "e.g., MgCl2"
+  }
+ },
+ {
+  "id": "x6",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>Configuration of Co<sup>3+</sup> (Co: Z = 27)?</p>",
+  "answer_format": {
+   "type": "config",
+   "species": "Co<sup>3+</sup>"
+  }
+ },
+ {
+  "id": "x7",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>A hydrogen atom absorbs a photon, and its electron goes from n = 2 to n = 5. What wavelength (nm) was absorbed?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "x8",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>Compound A: 1.000 g contains 0.400 g of element X and 0.600 g of element Y. Compound B: 1.000 g contains 0.250 g of X and 0.750 g of Y. For a fixed mass of X, what is the ratio of Y masses, B : A?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "x9",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>Which is larger: Mg<sup>2+</sup> or Na<sup>+</sup>?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Mg<sup>2+</sup>",
+    "[1] Na<sup>+</sup>",
+    "[2] Same size",
+    "[3] Can't tell"
+   ]
+  }
+ },
+ {
+  "id": "x10",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>Ca<sup>2+</sup> (100 pm) and S<sup>2−</sup> (184 pm) touch. What is the electrostatic potential energy of the pair?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "x11",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>Which observation shows that light behaves as particles (packets of energy)?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Light bends through a prism.",
+    "[1] A metal ejects electrons only above a threshold frequency, however bright the light.",
+    "[2] λν = c",
+    "[3] X-rays diffract off crystals."
+   ]
+  }
+ },
+ {
+  "id": "x12",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>How many unpaired electrons does a ground-state manganese atom (Z = 25) have?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "x13",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>A photon carries 4.50 × 10<sup>−19</sup> J. What is its wavelength in nm?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "x14",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>Name Li<sub>2</sub>O.</p>",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "x15",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>Which particle has the largest radius: K, K<sup>+</sup>, Ar, or Cl<sup>−</sup>?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] K",
+    "[1] K<sup>+</sup>",
+    "[2] Ar",
+    "[3] Cl<sup>−</sup>"
+   ]
+  }
+ },
+ {
+  "id": "x16",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>Hydrogen peroxide contains 1.01 g of hydrogen for every 16.00 g of oxygen (Day 1 p.13). What is its percent oxygen by mass?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "x17",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>A hydrogen emission line comes from the electron dropping from n = 7 to n = 2. What is its wavelength in nm, and is it visible?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "x18",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>Which hydrogen transition releases more energy: n = 3 → 1 or n = 5 → 2?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] 3 → 1",
+    "[1] 5 → 2",
+    "[2] They're equal.",
+    "[3] Neither; both absorb energy."
+   ]
+  }
+ },
+ {
+  "id": "x19",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>A copper wire conducts electricity. Which type of bonding explains that?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] ionic",
+    "[1] covalent",
+    "[2] metallic",
+    "[3] none"
+   ]
+  }
+ },
+ {
+  "id": "x20",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "<p>A period-3 element has IE<sub>1</sub> = 738, IE<sub>2</sub> = 1451, and IE<sub>3</sub> = 7733 kJ/mol. Which group is it in?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m3-tophat",
+  "module": "m3",
+  "label": "lecture",
+  "prompt": "<p>“Rank the following types of electromagnetic radiation by wavelength, with the longest wavelength at the top” (Day 2 p.28). Rank 1 = longest.</p>",
+  "answer_format": {
+   "type": "order",
+   "direction": "longest wavelength (1) to shortest (5)",
+   "items": [
+    "A: A. Infrared",
+    "B: B. Ultraviolet",
+    "C: C. Green",
+    "D: D. Orange",
+    "E: E. X-Rays"
+   ]
+  }
+ },
+ {
+  "id": "m8-tophat",
+  "module": "m8",
+  "label": "lecture",
+  "prompt": "<p>“Which ONE set of quantum numbers is valid?” (Day 5 p.16), written as (n, ℓ, m<sub>ℓ</sub>, m<sub>s</sub>).</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] a. (1, 0, −1, +½)",
+    "[1] b. (3, 2, −2, +½)",
+    "[2] c. (2, 2, 0, 0)",
+    "[3] d. (2, 0, 1, −½)",
+    "[4] e. (−3, −2, −1, −½)"
+   ]
+  }
+ },
+ {
+  "id": "m11-tophat",
+  "module": "m11",
+  "label": "lecture",
+  "prompt": "<p>“How many 3d electrons does V<sup>3+</sup> have?” (Day 6 p.23). V: Z = 23.</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m12-tophat",
+  "module": "m12",
+  "label": "lecture",
+  "prompt": "<p>“Rank these atoms from largest to smallest. F S P As Cl” (Day 6 p.26). Rank 1 = largest.</p>",
+  "answer_format": {
+   "type": "order",
+   "direction": "largest (1) to smallest (5)",
+   "items": [
+    "F: F",
+    "S: S",
+    "P: P",
+    "As: As",
+    "Cl: Cl"
+   ]
+  }
+ },
+ {
+  "id": "m1-preview-methods",
+  "module": "m1",
+  "label": "preview",
+  "prompt": "<p>Which statement correctly contrasts a scientific <em>law</em> with a scientific <em>theory</em>, as the textbook uses the words?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] A law is a theory that has been proven.",
+    "[1] A law describes a consistent pattern; a theory explains why the pattern happens.",
+    "[2] A theory is an untested guess.",
+    "[3] Laws apply only to chemistry; theories apply to physics."
+   ]
+  }
+ }
+]

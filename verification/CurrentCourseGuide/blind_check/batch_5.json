@@ -1,0 +1,42 @@
+[
+ {
+  "id": "m14-m-sanity",
+  "module": "m14",
+  "label": "lecture",
+  "prompt": "<p>A student computes E<sub>el</sub> = +8.16 × 10<sup>−19</sup> J for one Na<sup>+</sup>–Cl<sup>−</sup> pair at d = 0.283 nm. What's the problem?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Nothing; energies are positive.",
+    "[1] Sign error: Q<sub>1</sub>Q<sub>2</sub> = (+1)(−1) is negative, so E<sub>el</sub> must be negative.",
+    "[2] The distance must be in pm.",
+    "[3] Na<sup>+</sup> and Cl<sup>−</sup> repel."
+   ]
+  }
+ },
+ {
+  "id": "t1-2-transfer",
+  "module": "t1-2",
+  "label": "preview",
+  "prompt": "<p>You're asked for the de Broglie wavelength of a 57.0 g ball, but λ = h/(mu) needs mass in kg. The textbook says that comparing the units of the given values and of the final answer helps you see how they're connected, and so which conversions you need. Which COAST step is that?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Collect and Organize",
+    "[1] Analyze",
+    "[2] Solve",
+    "[3] Think About It"
+   ]
+  }
+ },
+ {
+  "id": "m10-preview-excited",
+  "module": "m10",
+  "label": "preview",
+  "prompt": "<p>The textbook's example is sodium: a flame moves its 3s electron up to 3p, giving the first excited state [Ne]3p<sup>1</sup>. Apply the same idea to lithium, whose ground state is [He]2s<sup>1</sup>. Write lithium's <em>first excited state</em>, where the 2s electron has moved up to the next-lowest subshell.</p>",
+  "answer_format": {
+   "type": "config",
+   "species": "excited Na"
+  }
+ }
+]

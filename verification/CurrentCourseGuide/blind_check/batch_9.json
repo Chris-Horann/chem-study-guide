@@ -1,0 +1,485 @@
+[
+ {
+  "id": "t4-7-p6",
+  "module": "t4-7",
+  "label": "preview",
+  "prompt": "A Cl atom forms two single bonds and has two lone pairs (an octet). Without writing out Eq. 4.2, what is its formal charge?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t4-7-transfer",
+  "module": "t4-7",
+  "label": "preview",
+  "prompt": "The thiocyanate ion, SCN<sup>−</sup> (on the polyatomic-ion table), has the skeleton S–C–N (textbook PDF p.197). Which Lewis structure is best by the formal-charge criteria? (χ: S 2.5, C 2.5, N 3.0.)",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] [drawing: Lewis structure: S–C triple bond, C–N single bond, 1 lone pair on S, 3 lone pairs on N; overall charge 1−]",
+    "[1] [drawing: Lewis structure: S–C single bond, C–N triple bond, 3 lone pairs on S, 1 lone pair on N; overall charge 1−]",
+    "[2] [drawing: Lewis structure: S–C double bond, C–N double bond, 2 lone pairs on S, 2 lone pairs on N; overall charge 1−]"
+   ]
+  }
+ },
+ {
+  "id": "t4-7-m-recognize",
+  "module": "t4-7",
+  "label": "preview",
+  "prompt": "When do you need formal charges?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Only for ionic compounds.",
+    "[1] Only when resonance structures are equivalent.",
+    "[2] When you can draw more than one valid Lewis structure that aren't equivalent, and must choose the best one.",
+    "[3] Every time you count valence electrons."
+   ]
+  }
+ },
+ {
+  "id": "t4-7-m-sanity",
+  "module": "t4-7",
+  "label": "preview",
+  "prompt": "For a neutral molecule, a student finds formal charges of +1, 0, and 0. What does that tell you?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Nothing; any values are possible.",
+    "[1] There's an error: the formal charges of a neutral molecule must add up to 0.",
+    "[2] The molecule is a radical.",
+    "[3] The +1 atom is a cation."
+   ]
+  }
+ },
+ {
+  "id": "t4-8-attempt",
+  "module": "t4-8",
+  "label": "preview",
+  "prompt": "Draw BF<sub>3</sub> (B central). (a) How many valence electrons does it have? (b) In the best structure, how many electrons surround B?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) valence electrons"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) electrons around B"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t4-8-p1",
+  "module": "t4-8",
+  "label": "preview",
+  "prompt": "How many valence electrons does chlorine dioxide, ClO<sub>2</sub>, have, and what does that number tell you?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "valence electrons"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] An odd count: at least one electron is unpaired, so ClO<sub>2</sub> is a free radical.",
+      "[1] An even count: every atom can have an octet.",
+      "[2] Cl must have an expanded octet."
+     ],
+     "label": "what it tells you"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t4-8-p2",
+  "module": "t4-8",
+  "label": "preview",
+  "prompt": "In PF<sub>5</sub>, how many valence electrons surround the central P atom?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t4-8-p3",
+  "module": "t4-8",
+  "label": "preview",
+  "prompt": "Bromine pentafluoride, BrF<sub>5</sub>, has Br in the center bonded to five F atoms. How many valence electrons surround Br?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t4-8-p4",
+  "module": "t4-8",
+  "label": "preview",
+  "prompt": "Which atom can have more than eight valence electrons around it in a Lewis structure?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] C",
+    "[1] O",
+    "[2] S",
+    "[3] N"
+   ]
+  }
+ },
+ {
+  "id": "t4-8-p5",
+  "module": "t4-8",
+  "label": "preview",
+  "prompt": "In an odd-electron molecule made of N and O atoms, which atom should be left with the incomplete octet?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Neither: move an electron so both have octets.",
+    "[1] N, because O is more electronegative and should keep its octet.",
+    "[2] O, because it has more valence electrons to spare.",
+    "[3] It doesn't matter which one."
+   ]
+  }
+ },
+ {
+  "id": "t4-8-p6",
+  "module": "t4-8",
+  "label": "preview",
+  "prompt": "What is a free radical?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] A molecule with an expanded octet.",
+    "[1] A molecule with a triple bond.",
+    "[2] An atom, ion, or molecule with unpaired electrons.",
+    "[3] Any ion with a negative charge."
+   ]
+  }
+ },
+ {
+  "id": "t4-8-transfer",
+  "module": "t4-8",
+  "label": "preview",
+  "prompt": "The sulfite ion, SO<sub>3</sub><sup>2−</sup>, has S bonded to three O atoms and one lone pair on S. (a) With only single S–O bonds (every atom with an octet), what is the formal charge on S? (b) In the structure that minimizes formal charges, how many electrons surround S?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) FC on S, octets only"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) electrons around S, minimized FC"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t4-8-m-recognize",
+  "module": "t4-8",
+  "label": "preview",
+  "prompt": "Which species has an odd number of valence electrons, so no structure can give every atom an octet?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] O<sub>3</sub>",
+    "[1] NO<sub>3</sub><sup>−</sup>",
+    "[2] NO<sub>2</sub>",
+    "[3] CO<sub>2</sub>"
+   ]
+  }
+ },
+ {
+  "id": "t4-8-m-sanity",
+  "module": "t4-8",
+  "label": "preview",
+  "prompt": "To give N an octet, a student draws NO with a triple bond (one lone pair on O; one lone pair and one unpaired electron on N). What's wrong?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Nothing; both atoms now have octets.",
+    "[1] NO has 12 electrons, not 11.",
+    "[2] O can't form triple bonds.",
+    "[3] N would then have 9 electrons, which is impossible for a period-2 atom."
+   ]
+  }
+ },
+ {
+  "id": "t4-9-attempt",
+  "module": "t4-9",
+  "label": "preview",
+  "prompt": "In CO<sub>2</sub> (O=C=O), the symmetric stretch is IR-inactive: the two identical C=O bonds' fluctuating fields cancel. Dinitrogen monoxide, N<sub>2</sub>O, is also linear, but its atoms are arranged N–N–O. (a) Is its symmetric stretch (both bonds lengthening and shortening together) IR-active? (b) Why?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] yes",
+      "[1] no"
+     ],
+     "label": "(a) IR-active?"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] N<sub>2</sub>O isn't linear.",
+      "[1] N<sub>2</sub>O has no polar bonds.",
+      "[2] Every stretch absorbs IR.",
+      "[3] Its two bonds are different (N–N and N–O), so their fluctuating fields don't cancel."
+     ],
+     "label": "(b) reason"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t4-9-p1",
+  "module": "t4-9",
+  "label": "preview",
+  "prompt": "Is the stretching vibration of a hydrogen molecule, H<sub>2</sub>, infrared-active?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Yes: H<sub>2</sub> is the lightest molecule, so it vibrates fastest.",
+    "[1] Only at high temperature.",
+    "[2] No: the H–H bond is nonpolar, so stretching it creates no fluctuating field.",
+    "[3] Yes: every bond vibrates."
+   ]
+  }
+ },
+ {
+  "id": "t4-9-p2",
+  "module": "t4-9",
+  "label": "preview",
+  "prompt": "How many of CO<sub>2</sub>'s three vibrations in textbook Fig. 4.13 are infrared-active?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t4-9-p3",
+  "module": "t4-9",
+  "label": "preview",
+  "prompt": "Earth's average surface temperature is 287 K. In which region of the spectrum does it emit most strongly?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Ultraviolet",
+    "[1] X-ray",
+    "[2] Infrared",
+    "[3] Visible"
+   ]
+  }
+ },
+ {
+  "id": "t4-9-p4",
+  "module": "t4-9",
+  "label": "preview",
+  "prompt": "A CO<sub>2</sub> molecule in the atmosphere absorbs an IR photon emitted by Earth's surface. According to the textbook, what happens next?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] It keeps the energy permanently.",
+    "[1] It always re-emits the photon toward space.",
+    "[2] The C=O bonds break.",
+    "[3] It later emits a photon of the same energy, which is as likely to head back toward Earth as out to space."
+   ]
+  }
+ },
+ {
+  "id": "t4-9-p5",
+  "module": "t4-9",
+  "label": "preview",
+  "prompt": "Why does a vibrating polar bond interact with infrared light rather than, say, visible light?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Bond vibrations have natural frequencies in the infrared range, and absorption needs the light's frequency to match.",
+    "[1] Visible light can't reach the atmosphere.",
+    "[2] Infrared light has more energy than visible light.",
+    "[3] Polar bonds only absorb light of one color."
+   ]
+  }
+ },
+ {
+  "id": "t4-9-transfer",
+  "module": "t4-9",
+  "label": "preview",
+  "prompt": "Carbonyl sulfide, O=C=S, is linear like CO<sub>2</sub>, with different atoms at its two ends. How many of its three vibrations (symmetric stretch, asymmetric stretch, bend) can absorb infrared radiation? (χ: O 3.5, C 2.5, S 2.5.)",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t4-9-m-recognize",
+  "module": "t4-9",
+  "label": "preview",
+  "prompt": "Which molecule's bond stretch can absorb infrared radiation?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] N<sub>2</sub>",
+    "[1] Cl<sub>2</sub>",
+    "[2] O<sub>2</sub>",
+    "[3] CO"
+   ]
+  }
+ },
+ {
+  "id": "t4-9-m-sanity",
+  "module": "t4-9",
+  "label": "preview",
+  "prompt": "A classmate argues that N<sub>2</sub> and O<sub>2</sub> must be the main greenhouse gases, since they make up 99% of the atmosphere. What's the flaw?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Abundance isn't the test: their nonpolar bonds can't absorb IR, so they don't trap heat.",
+    "[1] Nothing; the most abundant gases matter most.",
+    "[2] They make up only 50% of the atmosphere.",
+    "[3] N<sub>2</sub> and O<sub>2</sub> absorb visible light instead."
+   ]
+  }
+ },
+ {
+  "id": "x36",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "Name Cu(NO<sub>3</sub>)<sub>2</sub>.",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "x37",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "Write the formula of dinitrogen pentoxide.",
+  "answer_format": {
+   "type": "text",
+   "kind": "formula",
+   "placeholder": "e.g., MgCl2"
+  }
+ },
+ {
+  "id": "x38",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "How many valence electrons are in the sulfate ion, SO<sub>4</sub><sup>2−</sup>?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "x39",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "What is the formal charge on the central O atom in ozone? [drawing: Lewis structure of ozone, O₃ (double bond on the left): left O–central O double bond, central O–right O single bond, 2 lone pairs on the left O, 1 lone pair on the central O, 3 lone pairs on the right O]",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "x40",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "The textbook's best Lewis structure of phosphate, PO<sub>4</sub><sup>3−</sup>, has one P=O and three P–O bonds, and the double bond can be drawn to any of the four O atoms. What is the average P–O bond order? Enter a decimal.",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "x41",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "Which compound's name needs a Roman numeral?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] FeO",
+    "[1] MgO",
+    "[2] Na<sub>2</sub>O",
+    "[3] CaO"
+   ]
+  }
+ },
+ {
+  "id": "x42",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "How many lone pairs are in the Lewis structure of ammonia, NH<sub>3</sub>?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "x43",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "Which of these molecules has a vibration that can absorb infrared radiation?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] O<sub>2</sub>",
+    "[1] Cl<sub>2</sub>",
+    "[2] CO<sub>2</sub>",
+    "[3] N<sub>2</sub>"
+   ]
+  }
+ },
+ {
+  "id": "x44",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "Which molecule is electron-deficient (its central atom has fewer than 8 electrons in the best Lewis structure)?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] CCl<sub>4</sub>",
+    "[1] BCl<sub>3</sub>",
+    "[2] NCl<sub>3</sub>",
+    "[3] PCl<sub>3</sub>"
+   ]
+  }
+ },
+ {
+  "id": "x45",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "Name H<sub>2</sub>SO<sub>4</sub>.",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "x46",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "How many dots are in the Lewis symbol of silicon (group 14)?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "x47",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "Which bond is the longest?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] C–H",
+    "[1] C–C",
+    "[2] C=C",
+    "[3] C≡C"
+   ]
+  }
+ }
+]

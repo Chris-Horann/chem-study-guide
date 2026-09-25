@@ -1,0 +1,330 @@
+[
+ {
+  "id": "m18-m-recognize",
+  "answer": 3,
+  "confidence": "high",
+  "note": "S is group 16 (6 valence e-: two pairs + two single dots); O is also group 16, so same dot pattern."
+ },
+ {
+  "id": "m18-m-sanity",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Lewis-symbol convention places one dot per side before pairing; C has 4 valence e- -> 4 single dots -> 4 bonds."
+ },
+ {
+  "id": "m19-attempt",
+  "answer": [
+   {
+    "value": 10,
+    "unit": ""
+   },
+   2,
+   {
+    "value": 1,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "1+4+5 = 10 e-; H-C-N plus 3 LP on N leaves C with 4 e-, so two N lone pairs become shared: H-C≡N with 1 LP on N."
+ },
+ {
+  "id": "m19-p1",
+  "answer": {
+   "value": 26,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "7 (Cl) + 3x6 (O) + 1 (for the 1- charge) = 26."
+ },
+ {
+  "id": "m19-p2",
+  "answer": 3,
+  "confidence": "high",
+  "note": "O has the largest bonding capacity (2) vs Cl (1) and H (1), so H-O-Cl. The 'least electronegative atom goes in the center' shortcut would wrongly pick Cl (EN 3.0 < 3.5)."
+ },
+ {
+  "id": "m19-p3",
+  "answer": [
+   {
+    "value": 16,
+    "unit": ""
+   },
+   {
+    "value": 4,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "4 + 2x6 = 16 e-; S=C=S with 2 LP on each S = 4 LP. (S≡C-S also has 4 LP, so the count is the same either way.)"
+ },
+ {
+  "id": "m19-p4",
+  "answer": 3,
+  "confidence": "high",
+  "note": "10 e-: N≡N (6 e-) + 1 LP on each N (4 e-); each N has an octet. Option 3 has no lone pairs (only 6 e-); options 1 and 2 use too many e-."
+ },
+ {
+  "id": "m19-p5",
+  "answer": [
+   {
+    "value": 5,
+    "unit": ""
+   },
+   {
+    "value": 2,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "14 valence e-; 4 N-H + 1 N-N = 5 bonds (10 e-); the 4 left over = 1 LP on each N = 2 LP."
+ },
+ {
+  "id": "m19-p6",
+  "answer": 3,
+  "confidence": "high",
+  "note": "The brackets enclose the whole ion, including the extra electron, and the charge belongs to the whole ion."
+ },
+ {
+  "id": "m19-transfer",
+  "answer": [
+   {
+    "value": 12,
+    "unit": ""
+   },
+   {
+    "value": 2,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "2x4 + 4x1 = 12 e-; 5 single bonds use 10, so the 2 left over make the C=C double bond (bond order 2), giving both C an octet."
+ },
+ {
+  "id": "m19-m-recognize",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Step 5: once every electron is placed, a central atom still short of an octet means outer lone pairs must become shared (multiple bonds)."
+ },
+ {
+  "id": "m19-m-sanity",
+  "answer": 0,
+  "confidence": "high",
+  "note": "The drawn structure uses 2 + 12 = 14 e-, but O2 has 2x6 = 12; the correct structure is O=O with 2 LP on each O."
+ },
+ {
+  "id": "t4-5-attempt",
+  "answer": [
+   {
+    "value": 2,
+    "unit": ""
+   },
+   {
+    "value": 1.5,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "18 e-: O=N-O with 1 LP on N; the double bond can go to either O, giving 2 structures, so the bond order is (2+1)/2 = 1.5."
+ },
+ {
+  "id": "t4-5-p1",
+  "answer": 3,
+  "confidence": "high",
+  "note": "Different molecular forms of the same element are allotropes (O2, O3). I can't see the lecture wording itself, but this is the standard term."
+ },
+ {
+  "id": "t4-5-p2",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Same connectivity and the same 18 e- in both; only the position of the double bond (and so which end O has 3 LP) differs."
+ },
+ {
+  "id": "t4-5-p3",
+  "answer": {
+   "value": 2,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "The C=O double bond can sit on either of the two equivalent O atoms of the COO- group; the CH3 part has no alternative placement."
+ },
+ {
+  "id": "t4-5-p4",
+  "answer": 1,
+  "confidence": "high",
+  "note": "The real molecule is a resonance hybrid (not flipping between forms); the 3rd bonding pair is delocalized, so each bond order is 1.5 (between 148 and 121 pm)."
+ },
+ {
+  "id": "t4-5-p5",
+  "answer": 0,
+  "confidence": "high",
+  "note": "CO3 2- has 3 equivalent structures (C=O to any one O); CH4, NH3, and H2O have only single bonds and one structure each."
+ },
+ {
+  "id": "t4-5-p6",
+  "answer": 2,
+  "confidence": "high",
+  "note": "The resonance arrow links contributing structures of one species; it doesn't stand for equilibrium or atom movement."
+ },
+ {
+  "id": "t4-5-transfer",
+  "answer": [
+   {
+    "value": 2,
+    "unit": ""
+   },
+   {
+    "value": 1.5,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "18 e-: H-C(=O)-O-; the double bond can go to either O, giving 2 structures, so the C-O bond order is (2+1)/2 = 1.5."
+ },
+ {
+  "id": "t4-5-m-recognize",
+  "answer": 3,
+  "confidence": "high",
+  "note": "When an atom has single and double bonds to atoms of the same element, the double bond can be moved, which gives equivalent resonance forms."
+ },
+ {
+  "id": "t4-5-m-sanity",
+  "answer": 0,
+  "confidence": "high",
+  "note": "NO3- has 3 equivalent resonance structures; the hybrid has three identical N-O bonds, each with bond order 4/3."
+ },
+ {
+  "id": "t4-6-attempt",
+  "answer": [
+   {
+    "value": 1,
+    "unit": ""
+   },
+   {
+    "value": 1.5,
+    "unit": ""
+   },
+   2
+  ],
+  "confidence": "high",
+  "note": "24 e-: HO-C(=O)-O-; C-OH is always single (1). The other two share one double bond over 2 resonance forms (1.5). The lowest bond order is the longest, so C-OH."
+ },
+ {
+  "id": "t4-6-p1",
+  "answer": [
+   "cc1",
+   "cc2",
+   "cc3"
+  ],
+  "confidence": "high",
+  "note": "Table 4.6: C-C 154 pm > C=C 134 pm > C≡C 120 pm; a higher bond order gives a shorter bond."
+ },
+ {
+  "id": "t4-6-p2",
+  "answer": 3,
+  "confidence": "high",
+  "note": "Bond energy is the energy that must be absorbed to break 1 mol of the bonds in the gas phase; the same amount is released when they form."
+ },
+ {
+  "id": "t4-6-p3",
+  "answer": {
+   "value": 1652,
+   "unit": "kJ"
+  },
+  "confidence": "high",
+  "note": "4 C-H x 413 kJ/mol = 1652 kJ per mol CH4. Strict sig figs (413 has 3; the 4 is exact) give 1.65e3 kJ; it could also be written as kJ/mol CH4."
+ },
+ {
+  "id": "t4-6-p4",
+  "answer": 1,
+  "confidence": "high",
+  "note": "CO is C≡O (113 pm, 1072 kJ/mol); CO2 has C=O bonds (799 kJ/mol per the Table 4.6 footnote, and longer)."
+ },
+ {
+  "id": "t4-6-p5",
+  "answer": [
+   "h2o2",
+   "o3",
+   "o2"
+  ],
+  "confidence": "high",
+  "note": "H2O2 O-O bond order 1 (148 pm) > O3 bond order 1.5 (128 pm) > O2 bond order 2 (121 pm)."
+ },
+ {
+  "id": "t4-6-transfer",
+  "answer": {
+   "value": 404,
+   "unit": "kJ/mol"
+  },
+  "confidence": "high",
+  "note": "For bond order 1.5, average the single and double values: (201 + 607)/2 = 404 kJ/mol (a rough interpolation)."
+ },
+ {
+  "id": "t4-6-m-recognize",
+  "answer": 0,
+  "confidence": "high",
+  "note": "A length between the single- and double-bond values means a fractional bond order (1 to 2), which is the sign of resonance (e.g., O3 at 128 pm)."
+ },
+ {
+  "id": "t4-6-m-sanity",
+  "answer": 3,
+  "confidence": "high",
+  "note": "C-C 348, C=C 614 (+266), C≡C 839 (+225): each added pair contributes less than the first single bond, so energy is not proportional to bond order."
+ },
+ {
+  "id": "t4-7-attempt",
+  "answer": [
+   {
+    "value": -1,
+    "unit": ""
+   },
+   {
+    "value": 1,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "FC = V - lone e- - bonds. C: 4 - 2 - 3 = -1; O: 6 - 2 - 3 = +1. The sum is 0 for neutral CO."
+ },
+ {
+  "id": "t4-7-p1",
+  "answer": {
+   "value": -1,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "O: 6 - 6 (3 lone pairs) - 1 (one bond) = -1; H is 0, so the sum is the ion's 1- charge."
+ },
+ {
+  "id": "t4-7-p2",
+  "answer": {
+   "value": 1,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "N: 5 - 0 lone e- - 4 bonds = +1; each H is 0, so the sum matches the 1+ charge."
+ },
+ {
+  "id": "t4-7-p3",
+  "answer": 1,
+  "confidence": "high",
+  "note": "S=C=S has FC 0 on every atom. S≡C-S has FC +1/-1, so it is worse. Option 2 uses 20 e- (CS2 has 16), so it is invalid."
+ },
+ {
+  "id": "t4-7-p4",
+  "answer": {
+   "value": -2,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "The formal charges in any valid structure must sum to the species' overall charge, -2 for SO4 2-."
+ },
+ {
+  "id": "t4-7-p5",
+  "answer": {
+   "value": -1,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "5 - 4 (two lone pairs) - 2 (one double bond) = -1 (e.g., terminal N of azide, N3-)."
+ }
+]

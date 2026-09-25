@@ -1,0 +1,365 @@
+{
+ "polyatomic_ions_Day8_p8": [
+  [
+   "CO3",
+   -2,
+   "carbonate"
+  ],
+  [
+   "HCO3",
+   -1,
+   "hydrogen carbonate or bicarbonate"
+  ],
+  [
+   "CH3COO",
+   -1,
+   "acetate"
+  ],
+  [
+   "CN",
+   -1,
+   "cyanide"
+  ],
+  [
+   "SCN",
+   -1,
+   "thiocyanate"
+  ],
+  [
+   "ClO",
+   -1,
+   "hypochlorite"
+  ],
+  [
+   "ClO2",
+   -1,
+   "chlorite"
+  ],
+  [
+   "ClO3",
+   -1,
+   "chlorate"
+  ],
+  [
+   "ClO4",
+   -1,
+   "perchlorate"
+  ],
+  [
+   "CrO4",
+   -2,
+   "chromate"
+  ],
+  [
+   "Cr2O7",
+   -2,
+   "dichromate"
+  ],
+  [
+   "MnO4",
+   -1,
+   "permanganate"
+  ],
+  [
+   "N3",
+   -1,
+   "azide"
+  ],
+  [
+   "NO2",
+   -1,
+   "nitrite"
+  ],
+  [
+   "NO3",
+   -1,
+   "nitrate"
+  ],
+  [
+   "OH",
+   -1,
+   "hydroxide"
+  ],
+  [
+   "O2",
+   -2,
+   "peroxide"
+  ],
+  [
+   "PO4",
+   -3,
+   "phosphate"
+  ],
+  [
+   "HPO4",
+   -2,
+   "hydrogen phosphate"
+  ],
+  [
+   "H2PO4",
+   -1,
+   "dihydrogen phosphate"
+  ],
+  [
+   "S2",
+   -2,
+   "disulfide"
+  ],
+  [
+   "SO3",
+   -2,
+   "sulfite"
+  ],
+  [
+   "SO4",
+   -2,
+   "sulfate"
+  ],
+  [
+   "HSO3",
+   -1,
+   "hydrogen sulfite or bisulfite"
+  ],
+  [
+   "HSO4",
+   -1,
+   "hydrogen sulfate or bisulfate"
+  ],
+  [
+   "NH4",
+   1,
+   "ammonium"
+  ]
+ ],
+ "prefixes_Table_4_3": [
+  "mono",
+  "di",
+  "tri",
+  "tetra",
+  "penta",
+  "hexa",
+  "hepta",
+  "octa",
+  "nona",
+  "deca"
+ ],
+ "bond_lengths_pm_and_energies_kJ_per_mol_Table_4_6": {
+  "C–C": {
+   "pm": 154,
+   "kJ/mol": 348
+  },
+  "C=C": {
+   "pm": 134,
+   "kJ/mol": 614
+  },
+  "C≡C": {
+   "pm": 120,
+   "kJ/mol": 839
+  },
+  "C–N": {
+   "pm": 147,
+   "kJ/mol": 293
+  },
+  "C=N": {
+   "pm": 127,
+   "kJ/mol": 615
+  },
+  "C≡N": {
+   "pm": 116,
+   "kJ/mol": 891
+  },
+  "C–O": {
+   "pm": 143,
+   "kJ/mol": 358
+  },
+  "C=O": {
+   "pm": 123,
+   "kJ/mol": 743
+  },
+  "C≡O": {
+   "pm": 113,
+   "kJ/mol": 1072
+  },
+  "C–H": {
+   "pm": 110,
+   "kJ/mol": 413
+  },
+  "C–F": {
+   "pm": 133,
+   "kJ/mol": 485
+  },
+  "C–Cl": {
+   "pm": 177,
+   "kJ/mol": 328
+  },
+  "N–H": {
+   "pm": 104,
+   "kJ/mol": 391
+  },
+  "N–N": {
+   "pm": 147,
+   "kJ/mol": 163
+  },
+  "N=N": {
+   "pm": 124,
+   "kJ/mol": 418
+  },
+  "N≡N": {
+   "pm": 110,
+   "kJ/mol": 945
+  },
+  "N–O": {
+   "pm": 136,
+   "kJ/mol": 201
+  },
+  "N=O": {
+   "pm": 122,
+   "kJ/mol": 607
+  },
+  "N≡O": {
+   "pm": 106,
+   "kJ/mol": 678
+  },
+  "O–O": {
+   "pm": 148,
+   "kJ/mol": 146
+  },
+  "O=O": {
+   "pm": 121,
+   "kJ/mol": 498
+  },
+  "O–H": {
+   "pm": 96,
+   "kJ/mol": 463
+  },
+  "S–O": {
+   "pm": 151,
+   "kJ/mol": 265
+  },
+  "S=O": {
+   "pm": 143,
+   "kJ/mol": 523
+  },
+  "S–S": {
+   "pm": 204,
+   "kJ/mol": 266
+  },
+  "S–H": {
+   "pm": 134,
+   "kJ/mol": 347
+  },
+  "H–H": {
+   "pm": 74,
+   "kJ/mol": 436
+  },
+  "H–F": {
+   "pm": 92,
+   "kJ/mol": 567
+  },
+  "H–Cl": {
+   "pm": 127,
+   "kJ/mol": 431
+  },
+  "H–Br": {
+   "pm": 141,
+   "kJ/mol": 366
+  },
+  "H–I": {
+   "pm": 161,
+   "kJ/mol": 299
+  },
+  "F–F": {
+   "pm": 143,
+   "kJ/mol": 155
+  },
+  "Cl–Cl": {
+   "pm": 200,
+   "kJ/mol": 243
+  },
+  "Br–Br": {
+   "pm": 228,
+   "kJ/mol": 193
+  },
+  "I–I": {
+   "pm": 266,
+   "kJ/mol": 151
+  }
+ },
+ "Table_4_6_footnote": "The C=O bond energy in CO2 is 799 kJ/mol.",
+ "electronegativity_textbook_Fig_4_5": {
+  "H": 2.1,
+  "Li": 1.1,
+  "Be": 1.5,
+  "B": 2.0,
+  "C": 2.5,
+  "N": 3.0,
+  "O": 3.5,
+  "F": 4.0,
+  "Na": 0.9,
+  "Mg": 1.2,
+  "Al": 1.5,
+  "Si": 1.8,
+  "P": 2.1,
+  "S": 2.5,
+  "Cl": 3.0,
+  "K": 0.8,
+  "Ca": 1.0,
+  "Sc": 1.3,
+  "Ti": 1.5,
+  "V": 1.6,
+  "Cr": 1.6,
+  "Mn": 1.5,
+  "Fe": 1.8,
+  "Co": 1.8,
+  "Ni": 1.8,
+  "Cu": 1.9,
+  "Zn": 1.6,
+  "Ga": 1.6,
+  "Ge": 1.8,
+  "As": 2.0,
+  "Se": 2.4,
+  "Br": 2.8,
+  "Rb": 0.8,
+  "Sr": 1.0,
+  "Y": 1.2,
+  "Zr": 1.4,
+  "Nb": 1.6,
+  "Mo": 1.8,
+  "Tc": 1.9,
+  "Ru": 2.2,
+  "Rh": 2.2,
+  "Pd": 2.2,
+  "Ag": 1.9,
+  "Cd": 1.7,
+  "In": 1.7,
+  "Sn": 1.8,
+  "Sb": 1.9,
+  "Te": 2.1,
+  "I": 2.5,
+  "Cs": 0.7,
+  "Ba": 0.9,
+  "La": 1.1,
+  "Hf": 1.3,
+  "Ta": 1.5,
+  "W": 1.7,
+  "Re": 1.9,
+  "Os": 2.2,
+  "Ir": 2.2,
+  "Pt": 2.2,
+  "Au": 2.4,
+  "Hg": 1.9,
+  "Tl": 1.8,
+  "Pb": 1.9,
+  "Bi": 1.9,
+  "Po": 2.0,
+  "At": 2.2,
+  "Fr": 0.7,
+  "Ra": 0.9,
+  "Ac": 1.1
+ },
+ "course_conventions": [
+  "Five steps (Day 8 p.21): 1 count valence electrons; 2 skeleton with single bonds, central atom = largest bonding capacity; 3 complete the octets of atoms bonded to the central atom (H needs 2); 4 compare with the count; 5 use leftover electrons to complete the central atom's octet (if still short, turn outer lone pairs into shared pairs).",
+  "Roman numerals give the charge of a transition-metal ion; the slides write 'copper (II) oxide' with a space, the textbook 'copper(II) oxide'.",
+  "Covalent names: prefixes for every count except no 'mono' on the first element; the textbook drops a prefix's final o/a before 'oxide'."
+ ]
+}

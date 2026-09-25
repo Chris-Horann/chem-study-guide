@@ -1,0 +1,269 @@
+[
+ {
+  "id": "t4-7-p6",
+  "answer": {
+   "value": 1,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "Cl normally has 1 bond + 3 lone pairs (FC 0); one extra bond with one fewer lone pair gives +1 (7 - 4 - 2 = +1)."
+ },
+ {
+  "id": "t4-7-transfer",
+  "answer": 2,
+  "confidence": "high",
+  "note": "FCs: [0] S-1,C0,N0; [1] S0,C0,N-1; [2] S+1,C0,N-2. [0] and [1] tie on zeros; the tiebreak puts -1 on the more electronegative N (3.0 > 2.5), so [1]. (In reality S-C#N also contributes a lot; the textbook criteria pick [1].)"
+ },
+ {
+  "id": "t4-7-m-recognize",
+  "answer": 2,
+  "confidence": "high",
+  "note": "Formal charges pick the best of several nonequivalent valid Lewis structures."
+ },
+ {
+  "id": "t4-7-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "The formal charges must add up to the overall charge (0 for a neutral molecule); +1+0+0 means there's an error."
+ },
+ {
+  "id": "t4-8-attempt",
+  "answer": [
+   {
+    "value": 24,
+    "unit": ""
+   },
+   {
+    "value": 6,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "3 + 3(7) = 24; the best structure has three B-F single bonds (all FC 0), leaving B with 6 electrons. A B=F double bond would put +1 on F."
+ },
+ {
+  "id": "t4-8-p1",
+  "answer": [
+   {
+    "value": 19,
+    "unit": ""
+   },
+   0
+  ],
+  "confidence": "high",
+  "note": "7 + 2(6) = 19 is odd, so one electron is unpaired and ClO2 is a free radical."
+ },
+ {
+  "id": "t4-8-p2",
+  "answer": {
+   "value": 10,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "Five P-F single bonds and no lone pair on P: 5 x 2 = 10 electrons (expanded octet)."
+ },
+ {
+  "id": "t4-8-p3",
+  "answer": {
+   "value": 12,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "42 valence e-: 10 in bonds + 30 on the F atoms leaves 2 (one lone pair) on Br, so Br has 10 + 2 = 12."
+ },
+ {
+  "id": "t4-8-p4",
+  "answer": 2,
+  "confidence": "high",
+  "note": "Only S (period 3) can expand its octet; N, C, and O are period 2."
+ },
+ {
+  "id": "t4-8-p5",
+  "answer": 1,
+  "confidence": "high",
+  "note": "The more electronegative O keeps its octet, and the odd electron stays on N (e.g., in NO, N=O gives FC 0 on both atoms)."
+ },
+ {
+  "id": "t4-8-p6",
+  "answer": 2,
+  "confidence": "high",
+  "note": "Free radical = a species (atom, ion, or molecule) with one or more unpaired electrons."
+ },
+ {
+  "id": "t4-8-transfer",
+  "answer": [
+   {
+    "value": 1,
+    "unit": ""
+   },
+   {
+    "value": 10,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "26 e-. All single bonds: S = 6-2-3 = +1 and each O = -1. With one S=O: S 0, O= 0, two O -1; S has 2+2+4 bonding + 2 lone = 10. Two S=O would give S -1 (same count of zeros, negative on the less electronegative atom), so one double bond is best."
+ },
+ {
+  "id": "t4-8-m-recognize",
+  "answer": 2,
+  "confidence": "high",
+  "note": "NO2 has 5 + 12 = 17 (odd); CO2 has 16, O3 18, NO3- 24."
+ },
+ {
+  "id": "t4-8-m-sanity",
+  "answer": 3,
+  "confidence": "high",
+  "note": "N would have 6 (triple bond) + 2 (lone pair) + 1 = 9 electrons, which is more than a period-2 atom can hold. The total of 11 e- is correct."
+ },
+ {
+  "id": "t4-9-attempt",
+  "answer": [
+   0,
+   3
+  ],
+  "confidence": "high",
+  "note": "In the N-N-O arrangement the two bonds differ, so the dipole changes during the symmetric stretch: IR-active."
+ },
+ {
+  "id": "t4-9-p1",
+  "answer": 2,
+  "confidence": "high",
+  "note": "A homonuclear H-H bond is nonpolar, so stretching it produces no changing dipole: IR-inactive."
+ },
+ {
+  "id": "t4-9-p2",
+  "answer": {
+   "value": 2,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "The asymmetric stretch and the bend are IR-active; the symmetric stretch is inactive. (The bend is doubly degenerate, but the figure shows three vibrations.)"
+ },
+ {
+  "id": "t4-9-p3",
+  "answer": 2,
+  "confidence": "high",
+  "note": "Wien's law: lambda_max = 2.898e-3/287 = about 10 um, which is infrared."
+ },
+ {
+  "id": "t4-9-p4",
+  "answer": 3,
+  "confidence": "high",
+  "note": "The excited CO2 re-emits an IR photon of about the same energy in a random direction, so it is as likely to go back toward Earth as out to space."
+ },
+ {
+  "id": "t4-9-p5",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Bond vibrational frequencies fall in the IR range, and absorption requires the light's frequency to match."
+ },
+ {
+  "id": "t4-9-transfer",
+  "answer": {
+   "value": 3,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "The ends differ (C=O polar with a chi difference of 1.0; C=S nonpolar with 0), so no mode cancels: the symmetric stretch, asymmetric stretch, and bend all change the dipole. Real OCS shows all three IR bands."
+ },
+ {
+  "id": "t4-9-m-recognize",
+  "answer": 3,
+  "confidence": "high",
+  "note": "CO is heteronuclear with a polar bond; N2, Cl2, and O2 are homonuclear and nonpolar."
+ },
+ {
+  "id": "t4-9-m-sanity",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Greenhouse activity requires IR absorption (a changing dipole), not abundance; the N2 and O2 bond stretches are IR-inactive."
+ },
+ {
+  "id": "x36",
+  "answer": "copper(II) nitrate",
+  "confidence": "high",
+  "note": "NO3- is -1, so Cu is 2+. The textbook writes copper(II); the slides write 'copper (II) nitrate' with a space, which should also be accepted."
+ },
+ {
+  "id": "x37",
+  "answer": "N2O5",
+  "confidence": "high",
+  "note": "di = 2 N, penta = 5 O (pentoxide is the elided form of pentaoxide)."
+ },
+ {
+  "id": "x38",
+  "answer": {
+   "value": 32,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "6 + 4(6) + 2 = 32."
+ },
+ {
+  "id": "x39",
+  "answer": {
+   "value": 1,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "The central O has 1 lone pair and 3 bonds (one double, one single): 6 - 2 - 3 = +1."
+ },
+ {
+  "id": "x40",
+  "answer": {
+   "value": 1.25,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "(2 + 1 + 1 + 1)/4 = 1.25, averaged over the four equivalent resonance structures."
+ },
+ {
+  "id": "x41",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Fe is a transition metal with more than one common charge, so FeO is iron(II) oxide; Mg, Na, and Ca each have only one charge."
+ },
+ {
+  "id": "x42",
+  "answer": {
+   "value": 1,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "8 valence e-: 3 N-H bonds (6 e-) plus 1 lone pair on N."
+ },
+ {
+  "id": "x43",
+  "answer": 2,
+  "confidence": "high",
+  "note": "CO2's asymmetric stretch and bend change its dipole; N2, O2, and Cl2 are homonuclear and IR-inactive."
+ },
+ {
+  "id": "x44",
+  "answer": 1,
+  "confidence": "high",
+  "note": "B has 3 valence electrons, so in BCl3 it has only 6 electrons from three single bonds; N, P, and C all reach octets."
+ },
+ {
+  "id": "x45",
+  "answer": "sulfuric acid",
+  "confidence": "high",
+  "note": "Oxoacid of sulfate (-ate becomes -ic acid). The pure-compound name 'hydrogen sulfate' is less likely to be intended."
+ },
+ {
+  "id": "x46",
+  "answer": {
+   "value": 4,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "Group 14 gives 4 valence electrons (3s2 3p2), so 4 dots."
+ },
+ {
+  "id": "x47",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Table 4.6: C-C 154 pm > C=C 134 > C#C 120 > C-H 110."
+ }
+]

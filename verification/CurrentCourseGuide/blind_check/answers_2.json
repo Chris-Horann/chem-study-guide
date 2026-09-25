@@ -1,0 +1,601 @@
+[
+ {
+  "id": "m10-p2",
+  "answer": [
+   "1s2 2s2 2p6 3s2 3p3",
+   {
+    "value": 3,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "P = [Ne] 3s2 3p3; Hund's rule puts the three 3p electrons in separate orbitals, so 3 are unpaired."
+ },
+ {
+  "id": "m10-p3",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Penetration lowers the 2s energy (Day 6 p.12); option 0 is false because the 2s main radial peak lies farther out than 2p's."
+ },
+ {
+  "id": "m10-p4",
+  "answer": 1,
+  "confidence": "high",
+  "note": "18 + 2 + 3 = 23 electrons, so V."
+ },
+ {
+  "id": "m10-p5",
+  "answer": 2,
+  "confidence": "high",
+  "note": "Pairing in one 2p box while another is empty breaks Hund's rule; the pair has opposite spins, so Pauli holds."
+ },
+ {
+  "id": "m10-transfer",
+  "answer": [
+   "Cl",
+   {
+    "value": 1,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "Z = 10 + 7 = 17 (Cl); 3p5 leaves one unpaired electron."
+ },
+ {
+  "id": "m10-m-recognize",
+  "answer": 2,
+  "confidence": "high",
+  "note": "A last electron entering 3d means a transition metal (d block)."
+ },
+ {
+  "id": "m10-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "4s is lower than 3d and fills first, so Ca is [Ar] 4s2."
+ },
+ {
+  "id": "m11-attempt",
+  "answer": [
+   "[Ar] 3d5",
+   {
+    "value": 5,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "Fe [Ar] 4s2 3d6 loses both 4s electrons, then one 3d, leaving 5 3d electrons."
+ },
+ {
+  "id": "m11-p1",
+  "answer": "[Ar] 3d7",
+  "confidence": "high",
+  "note": "Co [Ar] 4s2 3d7 loses both 4s (highest n) electrons first."
+ },
+ {
+  "id": "m11-p2",
+  "answer": "1s2 2s2 2p6 3s2 3p6",
+  "confidence": "high",
+  "note": "S gains 2 electrons into 3p, giving 18 electrons, the same as [Ar]."
+ },
+ {
+  "id": "m11-p3",
+  "answer": {
+   "value": 5,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "Mn [Ar] 4s2 3d5 loses the two 4s electrons, leaving Mn2+ = [Ar] 3d5."
+ },
+ {
+  "id": "m11-p4",
+  "answer": 2,
+  "confidence": "high",
+  "note": "K+ has 18 electrons (isoelectronic with Ar); the other three ions have 10."
+ },
+ {
+  "id": "m11-transfer",
+  "answer": {
+   "value": 2,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "Ti2+ = [Ar] 3d2, and Hund's rule gives 2 unpaired electrons."
+ },
+ {
+  "id": "m11-m-recognize",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Only Zn2+ is a cation whose 4s electrons leave before the last-filled 3d ([Ar] 3d10)."
+ },
+ {
+  "id": "m11-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "The student removed 3d electrons instead of the two 4s electrons; Zn2+ = [Ar] 3d10."
+ },
+ {
+  "id": "m12-attempt",
+  "answer": [
+   "K",
+   "Na",
+   "Mg",
+   "Cl"
+  ],
+  "confidence": "high",
+  "note": "Course radii: K 227 > Na 186 > Mg 160 > Cl 99 pm."
+ },
+ {
+  "id": "m12-p1",
+  "answer": [
+   "Ba",
+   "Ca",
+   "Mg",
+   "Be"
+  ],
+  "confidence": "high",
+  "note": "Radius grows down group 2: Ba 222 > Ca 197 > Mg 160 > Be 112 pm."
+ },
+ {
+  "id": "m12-p2",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Cl- (181 pm) is larger than Cl (99 pm): same nuclear charge, one more electron repelling."
+ },
+ {
+  "id": "m12-p3",
+  "answer": [
+   "S2-",
+   "Cl-",
+   "K+",
+   "Ca2+"
+  ],
+  "confidence": "high",
+  "note": "Isoelectronic, so more protons means smaller: S2- 184 > Cl- 181 > K+ 138 > Ca2+ 100 pm."
+ },
+ {
+  "id": "m12-p4",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Li+ has lost its only n = 2 electron; the remaining 1s2 core sits much closer to the nucleus."
+ },
+ {
+  "id": "m12-transfer",
+  "answer": [
+   "Se2-",
+   "Br-",
+   "Rb+",
+   "Sr2+"
+  ],
+  "confidence": "high",
+  "note": "All have 36 electrons, so size falls as Z rises (34 < 35 < 37 < 38); Se2- 198 and Br- 195 pm are the lecture values."
+ },
+ {
+  "id": "m12-m-recognize",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Na+ and F- both have 10 electrons, and Na has more protons, so Na+ is smaller."
+ },
+ {
+  "id": "m12-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Radius increases down a group (added shells), so Cs (265 pm) is larger than Li (152 pm)."
+ },
+ {
+  "id": "m13-attempt",
+  "answer": [
+   {
+    "value": 3,
+    "unit": ""
+   },
+   "Al"
+  ],
+  "confidence": "high",
+  "note": "The largest successive ratio is IE4/IE3 = 4.22 (vs. 3.14 and 1.51), so 3 valence electrons: group 13, period 3, Al (IE1 578 matches)."
+ },
+ {
+  "id": "m13-p1",
+  "answer": 3,
+  "confidence": "high",
+  "note": "IE1 rises across period 3: Cl 1251 > Mg 738 > Al 578 > Na 496 kJ/mol."
+ },
+ {
+  "id": "m13-p2",
+  "answer": 1,
+  "confidence": "high",
+  "note": "O loses a paired 2p electron, and pair repulsion makes it easier to remove (Day 7 p.9 orbital diagram)."
+ },
+ {
+  "id": "m13-p3",
+  "answer": {
+   "value": 4,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "C: 6201 to 37,926 kJ/mol (x6.1, the largest ratio and difference) after the 4 valence electrons (2s2 2p2)."
+ },
+ {
+  "id": "m13-p4",
+  "answer": 0,
+  "confidence": "high",
+  "note": "A negative EA means energy is released when Cl(g) + e- forms Cl-(g)."
+ },
+ {
+  "id": "m13-p5",
+  "answer": 1,
+  "confidence": "high",
+  "note": "N is +7 kJ/mol (circled on Day 7 p.11); C, O, and F are negative."
+ },
+ {
+  "id": "m13-p6",
+  "answer": {
+   "value": 1311.5916,
+   "unit": "kJ/mol"
+  },
+  "confidence": "high",
+  "note": "Delta E = -2.178e-18 J (1/inf^2 - 1/1^2) = +2.178e-18 J/atom; times 6.022e23 gives 1312 kJ/mol (4 s.f.), matching the Day 7 p.9 value."
+ },
+ {
+  "id": "m13-transfer",
+  "answer": {
+   "value": 241.18046866129032,
+   "unit": "nm"
+  },
+  "confidence": "high",
+  "note": "E = 496e3 J/mol / 6.022e23 = 8.236e-19 J per atom, and lambda = hc/E = 241 nm (3 s.f.); N_A is not given in the prompt."
+ },
+ {
+  "id": "m13-m-recognize",
+  "answer": 1,
+  "confidence": "high",
+  "note": "The big jump (largest successive ratio) comes right after the last valence electron is removed."
+ },
+ {
+  "id": "m13-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Day 7 p.11 gives Cl -349, which is more negative than F -328 kJ/mol."
+ },
+ {
+  "id": "m14-attempt",
+  "answer": {
+   "value": -8.162544169611308e-19,
+   "unit": "J"
+  },
+  "confidence": "high",
+  "note": "d = 0.283 nm; E_el = 2.31e-19 J nm x (+1)(-1)/0.283 nm = -8.16e-19 J (3 s.f.)."
+ },
+ {
+  "id": "m14-p1",
+  "answer": {
+   "value": -4.358490566037736e-18,
+   "unit": "J"
+  },
+  "confidence": "high",
+  "note": "d = 0.212 nm and Q1Q2 = -4, so E_el = -4.36e-18 J (3 s.f.)."
+ },
+ {
+  "id": "m14-p2",
+  "answer": [
+   "MgO",
+   "NaF",
+   "KCl"
+  ],
+  "confidence": "high",
+  "note": "E_el: MgO -4.36e-18, NaF -9.83e-19, KCl -7.24e-19 J; the charge product dominates, then distance."
+ },
+ {
+  "id": "m14-p3",
+  "answer": {
+   "value": -436.0758620689656,
+   "unit": "kJ/mol"
+  },
+  "confidence": "high",
+  "note": "-7.24e-19 J/pair x 6.022e23 = -436 kJ/mol (3 s.f.); the lattice energy -720 is about 1.65 times more negative."
+ },
+ {
+  "id": "m14-p4",
+  "answer": {
+   "0": "ionic",
+   "1": "covalent",
+   "2": "metallic",
+   "3": "ionic",
+   "4": "covalent"
+  },
+  "confidence": "high",
+  "note": "Metal + nonmetal is ionic, nonmetals are covalent, a metal alone is metallic (CaCl2 and KBr have delta chi = 2.0 exactly, still ionic by the textbook cut-off)."
+ },
+ {
+  "id": "m14-p5",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Each ion in the lattice is attracted by several oppositely charged neighbors, not one (option 0 is false: same d)."
+ },
+ {
+  "id": "m14-transfer",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Q1Q2 of -4 vs. -1 dominates, and CaO's d is also smaller (240 vs. 271 pm); option 3 states a true size fact with the wrong conclusion."
+ },
+ {
+  "id": "m14-m-recognize",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Both are +1/-1 pairs, so distance decides: LiF d = 76 + 133 = 209 pm < KBr 138 + 195 = 333 pm."
+ },
+ {
+  "id": "m14-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "(+1)(-1) < 0, so E_el must be negative; the magnitude also doesn't match touching ions (-8.16e-19 J at 0.283 nm)."
+ },
+ {
+  "id": "m15-attempt",
+  "answer": [
+   "Al2S3",
+   "aluminum sulfide"
+  ],
+  "confidence": "high",
+  "note": "Al3+ and S2-: 2(+3) + 3(-2) = 0, so Al2S3, named cation + anion stem + -ide."
+ },
+ {
+  "id": "m15-p1",
+  "answer": "CaCl2",
+  "confidence": "high",
+  "note": "Ca2+ needs two Cl- ions."
+ },
+ {
+  "id": "m15-p2",
+  "answer": "K2S",
+  "confidence": "high",
+  "note": "Two K+ balance one S2-."
+ },
+ {
+  "id": "m15-p3",
+  "answer": "sodium oxide",
+  "confidence": "high",
+  "note": "Binary ionic name, no prefixes."
+ },
+ {
+  "id": "m15-p4",
+  "answer": "aluminum chloride",
+  "confidence": "high",
+  "note": "Named by the binary-ionic rule; strictly, Al-Cl (delta chi 1.5) is polar covalent by textbook section 4.2, but the name is the same."
+ },
+ {
+  "id": "m15-p5",
+  "answer": "Mg3N2",
+  "confidence": "high",
+  "note": "Mg2+ and N3- (group 15 gains 3): 3(+2) + 2(-3) = 0."
+ },
+ {
+  "id": "m15-p6",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Ionic names use no number prefixes, and the anion ends in -ide."
+ },
+ {
+  "id": "m15-transfer",
+  "answer": [
+   {
+    "value": 3,
+    "unit": ""
+   },
+   "MCl3"
+  ],
+  "confidence": "high",
+  "note": "3 O2- = -6, so 2 M = +6 and M is 3+, giving MCl3."
+ },
+ {
+  "id": "m15-m-recognize",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Group 16 gains 2 electrons to reach the Kr configuration: Se2-."
+ },
+ {
+  "id": "m15-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Ba2+ and O2- cancel 1:1, and formulas use the lowest ratio: BaO."
+ },
+ {
+  "id": "x1",
+  "answer": {
+   "value": 2.4247081640868006e-10,
+   "unit": "m"
+  },
+  "confidence": "high",
+  "note": "lambda = h/(m u) = 6.626e-34 / (9.109e-31 x 3.00e6) = 2.42e-10 m (0.242 nm, 3 s.f.)."
+ },
+ {
+  "id": "x2",
+  "answer": {
+   "value": 8.13e-20,
+   "unit": "J"
+  },
+  "confidence": "high",
+  "note": "h nu = 3.313e-19 J; KE = 3.313e-19 - 2.50e-19 = 8.13e-20 J (the strict subtraction rule gives 8.1e-20 J, 2 s.f.)."
+ },
+ {
+  "id": "x3",
+  "answer": 0,
+  "confidence": "high",
+  "note": "K's outermost electron is 4s1: n = 4, l = 0, m_l = 0; option 3 is invalid because m_l must be 0 when l = 0."
+ },
+ {
+  "id": "x4",
+  "answer": [
+   "Cl",
+   "P",
+   "Mg",
+   "Na"
+  ],
+  "confidence": "high",
+  "note": "Cl 1251 > P 1012 > Mg 738 > Na 496 kJ/mol."
+ },
+ {
+  "id": "x5",
+  "answer": "Ca3N2",
+  "confidence": "high",
+  "note": "Ca2+ and N3-: 3(+2) + 2(-3) = 0."
+ },
+ {
+  "id": "x6",
+  "answer": "[Ar] 3d6",
+  "confidence": "high",
+  "note": "Co [Ar] 4s2 3d7 loses both 4s electrons, then one 3d."
+ },
+ {
+  "id": "x7",
+  "answer": {
+   "value": 434.3160610433337,
+   "unit": "nm"
+  },
+  "confidence": "high",
+  "note": "Bohr: Delta E = +4.574e-19 J, so lambda = 434.3 nm; Balmer (n = 5) gives 434.0 and R_H 433.9, all 434 nm at 3 s.f."
+ },
+ {
+  "id": "x8",
+  "answer": {
+   "value": 2.0000000000000004,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "Y per gram of X: A 1.50, B 3.00, so B:A = 2.00 (2:1, multiple proportions)."
+ },
+ {
+  "id": "x9",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Isoelectronic (10 electrons), and Mg has more protons, so Na+ (102 pm) is larger than Mg2+ (72 pm)."
+ },
+ {
+  "id": "x10",
+  "answer": {
+   "value": -3.2535211267605638e-18,
+   "unit": "J"
+  },
+  "confidence": "high",
+  "note": "d = 0.284 nm and Q1Q2 = -4, so E_el = -3.25e-18 J (3 s.f.)."
+ },
+ {
+  "id": "x11",
+  "answer": 1,
+  "confidence": "high",
+  "note": "The threshold frequency, regardless of intensity, is the photoelectric evidence for photons; the other options are wave behavior."
+ },
+ {
+  "id": "x12",
+  "answer": {
+   "value": 5,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "Mn [Ar] 4s2 3d5: five 3d electrons, one per orbital (Hund)."
+ },
+ {
+  "id": "x13",
+  "answer": {
+   "value": 441.4388444444444,
+   "unit": "nm"
+  },
+  "confidence": "high",
+  "note": "lambda = hc/E = 1.9865e-25 J m / 4.50e-19 J = 441 nm (3 s.f.)."
+ },
+ {
+  "id": "x14",
+  "answer": "lithium oxide",
+  "confidence": "high",
+  "note": "Binary ionic name, no prefixes."
+ },
+ {
+  "id": "x15",
+  "answer": 0,
+  "confidence": "high",
+  "note": "K (227 pm) has an occupied n = 4 shell; Cl- is 181, K+ 138, and Ar 97 pm."
+ },
+ {
+  "id": "x16",
+  "answer": {
+   "value": 94.0623162845385,
+   "unit": "%"
+  },
+  "confidence": "high",
+  "note": "16.00/(1.01 + 16.00) x 100 = 94.06% (4 s.f.); H is 5.94%."
+ },
+ {
+  "id": "x17",
+  "answer": {
+   "value": 397.2544238343026,
+   "unit": "nm"
+  },
+  "confidence": "medium",
+  "note": "Bohr gives 397.3 and Balmer (n = 7) 397.0 nm, both 397 nm: just below the 400-750 nm visible band (Day 2 p.29), so not visible (near-UV, Day 4 p.7); the numeric format can't record the visibility part, and visibility is borderline if 380-390 nm is used."
+ },
+ {
+  "id": "x18",
+  "answer": 0,
+  "confidence": "high",
+  "note": "|Delta E|: 3 to 1 is 1.936e-18 J, while 5 to 2 is 4.574e-19 J."
+ },
+ {
+  "id": "x19",
+  "answer": 2,
+  "confidence": "high",
+  "note": "Highly mobile shared electrons in metallic bonding (Day 7 p.14, Cu example) carry the current."
+ },
+ {
+  "id": "x20",
+  "answer": {
+   "value": 2,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "The big jump is IE3/IE2 = 5.33, so 2 valence electrons: group 2 (Mg, IE1 738)."
+ },
+ {
+  "id": "m3-tophat",
+  "answer": [
+   "A",
+   "D",
+   "C",
+   "B",
+   "E"
+  ],
+  "confidence": "high",
+  "note": "Infrared > orange > green > ultraviolet > X-rays (Day 2 p.29 spectrum)."
+ },
+ {
+  "id": "m8-tophat",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Only (3, 2, -2, +1/2) obeys l <= n-1, |m_l| <= l, and m_s = +/-1/2."
+ },
+ {
+  "id": "m11-tophat",
+  "answer": {
+   "value": 2,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "V [Ar] 4s2 3d3 loses both 4s electrons, then one 3d, leaving V3+ = [Ar] 3d2."
+ },
+ {
+  "id": "m12-tophat",
+  "answer": [
+   "As",
+   "P",
+   "S",
+   "Cl",
+   "F"
+  ],
+  "confidence": "high",
+  "note": "Course radii: As 121 > P 110 > S 103 > Cl 99 > F 71 pm."
+ },
+ {
+  "id": "m1-preview-methods",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Textbook section 1.1: laws describe a pattern; theories explain it."
+ }
+]

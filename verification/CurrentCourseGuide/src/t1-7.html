@@ -1,0 +1,67 @@
+<div class="stage" data-stage="learn">
+<h2>Learn</h2>
+<p class="big-idea">Every measurement is uncertain, and the digits you write say how uncertain. Significant figures are the certain digits plus one estimated digit. A result can be known only as well as the least well-known value that went into it: the textbook's “weak-link principle.”</p>
+<div class="triad">
+  <div class="rep rep-observe"><h3>What we observe</h3><p>One balance reads a penny as 2.53 g; a better one reads 2.5271 g. Repeated readings may agree closely (precise) yet all be off from the true mass (not accurate).</p></div>
+  <div class="rep rep-write"><h3>What we write</h3><p>2.53 g has 3 significant figures; 2.5271 g has 5. For 0.0810 g, write 8.10 × 10<sup>−2</sup> g: the leading zeros only place the decimal point.</p></div>
+  <div class="rep rep-particles"><h3>Why it matters here</h3><p>Counted things (12 eggs, 6 protons) are exact. Measured things (masses, wavelengths) carry uncertainty that propagates through every calculation.</p></div>
+</div>
+<p class="source">Source: textbook §1.7, PDF p.53–60 (printed 19–26).</p>
+</div>
+
+<div class="stage" data-stage="understand">
+<h2>Understand</h2>
+<h3>SI units and prefixes</h3>
+<p>SI base units (Table 1.2): kilogram, meter, kelvin, second, ampere, mole. Prefixes (Table 1.1) scale by powers of 10: k = 10<sup>3</sup>, c = 10<sup>−2</sup>, m = 10<sup>−3</sup>, μ = 10<sup>−6</sup>, n = 10<sup>−9</sup>, p = 10<sup>−12</sup>. The joule is 1 kg·(m/s)<sup>2</sup>.</p>
+<h3>Which zeros count</h3>
+<table class="lookalike">
+<thead><tr><th scope="col">Rule</th><th scope="col">Example</th><th scope="col">Significant figures</th></tr></thead>
+<tbody>
+<tr><td>leading zeros never count</td><td>0.0592</td><td>3</td></tr>
+<tr><td>zeros after a decimal point and after a nonzero digit always count</td><td>3.00 × 10<sup>8</sup></td><td>3</td></tr>
+<tr><td>trailing zeros without a decimal point are ambiguous; use scientific notation</td><td>96,500 (9.65 × 10<sup>4</sup>?)</td><td>3, 4, or 5</td></tr>
+<tr><td>zeros between significant digits always count</td><td>101.3</td><td>4</td></tr>
+</tbody></table>
+<h3>Calculations: the weak link</h3>
+<div class="eqcard"><p class="eq">× and ÷ → keep the fewest <em>significant figures</em></p><p class="use">(1.52 × 10<sup>11</sup> m) ÷ (2.998 × 10<sup>8</sup> m/s) = 507 s: 3 s.f., set by 1.52.</p></div>
+<div class="eqcard"><p class="eq">+ and − → keep the fewest <em>decimal places</em></p><p class="use">124.01 g + 2.5271 g = 126.54 g: hundredths place, set by 124.01.</p></div>
+<p><strong>Round only at the end.</strong> Carry extra digits through intermediate steps. For a tie (dropping exactly a 5), the textbook rounds to the nearest even digit: 76.45 → 76.4 and 76.55 → 76.6. <strong>Exact numbers</strong> (counts, defined equalities like 1 in = 2.54 cm) never limit.</p>
+<h3>Precision vs. accuracy</h3>
+<p>Precision is how well repeated measurements agree. Accuracy is how close they are to the true value, checked by calibrating against a known standard. The textbook's dart boards (Fig. 1.22) show all four combinations.</p>
+<div class="lecture-box"><span class="chip chip-lecture">Covered in lecture</span><p>The slides list significant figures in italics (Ch. 1 outcome 6, Day 1 p.7) without teaching them, but every worked answer follows the least-precise input: 11.2% (Day 1 p.11), 1.80 × 10<sup>−10</sup> m (Day 4 p.12), 1.06 × 10<sup>−34</sup> m (Day 4 p.14).</p></div>
+</div>
+
+<div class="stage" data-stage="explore">
+<h2>Explore</h2>
+<p>Type any number to see which digits are significant, then try the calculator: it applies the right rule for × ÷ or + −.</p>
+<div class="explorer" data-explorer="sigfigs"></div>
+</div>
+
+<div class="stage" data-stage="attempt">
+<h2>Attempt</h2>
+<div class="slot" data-module="t1-7" data-kinds="attempt"></div>
+</div>
+
+<div class="stage" data-stage="compare">
+<h2>Compare</h2>
+<div class="compare-slot" data-compare="t1-7"></div>
+<h3>Common mistakes</h3>
+<ul class="mistakes"><li>Using the significant-figure rule for a subtraction (it's decimal places).</li><li>Rounding intermediate results.</li><li>Letting an exact count limit the result.</li><li>Reporting every calculator digit.</li></ul>
+</div>
+
+<div class="stage" data-stage="practice">
+<h2>Practice</h2>
+<div class="slot" data-module="t1-7" data-kinds="practice"></div>
+</div>
+
+<div class="stage" data-stage="master">
+<h2>Master</h2>
+<div class="slot" data-module="t1-7" data-kinds="transfer mastery"></div>
+<h3>Can you…?</h3>
+<ul class="cando" data-module="t1-7">
+<li data-key="count">count significant figures, including every kind of zero</li>
+<li data-key="rules">apply the × ÷ and + − rules in multistep calculations</li>
+<li data-key="exact">recognize exact numbers</li>
+<li data-key="pa">tell precision from accuracy</li>
+</ul>
+</div>

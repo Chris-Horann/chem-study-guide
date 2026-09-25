@@ -1,0 +1,258 @@
+[
+ {
+  "id": "m16-attempt",
+  "answer": "copper(I) sulfide",
+  "confidence": "high",
+  "note": "S2- is -2 shared by 2 Cu, so each is Cu+ -> copper(I); slide spacing 'copper (I) sulfide' is equivalent."
+ },
+ {
+  "id": "m16-tophat",
+  "answer": "iron(III) oxide",
+  "confidence": "high",
+  "note": "3 O2- = -6, so 2 Fe = +6, each Fe3+ -> iron(III) oxide (slide style 'iron (III) oxide' equivalent)."
+ },
+ {
+  "id": "m16-p1",
+  "answer": "FeCl2",
+  "confidence": "high",
+  "note": "Fe2+ needs two Cl- for a neutral formula unit."
+ },
+ {
+  "id": "m16-p2",
+  "answer": "potassium carbonate",
+  "confidence": "high",
+  "note": "K+ (group 1, single charge, no numeral) + CO3 2- = carbonate; subscript 2 not named."
+ },
+ {
+  "id": "m16-p3",
+  "answer": "(NH4)3PO4",
+  "confidence": "high",
+  "note": "Three NH4+ balance one PO4 3-; parentheses needed around the repeated polyatomic cation."
+ },
+ {
+  "id": "m16-p4",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Cu forms Cu+ and Cu2+, so the ion charge (Roman numeral) is needed to tell Cu2O from CuO."
+ },
+ {
+  "id": "m16-p5",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Zn forms only Zn2+, so ZnCl2 = zinc chloride; Fe, Cu, Co form more than one ion and need numerals."
+ },
+ {
+  "id": "m16-p6",
+  "answer": "calcium nitrate",
+  "confidence": "high",
+  "note": "Ca2+ with two NO3- (nitrate); ionic names do not state the ion counts."
+ },
+ {
+  "id": "m16-transfer",
+  "answer": "chromium(III) sulfate",
+  "confidence": "high",
+  "note": "3 SO4 2- = -6, so 2 Cr = +6, each Cr3+ -> chromium(III) sulfate."
+ },
+ {
+  "id": "m16-m-recognize",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Mg(OH)2 has two hydroxide ions -> parentheses; NaOH, NH4Cl, KNO3 each contain only one polyatomic ion."
+ },
+ {
+  "id": "m16-m-sanity",
+  "answer": 0,
+  "confidence": "high",
+  "note": "O2- (-2) over 2 Cu gives Cu+; the numeral is the ion charge, not the subscript -> copper(I) oxide."
+ },
+ {
+  "id": "m17-attempt",
+  "answer": "phosphorus pentachloride",
+  "confidence": "high",
+  "note": "Two nonmetals -> prefixes; no mono on the first element; penta for 5 Cl."
+ },
+ {
+  "id": "m17-p1",
+  "answer": "SiF4",
+  "confidence": "high",
+  "note": "No prefix on Si = one Si; tetra = 4 F."
+ },
+ {
+  "id": "m17-p2",
+  "answer": "dinitrogen tetrafluoride",
+  "confidence": "high",
+  "note": "di for 2 N, tetra for 4 F."
+ },
+ {
+  "id": "m17-p3",
+  "answer": 0,
+  "confidence": "high",
+  "note": "NCl3 is two nonmetals (covalent) -> nitrogen trichloride; CaCl2, FeCl3, NaCl are ionic (no prefixes)."
+ },
+ {
+  "id": "m17-p4",
+  "answer": "nitrogen monoxide",
+  "confidence": "high",
+  "note": "No mono on first element; mono + oxide -> monoxide. The common name 'nitric oxide' should probably also be accepted."
+ },
+ {
+  "id": "m17-p5",
+  "answer": "N2O3",
+  "confidence": "high",
+  "note": "di = 2 N, tri = 3 O."
+ },
+ {
+  "id": "m17-transfer",
+  "answer": [
+   "N2O",
+   "dichlorine heptoxide"
+  ],
+  "confidence": "high",
+  "note": "(a) di N, mono O; (b) di Cl, hepta O with the final a dropped before oxide (textbook convention); 'dichlorine heptaoxide' is a spelling variant."
+ },
+ {
+  "id": "m17-m-recognize",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Covalent rules: tetra for 4 Cl, no mono on the first element, no Roman numerals."
+ },
+ {
+  "id": "m17-m-sanity",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Two nonmetals -> prefix naming under the course rules: sulfur trioxide."
+ },
+ {
+  "id": "t4-3-attempt",
+  "answer": "hydroiodic acid",
+  "confidence": "high",
+  "note": "Binary acid from iodide: hydro- + iod- + -ic acid ('hydriodic acid' is a spelling variant)."
+ },
+ {
+  "id": "t4-3-p1",
+  "answer": "nitric acid",
+  "confidence": "high",
+  "note": "nitrate (-ate) -> -ic acid."
+ },
+ {
+  "id": "t4-3-p2",
+  "answer": "chlorous acid",
+  "confidence": "high",
+  "note": "chlorite (-ite) -> -ous acid."
+ },
+ {
+  "id": "t4-3-p3",
+  "answer": "H2CO3",
+  "confidence": "high",
+  "note": "Two H+ neutralize CO3 2-."
+ },
+ {
+  "id": "t4-3-p4",
+  "answer": {
+   "0": "hydro",
+   "1": "ic",
+   "2": "ous"
+  },
+  "confidence": "high",
+  "note": "-ide -> hydro-...-ic (hydrochloric); -ate -> -ic (sulfuric); -ite -> -ous (sulfurous)."
+ },
+ {
+  "id": "t4-3-p5",
+  "answer": "hypochlorous acid",
+  "confidence": "high",
+  "note": "hypochlorite (-ite) -> -ous acid; the hypo- prefix is kept."
+ },
+ {
+  "id": "t4-3-transfer",
+  "answer": "iodic acid",
+  "confidence": "high",
+  "note": "iodate (-ate) -> -ic acid."
+ },
+ {
+  "id": "t4-3-m-recognize",
+  "answer": 0,
+  "confidence": "high",
+  "note": "HF(aq) = H + one other element, no O -> binary acid; HNO3 and H2SO4 are oxoacids, NaOH is a base."
+ },
+ {
+  "id": "t4-3-m-sanity",
+  "answer": 0,
+  "confidence": "high",
+  "note": "H2SO4 is an oxoacid from sulfate -> sulfuric acid (hydrosulfuric acid is actually H2S(aq))."
+ },
+ {
+  "id": "m18-attempt",
+  "answer": [
+   {
+    "value": 5,
+    "unit": ""
+   },
+   {
+    "value": 3,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "Group 15 -> 5 valence e- (1 pair + 3 single dots); 3 unpaired e- -> bonding capacity 3 (= 8 - 5)."
+ },
+ {
+  "id": "m18-p1",
+  "answer": {
+   "value": 4,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "C has 4 valence e- and needs 4 more for an octet -> 4 bonds."
+ },
+ {
+  "id": "m18-p2",
+  "answer": 0,
+  "confidence": "high",
+  "note": "O has 6 valence e-: 2 pairs + 2 singles (N = 1 pair + 3 singles, F = 3 pairs + 1 single, C = 4 singles)."
+ },
+ {
+  "id": "m18-p3",
+  "answer": {
+   "value": 2,
+   "unit": ""
+  },
+  "confidence": "medium",
+  "note": "H matches He with 2 valence e- (duet; course note 'H needs 2'). Wording is ambiguous: 'need' could be read as additional electrons (1)."
+ },
+ {
+  "id": "m18-p4",
+  "answer": [
+   {
+    "value": 0,
+    "unit": ""
+   },
+   {
+    "value": 8,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "Each K lost its single valence e- (K+ drawn with no dots); S2- gained 2 -> 8 dots, in brackets with 2- charge."
+ },
+ {
+  "id": "m18-p5",
+  "answer": {
+   "value": 1,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "7 valence e-, one unpaired -> one bond completes the octet."
+ },
+ {
+  "id": "m18-p6",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Octet rule: main-group atoms gain, lose, or share e- to reach 8 valence electrons (noble-gas configuration)."
+ },
+ {
+  "id": "m18-transfer",
+  "answer": "SiH4",
+  "confidence": "high",
+  "note": "Si has bonding capacity 4 like C (CH4) -> four Si-H single bonds."
+ }
+]

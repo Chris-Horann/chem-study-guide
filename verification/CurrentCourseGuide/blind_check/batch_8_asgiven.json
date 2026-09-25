@@ -1,0 +1,560 @@
+[
+ {
+  "id": "m18-m-recognize",
+  "module": "m18",
+  "label": "lecture",
+  "prompt": "Which element's Lewis symbol has the same pattern of dots as sulfur's?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] O",
+    "[1] Cl",
+    "[2] P",
+    "[3] Ar"
+   ]
+  }
+ },
+ {
+  "id": "m18-m-sanity",
+  "module": "m18",
+  "label": "lecture",
+  "prompt": "A student draws carbon's Lewis symbol with two pairs of dots and concludes that carbon forms two bonds. What's wrong?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Dots go one per side before pairing, so C has four single dots and forms four bonds.",
+    "[1] Nothing; C forms two bonds.",
+    "[2] Carbon has six valence electrons.",
+    "[3] Lewis symbols show all electrons."
+   ]
+  }
+ },
+ {
+  "id": "m19-attempt",
+  "module": "m19",
+  "label": "lecture",
+  "prompt": "Use the five steps (Day 8 p.21) on hydrogen cyanide, HCN, with C as the central atom. (a) How many valence electrons does HCN have? (b) Is the C–N bond single, double, or triple? (c) How many lone pairs are on N?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) valence electrons"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] single",
+      "[1] double",
+      "[2] triple"
+     ],
+     "label": "(b) C–N bond"
+    },
+    {
+     "type": "numeric",
+     "label": "(c) lone pairs on N"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m19-p1",
+  "module": "m19",
+  "label": "preview",
+  "prompt": "How many valence electrons are in the chlorate ion, ClO<sub>3</sub><sup>−</sup>?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m19-p2",
+  "module": "m19",
+  "label": "lecture",
+  "prompt": "In hypochlorous acid, HOCl, which atom goes in the center?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] O",
+    "[1] Cl",
+    "[2] H",
+    "[3] It has no central atom."
+   ]
+  }
+ },
+ {
+  "id": "m19-p3",
+  "module": "m19",
+  "label": "lecture",
+  "prompt": "Carbon disulfide, CS<sub>2</sub>, has C in the center. (a) How many valence electrons does it have? (b) How many lone pairs are in the finished structure?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) valence electrons"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) lone pairs"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m19-p4",
+  "module": "m19",
+  "label": "lecture",
+  "prompt": "Which is the correct Lewis structure of N<sub>2</sub>?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] [drawing: Lewis structure: left N–right N triple bond, 1 lone pair on the left N, 1 lone pair on the right N]",
+    "[1] [drawing: Lewis structure: left N–right N double bond, 2 lone pairs on the left N, 2 lone pairs on the right N]",
+    "[2] [drawing: Lewis structure: left N–right N single bond, 3 lone pairs on the left N, 3 lone pairs on the right N]",
+    "[3] [drawing: Lewis structure: left N–right N triple bond]"
+   ]
+  }
+ },
+ {
+  "id": "m19-p5",
+  "module": "m19",
+  "label": "lecture",
+  "prompt": "Hydrazine, N<sub>2</sub>H<sub>4</sub>, has the skeleton H<sub>2</sub>N–NH<sub>2</sub>. In its Lewis structure, (a) how many bonds are there, and (b) how many lone pairs?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) bonds"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) lone pairs"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m19-p6",
+  "module": "m19",
+  "label": "preview",
+  "prompt": "The textbook draws the hydroxide ion like this: [drawing: Lewis structure of hydroxide ion, OH⁻: O–H single bond, 3 lone pairs on O; overall charge 1−] Why the brackets and the − outside?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The charge belongs to the whole ion: the brackets enclose all its electrons, including the extra one.",
+    "[1] The O atom alone is negative; H is positive.",
+    "[2] Brackets mean the structure has resonance.",
+    "[3] Brackets show a missing electron."
+   ]
+  }
+ },
+ {
+  "id": "m19-transfer",
+  "module": "m19",
+  "label": "lecture",
+  "prompt": "Ethene, C<sub>2</sub>H<sub>4</sub>, has each C bonded to two H atoms and to the other C. (a) How many valence electrons does it have? (b) What is the bond order of the C–C bond (1, 2, or 3)?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) valence electrons"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) C–C bond order"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m19-m-recognize",
+  "module": "m19",
+  "label": "lecture",
+  "prompt": "Which situation tells you a Lewis structure needs a double or triple bond?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] All the electrons are placed, but the central atom has fewer than 8.",
+    "[1] The molecule contains hydrogen.",
+    "[2] The electron count is odd.",
+    "[3] An outer atom has three lone pairs."
+   ]
+  }
+ },
+ {
+  "id": "m19-m-sanity",
+  "module": "m19",
+  "label": "lecture",
+  "prompt": "A student draws O<sub>2</sub> like this: [drawing: Lewis structure of O₂ drawn with a single bond: left O–right O single bond, 3 lone pairs on the left O, 3 lone pairs on the right O] What's wrong?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] It uses 14 electrons, but O<sub>2</sub> has only 12. The correct structure has a double bond.",
+    "[1] Nothing; each O has an octet.",
+    "[2] O should have four lone pairs.",
+    "[3] The bond should be triple."
+   ]
+  }
+ },
+ {
+  "id": "t4-5-attempt",
+  "module": "t4-5",
+  "label": "preview",
+  "prompt": "The nitrite ion, NO<sub>2</sub><sup>−</sup> (on the polyatomic-ion table, Day 8 p.8), has N bonded to both O atoms. (a) How many equivalent Lewis structures can you draw for it? (b) What is the average N–O bond order? Enter a decimal.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) equivalent structures"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) average N–O bond order"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t4-5-p1",
+  "module": "t4-5",
+  "label": "lecture",
+  "prompt": "O<sub>2</sub> and O<sub>3</sub> are both pure oxygen. What does the lecture call different molecular forms of the same element?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] allotropes",
+    "[1] isotopes",
+    "[2] resonance structures",
+    "[3] ions"
+   ]
+  }
+ },
+ {
+  "id": "t4-5-p2",
+  "module": "t4-5",
+  "label": "lecture",
+  "prompt": "The professor finishes ozone with two structures (Day 8 p.30): [drawing: Lewis structure of ozone, O₃ (double bond on the left): left O–central O double bond, central O–right O single bond, 2 lone pairs on the left O, 1 lone pair on the central O, 3 lone pairs on the right O] and [drawing: Lewis structure of ozone, O₃ (double bond on the right): left O–central O single bond, central O–right O double bond, 3 lone pairs on the left O, 1 lone pair on the central O, 2 lone pairs on the right O] How do they differ?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Only in which end O has the double bond (and so which end O has three lone pairs).",
+    "[1] In the order the atoms are connected.",
+    "[2] One uses 18 valence electrons and the other 16.",
+    "[3] One obeys the octet rule and the other doesn't."
+   ]
+  }
+ },
+ {
+  "id": "t4-5-p3",
+  "module": "t4-5",
+  "label": "preview",
+  "prompt": "The acetate ion, CH<sub>3</sub>COO<sup>−</sup> (on the polyatomic-ion table, Day 8 p.8), has a CH<sub>3</sub> group and two O atoms bonded to the same C. How many equivalent resonance structures does it have?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t4-5-p4",
+  "module": "t4-5",
+  "label": "preview",
+  "prompt": "Both O–O bonds in ozone are 128 pm long. Why?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The real molecule is an average of the two resonance structures: the third bonding pair is spread over all three atoms.",
+    "[1] The molecule flips back and forth between the two structures, so we measure an average.",
+    "[2] One bond is double and one is single, and the lengths happen to match.",
+    "[3] Ozone has two double bonds."
+   ]
+  }
+ },
+ {
+  "id": "t4-5-p5",
+  "module": "t4-5",
+  "label": "preview",
+  "prompt": "Which species has equivalent resonance structures?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] CO<sub>3</sub><sup>2−</sup>",
+    "[1] CH<sub>4</sub>",
+    "[2] NH<sub>3</sub>",
+    "[3] H<sub>2</sub>O"
+   ]
+  }
+ },
+ {
+  "id": "t4-5-p6",
+  "module": "t4-5",
+  "label": "preview",
+  "prompt": "What does the double-headed arrow ↔ between two Lewis structures mean?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The structures are resonance forms, and the real bonding is an average of them.",
+    "[1] A reaction that runs in both directions.",
+    "[2] The atoms move from one position to another.",
+    "[3] Electrons are transferred to make ions."
+   ]
+  }
+ },
+ {
+  "id": "t4-5-transfer",
+  "module": "t4-5",
+  "label": "preview",
+  "prompt": "In the formate ion, HCO<sub>2</sub><sup>−</sup>, C is bonded to H and to both O atoms. (a) How many equivalent resonance structures does it have? (b) What is the average C–O bond order? Enter a decimal.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) structures"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) C–O bond order"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t4-5-m-recognize",
+  "module": "t4-5",
+  "label": "preview",
+  "prompt": "Which clue tells you to look for equivalent resonance structures?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] An atom has single and double bonds to two or more atoms of the same element.",
+    "[1] The molecule contains any double bond.",
+    "[2] The electron count is odd.",
+    "[3] The central atom has a lone pair."
+   ]
+  }
+ },
+ {
+  "id": "t4-5-m-sanity",
+  "module": "t4-5",
+  "label": "preview",
+  "prompt": "A student says the nitrate ion has one short N=O bond and two longer N–O bonds. What's wrong with that?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] All three N–O bonds are identical: the real ion is an average of three resonance structures.",
+    "[1] Nothing; that's what the Lewis structure shows.",
+    "[2] Nitrate has three double bonds.",
+    "[3] Nitrate has no double bonds."
+   ]
+  }
+ },
+ {
+  "id": "t4-6-attempt",
+  "module": "t4-6",
+  "label": "preview",
+  "prompt": "The hydrogen carbonate ion, HCO<sub>3</sub><sup>−</sup>, has C bonded to three O atoms, and the H is bonded to one of those O atoms. (a) What is the bond order of the C–O bond to the O that carries the H? (b) What is the average bond order of the other two C–O bonds? Enter a decimal. (c) Which C–O bond is the longest?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) C–O(H) bond order"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) average of the other two"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] the bond to the O that carries the H",
+      "[1] one of the other two",
+      "[2] all three are the same length"
+     ],
+     "label": "(c) longest C–O bond"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t4-6-p1",
+  "module": "t4-6",
+  "label": "preview",
+  "prompt": "Rank these carbon–carbon bonds by length.",
+  "answer_format": {
+   "type": "order",
+   "direction": "longest (1) to shortest (3)",
+   "items": [
+    "cc1: C–C",
+    "cc2: C=C",
+    "cc3: C≡C"
+   ]
+  }
+ },
+ {
+  "id": "t4-6-p2",
+  "module": "t4-6",
+  "label": "preview",
+  "prompt": "Table 4.6 lists the H–H bond energy as 436 kJ/mol. What does that number mean?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] 436 kJ must be added to break 1 mol of H–H bonds in the gas phase (and the same amount is released when they form).",
+    "[1] 436 kJ is released when 1 mol of H–H bonds breaks.",
+    "[2] 436 kJ is the energy of a single H–H bond.",
+    "[3] 436 kJ/mol is H<sub>2</sub>'s ionization energy."
+   ]
+  }
+ },
+ {
+  "id": "t4-6-p3",
+  "module": "t4-6",
+  "label": "preview",
+  "prompt": "Using Table 4.6's average C–H bond energy (413 kJ/mol), estimate the energy needed to break all the C–H bonds in 1 mol of CH<sub>4</sub>.",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t4-6-p4",
+  "module": "t4-6",
+  "label": "preview",
+  "prompt": "Which has the shorter and stronger carbon–oxygen bond: carbon monoxide, CO, or carbon dioxide, CO<sub>2</sub>?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] CO, with a C≡O triple bond",
+    "[1] CO<sub>2</sub>, because it has two C=O bonds",
+    "[2] They're the same",
+    "[3] Can't tell without a measurement"
+   ]
+  }
+ },
+ {
+  "id": "t4-6-p5",
+  "module": "t4-6",
+  "label": "preview",
+  "prompt": "Rank the O–O bonds in these molecules by length.",
+  "answer_format": {
+   "type": "order",
+   "direction": "longest (1) to shortest (3)",
+   "items": [
+    "h2o2: H<sub>2</sub>O<sub>2</sub> (H–O–O–H)",
+    "o3: O<sub>3</sub>",
+    "o2: O<sub>2</sub>"
+   ]
+  }
+ },
+ {
+  "id": "t4-6-transfer",
+  "module": "t4-6",
+  "label": "preview",
+  "prompt": "Nitrite, NO<sub>2</sub><sup>−</sup>, has two equivalent resonance structures, so each N–O bond has bond order 1.5. Estimate the energy of one mole of these N–O bonds from Table 4.6 (N–O 201 kJ/mol, N=O 607 kJ/mol).",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t4-6-m-recognize",
+  "module": "t4-6",
+  "label": "preview",
+  "prompt": "A measured bond length falls between Table 4.6's single- and double-bond values. What should you suspect?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Resonance: the bond order is between 1 and 2.",
+    "[1] A measurement error.",
+    "[2] The bond is ionic.",
+    "[3] A triple bond."
+   ]
+  }
+ },
+ {
+  "id": "t4-6-m-sanity",
+  "module": "t4-6",
+  "label": "preview",
+  "prompt": "A student estimates the C≡C bond energy as 3 × 348 = 1044 kJ/mol. Table 4.6 gives 839 kJ/mol. What does the difference tell you?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Bond energy rises with bond order, but not in proportion: the second and third pairs add less than the first.",
+    "[1] Table 4.6 must be wrong.",
+    "[2] Triple bonds are weaker than single bonds.",
+    "[3] The student should have divided by 3."
+   ]
+  }
+ },
+ {
+  "id": "t4-7-attempt",
+  "module": "t4-7",
+  "label": "preview",
+  "prompt": "Carbon monoxide has the Lewis structure [drawing: Lewis structure of carbon monoxide, CO: C–O triple bond, 1 lone pair on C, 1 lone pair on O] Find the formal charge on (a) C and (b) O.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) FC on C"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) FC on O"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t4-7-p1",
+  "module": "t4-7",
+  "label": "preview",
+  "prompt": "Find the formal charge on O in the hydroxide ion: [drawing: Lewis structure of hydroxide ion, OH⁻: O–H single bond, 3 lone pairs on O; overall charge 1−]",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t4-7-p2",
+  "module": "t4-7",
+  "label": "preview",
+  "prompt": "Find the formal charge on N in the ammonium ion: [drawing: Lewis structure of ammonium ion, NH₄⁺: N–left H single bond, N–right H single bond, N–upper H single bond, N–lower H single bond; overall charge 1+]",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t4-7-p3",
+  "module": "t4-7",
+  "label": "preview",
+  "prompt": "Which Lewis structure best describes carbon disulfide, CS<sub>2</sub>?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] [drawing: Lewis structure: left S–C double bond, C–right S double bond, 2 lone pairs on the left S, 2 lone pairs on the right S]",
+    "[1] [drawing: Lewis structure: left S–C triple bond, C–right S single bond, 1 lone pair on the left S, 3 lone pairs on the right S]",
+    "[2] [drawing: Lewis structure: left S–C single bond, C–right S single bond, 3 lone pairs on the left S, 2 lone pairs on C, 3 lone pairs on the right S]"
+   ]
+  }
+ },
+ {
+  "id": "t4-7-p4",
+  "module": "t4-7",
+  "label": "preview",
+  "prompt": "In any valid Lewis structure of the sulfate ion, SO<sub>4</sub><sup>2−</sup>, what must the formal charges add up to?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t4-7-p5",
+  "module": "t4-7",
+  "label": "preview",
+  "prompt": "What is the formal charge on a nitrogen atom that has two lone pairs and forms one double bond?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ }
+]

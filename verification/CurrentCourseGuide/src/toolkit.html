@@ -1,0 +1,84 @@
+<section class="page" id="toolkit" data-title="Toolkit" aria-labelledby="toolkit-title">
+<header class="module-head">
+  <p class="kicker">Reference</p>
+  <h1 id="toolkit-title" tabindex="-1">Toolkit: constants, equations, and recognition cues</h1>
+  <p>A quick reference to use <em>after</em> you understand a section, not instead of it. Each row names its source and label.</p>
+</header>
+
+<h2>Constants</h2>
+<div class="table-wrap"><table class="data">
+<thead><tr><th scope="col">Quantity</th><th scope="col">Value used in this guide</th><th scope="col">Source</th></tr></thead>
+<tbody>
+<tr><td>speed of light, c</td><td>2.998 × 10<sup>8</sup> m/s</td><td>lecture, Day 2 p.30</td></tr>
+<tr><td>Planck's constant, h</td><td>6.626 × 10<sup>−34</sup> J·s</td><td>lecture, Day 3 p.17 (Day 4 p.11 lists 6.62607004 × 10<sup>−34</sup>)</td></tr>
+<tr><td>Bohr energy constant</td><td>2.178 × 10<sup>−18</sup> J</td><td>lecture, Day 4 p.10</td></tr>
+<tr><td>Balmer constant</td><td>364.56 nm</td><td>lecture, Day 3 p.21</td></tr>
+<tr><td>Coulomb constant (E<sub>el</sub>)</td><td>2.31 × 10<sup>−19</sup> J·nm</td><td>lecture, Day 7 p.15</td></tr>
+<tr><td>electron charge, q<sub>e</sub></td><td>−1.602 × 10<sup>−19</sup> C</td><td>lecture, Day 2 p.12</td></tr>
+<tr><td>electron mass, m<sub>e</sub></td><td>9.109 × 10<sup>−31</sup> kg (9.109 × 10<sup>−28</sup> g)</td><td>lecture, Day 2 p.12, p.22</td></tr>
+<tr><td>proton mass</td><td>1.67262 × 10<sup>−27</sup> kg = 1.00728 amu</td><td>lecture, Day 2 p.22 (RAMP UP)</td></tr>
+<tr><td>Avogadro constant, N<sub>A</sub></td><td>6.022 × 10<sup>23</sup> mol<sup>−1</sup></td><td><span class="pill-label preview">Textbook preview</span> §2.5, PDF p.98 (printed 64); not on any slide</td></tr>
+<tr><td>1 amu (u)</td><td>1.66054 × 10<sup>−27</sup> kg</td><td><span class="pill-label preview">Textbook preview</span> §2.1, PDF p.86 (printed 52)</td></tr>
+</tbody></table></div>
+
+<h2>Equation map</h2>
+<p>Each equation is a relationship between quantities. Read the row that matches what the problem gives you and what it asks for.</p>
+<div class="table-wrap"><table class="data">
+<thead><tr><th scope="col">Relationship</th><th scope="col">Use it when…</th><th scope="col">Don't confuse with</th><th scope="col">Section</th></tr></thead>
+<tbody>
+<tr><td>λν = c; E = hν = hc/λ</td><td>light (any EM radiation): wavelength, frequency, or photon energy</td><td>λ = h/(mu), which is for particles with mass</td><td><a href="#m3">§3.1</a>, lecture</td></tr>
+<tr><td>KE = hν − φ = hν − hν<sub>0</sub></td><td>light ejects electrons from a metal (threshold, work function)</td><td>IE (gaseous atoms), ΔE (hydrogen levels)</td><td><a href="#m5">§3.3</a>, lecture</td></tr>
+<tr><td>ΔE = −2.178 × 10<sup>−18</sup> J (1/n<sub>final</sub><sup>2</sup> − 1/n<sub>initial</sub><sup>2</sup>)</td><td>hydrogen (one-electron) transitions between levels</td><td>multi-electron atoms, where Bohr “falls apart” (Day 4 p.3)</td><td><a href="#m6">§3.4</a>, lecture</td></tr>
+<tr><td>λ = 364.56 nm × n<sup>2</sup>/(n<sup>2</sup> − 4)</td><td>visible hydrogen lines ending on n = 2</td><td>other series</td><td><a href="#m6">§3.4</a>, lecture</td></tr>
+<tr><td>λ = h/(mu)</td><td>a particle with mass m moving at speed u</td><td>E = hc/λ for photons</td><td><a href="#m7">§3.5</a>, lecture</td></tr>
+<tr><td>Δx · mΔu ≥ h/(4π)</td><td>uncertainty in position ↔ uncertainty in speed</td><td>de Broglie (no 4π; not an inequality)</td><td><a href="#t3-5">§3.5</a>, preview</td></tr>
+<tr><td>E<sub>el</sub> = 2.31 × 10<sup>−19</sup> J·nm (Q<sub>1</sub>Q<sub>2</sub>/d)</td><td>energy of a pair of ions (d in nm; charges with signs)</td><td>lattice energy U (a whole crystal)</td><td><a href="#m14">§4.1</a>, lecture</td></tr>
+<tr><td>d = m/V</td><td>mass ↔ volume of a substance</td><td>d for distance in E<sub>el</sub></td><td><a href="#t1-3">§1.3</a>, preview</td></tr>
+<tr><td>KE = ½mu²; w = F × d</td><td>energy of motion; work</td><td>photoelectric KE (same kind of quantity, found another way)</td><td><a href="#t1-5">§1.5</a>, preview</td></tr>
+<tr><td>x̄ = Σx<sub>i</sub>/n; s = √[Σ(x<sub>i</sub> − x̄)<sup>2</sup>/(n − 1)]; μ = x̄ ± ts/√n; Z = |x<sub>i</sub> − x̄|/s</td><td>repeated measurements: mean, precision, confidence interval, outlier test</td><td>dividing by n (s uses n − 1)</td><td><a href="#t1-9">§1.9</a>, preview</td></tr>
+<tr><td>m<sub>X</sub> = a<sub>1</sub>m<sub>1</sub> + a<sub>2</sub>m<sub>2</sub> + …</td><td>isotope masses and abundances → average atomic mass</td><td>a simple average</td><td><a href="#t2-4">§2.4</a>, preview</td></tr>
+<tr><td>n = m/ℳ; N = n × N<sub>A</sub></td><td>grams ↔ moles ↔ particles</td><td>multiplying grams by N<sub>A</sub> directly</td><td><a href="#t2-5">§2.5</a>, preview</td></tr>
+<tr><td>Δχ = |χ<sub>A</sub> − χ<sub>B</sub>|</td><td>bond polarity: ≤ 0.4 nonpolar, 0.4–2.0 polar covalent, ≥ 2.0 ionic</td><td>E<sub>el</sub> (needs actual ion charges)</td><td><a href="#t4-2">§4.2</a>, preview</td></tr>
+<tr><td>valence electrons = Σ (group valence electrons); for an ion, + 1 per negative charge, − 1 per positive charge</td><td>step 1 of any Lewis structure</td><td>counting all of each atom's electrons</td><td><a href="#m19">§4.4</a>, lecture (ions: preview)</td></tr>
+<tr><td>bond order = shared pairs ÷ bonds (averaged over resonance structures)</td><td>equivalent bonds in O<sub>3</sub>, NO<sub>3</sub><sup>−</sup>, CO<sub>3</sub><sup>2−</sup>; predicting length and strength</td><td>averaging 1 and 2 regardless of how many bonds share the extra pair</td><td><a href="#t4-6">§4.6</a>, preview</td></tr>
+<tr><td>FC = (valence e<sup>−</sup>) − [(lone-pair e<sup>−</sup>) + ½(shared e<sup>−</sup>)]</td><td>choosing among nonequivalent Lewis structures</td><td>real (ionic) charge; oxidation numbers</td><td><a href="#t4-7">§4.7</a>, preview</td></tr>
+</tbody></table></div>
+
+<!--TOOLKIT_CH4-->
+<h2>Conversions (textbook Table 1.3)</h2>
+<div class="toolkit-grid">
+<div class="eqcard"><p class="eq">Length and mass</p><p>1 in = 2.54 cm (exact); 1 m = 39.37 in; 1 km = 0.6214 mi; 1 kg = 2.205 lb</p><p class="source">Textbook preview, §1.7, PDF p.54 (printed 20)</p></div>
+<div class="eqcard"><p class="eq">Volume and temperature</p><p>1 m<sup>3</sup> = 1000 L (exact); 1 L = 0.2642 gal = 1.057 qt; 1 mL = 1 cm<sup>3</sup>; T(K) = T(°C) + 273.15; T(°C) = (5/9)[T(°F) − 32]</p><p class="source">Textbook preview, §1.7, PDF p.54 (printed 20)</p></div>
+<div class="eqcard"><p class="eq">Prefixes you'll use most</p><p>k 10<sup>3</sup>; c 10<sup>−2</sup>; m 10<sup>−3</sup>; μ 10<sup>−6</sup>; n 10<sup>−9</sup>; p 10<sup>−12</sup>; f 10<sup>−15</sup></p><p class="source">Textbook preview, Table 1.1, PDF p.53 (printed 19)</p></div>
+<div class="eqcard"><p class="eq">Energy units</p><p>1 J = 1 kg·m<sup>2</sup>/s<sup>2</sup> (Day 4 p.11); kJ/mol = energy per mole: multiply J per particle by N<sub>A</sub>, then ÷ 1000</p><p class="source">Lecture, Day 4 p.11; textbook §1.7, PDF p.53</p></div>
+</div>
+
+<h2>Significant figures in one place</h2>
+<p><span class="pill-label preview">Textbook preview</span> The lecture has no written policy, but its worked answers carry the precision of the least-precise input (Day 1 p.11; Day 4 p.12, p.14). The textbook's rules (§1.7, PDF p.57–59): leading zeros never count; captive zeros always count; trailing zeros after a decimal point count; × and ÷ keep the fewest significant figures; + and − keep the fewest decimal places; exact numbers never limit; round only at the end.</p>
+
+<h2>Recognition map: what gives a problem away</h2>
+<div class="table-wrap"><table class="data">
+<thead><tr><th scope="col">If the problem mentions…</th><th scope="col">Think of…</th></tr></thead>
+<tbody>
+<tr><td>two compounds of the same two elements; mass of one per fixed mass of the other</td><td>Law of Multiple Proportions (<a href="#m1">§1.1</a>)</td></tr>
+<tr><td>“threshold,” “work function,” “ejected electrons”</td><td>photoelectric effect (<a href="#m5">§3.3</a>)</td></tr>
+<tr><td>hydrogen and two n values</td><td>Bohr ΔE, then λ = hc/|ΔE| (<a href="#m6">§3.4</a>)</td></tr>
+<tr><td>a mass and a speed, wavelength asked</td><td>de Broglie (<a href="#m7">§3.5</a>)</td></tr>
+<tr><td>“valid set of quantum numbers”</td><td>the n → ℓ → m<sub>ℓ</sub> → m<sub>s</sub> rules (<a href="#m8">§3.6</a>)</td></tr>
+<tr><td>a transition-metal cation's configuration</td><td>remove the highest-n (4s) electrons first (<a href="#m11">§3.9</a>)</td></tr>
+<tr><td>a list of successive IEs</td><td>find the biggest jump (<a href="#m13">§3.11</a>)</td></tr>
+<tr><td>ion charges and a distance</td><td>E<sub>el</sub> (<a href="#m14">§4.1</a>)</td></tr>
+<tr><td>a metal and a nonmetal combining</td><td>charge balance → formula → name (<a href="#m15">§4.3</a>)</td></tr>
+<tr><td>a transition metal in a formula or name; a polyatomic ion</td><td>Roman numeral = the metal's charge; the ion keeps its table name (<a href="#m16">§4.3</a>)</td></tr>
+<tr><td>two nonmetals; mono-, di-, tri- in a name</td><td>covalent naming with prefixes (<a href="#m17">§4.3</a>)</td></tr>
+<tr><td>a formula starting with H, dissolved (aq)</td><td>acid names: hydro-…-ic, -ic, -ous (<a href="#t4-3">§4.3</a>, preview)</td></tr>
+<tr><td>“draw the Lewis structure”; lone pairs; bonding capacity</td><td>the five steps (<a href="#m19">§4.4</a>)</td></tr>
+<tr><td>two or more valid structures with the same skeleton; ↔</td><td>resonance (<a href="#t4-5">§4.5</a>); nonequivalent ones → formal charge (<a href="#t4-7">§4.7</a>, preview)</td></tr>
+<tr><td>a bond length between single- and double-bond values</td><td>bond order between 1 and 2 (<a href="#t4-6">§4.6</a>, preview)</td></tr>
+<tr><td>an odd electron count; Be, B, or Al in the center; P or S with 5 or 6 bonds</td><td>exceptions to the octet rule (<a href="#t4-8">§4.8</a>, preview)</td></tr>
+<tr><td>“absorbs infrared,” “greenhouse gas,” “stretch,” “bend”</td><td>vibrating polar bonds (<a href="#t4-9">§4.9</a>, preview)</td></tr>
+<tr><td>grams and “how many atoms/molecules”</td><td>moles (<a href="#t2-5">§2.5</a>, preview)</td></tr>
+<tr><td>isotope abundances</td><td>weighted average (<a href="#t2-4">§2.4</a>, preview)</td></tr>
+<tr><td>peak heights and binding energies</td><td>photoelectron spectroscopy (<a href="#t3-11">§3.11</a>, preview)</td></tr>
+</tbody></table></div>
+</section>

@@ -1,0 +1,1130 @@
+[
+ {
+  "id": "t1-2-attempt",
+  "module": "t1-2",
+  "label": "preview",
+  "prompt": "<p>A student solves: “A cyclist rides 12.0 km in 40.0 min. What is her average speed in m/s?” Match each thing she does to the COAST step it belongs to.</p>",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] Writes down the givens (12.0 km, 40.0 min) and notes that speed = distance ÷ time.",
+    "[1] Notices the answer must be in m/s, so she plans to convert km → m and min → s, and estimates “about 5 m/s.”",
+    "[2] Calculates 12,000 m ÷ 2400 s = 5.00 m/s.",
+    "[3] Checks that 5.00 m/s is a sensible cycling speed, the units are m/s, and 3 significant figures are justified."
+   ],
+   "options": [
+    "C: Collect and Organize",
+    "A: Analyze",
+    "S: Solve",
+    "T: Think About It"
+   ]
+  }
+ },
+ {
+  "id": "t1-2-p1",
+  "module": "t1-2",
+  "label": "preview",
+  "prompt": "<p>Why does the Analyze step include an order-of-magnitude (“ballpark”) estimate?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] To replace the calculation when numbers are messy",
+    "[1] So the calculated answer can be checked against it in Think About It",
+    "[2] Because significant figures require it",
+    "[3] To decide which units to use"
+   ]
+  }
+ },
+ {
+  "id": "t1-2-p2",
+  "module": "t1-2",
+  "label": "preview",
+  "prompt": "<p>Estimate first, then calculate: a train travels 150. km in 1.50 h. What is its average speed in m/s?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t1-2-p3",
+  "module": "t1-2",
+  "label": "preview",
+  "prompt": "<p>A student calculates that a raindrop has a mass of 4.5 kg. Which COAST step should have caught the error?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Collect and Organize",
+    "[1] Analyze",
+    "[2] Solve",
+    "[3] Think About It"
+   ]
+  }
+ },
+ {
+  "id": "t1-2-transfer",
+  "module": "t1-2",
+  "label": "preview",
+  "prompt": "<p>You're asked for the de Broglie wavelength of a 57.0 g ball, but the equation needs mass in kg. In which COAST step should you first notice that a conversion is needed?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Collect and Organize",
+    "[1] Analyze",
+    "[2] Solve",
+    "[3] Think About It"
+   ]
+  }
+ },
+ {
+  "id": "t1-2-m-recognize",
+  "module": "t1-2",
+  "label": "preview",
+  "prompt": "<p>Which habit does the textbook say COAST helps you avoid?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Grabbing an equation that seems to have the right variables and plugging in numbers",
+    "[1] Using scientific notation",
+    "[2] Estimating answers",
+    "[3] Checking units"
+   ]
+  }
+ },
+ {
+  "id": "t1-2-m-sanity",
+  "module": "t1-2",
+  "label": "preview",
+  "prompt": "<p>A classmate's estimate is “about 30 m/s,” but the calculator gives 0.083 m/s for a car's speed. What should they do?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Trust the calculator.",
+    "[1] Go back to Analyze and check the conversion factors (for example, km/h ↔ m/s).",
+    "[2] Average the two answers.",
+    "[3] Report both."
+   ]
+  }
+ },
+ {
+  "id": "t1-3-attempt",
+  "module": "t1-3",
+  "label": "preview",
+  "prompt": "<p>Classify each sample using the textbook's scheme (Fig. 1.2).</p>",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] neon gas inside a sign",
+    "[1] table sugar, sucrose (C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>)",
+    "[2] sugar completely dissolved in water (clear)",
+    "[3] sand stirred into water"
+   ],
+   "options": [
+    "el: element",
+    "cp: compound",
+    "ho: homogeneous mixture",
+    "he: heterogeneous mixture"
+   ]
+  }
+ },
+ {
+  "id": "t1-3-p1",
+  "module": "t1-3",
+  "label": "preview",
+  "prompt": "<p>Physical or chemical property?</p>",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] iron rusts in moist air",
+    "[1] copper conducts electricity",
+    "[2] ethanol boils at 78 °C",
+    "[3] methane burns in oxygen"
+   ],
+   "options": [
+    "ph: physical",
+    "ch: chemical"
+   ]
+  }
+ },
+ {
+  "id": "t1-3-p2",
+  "module": "t1-3",
+  "label": "preview",
+  "prompt": "<p>Which property of a gold bar is <em>intensive</em>?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] mass",
+    "[1] volume",
+    "[2] density",
+    "[3] length"
+   ]
+  }
+ },
+ {
+  "id": "t1-3-p3",
+  "module": "t1-3",
+  "label": "preview",
+  "prompt": "<p>A 12.0 cm<sup>3</sup> block of metal has a mass of 32.4 g. What is its density?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t1-3-p4",
+  "module": "t1-3",
+  "label": "preview",
+  "prompt": "<p>Choose the separation method.</p>",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] drinking water from seawater",
+    "[1] sand from water",
+    "[2] the colored dyes in a marker's ink"
+   ],
+   "options": [
+    "di: distillation",
+    "fi: filtration",
+    "ch: chromatography"
+   ]
+  }
+ },
+ {
+  "id": "t1-3-p5",
+  "module": "t1-3",
+  "label": "preview",
+  "prompt": "<p>Ethanol has a density of 0.789 g/mL. What volume does 50.0 g of ethanol occupy?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t1-3-transfer",
+  "module": "t1-3",
+  "label": "preview",
+  "prompt": "<p>A clear, colorless liquid boils over a range of temperatures, and the first vapor collected has a different composition from what remains in the flask. What is the liquid?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] an element",
+    "[1] a compound",
+    "[2] a homogeneous mixture",
+    "[3] a heterogeneous mixture"
+   ]
+  }
+ },
+ {
+  "id": "t1-3-m-recognize",
+  "module": "t1-3",
+  "label": "preview",
+  "prompt": "<p>“A white powder decomposes when heated into a gas and a different white solid.” What does that tell you about the powder?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] It's an element.",
+    "[1] It's a compound (or contains one).",
+    "[2] It's a heterogeneous mixture.",
+    "[3] Nothing."
+   ]
+  }
+ },
+ {
+  "id": "t1-3-m-sanity",
+  "module": "t1-3",
+  "label": "preview",
+  "prompt": "<p>A student reports that a gold nugget has a density of 1.93 g/cm<sup>3</sup>. Gold's density is 19.3 g/cm<sup>3</sup>. What's the most likely error?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The nugget is hollow.",
+    "[1] A factor-of-10 slip, such as a misplaced decimal in the volume",
+    "[2] Gold's density varies by sample.",
+    "[3] Nothing; both are fine."
+   ]
+  }
+ },
+ {
+  "id": "t1-4-attempt",
+  "module": "t1-4",
+  "label": "preview",
+  "prompt": "<p>On a cold night, frost forms on a car window directly from water vapor in the air, with no liquid step. (a) Name the change. (b) Is energy absorbed or released by the water?</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "text",
+     "kind": "text",
+     "placeholder": "one word",
+     "label": "(a) name of the change"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] absorbed",
+      "[1] released"
+     ],
+     "label": "(b) energy"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t1-4-p1",
+  "module": "t1-4",
+  "label": "preview",
+  "prompt": "<p>Particles are close together, randomly arranged, and slide past one another. Which state is this?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] solid",
+    "[1] liquid",
+    "[2] gas",
+    "[3] plasma"
+   ]
+  }
+ },
+ {
+  "id": "t1-4-p2",
+  "module": "t1-4",
+  "label": "preview",
+  "prompt": "<p>Why can a gas be compressed into a smaller volume, while a liquid essentially can't?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Gas particles are smaller.",
+    "[1] A gas is mostly empty space between particles.",
+    "[2] Gas particles have no mass.",
+    "[3] Liquids are always colder."
+   ]
+  }
+ },
+ {
+  "id": "t1-4-p3",
+  "module": "t1-4",
+  "label": "preview",
+  "prompt": "<p>Does each change absorb or release energy?</p>",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] ice melts",
+    "[1] water vapor condenses on a cold glass",
+    "[2] a pond freezes",
+    "[3] dry ice (solid CO<sub>2</sub>) sublimes"
+   ],
+   "options": [
+    "ab: absorbs energy",
+    "re: releases energy"
+   ]
+  }
+ },
+ {
+  "id": "t1-4-p4",
+  "module": "t1-4",
+  "label": "preview",
+  "prompt": "<p>Which statement describes a solid?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] definite volume, no definite shape",
+    "[1] definite shape and definite volume",
+    "[2] neither definite shape nor volume",
+    "[3] definite shape, no definite volume"
+   ]
+  }
+ },
+ {
+  "id": "t1-4-transfer",
+  "module": "t1-4",
+  "label": "preview",
+  "prompt": "<p>Liquid nitrogen (boiling point 77 K) is poured onto a lab bench and boils away. Why does the bench get cold?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Nitrogen molecules are cold and stick to the bench.",
+    "[1] Vaporization absorbs energy, and it comes from the bench.",
+    "[2] Boiling releases energy into the bench.",
+    "[3] Nitrogen reacts with the bench."
+   ]
+  }
+ },
+ {
+  "id": "t1-4-m-recognize",
+  "module": "t1-4",
+  "label": "preview",
+  "prompt": "<p>Mothballs slowly disappear in a closet without ever melting. Which change is this?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] evaporation",
+    "[1] sublimation",
+    "[2] deposition",
+    "[3] condensation"
+   ]
+  }
+ },
+ {
+  "id": "t1-4-m-sanity",
+  "module": "t1-4",
+  "label": "preview",
+  "prompt": "<p>A student draws steam as molecules packed as tightly as in liquid water. What's wrong?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Nothing; the molecules are the same.",
+    "[1] Gas molecules should be far apart, with mostly empty space.",
+    "[2] Steam molecules are larger.",
+    "[3] Steam should be drawn as a solid lattice."
+   ]
+  }
+ },
+ {
+  "id": "t1-5-attempt",
+  "module": "t1-5",
+  "label": "preview",
+  "prompt": "<p>A 145 g baseball leaves a pitcher's hand at 40.0 m/s. What is its kinetic energy in joules?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit (type the unit too)"
+  }
+ },
+ {
+  "id": "t1-5-p1",
+  "module": "t1-5",
+  "label": "preview",
+  "prompt": "<p>If an object's speed triples, by what factor does its kinetic energy change?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t1-5-p2",
+  "module": "t1-5",
+  "label": "preview",
+  "prompt": "<p>You push a crate with a force of 25.0 N for 3.00 m. How much work do you do? (1 N·m = 1 J)</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t1-5-p3",
+  "module": "t1-5",
+  "label": "preview",
+  "prompt": "<p><span class='tag-conn'>Connects to Module 5</span> An electron (m = 9.109 × 10<sup>−31</sup> kg) is ejected from a metal at 2.00 × 10<sup>6</sup> m/s. What is its kinetic energy?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t1-5-p4",
+  "module": "t1-5",
+  "label": "preview",
+  "prompt": "<p>Which is an example of <em>potential</em> energy?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] a sprinter running the 100 m",
+    "[1] the chemical energy stored in glucose",
+    "[2] a thrown baseball",
+    "[3] a gas molecule moving at 500 m/s"
+   ]
+  }
+ },
+ {
+  "id": "t1-5-p5",
+  "module": "t1-5",
+  "label": "lecture",
+  "prompt": "<p><span class='tag-lecture'>Covered in lecture</span> A photon with more than the threshold energy strikes a metal and ejects an electron. According to the law of conservation of energy, where does the photon's “extra” energy go?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] It is destroyed.",
+    "[1] It becomes the ejected electron's kinetic energy.",
+    "[2] It heats the light source.",
+    "[3] It turns into mass."
+   ]
+  }
+ },
+ {
+  "id": "t1-5-transfer",
+  "module": "t1-5",
+  "label": "preview",
+  "prompt": "<p>Which has more kinetic energy: a 60.0 kg sprinter at 10.0 m/s or a 5.00 g pellet at 700. m/s? Enter the larger KE in joules.</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t1-5-m-recognize",
+  "module": "t1-5",
+  "label": "preview",
+  "prompt": "<p>“Heat” in the textbook's sense is…</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] the temperature of an object",
+    "[1] energy transferred because of a temperature difference",
+    "[2] the kinetic energy of one molecule",
+    "[3] a form of potential energy"
+   ]
+  }
+ },
+ {
+  "id": "t1-5-m-sanity",
+  "module": "t1-5",
+  "label": "preview",
+  "prompt": "<p>A calculation gives KE = −45 J for a moving cart. What's wrong?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Nothing; the cart moves backward.",
+    "[1] KE = ½mu² can't be negative, so there's an arithmetic or sign error.",
+    "[2] The mass is negative.",
+    "[3] Heat was lost."
+   ]
+  }
+ },
+ {
+  "id": "t1-6-attempt",
+  "module": "t1-6",
+  "label": "preview",
+  "prompt": "<p>Each glucose molecule contains 6 carbon, 12 hydrogen, and 6 oxygen atoms. Write (a) its molecular formula and (b) its empirical formula.</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "text",
+     "kind": "formula",
+     "placeholder": "e.g., C2H4O2",
+     "label": "(a) molecular formula"
+    },
+    {
+     "type": "text",
+     "kind": "formula",
+     "placeholder": "e.g., CH2O",
+     "label": "(b) empirical formula"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t1-6-p1",
+  "module": "t1-6",
+  "label": "preview",
+  "prompt": "<p>The condensed structural formula of propane is CH<sub>3</sub>CH<sub>2</sub>CH<sub>3</sub>. What is its molecular formula?</p>",
+  "answer_format": {
+   "type": "text",
+   "kind": "formula",
+   "placeholder": "e.g., MgCl2"
+  }
+ },
+ {
+  "id": "t1-6-p2",
+  "module": "t1-6",
+  "label": "preview",
+  "prompt": "<p>Which element exists as diatomic molecules?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] neon",
+    "[1] nitrogen",
+    "[2] sodium",
+    "[3] carbon"
+   ]
+  }
+ },
+ {
+  "id": "t1-6-p3",
+  "module": "t1-6",
+  "label": "preview",
+  "prompt": "<p>Why is NaCl called an empirical formula rather than a molecular formula?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Because it was discovered experimentally",
+    "[1] Because solid NaCl is a 3-D array of ions with no molecules; the formula gives only the 1 : 1 ion ratio",
+    "[2] Because Na and Cl are both metals",
+    "[3] Because the formula is too simple"
+   ]
+  }
+ },
+ {
+  "id": "t1-6-p4",
+  "module": "t1-6",
+  "label": "preview",
+  "prompt": "<p>Match each representation to what it shows best.</p>",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] molecular formula",
+    "[1] structural formula",
+    "[2] ball-and-stick model",
+    "[3] space-filling model"
+   ],
+   "options": [
+    "count: how many atoms of each element",
+    "bonds: which atoms are bonded to which",
+    "angles: 3-D bond angles, clearly visible",
+    "shape: overall shape, with atoms overlapping as they really do"
+   ]
+  }
+ },
+ {
+  "id": "t1-6-transfer",
+  "module": "t1-6",
+  "label": "preview",
+  "prompt": "<p>Hydrogen peroxide (Day 1 p.13) has the molecular formula H<sub>2</sub>O<sub>2</sub>. What is its empirical formula?</p>",
+  "answer_format": {
+   "type": "text",
+   "kind": "formula",
+   "placeholder": "e.g., CH2O"
+  }
+ },
+ {
+  "id": "t1-6-m-recognize",
+  "module": "t1-6",
+  "label": "preview",
+  "prompt": "<p>You need to see the angles between bonds clearly. Which representation?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] molecular formula",
+    "[1] condensed structural formula",
+    "[2] ball-and-stick model",
+    "[3] empirical formula"
+   ]
+  }
+ },
+ {
+  "id": "t1-6-m-sanity",
+  "module": "t1-6",
+  "label": "preview",
+  "prompt": "<p>A student says the empirical formula of benzene, C<sub>6</sub>H<sub>6</sub>, is C<sub>6</sub>H<sub>6</sub>. Right?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Yes",
+    "[1] No; it's CH.",
+    "[2] No; it's C<sub>3</sub>H<sub>3</sub>.",
+    "[3] No; it's C<sub>2</sub>H<sub>2</sub>."
+   ]
+  }
+ },
+ {
+  "id": "t1-7-attempt",
+  "module": "t1-7",
+  "label": "preview",
+  "prompt": "<p>An empty beaker has a mass of 42.37 g. With a liquid in it, the mass is 57.9 g. The liquid's volume is 15.25 mL. What is the liquid's density, with the correct number of significant figures?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t1-7-p1",
+  "module": "t1-7",
+  "label": "preview",
+  "prompt": "<p>How many significant figures are in each value?</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "0.0592 g"
+    },
+    {
+     "type": "numeric",
+     "label": "3.00 × 10<sup>8</sup> m/s"
+    },
+    {
+     "type": "numeric",
+     "label": "101.3 kPa"
+    },
+    {
+     "type": "numeric",
+     "label": "0.07010 L"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t1-7-p2",
+  "module": "t1-7",
+  "label": "preview",
+  "prompt": "<p>Using the textbook's tie-breaking rule, round 76.45 to three significant figures.</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t1-7-p3",
+  "module": "t1-7",
+  "label": "preview",
+  "prompt": "<p>Which value is exact (no uncertainty)?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] the 1.80 × 10<sup>−10</sup> m wavelength from Day 4 p.12",
+    "[1] the 12 eggs in a carton",
+    "[2] the 2.998 × 10<sup>8</sup> m/s used for c",
+    "[3] the 0.142 kg mass of a baseball"
+   ]
+  }
+ },
+ {
+  "id": "t1-7-p4",
+  "module": "t1-7",
+  "label": "preview",
+  "prompt": "<p>A standard mass is exactly 10.000 g. Balance A reads 10.52, 10.51, 10.53 g; balance B reads 9.8, 10.3, 10.0 g. Which description fits?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] A is precise but not accurate; B's average is closer to the true value but its readings are less precise.",
+    "[1] A is accurate and precise.",
+    "[2] B is precise but not accurate.",
+    "[3] Both are equally accurate."
+   ]
+  }
+ },
+ {
+  "id": "t1-7-p5",
+  "module": "t1-7",
+  "label": "preview",
+  "prompt": "<p>Add these measured lengths and report the sum correctly: 18.2 m + 0.456 m + 3.12 m.</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t1-7-transfer",
+  "module": "t1-7",
+  "label": "preview",
+  "prompt": "<p>Three measurements of a coin's diameter are 2.51, 2.49, and 2.52 cm. Report their average with the correct number of significant figures.</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t1-7-m-recognize",
+  "module": "t1-7",
+  "label": "preview",
+  "prompt": "<p>A calculation is 6.626 × 10<sup>−34</sup> J·s × 5.7 × 10<sup>14</sup> s<sup>−1</sup>. How many significant figures should the answer have?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] 2",
+    "[1] 3",
+    "[2] 4",
+    "[3] 6"
+   ]
+  }
+ },
+ {
+  "id": "t1-7-m-sanity",
+  "module": "t1-7",
+  "label": "preview",
+  "prompt": "<p>A lab report gives a density as 2.718281 g/mL, calculated from a mass of 4.3 g. What's the problem?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Nothing; more digits are more accurate.",
+    "[1] Too many significant figures: 4.3 g limits the result to 2 (2.7 g/mL).",
+    "[2] It should be in kg/L.",
+    "[3] Density must be a whole number."
+   ]
+  }
+ },
+ {
+  "id": "t1-8-attempt",
+  "module": "t1-8",
+  "label": "preview",
+  "prompt": "<p>A marathon is 26.2 miles. How long is it in kilometers? (Table 1.3: 1 km = 0.6214 mi.)</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit (type the unit too)"
+  }
+ },
+ {
+  "id": "t1-8-p1",
+  "module": "t1-8",
+  "label": "preview",
+  "prompt": "<p>Convert 5.00 in to centimeters (1 in = 2.54 cm, exactly).</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t1-8-p2",
+  "module": "t1-8",
+  "label": "preview",
+  "prompt": "<p>A can holds 355 mL. How many quarts is that? (1 L = 1.057 qt.)</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t1-8-p3",
+  "module": "t1-8",
+  "label": "preview",
+  "prompt": "<p>Normal body temperature is 98.6 °F. Express it in (a) °C and (b) K.</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) °C"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) K"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t1-8-p4",
+  "module": "t1-8",
+  "label": "preview",
+  "prompt": "<p>Gold's density is 19.3 g/cm<sup>3</sup>. Express it in kg/m<sup>3</sup>.</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t1-8-transfer",
+  "module": "t1-8",
+  "label": "preview",
+  "prompt": "<p>What is the mass, in kilograms, of 250. mL of mercury (density 13.6 g/cm<sup>3</sup>)? (1 mL = 1 cm<sup>3</sup>.)</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t1-8-m-recognize",
+  "module": "t1-8",
+  "label": "preview",
+  "prompt": "<p>You know a liquid's volume and need its mass. Which quantity is the conversion factor?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] its temperature",
+    "[1] its density",
+    "[2] its boiling point",
+    "[3] the speed of light"
+   ]
+  }
+ },
+ {
+  "id": "t1-8-m-sanity",
+  "module": "t1-8",
+  "label": "preview",
+  "prompt": "<p>A student converts 5.0 m to cm and gets 0.050 cm. Plausible?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Yes",
+    "[1] No: it should be 5.0 × 10<sup>2</sup> cm; the factor was flipped.",
+    "[2] No: it should be 50 cm.",
+    "[3] Yes, if the metre stick is short."
+   ]
+  }
+ },
+ {
+  "id": "t1-9-attempt",
+  "module": "t1-9",
+  "label": "preview",
+  "prompt": "<p>Five analyses of a water sample give 12.3, 12.6, 12.4, 12.5, and 12.7 mg/L. Find (a) the mean, (b) the standard deviation s, and (c) the half-width of the 95% confidence interval (t = 2.776 for n − 1 = 4, Table 1.5).</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) mean (mg/L)"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) s (mg/L)"
+    },
+    {
+     "type": "numeric",
+     "label": "(c) 95% half-width ts/√n (mg/L)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t1-9-p1",
+  "module": "t1-9",
+  "label": "preview",
+  "prompt": "<p>Find the mean of 2.31, 2.35, 2.29, and 2.33 g.</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t1-9-p2",
+  "module": "t1-9",
+  "label": "preview",
+  "prompt": "<p>Find the standard deviation of 10.1, 10.3, and 10.2 mL.</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t1-9-p3",
+  "module": "t1-9",
+  "label": "preview",
+  "prompt": "<p>Six measurements have x̄ = 8.24 ppm and s = 0.12 ppm. What is the half-width of the 95% confidence interval? (Table 1.5: t = 2.571 for n − 1 = 5.)</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t1-9-p4",
+  "module": "t1-9",
+  "label": "preview",
+  "prompt": "<p>Data: 5.02, 5.05, 5.03, 5.04, and 5.21 g. Calculate Grubbs' Z for the suspect value 5.21 g (use the mean and s of all five values). Is it an outlier at 95% confidence (reference Z = 1.715 for n = 5, Table 1.7)?</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "Z"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] yes",
+      "[1] no"
+     ],
+     "label": "outlier at 95%?"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t1-9-p5",
+  "module": "t1-9",
+  "label": "preview",
+  "prompt": "<p>For normally distributed data, about what fraction of values lie within one standard deviation of the mean?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] 50%",
+    "[1] 68%",
+    "[2] 95%",
+    "[3] 100%"
+   ]
+  }
+ },
+ {
+  "id": "t1-9-transfer",
+  "module": "t1-9",
+  "label": "preview",
+  "prompt": "<p>A control sample is known to contain 4.50 mg/dL. Four analyses give x̄ = 4.62 mg/dL and s = 0.05 mg/dL. Using the 95% confidence interval (t = 3.182 for n − 1 = 3), are the analyses accurate?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Yes: the interval contains 4.50.",
+    "[1] No: the interval, about 4.54 to 4.70, does not contain 4.50.",
+    "[2] Can't tell without more data.",
+    "[3] Yes, because s is small."
+   ]
+  }
+ },
+ {
+  "id": "t1-9-m-recognize",
+  "module": "t1-9",
+  "label": "preview",
+  "prompt": "<p>One of your ten readings looks suspiciously high. Which tool decides whether you may discard it?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] the mean",
+    "[1] Grubbs' test",
+    "[2] the confidence interval",
+    "[3] just drop it"
+   ]
+  }
+ },
+ {
+  "id": "t1-9-m-sanity",
+  "module": "t1-9",
+  "label": "preview",
+  "prompt": "<p>A student reports s = −0.03 g. What's wrong?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Nothing: negative means below the mean.",
+    "[1] s can never be negative.",
+    "[2] s must be larger than the mean.",
+    "[3] s must be a whole number."
+   ]
+  }
+ },
+ {
+  "id": "m2-preview-radioactivity",
+  "module": "m2",
+  "label": "preview",
+  "prompt": "<p>Which description of α and β particles matches the textbook's Radioactivity subsection?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] α particles are high-energy electrons; β particles are helium nuclei.",
+    "[1] β particles are high-energy electrons (1−); α particles are helium-4 nuclei (2+), and the two bend in opposite directions in a magnetic field.",
+    "[2] Both are neutral, so neither bends in a magnetic field.",
+    "[3] α and β particles have the same mass."
+   ]
+  }
+ },
+ {
+  "id": "t2-2-attempt",
+  "module": "t2-2",
+  "label": "preview",
+  "prompt": "<p>How many protons, neutrons, and electrons are in the ion <sup>56</sup>Fe<sup>3+</sup>? (Fe: Z = 26.)</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "protons"
+    },
+    {
+     "type": "numeric",
+     "label": "neutrons"
+    },
+    {
+     "type": "numeric",
+     "label": "electrons"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t2-2-p1",
+  "module": "t2-2",
+  "label": "preview",
+  "prompt": "<p>Write the nuclide symbol for an atom with 17 protons and 20 neutrons, in the form <sup>A</sup>X (for example, type 37Cl or Cl-37).</p>",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "e.g., 12C"
+  }
+ },
+ {
+  "id": "t2-2-p2",
+  "module": "t2-2",
+  "label": "preview",
+  "prompt": "<p>Which pair are isotopes of each other?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] <sup>12</sup>C and <sup>13</sup>C",
+    "[1] <sup>14</sup>C and <sup>14</sup>N",
+    "[2] <sup>16</sup>O and <sup>16</sup>O<sup>2−</sup>",
+    "[3] <sup>1</sup>H and <sup>4</sup>He"
+   ]
+  }
+ },
+ {
+  "id": "t2-2-p3",
+  "module": "t2-2",
+  "label": "preview",
+  "prompt": "<p>How many electrons are in <sup>80</sup>Se<sup>2−</sup>? (Se: Z = 34.)</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t2-2-p4",
+  "module": "t2-2",
+  "label": "preview",
+  "prompt": "<p>A particle has 20 protons, 20 neutrons, and 18 electrons. Which symbol describes it?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] <sup>40</sup>Ca<sup>2+</sup>",
+    "[1] <sup>40</sup>Ar",
+    "[2] <sup>40</sup>Ca<sup>2−</sup>",
+    "[3] <sup>20</sup>Ca<sup>2+</sup>"
+   ]
+  }
+ },
+ {
+  "id": "t2-2-p5",
+  "module": "t2-2",
+  "label": "preview",
+  "prompt": "<p>In the particle symbol <sup>0</sup><sub>−1</sub>e for an electron, what does the subscript −1 represent?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] its atomic number",
+    "[1] its relative charge",
+    "[2] its number of neutrons",
+    "[3] its mass in u"
+   ]
+  }
+ },
+ {
+  "id": "t2-2-transfer",
+  "module": "t2-2",
+  "label": "preview",
+  "prompt": "<p>A monatomic ion <sup>A</sup>X<sup>2−</sup> has 18 electrons and 18 neutrons. Identify X (symbol) and A.</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "text",
+     "kind": "text",
+     "placeholder": "symbol",
+     "label": "X (symbol)"
+    },
+    {
+     "type": "numeric",
+     "label": "A"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t2-2-m-recognize",
+  "module": "t2-2",
+  "label": "preview",
+  "prompt": "<p>Which number alone determines which element an atom is?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] mass number A",
+    "[1] atomic number Z",
+    "[2] number of neutrons",
+    "[3] charge Q"
+   ]
+  }
+ },
+ {
+  "id": "t2-2-m-sanity",
+  "module": "t2-2",
+  "label": "preview",
+  "prompt": "<p>A student writes a nuclide with Z = 8 and A = 7. What's wrong?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Nothing",
+    "[1] A can't be smaller than Z, since A = protons + neutrons.",
+    "[2] Z must be even.",
+    "[3] Oxygen has no isotopes."
+   ]
+  }
+ }
+]

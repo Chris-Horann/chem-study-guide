@@ -1,0 +1,20 @@
+[
+  {
+    "id": "m14-m-sanity",
+    "answer": 1,
+    "confidence": "high",
+    "note": "E_el = 2.31e-19 J nm x (+1)(-1)/0.283 nm = -8.16e-19 J (checked in Python), so the magnitude is right, only the sign is wrong, and nm is the correct unit for this constant."
+  },
+  {
+    "id": "t1-2-transfer",
+    "answer": 1,
+    "confidence": "high",
+    "note": "Analyze step, confirmed on rendered TB PDF p.42 (printed p.8), though the book says the units show 'which equation(s) may be useful', not 'which conversions you need' as the prompt paraphrases."
+  },
+  {
+    "id": "m10-preview-excited",
+    "answer": "[He] 2p1",
+    "confidence": "high",
+    "note": "Li 2s -> 2p gives 1s2 2p1, but answer_format.species reads 'excited Na', which mismatches this lithium question and could make a grader expect [Ne] 3p1."
+  }
+]

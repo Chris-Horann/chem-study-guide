@@ -1,0 +1,1057 @@
+[
+ {
+  "id": "t2-3-attempt",
+  "module": "t2-3",
+  "label": "preview",
+  "prompt": "<p>Identify each element (symbol).</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "text",
+     "kind": "text",
+     "placeholder": "symbol",
+     "label": "(a) the halogen in period 3"
+    },
+    {
+     "type": "text",
+     "kind": "text",
+     "placeholder": "symbol",
+     "label": "(b) the alkaline earth metal in period 4"
+    },
+    {
+     "type": "text",
+     "kind": "text",
+     "placeholder": "symbol",
+     "label": "(c) the metalloid in group 14, period 3"
+    },
+    {
+     "type": "text",
+     "kind": "text",
+     "placeholder": "symbol",
+     "label": "(d) the noble gas in period 2"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t2-3-p1",
+  "module": "t2-3",
+  "label": "preview",
+  "prompt": "<p>Classify each element.</p>",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] Mg",
+    "[1] S",
+    "[2] Ge",
+    "[3] Br"
+   ],
+   "options": [
+    "m: metal",
+    "n: nonmetal",
+    "md: metalloid"
+   ]
+  }
+ },
+ {
+  "id": "t2-3-p2",
+  "module": "t2-3",
+  "label": "preview",
+  "prompt": "<p>Predict the charge of the most common monatomic ion of each element (textbook Table 2.2 pattern).</p>",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] Ba",
+    "[1] Se",
+    "[2] Ga",
+    "[3] I"
+   ],
+   "options": [
+    "1+: 1+",
+    "2+: 2+",
+    "3+: 3+",
+    "1-: 1−",
+    "2-: 2−",
+    "3-: 3−"
+   ]
+  }
+ },
+ {
+  "id": "t2-3-p3",
+  "module": "t2-3",
+  "label": "preview",
+  "prompt": "<p>Match each element to its group name.</p>",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] K",
+    "[1] Sr",
+    "[2] O",
+    "[3] Cl",
+    "[4] Kr"
+   ],
+   "options": [
+    "alk: alkali metal",
+    "ae: alkaline earth metal",
+    "ch: chalcogen",
+    "ha: halogen",
+    "ng: noble gas"
+   ]
+  }
+ },
+ {
+  "id": "t2-3-p4",
+  "module": "t2-3",
+  "label": "preview",
+  "prompt": "<p><span class='tag-conn'>Connects to Module 15</span> Write the formula of the ionic compound formed by strontium and iodine.</p>",
+  "answer_format": {
+   "type": "text",
+   "kind": "formula",
+   "placeholder": "e.g., MgCl2"
+  }
+ },
+ {
+  "id": "t2-3-transfer",
+  "module": "t2-3",
+  "label": "preview",
+  "prompt": "<p>Why did Mendeleev leave empty cells in his 1872 table?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] He ran out of room.",
+    "[1] To keep elements with similar properties in the same column, predicting elements not yet discovered",
+    "[2] Because those elements are radioactive",
+    "[3] Because atomic numbers were unknown"
+   ]
+  }
+ },
+ {
+  "id": "t2-3-m-recognize",
+  "module": "t2-3",
+  "label": "preview",
+  "prompt": "<p>Which groups hold the transition metals?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] 1–2",
+    "[1] 3–12",
+    "[2] 13–18",
+    "[3] the two bottom rows"
+   ]
+  }
+ },
+ {
+  "id": "t2-3-m-sanity",
+  "module": "t2-3",
+  "label": "preview",
+  "prompt": "<p>A classmate calls sodium “a nonmetal gas.” What's the correction?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Correct",
+    "[1] Sodium is an alkali metal: a shiny, soft solid that forms Na<sup>+</sup>.",
+    "[2] Sodium is a metalloid.",
+    "[3] Sodium is a noble gas."
+   ]
+  }
+ },
+ {
+  "id": "t2-4-attempt",
+  "module": "t2-4",
+  "label": "preview",
+  "prompt": "<p>Boron has two stable isotopes: <sup>10</sup>B, 10.0129 amu (19.9%), and <sup>11</sup>B, 11.0093 amu (80.1%). What is boron's average atomic mass?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t2-4-p1",
+  "module": "t2-4",
+  "label": "preview",
+  "prompt": "<p>Magnesium: <sup>24</sup>Mg 23.9850 amu (78.99%), <sup>25</sup>Mg 24.9858 amu (10.00%), <sup>26</sup>Mg 25.9826 amu (11.01%). Average atomic mass?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t2-4-p2",
+  "module": "t2-4",
+  "label": "preview",
+  "prompt": "<p>Gallium has two stable isotopes, <sup>69</sup>Ga (68.9256 amu) and <sup>71</sup>Ga (70.9247 amu), and an average atomic mass of 69.723 amu. What percent of gallium atoms are <sup>69</sup>Ga?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t2-4-p3",
+  "module": "t2-4",
+  "label": "preview",
+  "prompt": "<p>What is the molecular mass of water, H<sub>2</sub>O? (H 1.0079 amu, O 15.999 amu.)</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t2-4-p4",
+  "module": "t2-4",
+  "label": "preview",
+  "prompt": "<p>MgCl<sub>2</sub> is ionic. What is the mass of one formula unit? (Mg 24.305, Cl 35.453 amu.)</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t2-4-transfer",
+  "module": "t2-4",
+  "label": "preview",
+  "prompt": "<p>Copper has isotopes of mass 62.93 amu and 64.93 amu, and an average atomic mass of 63.55 amu. What percent of copper atoms are the lighter isotope?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t2-4-m-recognize",
+  "module": "t2-4",
+  "label": "preview",
+  "prompt": "<p>“The isotopes' masses and percent abundances are given; find the element's atomic mass.” What operation?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] simple average",
+    "[1] abundance-weighted average",
+    "[2] the sum of the masses",
+    "[3] the most abundant isotope's mass"
+   ]
+  }
+ },
+ {
+  "id": "t2-4-m-sanity",
+  "module": "t2-4",
+  "label": "preview",
+  "prompt": "<p>A student calculates that an element with isotopes of 50.0 and 52.0 amu has an average atomic mass of 53.1 amu. Possible?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Yes",
+    "[1] No: the average must lie between 50.0 and 52.0 amu.",
+    "[2] Yes, if one isotope is radioactive.",
+    "[3] Only if the abundances add to more than 100%."
+   ]
+  }
+ },
+ {
+  "id": "t2-5-attempt",
+  "module": "t2-5",
+  "label": "preview",
+  "prompt": "<p>How many (a) moles and (b) molecules of water are in 10.0 g of water? (Molar mass of H<sub>2</sub>O = 18.015 g/mol; N<sub>A</sub> = 6.022 × 10<sup>23</sup> mol<sup>−1</sup>.)</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "unit_hint": "answer carries a unit",
+     "label": "(a) moles"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) molecules"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t2-5-p1",
+  "module": "t2-5",
+  "label": "preview",
+  "prompt": "<p>What is the molar mass of ammonia, NH<sub>3</sub>? (N 14.007, H 1.0079 g/mol.)</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t2-5-p2",
+  "module": "t2-5",
+  "label": "preview",
+  "prompt": "<p>What is the mass of 0.250 mol of NaCl? (Na 22.990, Cl 35.453 g/mol.)</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t2-5-p3",
+  "module": "t2-5",
+  "label": "preview",
+  "prompt": "<p>How many atoms are in 5.00 g of aluminum? (Al 26.982 g/mol.)</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t2-5-p4",
+  "module": "t2-5",
+  "label": "preview",
+  "prompt": "<p>What is the mass in grams of one molecule of methane, CH<sub>4</sub>? (C 12.011, H 1.0079 g/mol.)</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t2-5-p5",
+  "module": "t2-5",
+  "label": "preview",
+  "prompt": "<p>How many moles of oxygen <em>atoms</em> are in 2.00 mol of glucose, C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t2-5-transfer",
+  "module": "t2-5",
+  "label": "preview",
+  "prompt": "<p>How many copper atoms are in a 1.00 cm<sup>3</sup> cube of copper? (Density 8.96 g/cm<sup>3</sup>; Cu 63.546 g/mol.)</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t2-5-m-recognize",
+  "module": "t2-5",
+  "label": "preview",
+  "prompt": "<p>You have a number of molecules and want grams. What is the chain?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] molecules × molar mass",
+    "[1] molecules ÷ N<sub>A</sub>, then × molar mass",
+    "[2] molecules × N<sub>A</sub> ÷ molar mass",
+    "[3] molecules ÷ molar mass"
+   ]
+  }
+ },
+ {
+  "id": "t2-5-m-sanity",
+  "module": "t2-5",
+  "label": "preview",
+  "prompt": "<p>A student finds that 1.0 g of carbon contains 5.0 × 10<sup>40</sup> atoms. Reasonable?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Yes: atoms are tiny.",
+    "[1] No: 1.0 g of C is about 0.083 mol, about 5 × 10<sup>22</sup> atoms.",
+    "[2] Yes, carbon is light.",
+    "[3] No: it should be less than 1 atom."
+   ]
+  }
+ },
+ {
+  "id": "t2-6-attempt",
+  "module": "t2-6",
+  "label": "preview",
+  "prompt": "<p>An unknown hydrocarbon's mass spectrum has its molecular-ion peak (M<sup>+</sup>) at m/z = 58. Which molecular formula fits?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] C<sub>4</sub>H<sub>10</sub> (58.12 amu)",
+    "[1] C<sub>3</sub>H<sub>8</sub> (44.10 amu)",
+    "[2] C<sub>4</sub>H<sub>8</sub> (56.11 amu)",
+    "[3] C<sub>5</sub>H<sub>12</sub> (72.15 amu)"
+   ]
+  }
+ },
+ {
+  "id": "t2-6-p1",
+  "module": "t2-6",
+  "label": "preview",
+  "prompt": "<p>In a mass spectrometer, how does a molecule usually become a molecular ion M<sup>+</sup>?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] It gains a proton.",
+    "[1] A high-energy electron knocks one of its electrons out.",
+    "[2] It splits in half.",
+    "[3] It absorbs visible light."
+   ]
+  }
+ },
+ {
+  "id": "t2-6-p2",
+  "module": "t2-6",
+  "label": "preview",
+  "prompt": "<p>At what m/z would the molecular-ion peak of ethanol, C<sub>2</sub>H<sub>6</sub>O, appear?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t2-6-p3",
+  "module": "t2-6",
+  "label": "preview",
+  "prompt": "<p>The mass spectrum of HBr shows two molecular-ion peaks of nearly equal height, at m/z = 80 and 82. Why?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] HBr breaks into two fragments.",
+    "[1] Bromine's two isotopes, <sup>79</sup>Br and <sup>81</sup>Br, are nearly equally abundant.",
+    "[2] One peak is HBr<sup>2+</sup>.",
+    "[3] Hydrogen has two isotopes."
+   ]
+  }
+ },
+ {
+  "id": "t2-6-p4",
+  "module": "t2-6",
+  "label": "preview",
+  "prompt": "<p>Why can the mass of an ion be read directly off the m/z axis?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Because z is usually 1",
+    "[1] Because m/z doesn't depend on charge",
+    "[2] Because ions have no mass",
+    "[3] Because electrons are heavy"
+   ]
+  }
+ },
+ {
+  "id": "t2-6-transfer",
+  "module": "t2-6",
+  "label": "preview",
+  "prompt": "<p>Chlorine is about 75.76% <sup>35</sup>Cl and 24.24% <sup>37</sup>Cl. In the mass spectrum of Cl<sub>2</sub>, what is the ratio of the height of the m/z 72 peak (<sup>35</sup>Cl<sup>37</sup>Cl) to the m/z 70 peak (<sup>35</sup>Cl<sub>2</sub>)?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t2-6-m-recognize",
+  "module": "t2-6",
+  "label": "preview",
+  "prompt": "<p>Aston's positive-ray analyzer (§2.2) was the forerunner of which instrument?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] the cathode-ray tube",
+    "[1] the mass spectrometer",
+    "[2] the spectroscope",
+    "[3] the STM"
+   ]
+  }
+ },
+ {
+  "id": "t2-6-m-sanity",
+  "module": "t2-6",
+  "label": "preview",
+  "prompt": "<p>A student claims methane (CH<sub>4</sub>) shows its molecular-ion peak at m/z = 18. Plausible?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Yes",
+    "[1] No: M<sup>+</sup> for CH<sub>4</sub> is at m/z 16; a peak at 18 suggests water.",
+    "[2] Yes, because of isotopes",
+    "[3] No: at 12"
+   ]
+  }
+ },
+ {
+  "id": "m3-preview-maxwell",
+  "module": "m3",
+  "label": "preview",
+  "prompt": "<p>According to the textbook's picture of electromagnetic radiation (Maxwell's theory), what is oscillating as a light wave travels?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] air molecules",
+    "[1] an electric field and a magnetic field, at right angles to each other",
+    "[2] electrons inside the light beam",
+    "[3] nothing: light is only particles"
+   ]
+  }
+ },
+ {
+  "id": "m10-preview-excited",
+  "module": "m10",
+  "label": "preview",
+  "prompt": "<p>A flame excites sodium atoms. Sodium's ground state is [Ne]3s<sup>1</sup>. Write the configuration of its <em>first excited state</em>, where the 3s electron has moved up to the next-lowest subshell.</p>",
+  "answer_format": {
+   "type": "config",
+   "species": "excited Na"
+  }
+ },
+ {
+  "id": "m10-preview-exception",
+  "module": "m10",
+  "label": "preview",
+  "prompt": "<p>By the lecture's rules, chromium would be [Ar]4s<sup>2</sup>3d<sup>4</sup>. What does the textbook report as chromium's actual ground-state configuration, and what does this course do with such exceptions?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] [Ar]3d<sup>5</sup>4s<sup>1</sup>; the course ignores exceptions (Day 7 p.6).",
+    "[1] [Ar]3d<sup>6</sup>; the course requires memorizing it.",
+    "[2] [Ar]4s<sup>2</sup>3d<sup>4</sup>; there's no exception.",
+    "[3] [Kr]; the course ignores it."
+   ]
+  }
+ },
+ {
+  "id": "m14-preview-covalent",
+  "module": "m14",
+  "label": "preview",
+  "prompt": "<p>In the textbook's energy curve for two H atoms (Fig. 4.2), the energy is lowest, −436 kJ/mol, at 74 pm. What do those two numbers represent?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] 74 pm is the H–H bond length; 436 kJ/mol is the bond energy (the energy to break a mole of H–H bonds).",
+    "[1] 74 pm is the radius of an H atom; 436 kJ/mol is its ionization energy.",
+    "[2] 74 pm is where the atoms repel most.",
+    "[3] 436 kJ/mol is the lattice energy of H<sub>2</sub>."
+   ]
+  }
+ },
+ {
+  "id": "t3-5-attempt",
+  "module": "t3-5",
+  "label": "preview",
+  "prompt": "<p>An electron is confined to a region about the size of an atom, Δx = 1.0 × 10<sup>−10</sup> m. What is the minimum uncertainty in its speed?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit (type the unit too)"
+  }
+ },
+ {
+  "id": "t3-5-p1",
+  "module": "t3-5",
+  "label": "preview",
+  "prompt": "<p>A proton (m = 1.673 × 10<sup>−27</sup> kg) is confined within a nucleus, Δx = 1.0 × 10<sup>−15</sup> m. Minimum speed uncertainty?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t3-5-p2",
+  "module": "t3-5",
+  "label": "preview",
+  "prompt": "<p>If you pin down a particle's position twice as precisely (Δx halved), what happens to the minimum uncertainty in its speed?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] It halves.",
+    "[1] It doubles.",
+    "[2] It stays the same.",
+    "[3] It becomes zero."
+   ]
+  }
+ },
+ {
+  "id": "t3-5-p3",
+  "module": "t3-5",
+  "label": "preview",
+  "prompt": "<p>A 57.0 g tennis ball's position is known to within 1.0 μm (1.0 × 10<sup>−6</sup> m). Minimum speed uncertainty?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t3-5-p4",
+  "module": "t3-5",
+  "label": "preview",
+  "prompt": "<p>In Heisenberg's thought experiment, why can't we simply watch an electron move around the nucleus?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Electrons are invisible because they're negative.",
+    "[1] Seeing something so small needs very short-wavelength light (γ rays), whose high-energy photons knock the electron off course.",
+    "[2] Electrons move faster than light.",
+    "[3] Microscopes can't be built."
+   ]
+  }
+ },
+ {
+  "id": "t3-5-transfer",
+  "module": "t3-5",
+  "label": "preview",
+  "prompt": "<p>An experiment measures an electron's speed to within 1.0 × 10<sup>5</sup> m/s. What is the smallest possible uncertainty in its position? Compare it with an atom's size (~10<sup>−10</sup> m).</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t3-5-m-recognize",
+  "module": "t3-5",
+  "label": "preview",
+  "prompt": "<p>“Given Δx for a particle, find the minimum Δu.” Which relationship?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] λ = h/(mu)",
+    "[1] Δx · mΔu ≥ h/(4π)",
+    "[2] E = hν",
+    "[3] KE = ½mu²"
+   ]
+  }
+ },
+ {
+  "id": "t3-5-m-sanity",
+  "module": "t3-5",
+  "label": "preview",
+  "prompt": "<p>A student claims a perfect instrument could measure an electron's position and speed exactly, at the same time. What's wrong?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Nothing, with good enough technology",
+    "[1] Δx · mΔu can never be less than h/(4π), so both can't be zero at once.",
+    "[2] Electrons have no position.",
+    "[3] Speed can be exact, but position is never measurable."
+   ]
+  }
+ },
+ {
+  "id": "t3-11-attempt",
+  "module": "t3-11",
+  "label": "preview",
+  "prompt": "<p>A photoelectron spectrum shows three peaks: 84.0 MJ/mol (relative height 2), 4.68 MJ/mol (height 2), and 2.08 MJ/mol (height 6). (a) How many electrons does the atom have? (b) Which element is it (symbol)?</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) electrons"
+    },
+    {
+     "type": "text",
+     "kind": "text",
+     "placeholder": "symbol",
+     "label": "(b) element"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t3-11-p1",
+  "module": "t3-11",
+  "label": "preview",
+  "prompt": "<p>In lithium's spectrum (peaks at 6.26 and 0.52 MJ/mol), why is the 6.26 MJ/mol peak twice as tall?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] It is the 1s subshell, with 2 electrons; the 0.52 peak is the single 2s electron.",
+    "[1] Higher energy always gives taller peaks.",
+    "[2] It is two overlapping peaks.",
+    "[3] The 2s electron is shielded."
+   ]
+  }
+ },
+ {
+  "id": "t3-11-p2",
+  "module": "t3-11",
+  "label": "preview",
+  "prompt": "<p>Which of these elements has a PES peak at the largest binding energy?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Na",
+    "[1] Mg",
+    "[2] Al",
+    "[3] Si"
+   ]
+  }
+ },
+ {
+  "id": "t3-11-p3",
+  "module": "t3-11",
+  "label": "preview",
+  "prompt": "<p><span class='tag-conn'>Connects to Module 13</span> Lithium's 2s binding energy is 0.52 MJ/mol. Convert it to kJ/mol and compare with Li's IE<sub>1</sub> on Day 7 p.9.</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "t3-11-p4",
+  "module": "t3-11",
+  "label": "preview",
+  "prompt": "<p>The x-axis of a photoelectron spectrum is drawn with binding energy <em>decreasing</em> from left to right. Moving left to right, the electrons are…</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] closer to the nucleus",
+    "[1] farther from the nucleus (outer subshells)",
+    "[2] heavier",
+    "[3] unpaired"
+   ]
+  }
+ },
+ {
+  "id": "t3-11-transfer",
+  "module": "t3-11",
+  "label": "preview",
+  "prompt": "<p>A spectrum has five peaks with relative heights 2 : 2 : 6 : 2 : 6 (from largest to smallest binding energy). Identify the element (symbol).</p>",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "symbol"
+  }
+ },
+ {
+  "id": "t3-11-m-recognize",
+  "module": "t3-11",
+  "label": "preview",
+  "prompt": "<p>Which relationship from lecture is PES built on?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] λ = h/(mu)",
+    "[1] KE = hν − φ (energy in excess of the binding energy becomes KE)",
+    "[2] E<sub>el</sub> = 2.31 × 10<sup>−19</sup> J·nm (Q<sub>1</sub>Q<sub>2</sub>/d)",
+    "[3] Balmer's formula"
+   ]
+  }
+ },
+ {
+  "id": "t3-11-m-sanity",
+  "module": "t3-11",
+  "label": "preview",
+  "prompt": "<p>A student labels one peak “3s, height 3.” What's wrong?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Nothing",
+    "[1] An s subshell holds at most 2 electrons (Pauli), so no s peak can have height 3.",
+    "[2] 3s peaks are always the largest.",
+    "[3] s peaks can't appear in PES."
+   ]
+  }
+ },
+ {
+  "id": "t4-2-attempt",
+  "module": "t4-2",
+  "label": "preview",
+  "prompt": "<p>Consider the H–F bond (χ: H 2.1, F 4.0; textbook Fig. 4.5). (a) What is Δχ? (b) Classify the bond. (c) Which atom carries the partial negative charge (δ−)?</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) Δχ"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] nonpolar covalent",
+      "[1] polar covalent",
+      "[2] ionic"
+     ],
+     "label": "(b) bond type"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] H",
+      "[1] F"
+     ],
+     "label": "(c) δ− atom"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t4-2-p1",
+  "module": "t4-2",
+  "label": "preview",
+  "prompt": "<p>Rank these bonds from most polar (1) to least polar (4): C–H, N–H, O–H, F–H.</p>",
+  "answer_format": {
+   "type": "order",
+   "direction": "most polar (1) to least polar (4)",
+   "items": [
+    "CH: C–H",
+    "NH: N–H",
+    "OH: O–H",
+    "FH: F–H"
+   ]
+  }
+ },
+ {
+  "id": "t4-2-p2",
+  "module": "t4-2",
+  "label": "preview",
+  "prompt": "<p>Classify each bond using Δχ and the textbook's guidelines.</p>",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] Cl–Cl",
+    "[1] C–O",
+    "[2] K–Cl",
+    "[3] P–H"
+   ],
+   "options": [
+    "np: nonpolar covalent",
+    "pc: polar covalent",
+    "io: ionic"
+   ]
+  }
+ },
+ {
+  "id": "t4-2-p3",
+  "module": "t4-2",
+  "label": "preview",
+  "prompt": "<p>Which element is the most electronegative?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] N",
+    "[1] P",
+    "[2] O",
+    "[3] S"
+   ]
+  }
+ },
+ {
+  "id": "t4-2-p4",
+  "module": "t4-2",
+  "label": "preview",
+  "prompt": "<p>In a C–Cl bond, which atom is δ+?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] C",
+    "[1] Cl",
+    "[2] neither",
+    "[3] both"
+   ]
+  }
+ },
+ {
+  "id": "t4-2-transfer",
+  "module": "t4-2",
+  "label": "preview",
+  "prompt": "<p><span class='tag-conn'>Connects to Module 14</span> Calculate Δχ for Mg and O. Is that consistent with the lattice energy of MgO on Day 7 p.17?</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "Δχ"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] Yes: Δχ ≥ 2.0 means ionic, and MgO has a large (very negative) lattice energy.",
+      "[1] No: MgO should be covalent."
+     ],
+     "label": "consistent?"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t4-2-m-recognize",
+  "module": "t4-2",
+  "label": "preview",
+  "prompt": "<p>“Is the bond between these two atoms polar?” What do you calculate?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] the sum of their atomic masses",
+    "[1] Δχ, their electronegativity difference",
+    "[2] E<sub>el</sub>",
+    "[3] their IE₁ difference"
+   ]
+  }
+ },
+ {
+  "id": "t4-2-m-sanity",
+  "module": "t4-2",
+  "label": "preview",
+  "prompt": "<p>A student says the Br–Br bond is polar with Δχ = 2.8. What's wrong?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Nothing",
+    "[1] Δχ for two identical atoms is 0: Br–Br is nonpolar covalent (2.8 is Br's own χ).",
+    "[2] Br–Br is ionic.",
+    "[3] χ(Br) is 4.0."
+   ]
+  }
+ },
+ {
+  "id": "x21",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "<p>A 5.20 cm<sup>3</sup> sample of a liquid has a mass of 45.6 g. What is its density?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "x22",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "<p>A calculation multiplies 3.14159 by the measured value 2.1 cm. How should the result be reported?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "x23",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "<p>How many inches is 250.0 cm? (1 in = 2.54 cm exactly.)</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "x24",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "<p>How many molecules are in 0.0500 mol of CO<sub>2</sub>?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "x25",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "<p>How many neutrons are in one atom of <sup>127</sup>I? (I: Z = 53.)</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "x26",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "<p>An element is 60.0% of an isotope with mass 69.0 amu and 40.0% of an isotope with mass 71.0 amu. What is its average atomic mass?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "x27",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "<p>Classify the N–O bond (χ: N 3.0, O 3.5).</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] nonpolar covalent",
+    "[1] polar covalent",
+    "[2] ionic",
+    "[3] metallic"
+   ]
+  }
+ },
+ {
+  "id": "x28",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "<p>What is the kinetic energy of a 1.50 × 10<sup>3</sup> kg car moving at 20.0 m/s?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "x29",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "<p>Five repeated measurements: 4.8, 5.2, 5.0, 5.1, and 4.9 mL. What is the standard deviation?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "x30",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "<p>Water vapor forms droplets on a cold glass. Name the change, and say whether energy is absorbed or released.</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] condensation; released",
+    "[1] condensation; absorbed",
+    "[2] deposition; released",
+    "[3] vaporization; absorbed"
+   ]
+  }
+ },
+ {
+  "id": "x31",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "<p>An electron's position is known to within 2.0 × 10<sup>−10</sup> m. What is the minimum uncertainty in its speed?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "x32",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "<p>A photoelectron spectrum has three peaks with relative heights 2, 2, and 3. Which element is it?</p>",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "symbol"
+  }
+ },
+ {
+  "id": "x33",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "<p>Classify pure table salt, NaCl.</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] element",
+    "[1] compound",
+    "[2] homogeneous mixture",
+    "[3] heterogeneous mixture"
+   ]
+  }
+ },
+ {
+  "id": "x34",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "<p>What is the molar mass of the ionic compound formed by sodium and oxygen? (Na 22.990, O 15.999 g/mol.)</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "x35",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "<p>A compound's mass spectrum has its highest-mass prominent peak at m/z = 44. Which formula fits?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] CO<sub>2</sub>",
+    "[1] H<sub>2</sub>O",
+    "[2] CH<sub>4</sub>",
+    "[3] N<sub>2</sub>"
+   ]
+  }
+ }
+]

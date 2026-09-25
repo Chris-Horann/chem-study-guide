@@ -1,0 +1,16 @@
+# Course source files aren't ours to publish: the textbook, the professor's lecture slides, and any future
+# homework, notes, review sheets, or images, plus the page renders and text extracts made from them.
+materials/lectures/
+materials/textbook/
+materials/homework/
+materials/notes/
+materials/review/
+materials/images/
+*.pdf
+
+# Machine-local settings and caches
+.claude/settings.local.json
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.playwright-mcp/

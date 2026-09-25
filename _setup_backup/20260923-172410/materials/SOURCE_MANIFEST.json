@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "_about": "Maintained by tools/source_manifest.py (mark/forget). Do not hand-edit entries. Keys are project-relative POSIX paths under materials/. Each entry: category, sha256, size, status (ingested|partial|mapped|skipped), processed_at, pages_done, page_count, page_hashes (non-textbook PDFs), render_dir, indexes, notes.",
+  "sources": {}
+}

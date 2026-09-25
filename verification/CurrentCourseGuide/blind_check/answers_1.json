@@ -1,0 +1,611 @@
+[
+ {
+  "id": "m1-attempt",
+  "answer": {
+   "value": 2.0,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "2.664/1.332 = 2.000 (4 s.f.), a 2:1 whole-number ratio (CO vs CO2), Law of Multiple Proportions."
+ },
+ {
+  "id": "m1-p1",
+  "answer": {
+   "value": 26.785714285714285,
+   "unit": "g"
+  },
+  "confidence": "high",
+  "note": "3.00 g H / 0.112 = 26.8 g water (3 s.f.)."
+ },
+ {
+  "id": "m1-p2",
+  "answer": {
+   "value": 1.5,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "1.50/1.00 = 1.50, i.e. 3:2 (SO2 vs SO3); report 1.50."
+ },
+ {
+  "id": "m1-p3",
+  "answer": {
+   "value": 4.4,
+   "unit": "g"
+  },
+  "confidence": "high",
+  "note": "Conservation of mass: 10.0 - 5.60 = 4.4 g; the subtraction rule allows one decimal place, so a key of 4.40 g would overstate precision."
+ },
+ {
+  "id": "m1-p4",
+  "answer": 2,
+  "confidence": "high",
+  "note": "Small whole-number combining ratios of atoms give whole-number mass ratios."
+ },
+ {
+  "id": "m1-transfer",
+  "answer": {
+   "value": 3.9929947460595447,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "2.28/0.571 = 3.99, about 4:1; I:II:III = 1:2:4 (N2O, NO, NO2), so all obey multiple proportions; the numeric-only format can't capture the yes/no part."
+ },
+ {
+  "id": "m1-m-recognize",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Same compound, same mass percent from any source = constant composition."
+ },
+ {
+  "id": "m1-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Pure water is always 11.2% H, so 20% means impure sample or bad measurement."
+ },
+ {
+  "id": "m2-attempt",
+  "answer": {
+   "value": 1836.1588100185934,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "1.00728/5.48580e-4 = 1836.16, about 1836 electrons (the kg masses give 1836.15)."
+ },
+ {
+  "id": "m2-p1",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Attraction to the + plate means negative charge."
+ },
+ {
+  "id": "m2-p2",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Diffuse positive charge cannot turn an alpha particle back; large-angle bounces need a tiny dense nucleus."
+ },
+ {
+  "id": "m2-p3",
+  "answer": {
+   "value": 288.0,
+   "unit": "m"
+  },
+  "confidence": "high",
+  "note": "Scale 1.0 cm/0.01 pm: 288/0.01 x 1.0 cm = 28,800 cm = 288 m; the 1-s.f. 0.01 pm makes this really ~3 x 10^2 m."
+ },
+ {
+  "id": "m2-p4",
+  "answer": [
+   {
+    "value": 6,
+    "unit": ""
+   },
+   {
+    "value": 7,
+    "unit": ""
+   },
+   {
+    "value": 6,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "Z = 6 protons, 13 - 6 = 7 neutrons, 6 electrons in the neutral atom."
+ },
+ {
+  "id": "m2-transfer",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Bending toward the - plate means positive; harder magnetic deflection at the same speed means larger m/q."
+ },
+ {
+  "id": "m2-m-match",
+  "answer": {
+   "0": "e",
+   "1": "q",
+   "2": "n"
+  },
+  "confidence": "high",
+  "note": "Thomson = electron, Millikan = charge (mass followed via Thomson's e/m, as the slide compresses), Rutherford = nucleus."
+ },
+ {
+  "id": "m2-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Electrons are ~1/1836 of a proton's mass (~1/7300 of an alpha), too light to reverse an alpha particle."
+ },
+ {
+  "id": "m3-attempt",
+  "answer": [
+   {
+    "value": 565660377358490.5,
+    "unit": "s^-1"
+   },
+   {
+    "value": 3.748065660377358e-19,
+    "unit": "J"
+   }
+  ],
+  "confidence": "high",
+  "note": "nu = c/lambda = 5.66 x 10^14 s^-1; E = h nu = 3.75 x 10^-19 J (3 s.f.)."
+ },
+ {
+  "id": "m3-p1",
+  "answer": [
+   "gam",
+   "uv",
+   "red",
+   "ir",
+   "mw"
+  ],
+  "confidence": "high",
+  "note": "E is proportional to 1/lambda: gamma > UV > red > IR > microwave."
+ },
+ {
+  "id": "m3-p2",
+  "answer": {
+   "value": 3.0436548223350255,
+   "unit": "m"
+  },
+  "confidence": "high",
+  "note": "lambda = 2.998e8/98.5e6 = 3.04 m (3 s.f.)."
+ },
+ {
+  "id": "m3-p3",
+  "answer": {
+   "value": 450.4478004535147,
+   "unit": "nm"
+  },
+  "confidence": "high",
+  "note": "lambda = hc/E = 450. nm (3 s.f.), blue (blue-violet) light."
+ },
+ {
+  "id": "m3-p4",
+  "answer": 1,
+  "confidence": "high",
+  "note": "nu = c/lambda halves, and E = h nu halves with it."
+ },
+ {
+  "id": "m3-transfer",
+  "answer": {
+   "value": 489469.387755102,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "E_UV/E_mw = c/(lambda nu) = 7.95e-19 J / 1.62e-24 J = 4.89 x 10^5 photons (3 s.f.)."
+ },
+ {
+  "id": "m3-m-recognize",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Photon energy gives lambda via E = hc/lambda; then read the color off the spectrum."
+ },
+ {
+  "id": "m3-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "2.998e8/530 = 5.66e5 reproduces the error exactly; the correct value with 5.30e-7 m is 5.66e14 Hz."
+ },
+ {
+  "id": "m4-attempt",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Dark lines on a continuous spectrum at the Balmer wavelengths mean absorption by hydrogen."
+ },
+ {
+  "id": "m4-p1",
+  "answer": {
+   "0": "em",
+   "1": "ab",
+   "2": "co"
+  },
+  "confidence": "high",
+  "note": "Bright lines = emission, rainbow with gaps = absorption, full rainbow = continuous."
+ },
+ {
+  "id": "m4-p2",
+  "answer": 1,
+  "confidence": "high",
+  "note": "The lines were measurable, but no theory explained why each element has specific wavelengths."
+ },
+ {
+  "id": "m4-p3",
+  "answer": 0,
+  "confidence": "high",
+  "note": "An element absorbs at the same wavelengths it emits (Day 3 p.10 overlay)."
+ },
+ {
+  "id": "m4-p4",
+  "answer": {
+   "value": 4.08739670781893e-19,
+   "unit": "J"
+  },
+  "confidence": "high",
+  "note": "E = hc/lambda = 4.09 x 10^-19 J (3 s.f.)."
+ },
+ {
+  "id": "m4-transfer",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Matching lines identify neon; strictly, cold gas absorbs only from the ground state, so its absorption lines are a subset of its emission lines."
+ },
+ {
+  "id": "m4-m-sanity",
+  "answer": 0,
+  "confidence": "high",
+  "note": "The sun emits a continuous spectrum; atoms in its atmosphere absorb specific wavelengths."
+ },
+ {
+  "id": "m5-attempt",
+  "answer": {
+   "value": 1.8494309090909095e-19,
+   "unit": "J"
+  },
+  "confidence": "high",
+  "note": "E_photon = hc/lambda = 9.03e-19 J > phi, so yes, ejected; KE = 9.03e-19 - 7.18e-19 = 1.85 x 10^-19 J (3 s.f.)."
+ },
+ {
+  "id": "m5-p1",
+  "answer": [
+   {
+    "value": 553878659824932.1,
+    "unit": "s^-1"
+   },
+   {
+    "value": 541.27378746594,
+    "unit": "nm"
+   }
+  ],
+  "confidence": "high",
+  "note": "nu0 = phi/h = 5.54 x 10^14 s^-1; lambda_max = hc/phi = 541 nm (3 s.f.)."
+ },
+ {
+  "id": "m5-p2",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Brightness adds photons, not energy per photon, so each photon is still below phi."
+ },
+ {
+  "id": "m5-p3",
+  "answer": {
+   "value": 3.4361870000000002e-19,
+   "unit": "J"
+  },
+  "confidence": "high",
+  "note": "phi = hc/lambda - KE = 4.97e-19 - 1.53e-19 = 3.44 x 10^-19 J (3 s.f.)."
+ },
+ {
+  "id": "m5-p4",
+  "answer": 0,
+  "confidence": "high",
+  "note": "The x-intercept is nu0, so shifting right means larger nu0 and larger phi = h nu0; the slope h is the same."
+ },
+ {
+  "id": "m5-p5",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Hotter blackbodies peak at shorter wavelength, so blue-white is hotter."
+ },
+ {
+  "id": "m5-transfer",
+  "answer": {
+   "value": 1103.597111111111,
+   "unit": "nm"
+  },
+  "confidence": "high",
+  "note": "lambda_max = hc/E = 1.10 x 10^3 nm (3 s.f.), in the (near) infrared."
+ },
+ {
+  "id": "m5-m-recognize",
+  "answer": 1,
+  "confidence": "high",
+  "note": "An intensity-independent threshold frequency shows energy arrives per photon, E = h nu."
+ },
+ {
+  "id": "m5-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "KE cannot be negative; h nu < phi means no electron is ejected."
+ },
+ {
+  "id": "m6-attempt",
+  "answer": {
+   "value": 486.43399,
+   "unit": "nm"
+  },
+  "confidence": "high",
+  "note": "Bohr dE = -4.084e-19 J gives lambda = hc/|dE| = 486 nm (3 s.f.); Balmer gives 486.1 and Rydberg 486.0, all 486 nm."
+ },
+ {
+  "id": "m6-p1",
+  "answer": {
+   "value": 434.31606,
+   "unit": "nm"
+  },
+  "confidence": "high",
+  "note": "Bohr dE = -4.574e-19 J gives 434 nm (3 s.f.); Balmer 434.0 and Rydberg 433.9 agree at 3 s.f."
+ },
+ {
+  "id": "m6-p2",
+  "answer": {
+   "value": 102.6071694214876,
+   "unit": "nm"
+  },
+  "confidence": "high",
+  "note": "dE = +1.936e-18 J, lambda = 103 nm (102.6 at 4 s.f.), UV/Lyman; Rydberg gives 102.5 nm."
+ },
+ {
+  "id": "m6-p3",
+  "answer": {
+   "value": 327.8979,
+   "unit": "kJ/mol"
+  },
+  "confidence": "high",
+  "note": "2.178e-18 J/4 = 5.445e-19 J per atom x N_A = 327.9 kJ/mol (4 s.f.), about 328 kJ/mol."
+ },
+ {
+  "id": "m6-p4",
+  "answer": 2,
+  "confidence": "high",
+  "note": "4->3 has the smallest gap (1/9 - 1/16), so the longest wavelength (1876 nm)."
+ },
+ {
+  "id": "m6-p5",
+  "answer": 1,
+  "confidence": "high",
+  "note": "The Bohr model holds only for one-electron atoms; correlated electrons break it (Day 4 p.3)."
+ },
+ {
+  "id": "m6-transfer",
+  "answer": {
+   "value": 5,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "hc/lambda = 1.550e-19 J; 1/n^2 = 1/9 - 0.0711 = 0.0400, so n = 5.00, i.e. n = 5 (Paschen)."
+ },
+ {
+  "id": "m6-m-recognize",
+  "answer": 1,
+  "confidence": "high",
+  "note": "The Bohr dE for 2->4 absorption, then lambda = hc/dE."
+ },
+ {
+  "id": "m6-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "3->2 is 657 nm = 6.57e-7 m (red); 6.57e-9 m is off by 100."
+ },
+ {
+  "id": "m7-attempt",
+  "answer": {
+   "value": 1.7981004070556309e-10,
+   "unit": "m"
+  },
+  "confidence": "high",
+  "note": "lambda = h/(mu) = 1.80 x 10^-10 m (0.180 nm), 3 s.f."
+ },
+ {
+  "id": "m7-p1",
+  "answer": {
+   "value": 7.274124492260402e-10,
+   "unit": "m"
+  },
+  "confidence": "high",
+  "note": "lambda = 6.626e-34/(9.109e-31 x 1.00e6) = 7.27 x 10^-10 m (3 s.f.)."
+ },
+ {
+  "id": "m7-p2",
+  "answer": {
+   "value": 7274124.492260402,
+   "unit": "m/s"
+  },
+  "confidence": "high",
+  "note": "u = h/(m lambda) with lambda = 1.00e-10 m gives 7.27 x 10^6 m/s (3 s.f.; m_e = 9.109e-31 kg)."
+ },
+ {
+  "id": "m7-p3",
+  "answer": {
+   "value": 2.324912280701754e-34,
+   "unit": "m"
+  },
+  "confidence": "high",
+  "note": "m = 0.0570 kg, so lambda = 6.626e-34/(0.0570 x 50.0) = 2.32 x 10^-34 m (3 s.f.)."
+ },
+ {
+  "id": "m7-p4",
+  "answer": 0,
+  "confidence": "high",
+  "note": "At fixed speed lambda is proportional to 1/m, so the lightest (the electron) has the longest wavelength."
+ },
+ {
+  "id": "m7-p5",
+  "answer": 1,
+  "confidence": "high",
+  "note": "A standing wave closes on itself only for a whole number of wavelengths (Day 4 p.15-16)."
+ },
+ {
+  "id": "m7-transfer",
+  "answer": {
+   "value": 1836.1513077728669,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "Same lambda means same mu, so u_e/u_p = m_p/m_e = 1.67262e-27/9.10938e-31 = 1836."
+ },
+ {
+  "id": "m7-m-recognize",
+  "answer": 1,
+  "confidence": "high",
+  "note": "A massive particle with a given speed calls for the de Broglie lambda = h/(mu)."
+ },
+ {
+  "id": "m7-m-sanity",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Using 9.10938e-28 as kg makes m 1000x too big, so lambda comes out 1000x too small (1.80e-13 m); km/s would give 1.8e-7 m instead."
+ },
+ {
+  "id": "m8-attempt",
+  "answer": [
+   {
+    "value": 16,
+    "unit": ""
+   },
+   {
+    "value": 32,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "n^2 = 16 orbitals (1 + 3 + 5 + 7); 2n^2 = 32 electrons."
+ },
+ {
+  "id": "m8-p1",
+  "answer": 0,
+  "confidence": "high",
+  "note": "(2,1,-1,+1/2) is valid; the others fail l <= n-1, |m_l| <= l, or m_s = +/-1/2."
+ },
+ {
+  "id": "m8-p2",
+  "answer": {
+   "value": 14,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "f means l = 3: 7 orbitals x 2 = 14 electrons."
+ },
+ {
+  "id": "m8-p3",
+  "answer": "4d",
+  "confidence": "high",
+  "note": "l = 2 is d, so n = 4, l = 2 is 4d."
+ },
+ {
+  "id": "m8-p4",
+  "answer": 2,
+  "confidence": "high",
+  "note": "m_l sets orientation (Day 5 p.13)."
+ },
+ {
+  "id": "m8-p5",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Born: |Psi|^2 is the probability density (Day 5 p.8)."
+ },
+ {
+  "id": "m8-transfer",
+  "answer": {
+   "value": 9,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "3 p orbitals x 3 allowed m_s values = 9 electrons."
+ },
+ {
+  "id": "m8-m-recognize",
+  "answer": 2,
+  "confidence": "high",
+  "note": "Identical sets of four quantum numbers are forbidden by Pauli, so no."
+ },
+ {
+  "id": "m8-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "For n = 2, l is 0 or 1 only, so no 2d exists."
+ },
+ {
+  "id": "m9-attempt",
+  "answer": 2,
+  "confidence": "high",
+  "note": "psi^2 peaks at r = 0, while 4 pi r^2 psi^2 peaks at 53 pm (Day 5 p.17)."
+ },
+ {
+  "id": "m9-p1",
+  "answer": {
+   "value": 2,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "3s radial distribution has two zeros (~100 and ~370 pm)."
+ },
+ {
+  "id": "m9-p2",
+  "answer": {
+   "value": 5,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "l = 2 gives m_l = -2..+2, so 5 orbitals."
+ },
+ {
+  "id": "m9-p3",
+  "answer": 2,
+  "confidence": "high",
+  "note": "s-orbital size grows with n, so 3s is farthest (~680 pm main peak)."
+ },
+ {
+  "id": "m9-p4",
+  "answer": 0,
+  "confidence": "high",
+  "note": "3s has inner lobes closest to the nucleus (penetration 3s > 3p > 3d, Day 6 p.18)."
+ },
+ {
+  "id": "m9-transfer",
+  "answer": {
+   "value": 3,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "ns has n - 1 radial nodes, so 4s has 3."
+ },
+ {
+  "id": "m9-m-recognize",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Two opposite lobes along one axis is a p orbital (Day 5 p.19)."
+ },
+ {
+  "id": "m9-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Any orbital holds at most 2 (Pauli); the 2p subshell's 3 orbitals hold 6."
+ },
+ {
+  "id": "m10-attempt",
+  "answer": [
+   "1s2 2s2 2p6 3s2 3p4",
+   {
+    "value": 2,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "S = [Ne] 3s2 3p4; Hund's rule fills 3p as up-down, up, up, so 2 unpaired."
+ },
+ {
+  "id": "m10-p1",
+  "answer": "[Ar] 4s2 3d6",
+  "confidence": "high",
+  "note": "26 electrons by aufbau: [Ar] 4s2 3d6 (n order [Ar] 3d6 4s2 is equivalent)."
+ }
+]

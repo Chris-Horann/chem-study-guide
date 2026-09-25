@@ -1,0 +1,60 @@
+<div class="stage" data-stage="learn">
+<h2>Learn</h2>
+<p class="big-idea">Repeating a measurement answers two questions. How much do the results scatter? That's the standard deviation, a measure of precision. And could the true value plausibly be what we expect? The confidence interval answers that, which judges accuracy. A suspicious point can be tested once, with Grubbs' test, instead of being quietly dropped.</p>
+<div class="triad">
+  <div class="rep rep-observe"><h3>What we observe</h3><p>A lab checks its method on a control sample of known creatinine concentration (0.681 mg/dL) and gets 0.685, 0.676, 0.669, 0.688, and 0.692 mg/dL.</p></div>
+  <div class="rep rep-write"><h3>What we write</h3><p>x̄ = 0.6820 mg/dL; s = 0.0094 mg/dL; 95% confidence interval: 0.6820 ± 0.0116 mg/dL, which contains 0.681, so the method is accurate.</p></div>
+  <div class="rep rep-particles"><h3>Where the scatter comes from</h3><p>Random error, such as dust, vibration, or reading a scale, pushes results up or down equally, giving a bell-shaped (normal) distribution. About 68% of results fall within one s of the mean.</p></div>
+</div>
+<p class="source">Source: textbook §1.9, PDF p.65–71 (printed 31–37); the creatinine example is the textbook's worked illustration (PDF p.65–67).</p>
+</div>
+
+<div class="stage" data-stage="understand">
+<h2>Understand</h2>
+<div class="eqcard"><p class="eq">x̄ = Σx<sub>i</sub> / n</p><p class="use">The arithmetic mean (Eq. 1.5).</p></div>
+<div class="eqcard"><p class="eq">s = √[ Σ(x<sub>i</sub> − x̄)<sup>2</sup> / (n − 1) ]</p>
+  <p class="use"><strong>Steps</strong> Take each deviation from the mean, square it, add the squares, divide by n − 1, and take the square root (Eq. 1.6). Report x̄ ± s, with s rounded to the mean's last decimal place.</p>
+  <p class="use"><strong>Why n − 1</strong> The mean was calculated from the same data, which uses up one degree of freedom. (The textbook states the formula; this reason is background.)</p></div>
+<div class="eqcard"><p class="eq">μ = x̄ ± t·s/√n</p>
+  <p class="use"><strong>Meaning</strong> The range that has (say) a 95% chance of containing the true mean μ (Eq. 1.7). t comes from Table 1.5, using n − 1:</p>
+  <div class="table-wrap"><table class="data"><thead><tr><th scope="col">n − 1</th><th scope="col">90%</th><th scope="col">95%</th><th scope="col">99%</th></tr></thead>
+  <tbody><tr><td>3</td><td>2.353</td><td>3.182</td><td>5.841</td></tr><tr><td>4</td><td>2.132</td><td>2.776</td><td>4.604</td></tr><tr><td>5</td><td>2.015</td><td>2.571</td><td>4.032</td></tr><tr><td>10</td><td>1.812</td><td>2.228</td><td>3.169</td></tr><tr><td>20</td><td>1.725</td><td>2.086</td><td>2.845</td></tr><tr><td>∞</td><td>1.645</td><td>1.960</td><td>2.576</td></tr></tbody></table></div>
+  <p class="use"><strong>Decision</strong> If a known value falls inside the interval, the analysis is judged accurate at that confidence level.</p></div>
+<div class="eqcard"><p class="eq">Z = |x<sub>i</sub> − x̄| / s</p>
+  <p class="use"><strong>Grubbs' test</strong> (Eq. 1.8): if Z exceeds the reference value in Table 1.7 (at 95%: n = 5 → 1.715; n = 6 → 1.887; n = 10 → 2.290), the point is an outlier and may be discarded. Use the test only once per data set. Discarding data without a valid reason is unethical.</p></div>
+<p class="connection">The lecture doesn't treat statistics (§1.9 is greyed out on Day 1 p.6), but control samples are how you'd check any lab measurement in this course.</p>
+</div>
+
+<div class="stage" data-stage="explore">
+<h2>Explore</h2>
+<p>Edit the data. Watch the mean, s, and the confidence band on the dot plot. Add a wild value and see whether Grubbs' test flags it.</p>
+<div class="explorer" data-explorer="stats"></div>
+</div>
+
+<div class="stage" data-stage="attempt">
+<h2>Attempt</h2>
+<div class="slot" data-module="t1-9" data-kinds="attempt"></div>
+</div>
+
+<div class="stage" data-stage="compare">
+<h2>Compare</h2>
+<div class="compare-slot" data-compare="t1-9"></div>
+<h3>Common mistakes</h3>
+<ul class="mistakes"><li>Dividing by n instead of n − 1.</li><li>Looking up t with n instead of n − 1 (Table 1.7 uses n itself).</li><li>Calling precise data accurate.</li><li>Dropping an “ugly” value without a test.</li></ul>
+</div>
+
+<div class="stage" data-stage="practice">
+<h2>Practice</h2>
+<div class="slot" data-module="t1-9" data-kinds="practice"></div>
+</div>
+
+<div class="stage" data-stage="master">
+<h2>Master</h2>
+<div class="slot" data-module="t1-9" data-kinds="transfer mastery"></div>
+<h3>Can you…?</h3>
+<ul class="cando" data-module="t1-9">
+<li data-key="mean">compute x̄ and s by hand</li>
+<li data-key="ci">build a 95% confidence interval and use it to judge accuracy</li>
+<li data-key="grubbs">apply Grubbs' test correctly</li>
+</ul>
+</div>

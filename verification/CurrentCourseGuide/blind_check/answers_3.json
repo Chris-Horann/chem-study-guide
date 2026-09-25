@@ -1,0 +1,626 @@
+[
+ {
+  "id": "t1-2-attempt",
+  "answer": {
+   "0": "C",
+   "1": "A",
+   "2": "S",
+   "3": "T"
+  },
+  "confidence": "high",
+  "note": "Givens/relationship = Collect and Organize; unit plan + estimate = Analyze; calculation = Solve; reasonableness/units/sig figs = Think About It (textbook PDF p.41-42)."
+ },
+ {
+  "id": "t1-2-p1",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Textbook: the ballpark estimate serves as a check, compared with the result in Think About It."
+ },
+ {
+  "id": "t1-2-p2",
+  "answer": {
+   "value": 27.7777777778,
+   "unit": "m/s"
+  },
+  "confidence": "high",
+  "note": "150000 m / 5400 s = 27.8 m/s (3 s.f.); estimate 100 km/h is about 28 m/s."
+ },
+ {
+  "id": "t1-2-p3",
+  "answer": 3,
+  "confidence": "high",
+  "note": "Think About It asks whether the answer is reasonable, and a 4.5 kg raindrop is not."
+ },
+ {
+  "id": "t1-2-transfer",
+  "answer": 1,
+  "confidence": "medium",
+  "note": "Analyze (units of the givens and the answer show how they connect); arguable, since the textbook puts assembling equations/constants in Collect and Organize and unit consistency in Solve."
+ },
+ {
+  "id": "t1-2-m-recognize",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Textbook PDF p.42 wording: grabbing an equation that seems to have the right variables and plugging in numbers."
+ },
+ {
+  "id": "t1-2-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "A result that is off by a factor of about 360 from the estimate points to a wrong conversion factor, so go back to Analyze."
+ },
+ {
+  "id": "t1-3-attempt",
+  "answer": {
+   "0": "el",
+   "1": "cp",
+   "2": "ho",
+   "3": "he"
+  },
+  "confidence": "high",
+  "note": "Ne is an element; sucrose is a compound; a clear sugar solution is homogeneous; sand in water is heterogeneous."
+ },
+ {
+  "id": "t1-3-p1",
+  "answer": {
+   "0": "ch",
+   "1": "ph",
+   "2": "ph",
+   "3": "ch"
+  },
+  "confidence": "high",
+  "note": "Rusting and burning change the substance (chemical); conduction and boiling point do not (physical)."
+ },
+ {
+  "id": "t1-3-p2",
+  "answer": 2,
+  "confidence": "high",
+  "note": "Density does not depend on the amount of sample; mass, volume, and length do."
+ },
+ {
+  "id": "t1-3-p3",
+  "answer": {
+   "value": 2.7,
+   "unit": "g/cm3"
+  },
+  "confidence": "high",
+  "note": "d = 32.4 g / 12.0 cm3 = 2.70 g/cm3 (3 s.f.)."
+ },
+ {
+  "id": "t1-3-p4",
+  "answer": {
+   "0": "di",
+   "1": "fi",
+   "2": "ch"
+  },
+  "confidence": "high",
+  "note": "Volatility difference means distillation, particle size means filtration, and dyes in ink call for chromatography."
+ },
+ {
+  "id": "t1-3-p5",
+  "answer": {
+   "value": 63.371356147,
+   "unit": "mL"
+  },
+  "confidence": "high",
+  "note": "V = 50.0 g / 0.789 g/mL = 63.4 mL (3 s.f.)."
+ },
+ {
+  "id": "t1-3-transfer",
+  "answer": 2,
+  "confidence": "high",
+  "note": "It is clear (uniform), but it boils over a range and its vapor composition changes, so it is a solution (homogeneous mixture)."
+ },
+ {
+  "id": "t1-3-m-recognize",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Decomposing into different substances (e.g., CaCO3 -> CaO + CO2) shows a compound is present."
+ },
+ {
+  "id": "t1-3-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "The result is exactly 1/10 of the true value, which points to a misplaced decimal."
+ },
+ {
+  "id": "t1-4-attempt",
+  "answer": [
+   "deposition",
+   1
+  ],
+  "confidence": "high",
+  "note": "Gas to solid directly is deposition, and it releases energy."
+ },
+ {
+  "id": "t1-4-p1",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Close-packed but disordered and mobile particles describe a liquid."
+ },
+ {
+  "id": "t1-4-p2",
+  "answer": 1,
+  "confidence": "high",
+  "note": "A gas is mostly empty space, so its particles can be pushed closer together."
+ },
+ {
+  "id": "t1-4-p3",
+  "answer": {
+   "0": "ab",
+   "1": "re",
+   "2": "re",
+   "3": "ab"
+  },
+  "confidence": "high",
+  "note": "Melting and sublimation absorb energy; condensation and freezing release it."
+ },
+ {
+  "id": "t1-4-p4",
+  "answer": 1,
+  "confidence": "high",
+  "note": "A solid has a definite shape and a definite volume."
+ },
+ {
+  "id": "t1-4-transfer",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Vaporization is endothermic, and the energy comes from the bench."
+ },
+ {
+  "id": "t1-4-m-recognize",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Solid to gas with no liquid step is sublimation."
+ },
+ {
+  "id": "t1-4-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Gas-phase molecules should be drawn far apart, with mostly empty space."
+ },
+ {
+  "id": "t1-5-attempt",
+  "answer": {
+   "value": 116.0,
+   "unit": "J"
+  },
+  "confidence": "high",
+  "note": "KE = 1/2 (0.145 kg)(40.0 m/s)^2 = 116 J (3 s.f.)."
+ },
+ {
+  "id": "t1-5-p1",
+  "answer": {
+   "value": 9,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "KE is proportional to u^2, so 3^2 = 9."
+ },
+ {
+  "id": "t1-5-p2",
+  "answer": {
+   "value": 75.0,
+   "unit": "J"
+  },
+  "confidence": "high",
+  "note": "w = F x d = 25.0 N x 3.00 m = 75.0 J."
+ },
+ {
+  "id": "t1-5-p3",
+  "answer": {
+   "value": 1.8218e-18,
+   "unit": "J"
+  },
+  "confidence": "high",
+  "note": "KE = 1/2 (9.109e-31 kg)(2.00e6 m/s)^2 = 1.82e-18 J (3 s.f.)."
+ },
+ {
+  "id": "t1-5-p4",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Chemical energy stored in glucose is potential energy (energy of composition); the other options are motion (kinetic)."
+ },
+ {
+  "id": "t1-5-p5",
+  "answer": 1,
+  "confidence": "high",
+  "note": "E_photon = threshold energy + KE of the electron, so the excess becomes kinetic energy."
+ },
+ {
+  "id": "t1-5-transfer",
+  "answer": {
+   "value": 3000.0,
+   "unit": "J"
+  },
+  "confidence": "high",
+  "note": "Sprinter 1/2(60.0)(10.0)^2 = 3.00e3 J beats the pellet at 1/2(0.00500)(700.)^2 = 1225 J (1.22e3 J by half-even), so enter 3.00e3 J."
+ },
+ {
+  "id": "t1-5-m-recognize",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Textbook: heat is energy transferred because of a temperature difference."
+ },
+ {
+  "id": "t1-5-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Mass is positive and u^2 is non-negative, so KE can't be negative."
+ },
+ {
+  "id": "t1-6-attempt",
+  "answer": [
+   "C6H12O6",
+   "CH2O"
+  ],
+  "confidence": "high",
+  "note": "Dividing the subscripts by 6 gives CH2O."
+ },
+ {
+  "id": "t1-6-p1",
+  "answer": "C3H8",
+  "confidence": "high",
+  "note": "Counting 3 C and 3+2+3 = 8 H gives C3H8."
+ },
+ {
+  "id": "t1-6-p2",
+  "answer": 1,
+  "confidence": "high",
+  "note": "N2 is one of the seven diatomic elements; Ne is monatomic, Na is metallic, and C forms networks."
+ },
+ {
+  "id": "t1-6-p3",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Ionic NaCl is an extended lattice of ions with no discrete molecules, so the formula gives only the ion ratio."
+ },
+ {
+  "id": "t1-6-p4",
+  "answer": {
+   "0": "count",
+   "1": "bonds",
+   "2": "angles",
+   "3": "shape"
+  },
+  "confidence": "high",
+  "note": "This follows the standard strengths of each representation (textbook section 1.6, Fig. 1.15)."
+ },
+ {
+  "id": "t1-6-transfer",
+  "answer": "HO",
+  "confidence": "high",
+  "note": "Dividing H2O2 by 2 gives HO."
+ },
+ {
+  "id": "t1-6-m-recognize",
+  "answer": 2,
+  "confidence": "high",
+  "note": "Ball-and-stick models show bond angles most clearly."
+ },
+ {
+  "id": "t1-6-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "C6H6 reduces to the simplest ratio 1:1, which is CH."
+ },
+ {
+  "id": "t1-7-attempt",
+  "answer": {
+   "value": 1.02,
+   "unit": "g/mL"
+  },
+  "confidence": "high",
+  "note": "The mass is 57.9 - 42.37 = 15.5 g (1 decimal place, 3 s.f.), so d = 1.02 g/mL (unrounded 1.0184, or 1.0164 if the mass is rounded first)."
+ },
+ {
+  "id": "t1-7-p1",
+  "answer": [
+   {
+    "value": 3,
+    "unit": ""
+   },
+   {
+    "value": 3,
+    "unit": ""
+   },
+   {
+    "value": 4,
+    "unit": ""
+   },
+   {
+    "value": 4,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "Leading zeros are not significant, while trailing zeros after the decimal point and captive zeros are."
+ },
+ {
+  "id": "t1-7-p2",
+  "answer": {
+   "value": 76.4,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "The dropped digit is exactly 5 and the retained 4 is even, so the result stays 76.4."
+ },
+ {
+  "id": "t1-7-p3",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Counted numbers are exact; 2.998e8 is a rounded value, and the others are measured or calculated."
+ },
+ {
+  "id": "t1-7-p4",
+  "answer": 0,
+  "confidence": "high",
+  "note": "A has mean 10.52 with a tight spread (precise, not accurate); B has mean 10.03 with a wide spread."
+ },
+ {
+  "id": "t1-7-p5",
+  "answer": {
+   "value": 21.8,
+   "unit": "m"
+  },
+  "confidence": "high",
+  "note": "The sum is 21.776, and 18.2 limits it to 1 decimal place, giving 21.8 m."
+ },
+ {
+  "id": "t1-7-transfer",
+  "answer": {
+   "value": 2.51,
+   "unit": "cm"
+  },
+  "confidence": "high",
+  "note": "7.52/3 = 2.5067 (3 is exact), which rounds to 2.51 cm (3 s.f.)."
+ },
+ {
+  "id": "t1-7-m-recognize",
+  "answer": 0,
+  "confidence": "high",
+  "note": "In multiplication, 5.7 (2 s.f.) limits the result."
+ },
+ {
+  "id": "t1-7-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "4.3 g has 2 s.f., so report 2.7 g/mL."
+ },
+ {
+  "id": "t1-8-attempt",
+  "answer": {
+   "value": 42.1628580624,
+   "unit": "km"
+  },
+  "confidence": "high",
+  "note": "26.2 mi x (1 km / 0.6214 mi) = 42.2 km (3 s.f.)."
+ },
+ {
+  "id": "t1-8-p1",
+  "answer": {
+   "value": 12.7,
+   "unit": "cm"
+  },
+  "confidence": "high",
+  "note": "5.00 in x 2.54 cm/in (exact) = 12.7 cm."
+ },
+ {
+  "id": "t1-8-p2",
+  "answer": {
+   "value": 0.375235,
+   "unit": "qt"
+  },
+  "confidence": "high",
+  "note": "0.355 L x 1.057 qt/L = 0.375 qt (3 s.f.)."
+ },
+ {
+  "id": "t1-8-p3",
+  "answer": [
+   {
+    "value": 37.0,
+    "unit": "°C"
+   },
+   {
+    "value": 310.15,
+    "unit": "K"
+   }
+  ],
+  "confidence": "high",
+  "note": "(5/9)(98.6 - 32) = 37.0 °C, and 37.0 + 273.15 = 310.15, which is reported as 310.2 K (1 decimal place, half-even), or 310 K if 273 is used."
+ },
+ {
+  "id": "t1-8-p4",
+  "answer": {
+   "value": 19300.0,
+   "unit": "kg/m3"
+  },
+  "confidence": "high",
+  "note": "19.3 g/cm3 x (1 kg/1000 g) x (100 cm/m)^3 = 1.93e4 kg/m3."
+ },
+ {
+  "id": "t1-8-transfer",
+  "answer": {
+   "value": 3.4,
+   "unit": "kg"
+  },
+  "confidence": "high",
+  "note": "250. cm3 x 13.6 g/cm3 = 3400 g = 3.40 kg (3 s.f.)."
+ },
+ {
+  "id": "t1-8-m-recognize",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Density (mass/volume) is the factor that converts volume to mass."
+ },
+ {
+  "id": "t1-8-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "5.0 m x 100 cm/m = 5.0e2 cm, so 0.050 cm means the factor was inverted."
+ },
+ {
+  "id": "t1-9-attempt",
+  "answer": [
+   {
+    "value": 12.5,
+    "unit": "mg/L"
+   },
+   {
+    "value": 0.158113883008,
+    "unit": "mg/L"
+   },
+   {
+    "value": 0.196292842457,
+    "unit": "mg/L"
+   }
+  ],
+  "confidence": "high",
+  "note": "Mean 12.5, s = sqrt(0.10/4) = 0.158 (about 0.16), and half-width 2.776 x 0.158/sqrt(5) = 0.196 (about 0.2) mg/L."
+ },
+ {
+  "id": "t1-9-p1",
+  "answer": {
+   "value": 2.32,
+   "unit": "g"
+  },
+  "confidence": "high",
+  "note": "9.28 g / 4 = 2.32 g."
+ },
+ {
+  "id": "t1-9-p2",
+  "answer": {
+   "value": 0.1,
+   "unit": "mL"
+  },
+  "confidence": "high",
+  "note": "The mean is 10.2, so s = sqrt(0.02/2) = 0.1 mL."
+ },
+ {
+  "id": "t1-9-p3",
+  "answer": {
+   "value": 0.125952762574,
+   "unit": "ppm"
+  },
+  "confidence": "high",
+  "note": "2.571 x 0.12/sqrt(6) = 0.126, reported as 0.13 ppm (2 s.f.)."
+ },
+ {
+  "id": "t1-9-p4",
+  "answer": [
+   {
+    "value": 1.77087548969,
+    "unit": ""
+   },
+   0
+  ],
+  "confidence": "high",
+  "note": "Mean 5.07 and s = 0.0791 give Z = 0.14/0.0791 = 1.77, which exceeds 1.715, so it is an outlier (it also exceeds the 99% value, 1.764)."
+ },
+ {
+  "id": "t1-9-p5",
+  "answer": 1,
+  "confidence": "high",
+  "note": "About 68% of normal data lie within +/- 1 s of the mean."
+ },
+ {
+  "id": "t1-9-transfer",
+  "answer": 1,
+  "confidence": "high",
+  "note": "The half-width is 3.182 x 0.05/sqrt(4) = 0.080, giving 4.54-4.70, which excludes 4.50, so the analyses are not accurate."
+ },
+ {
+  "id": "t1-9-m-recognize",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Grubbs' test (Z vs. Table 1.7) is the textbook's criterion for discarding a suspect value."
+ },
+ {
+  "id": "t1-9-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "s is a square root of a sum of squares, so it is never negative."
+ },
+ {
+  "id": "m2-preview-radioactivity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Beta particles are electrons (1-) and alpha particles are He-4 nuclei (2+), so they deflect in opposite directions (textbook section 2.1)."
+ },
+ {
+  "id": "t2-2-attempt",
+  "answer": [
+   {
+    "value": 26,
+    "unit": ""
+   },
+   {
+    "value": 30,
+    "unit": ""
+   },
+   {
+    "value": 23,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "p = Z = 26, n = 56 - 26 = 30, and e = 26 - 3 = 23."
+ },
+ {
+  "id": "t2-2-p1",
+  "answer": "37Cl",
+  "confidence": "high",
+  "note": "Z = 17 is Cl, and A = 17 + 20 = 37."
+ },
+ {
+  "id": "t2-2-p2",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Same Z with a different A: 12C and 13C are isotopes."
+ },
+ {
+  "id": "t2-2-p3",
+  "answer": {
+   "value": 36,
+   "unit": ""
+  },
+  "confidence": "high",
+  "note": "e = Z - Q = 34 - (-2) = 36."
+ },
+ {
+  "id": "t2-2-p4",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Z = 20 is Ca, A = 40, and 20 - 18 = +2, giving 40Ca2+."
+ },
+ {
+  "id": "t2-2-p5",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Textbook section 2.2: for particle symbols the subscript is the relative charge (an electron has no protons)."
+ },
+ {
+  "id": "t2-2-transfer",
+  "answer": [
+   "S",
+   {
+    "value": 34,
+    "unit": ""
+   }
+  ],
+  "confidence": "high",
+  "note": "Z = 18 - 2 = 16 (S), and A = 16 + 18 = 34."
+ },
+ {
+  "id": "t2-2-m-recognize",
+  "answer": 1,
+  "confidence": "high",
+  "note": "The atomic number (proton count) alone fixes the element's identity."
+ },
+ {
+  "id": "t2-2-m-sanity",
+  "answer": 1,
+  "confidence": "high",
+  "note": "A = Z + N and N >= 0, so A can't be less than Z."
+ }
+]

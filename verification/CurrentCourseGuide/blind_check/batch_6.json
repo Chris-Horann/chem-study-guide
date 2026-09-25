@@ -1,0 +1,17 @@
+[
+ {
+  "id": "m14-preview-valence",
+  "module": "m14",
+  "label": "preview",
+  "prompt": "<p>In §4.1 the textbook uses the word <em>valence</em> by itself, not as part of “valence electrons.” What does it mean there?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The capacity of an element's atoms to form chemical bonds.",
+    "[1] The number of electrons in an atom's outermost shell.",
+    "[2] The charge of the element's most common ion.",
+    "[3] The energy needed to remove an atom's outermost electron."
+   ]
+  }
+ }
+]

@@ -1,0 +1,483 @@
+[
+ {
+  "id": "m16-attempt",
+  "module": "m16",
+  "label": "lecture",
+  "prompt": "Copper forms more than one sulfide. One of them has the formula Cu<sub>2</sub>S. What is its systematic name?",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "m16-tophat",
+  "module": "m16",
+  "label": "lecture",
+  "prompt": "“What is the systematic name for Fe<sub>2</sub>O<sub>3</sub>?” (Day 8 p.10)",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "m16-p1",
+  "module": "m16",
+  "label": "lecture",
+  "prompt": "Write the formula of iron(II) chloride.",
+  "answer_format": {
+   "type": "text",
+   "kind": "formula",
+   "placeholder": "e.g., MgCl2"
+  }
+ },
+ {
+  "id": "m16-p2",
+  "module": "m16",
+  "label": "lecture",
+  "prompt": "Name K<sub>2</sub>CO<sub>3</sub>.",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "m16-p3",
+  "module": "m16",
+  "label": "preview",
+  "prompt": "Write the formula of ammonium phosphate.",
+  "answer_format": {
+   "type": "text",
+   "kind": "formula",
+   "placeholder": "e.g., Ca(NO3)2"
+  }
+ },
+ {
+  "id": "m16-p4",
+  "module": "m16",
+  "label": "lecture",
+  "prompt": "Why isn't “copper oxide” a complete name?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Copper forms more than one common ion (Cu<sup>+</sup> and Cu<sup>2+</sup>), so it could mean CuO or Cu<sub>2</sub>O.",
+    "[1] Oxide can carry different charges.",
+    "[2] Copper is a nonmetal, so the name needs prefixes.",
+    "[3] Oxygen is written first in the formula."
+   ]
+  }
+ },
+ {
+  "id": "m16-p5",
+  "module": "m16",
+  "label": "preview",
+  "prompt": "According to the textbook, which compound is named without a Roman numeral?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] ZnCl<sub>2</sub>",
+    "[1] FeCl<sub>3</sub>",
+    "[2] CuCl",
+    "[3] CoCl<sub>2</sub>"
+   ]
+  }
+ },
+ {
+  "id": "m16-p6",
+  "module": "m16",
+  "label": "lecture",
+  "prompt": "Name Ca(NO<sub>3</sub>)<sub>2</sub>.",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "m16-transfer",
+  "module": "m16",
+  "label": "lecture",
+  "prompt": "A compound has the formula Cr<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>. What is its systematic name?",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "m16-m-recognize",
+  "module": "m16",
+  "label": "preview",
+  "prompt": "Which compound's formula needs parentheses?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] magnesium hydroxide",
+    "[1] sodium hydroxide",
+    "[2] ammonium chloride",
+    "[3] potassium nitrate"
+   ]
+  }
+ },
+ {
+  "id": "m16-m-sanity",
+  "module": "m16",
+  "label": "lecture",
+  "prompt": "A classmate names Cu<sub>2</sub>O “copper (II) oxide” because the formula has a 2. What's wrong?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The numeral is each copper ion's charge. Cu<sub>2</sub>O contains Cu<sup>+</sup>, so it's copper (I) oxide.",
+    "[1] Nothing; the 2 goes into the name.",
+    "[2] It should be “dicopper oxide”.",
+    "[3] The numeral should be the oxide's charge."
+   ]
+  }
+ },
+ {
+  "id": "m17-attempt",
+  "module": "m17",
+  "label": "lecture",
+  "prompt": "Name the covalent compound PCl<sub>5</sub>.",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "m17-p1",
+  "module": "m17",
+  "label": "lecture",
+  "prompt": "Write the formula of silicon tetrafluoride.",
+  "answer_format": {
+   "type": "text",
+   "kind": "formula",
+   "placeholder": "e.g., MgCl2"
+  }
+ },
+ {
+  "id": "m17-p2",
+  "module": "m17",
+  "label": "lecture",
+  "prompt": "Name N<sub>2</sub>F<sub>4</sub>.",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "m17-p3",
+  "module": "m17",
+  "label": "lecture",
+  "prompt": "Which compound is named with number prefixes?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] NCl<sub>3</sub>",
+    "[1] CaCl<sub>2</sub>",
+    "[2] FeCl<sub>3</sub>",
+    "[3] NaCl"
+   ]
+  }
+ },
+ {
+  "id": "m17-p4",
+  "module": "m17",
+  "label": "preview",
+  "prompt": "Name NO, a gas in car exhaust.",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "m17-p5",
+  "module": "m17",
+  "label": "lecture",
+  "prompt": "Write the formula of dinitrogen trioxide.",
+  "answer_format": {
+   "type": "text",
+   "kind": "formula",
+   "placeholder": "e.g., MgCl2"
+  }
+ },
+ {
+  "id": "m17-transfer",
+  "module": "m17",
+  "label": "lecture",
+  "prompt": "(a) The anesthetic “laughing gas” is dinitrogen monoxide (textbook §4.7). Write its formula. (b) Name Cl<sub>2</sub>O<sub>7</sub>, a chlorine oxide.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "text",
+     "kind": "formula",
+     "placeholder": "e.g., MgCl2",
+     "label": "(a) formula"
+    },
+    {
+     "type": "text",
+     "kind": "text",
+     "placeholder": "name",
+     "label": "(b) name of Cl<sub>2</sub>O<sub>7</sub>"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m17-m-recognize",
+  "module": "m17",
+  "label": "lecture",
+  "prompt": "Which name follows the Day 8 rules for CCl<sub>4</sub>?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] carbon tetrachloride",
+    "[1] monocarbon tetrachloride",
+    "[2] carbon chloride",
+    "[3] carbon(IV) chloride"
+   ]
+  }
+ },
+ {
+  "id": "m17-m-sanity",
+  "module": "m17",
+  "label": "lecture",
+  "prompt": "A student names SO<sub>3</sub> “sulfur(VI) oxide”. What's the problem?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] SO<sub>3</sub> is covalent (two nonmetals), so it takes prefixes: sulfur trioxide.",
+    "[1] Nothing; Roman numerals work for any element.",
+    "[2] It should be “monosulfur trioxide”.",
+    "[3] Sulfur's numeral should be (III), for three O."
+   ]
+  }
+ },
+ {
+  "id": "t4-3-attempt",
+  "module": "t4-3",
+  "label": "preview",
+  "prompt": "Name HI(aq), hydrogen iodide dissolved in water.",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "t4-3-p1",
+  "module": "t4-3",
+  "label": "preview",
+  "prompt": "Name HNO<sub>3</sub>, the acid of the nitrate ion.",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "t4-3-p2",
+  "module": "t4-3",
+  "label": "preview",
+  "prompt": "Name HClO<sub>2</sub>, the acid of the chlorite ion.",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "t4-3-p3",
+  "module": "t4-3",
+  "label": "preview",
+  "prompt": "Write the formula of carbonic acid, the acid of the carbonate ion.",
+  "answer_format": {
+   "type": "text",
+   "kind": "formula",
+   "placeholder": "e.g., MgCl2"
+  }
+ },
+ {
+  "id": "t4-3-p4",
+  "module": "t4-3",
+  "label": "preview",
+  "prompt": "Match each anion ending to the acid it names.",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] -ide (Cl<sup>−</sup>, chloride)",
+    "[1] -ate (SO<sub>4</sub><sup>2−</sup>, sulfate)",
+    "[2] -ite (SO<sub>3</sub><sup>2−</sup>, sulfite)"
+   ],
+   "options": [
+    "hydro: hydro-…-ic acid",
+    "ic: …-ic acid",
+    "ous: …-ous acid"
+   ]
+  }
+ },
+ {
+  "id": "t4-3-p5",
+  "module": "t4-3",
+  "label": "preview",
+  "prompt": "Name HClO, the acid of the hypochlorite ion.",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "t4-3-transfer",
+  "module": "t4-3",
+  "label": "preview",
+  "prompt": "The iodate ion is IO<sub>3</sub><sup>−</sup>. Name the acid HIO<sub>3</sub>.",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "name"
+  }
+ },
+ {
+  "id": "t4-3-m-recognize",
+  "module": "t4-3",
+  "label": "preview",
+  "prompt": "Which is a binary acid?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] HF(aq)",
+    "[1] HNO<sub>3</sub>",
+    "[2] H<sub>2</sub>SO<sub>4</sub>",
+    "[3] NaOH"
+   ]
+  }
+ },
+ {
+  "id": "t4-3-m-sanity",
+  "module": "t4-3",
+  "label": "preview",
+  "prompt": "A student names H<sub>2</sub>SO<sub>4</sub> “hydrosulfuric acid”. What's wrong?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] hydro- is only for binary acids. H<sub>2</sub>SO<sub>4</sub> comes from sulfate, so it's sulfuric acid.",
+    "[1] Nothing.",
+    "[2] It should be sulfurous acid.",
+    "[3] Acids take Roman numerals."
+   ]
+  }
+ },
+ {
+  "id": "m18-attempt",
+  "module": "m18",
+  "label": "lecture",
+  "prompt": "Arsenic (As) is in group 15, below N and P. (a) How many dots are in its Lewis symbol? (b) What is its bonding capacity?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) dots"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) bonding capacity"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m18-p1",
+  "module": "m18",
+  "label": "lecture",
+  "prompt": "What is carbon's bonding capacity?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m18-p2",
+  "module": "m18",
+  "label": "lecture",
+  "prompt": "Which element's Lewis symbol has two pairs of dots and two single dots?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] O",
+    "[1] N",
+    "[2] F",
+    "[3] C"
+   ]
+  }
+ },
+ {
+  "id": "m18-p3",
+  "module": "m18",
+  "label": "lecture",
+  "prompt": "How many valence electrons does a hydrogen atom need to match a noble gas?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m18-p4",
+  "module": "m18",
+  "label": "preview",
+  "prompt": "Draw the Lewis structure of potassium sulfide, K<sub>2</sub>S, the way the textbook draws ionic compounds. How many dots surround (a) each K<sup>+</sup> ion and (b) the S<sup>2−</sup> ion?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) dots on each K<sup>+</sup>"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) dots on S<sup>2−</sup>"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m18-p5",
+  "module": "m18",
+  "label": "lecture",
+  "prompt": "Bromine is in group 17. How many covalent bonds does a Br atom typically form?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m18-p6",
+  "module": "m18",
+  "label": "lecture",
+  "prompt": "What does the octet rule say?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Main-group atoms tend to gain, lose, or share electrons so that each has eight valence electrons.",
+    "[1] Every atom has exactly eight electrons.",
+    "[2] Atoms form eight bonds.",
+    "[3] Only noble gases have octets."
+   ]
+  }
+ },
+ {
+  "id": "m18-transfer",
+  "module": "m18",
+  "label": "lecture",
+  "prompt": "Silicon is in group 14, just below carbon. Predict the formula of the simplest compound of silicon and hydrogen, in which each H forms one bond.",
+  "answer_format": {
+   "type": "text",
+   "kind": "formula",
+   "placeholder": "e.g., MgCl2"
+  }
+ }
+]

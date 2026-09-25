@@ -1,0 +1,1027 @@
+[
+ {
+  "id": "m1-attempt",
+  "module": "m1",
+  "label": "lecture",
+  "prompt": "<p>Carbon forms two different oxides. In oxide A, 1.000 g of carbon is combined with 1.332 g of oxygen. In oxide B, 1.000 g of carbon is combined with 2.664 g of oxygen.</p><p>For a fixed mass of carbon, what is the ratio of oxygen masses, B : A? Enter it as a decimal.</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m1-p1",
+  "module": "m1",
+  "label": "lecture",
+  "prompt": "<p>Pure water is always 11.2% hydrogen by mass (Day 1 p.11). A sample of pure water contains 3.00 g of hydrogen. What is the mass of the water sample?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m1-p2",
+  "module": "m1",
+  "label": "lecture",
+  "prompt": "<p>Sulfur forms two oxides. In sample X, 1.00 g of sulfur is combined with 1.00 g of oxygen. In sample Y, 1.00 g of sulfur is combined with 1.50 g of oxygen.</p><p>For a fixed mass of sulfur, what is the ratio of oxygen masses, Y : X?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m1-p3",
+  "module": "m1",
+  "label": "lecture",
+  "prompt": "<p>A 10.0 g sample of a white solid is heated in an open dish. A gas escapes, and 5.60 g of solid remains. Nothing else enters or leaves. What mass of gas escaped?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m1-p4",
+  "module": "m1",
+  "label": "lecture",
+  "prompt": "<p>Which postulate of Dalton's atomic theory directly explains the Law of Multiple Proportions?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Matter consists of atoms, which cannot be destroyed.",
+    "[1] All atoms of the same element are identical to each other.",
+    "[2] Atoms combine in small whole-number ratios when forming compounds.",
+    "[3] Atoms of different elements have different masses."
+   ]
+  }
+ },
+ {
+  "id": "m1-transfer",
+  "module": "m1",
+  "label": "lecture",
+  "prompt": "<p>Nitrogen forms several oxides. Per 1.00 g of nitrogen, compound I contains 0.571 g O, compound II contains 1.14 g O, and compound III contains 2.28 g O.</p><p>What is the ratio of oxygen masses, III : I? Then decide whether all three compounds obey the same law.</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m1-m-recognize",
+  "module": "m1",
+  "label": "lecture",
+  "prompt": "<p>“Every sample of table salt, from any source, is 39.3% sodium by mass.” Which law does this illustrate?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Law of Constant Composition (Definite Proportions)",
+    "[1] Law of Multiple Proportions",
+    "[2] Law of Conservation of Mass",
+    "[3] Law of Conservation of Energy"
+   ]
+  }
+ },
+ {
+  "id": "m1-m-sanity",
+  "module": "m1",
+  "label": "lecture",
+  "prompt": "<p>A student reports that a sample of pure water is 20% hydrogen by mass. What is the best conclusion?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Water's composition depends on where it came from.",
+    "[1] The sample isn't pure water, or the measurement is wrong.",
+    "[2] The hydrogen atoms in this sample are heavier.",
+    "[3] Some mass was destroyed during the measurement."
+   ]
+  }
+ },
+ {
+  "id": "m2-attempt",
+  "module": "m2",
+  "label": "lecture",
+  "prompt": "<p>Using the particle table from Day 2 p.22 (proton 1.00728 amu; electron 5.48580 × 10<sup>−4</sup> amu), how many electrons would it take to equal the mass of one proton?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m2-p1",
+  "module": "m2",
+  "label": "lecture",
+  "prompt": "<p>In a cathode-ray tube, the beam bends toward the positively charged plate. What does that tell you about the particles in the beam?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] They are positively charged.",
+    "[1] They are negatively charged.",
+    "[2] They are neutral.",
+    "[3] They are light waves."
+   ]
+  }
+ },
+ {
+  "id": "m2-p2",
+  "module": "m2",
+  "label": "lecture",
+  "prompt": "<p>Which gold-foil observation could the plum-pudding model NOT explain?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Most α particles passed straight through the foil.",
+    "[1] A few α particles bounced back at large angles.",
+    "[2] α particles are positively charged.",
+    "[3] The gold foil was very thin."
+   ]
+  }
+ },
+ {
+  "id": "m2-p3",
+  "module": "m2",
+  "label": "lecture",
+  "prompt": "<p>In the Day 2 p.20 figure, a gold atom is about 288 pm across and its nucleus about 0.01 pm. If the nucleus were enlarged to the size of a 1.0 cm marble, about how wide would the atom be, in meters?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m2-p4",
+  "module": "m2",
+  "label": "lecture",
+  "prompt": "<p><span class='tag-ramp'>RAMP UP (self-study)</span> A neutral carbon-13 atom (<sup>13</sup>C) has how many protons, neutrons, and electrons?</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "protons"
+    },
+    {
+     "type": "numeric",
+     "label": "neutrons"
+    },
+    {
+     "type": "numeric",
+     "label": "electrons"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m2-transfer",
+  "module": "m2",
+  "label": "lecture",
+  "prompt": "<p>In a modified Thomson-style tube, a beam bends toward the <em>negative</em> plate. At the same speed, it takes a much stronger magnet to bend this beam than to bend cathode rays. What can you conclude about the particles?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Negative and lighter than electrons",
+    "[1] Positive and much more massive per unit charge than electrons",
+    "[2] Neutral",
+    "[3] Positive and lighter than electrons"
+   ]
+  }
+ },
+ {
+  "id": "m2-m-match",
+  "module": "m2",
+  "label": "lecture",
+  "prompt": "<p>Match each experiment to what it revealed.</p>",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] Thomson's cathode-ray tube (1897)",
+    "[1] Millikan's oil drops (1909)",
+    "[2] Rutherford's gold foil (1911)"
+   ],
+   "options": [
+    "e: Atoms contain tiny negative particles",
+    "q: The electron's charge (and mass)",
+    "n: A tiny, massive, positive nucleus"
+   ]
+  }
+ },
+ {
+  "id": "m2-m-sanity",
+  "module": "m2",
+  "label": "lecture",
+  "prompt": "<p>A classmate says the α particles that bounced back must have hit electrons. What's wrong with that?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Nothing; electrons are what the α particles hit most.",
+    "[1] Electrons are about 1/1836 of a proton's mass, far too light to turn a heavy α particle around.",
+    "[2] Electrons are positively charged, so they'd attract α particles.",
+    "[3] Electrons are outside the atom."
+   ]
+  }
+ },
+ {
+  "id": "m3-attempt",
+  "module": "m3",
+  "label": "lecture",
+  "prompt": "<p>Green light has a wavelength λ = 5.30 × 10<sup>2</sup> nm. Find (a) its frequency and (b) the energy of one photon.</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "unit_hint": "answer carries a unit (type the unit too)",
+     "label": "(a) frequency ν"
+    },
+    {
+     "type": "numeric",
+     "unit_hint": "answer carries a unit (type the unit too)",
+     "label": "(b) photon energy E"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m3-p1",
+  "module": "m3",
+  "label": "lecture",
+  "prompt": "<p>Rank these from <strong>highest</strong> photon energy (1) to <strong>lowest</strong> (5).</p>",
+  "answer_format": {
+   "type": "order",
+   "direction": "highest energy (1) to lowest (5)",
+   "items": [
+    "mw: microwaves",
+    "red: red light",
+    "uv: ultraviolet",
+    "gam: γ rays",
+    "ir: infrared"
+   ]
+  }
+ },
+ {
+  "id": "m3-p2",
+  "module": "m3",
+  "label": "lecture",
+  "prompt": "<p>An FM radio station broadcasts at 98.5 MHz (1 MHz = 10<sup>6</sup> s<sup>−1</sup>). What is the wavelength?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "m3-p3",
+  "module": "m3",
+  "label": "lecture",
+  "prompt": "<p>A photon carries 4.41 × 10<sup>−19</sup> J. What is its wavelength in nanometers, and what color is it?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "m3-p4",
+  "module": "m3",
+  "label": "lecture",
+  "prompt": "<p>If you double the wavelength of light, what happens to its frequency and to the energy of each photon?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Both double.",
+    "[1] Both are halved.",
+    "[2] Frequency halves, but energy doubles.",
+    "[3] Nothing changes, because light always travels at c."
+   ]
+  }
+ },
+ {
+  "id": "m3-transfer",
+  "module": "m3",
+  "label": "lecture",
+  "prompt": "<p>A microwave oven uses 2.45 GHz radiation (2.45 × 10<sup>9</sup> s<sup>−1</sup>). How many microwave photons carry the same total energy as <em>one</em> ultraviolet photon of wavelength 2.50 × 10<sup>2</sup> nm?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m3-m-recognize",
+  "module": "m3",
+  "label": "lecture",
+  "prompt": "<p>“A laser emits photons that each carry 3.00 × 10<sup>−19</sup> J. What color is the laser?” Which relationship do you need first?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] E = hc/λ, to get λ, then read the color off the spectrum",
+    "[1] λ = h/(mu)",
+    "[2] KE = hν − φ",
+    "[3] ΔE = −2.178 × 10<sup>−18</sup> J (1/n<sub>f</sub><sup>2</sup> − 1/n<sub>i</sub><sup>2</sup>)"
+   ]
+  }
+ },
+ {
+  "id": "m3-m-sanity",
+  "module": "m3",
+  "label": "lecture",
+  "prompt": "<p>A student calculates that green light (530 nm) has a frequency of 5.66 × 10<sup>5</sup> Hz. What is the most likely error?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Wrong value of c",
+    "[1] Wavelength left in nm instead of converted to m",
+    "[2] Used E = hν instead of λν = c",
+    "[3] Nothing; that's a reasonable visible frequency"
+   ]
+  }
+ },
+ {
+  "id": "m4-attempt",
+  "module": "m4",
+  "label": "lecture",
+  "prompt": "<p>A star's spectrum is a continuous rainbow crossed by dark lines at 656, 486, 434, and 410 nm. What can you conclude?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The star emits light only at those four wavelengths.",
+    "[1] Hydrogen atoms in the star's outer layers absorb those wavelengths.",
+    "[2] The star contains no hydrogen.",
+    "[3] The dark lines are an artifact of the prism."
+   ]
+  }
+ },
+ {
+  "id": "m4-p1",
+  "module": "m4",
+  "label": "lecture",
+  "prompt": "<p>Match each description to the type of spectrum.</p>",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] A few bright colored lines on a black background",
+    "[1] A complete rainbow with narrow black gaps",
+    "[2] A complete rainbow with no gaps (a glowing hot solid)"
+   ],
+   "options": [
+    "em: emission",
+    "ab: absorption",
+    "co: continuous"
+   ]
+  }
+ },
+ {
+  "id": "m4-p2",
+  "module": "m4",
+  "label": "lecture",
+  "prompt": "<p>Why were line spectra a problem for the physics of the early 1800s?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The lines were too faint to measure.",
+    "[1] Existing theories couldn't explain WHY each element emits and absorbs only specific wavelengths.",
+    "[2] Prisms couldn't separate the colors.",
+    "[3] Every element had the same lines."
+   ]
+  }
+ },
+ {
+  "id": "m4-p3",
+  "module": "m4",
+  "label": "lecture",
+  "prompt": "<p>Hot hydrogen gas emits bright lines at 656, 486, 434, and 410 nm. White light is now passed through <em>cold</em> hydrogen gas and into a prism. Where do dark lines appear?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] At the same four wavelengths",
+    "[1] At four different wavelengths, shifted toward the red",
+    "[2] Nowhere; cold gas doesn't absorb light",
+    "[3] Everywhere except those four wavelengths"
+   ]
+  }
+ },
+ {
+  "id": "m4-p4",
+  "module": "m4",
+  "label": "lecture",
+  "prompt": "<p><span class='tag-conn'>Connects to Module 3</span> One of hydrogen's visible lines is at 486 nm. What is the energy of one photon of that light?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "m4-transfer",
+  "module": "m4",
+  "label": "lecture",
+  "prompt": "<p>A glowing gas in a discharge tube shows bright lines at exactly the wavelengths where cold neon gas absorbs light. What's the best conclusion?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The glowing gas is neon.",
+    "[1] The glowing gas is hydrogen, because all glowing gases emit hydrogen lines.",
+    "[2] Nothing; emission and absorption lines of one element never match.",
+    "[3] The gas must be a mixture of every element."
+   ]
+  }
+ },
+ {
+  "id": "m4-m-sanity",
+  "module": "m4",
+  "label": "lecture",
+  "prompt": "<p>A student says the dark Fraunhofer lines prove the sun doesn't produce those wavelengths at all. What's the better explanation?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The sun produces a continuous spectrum, and elements in its atmosphere absorb those wavelengths.",
+    "[1] The lines come from Earth's clouds.",
+    "[2] The student is right.",
+    "[3] The lines are wavelengths the prism can't bend."
+   ]
+  }
+ },
+ {
+  "id": "m5-attempt",
+  "module": "m5",
+  "label": "lecture",
+  "prompt": "<p>Ultraviolet light with λ = 2.20 × 10<sup>2</sup> nm shines on a metal whose threshold energy (work function) is φ = 7.18 × 10<sup>−19</sup> J. Is an electron ejected? If so, what is its kinetic energy?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit (type the unit too)"
+  }
+ },
+ {
+  "id": "m5-p1",
+  "module": "m5",
+  "label": "lecture",
+  "prompt": "<p><span class='tag-bg'>Background value</span> Potassium's work function is about φ = 3.67 × 10<sup>−19</sup> J. Find (a) the threshold frequency ν<sub>0</sub> and (b) the longest wavelength (nm) that can eject electrons.</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "unit_hint": "answer carries a unit",
+     "label": "(a) ν₀"
+    },
+    {
+     "type": "numeric",
+     "unit_hint": "answer carries a unit",
+     "label": "(b) longest λ"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m5-p2",
+  "module": "m5",
+  "label": "lecture",
+  "prompt": "<p>Red light shining on a metal ejects no electrons. What happens if you make the red light twice as bright?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Electrons are ejected, because the total energy doubled.",
+    "[1] Still no electrons.",
+    "[2] Electrons are ejected with twice the kinetic energy.",
+    "[3] The metal's work function drops."
+   ]
+  }
+ },
+ {
+  "id": "m5-p3",
+  "module": "m5",
+  "label": "lecture",
+  "prompt": "<p>Light of wavelength 4.00 × 10<sup>2</sup> nm ejects electrons from a metal with a maximum kinetic energy of 1.53 × 10<sup>−19</sup> J. What is the metal's work function φ?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "m5-p4",
+  "module": "m5",
+  "label": "lecture",
+  "prompt": "<p>On the Day 3 p.19 graph of maximum kinetic energy vs. light frequency, the lines for different metals are parallel but shifted left or right. What does a line farther to the <em>right</em> mean?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] A larger threshold frequency, so a larger work function",
+    "[1] A steeper slope",
+    "[2] More electrons ejected",
+    "[3] A larger value of h"
+   ]
+  }
+ },
+ {
+  "id": "m5-p5",
+  "module": "m5",
+  "label": "lecture",
+  "prompt": "<p>One star glows red; another glows blue-white. Which is hotter?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The red star",
+    "[1] The blue-white star",
+    "[2] They're the same temperature.",
+    "[3] You can't tell from color."
+   ]
+  }
+ },
+ {
+  "id": "m5-transfer",
+  "module": "m5",
+  "label": "lecture",
+  "prompt": "<p>A light detector registers a photon only if the photon carries at least 1.80 × 10<sup>−19</sup> J. What is the longest wavelength (nm) it can detect, and in which region is that?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "m5-m-recognize",
+  "module": "m5",
+  "label": "lecture",
+  "prompt": "<p>Which observation shows most directly that light's energy comes in packets?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Light travels at c = 2.998 × 10<sup>8</sup> m/s.",
+    "[1] A threshold frequency exists in the photoelectric effect, regardless of intensity.",
+    "[2] A prism splits sunlight into colors.",
+    "[3] Radio waves have long wavelengths."
+   ]
+  }
+ },
+ {
+  "id": "m5-m-sanity",
+  "module": "m5",
+  "label": "lecture",
+  "prompt": "<p>A student calculates KE = −2.1 × 10<sup>−20</sup> J for the “ejected” electron. What does that mean?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The electron moves backward.",
+    "[1] The photon's energy is below φ, so no electron is ejected at all.",
+    "[2] The light is too bright.",
+    "[3] The metal has a negative work function."
+   ]
+  }
+ },
+ {
+  "id": "m6-attempt",
+  "module": "m6",
+  "label": "lecture",
+  "prompt": "<p>Find the wavelength (nm) of the photon emitted when hydrogen's electron drops from n = 4 to n = 2.</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit (type the unit too)"
+  }
+ },
+ {
+  "id": "m6-p1",
+  "module": "m6",
+  "label": "lecture",
+  "prompt": "<p>What wavelength (nm) is emitted when hydrogen's electron drops from n = 5 to n = 2?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "m6-p2",
+  "module": "m6",
+  "label": "lecture",
+  "prompt": "<p>What wavelength (nm) must a hydrogen atom absorb to move its electron from n = 1 to n = 3?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "m6-p3",
+  "module": "m6",
+  "label": "lecture",
+  "prompt": "<p><span class='tag-preview'>Uses N<sub>A</sub>: textbook preview, §2.5</span> How much energy, in kJ/mol, removes the electron completely from hydrogen atoms whose electrons start in n = 2?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "m6-p4",
+  "module": "m6",
+  "label": "lecture",
+  "prompt": "<p>Which transition emits the photon with the <strong>longest</strong> wavelength?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] n = 2 → 1",
+    "[1] n = 3 → 2",
+    "[2] n = 4 → 3",
+    "[3] n = 6 → 2"
+   ]
+  }
+ },
+ {
+  "id": "m6-p5",
+  "module": "m6",
+  "label": "lecture",
+  "prompt": "<p>Why can't the Bohr equation predict helium's spectrum?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Helium has no electrons.",
+    "[1] With two electrons, the electrons are correlated, and the Bohr model falls apart.",
+    "[2] Helium doesn't emit light.",
+    "[3] The Bohr constant is different for every element."
+   ]
+  }
+ },
+ {
+  "id": "m6-transfer",
+  "module": "m6",
+  "label": "lecture",
+  "prompt": "<p>A hydrogen emission line is observed at 1282 nm (infrared). The electron lands in n = 3. From which level did it start?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m6-m-recognize",
+  "module": "m6",
+  "label": "lecture",
+  "prompt": "<p>“Hydrogen gas absorbs light, and its electrons jump from n = 2 to n = 4. What wavelength was absorbed?” Which relationship(s) do you need?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] λ = h/(mu)",
+    "[1] Bohr's ΔE equation, then E = hc/λ",
+    "[2] KE = hν − φ",
+    "[3] E<sub>el</sub> = 2.31 × 10<sup>−19</sup> J·nm (Q<sub>1</sub>Q<sub>2</sub>/d)"
+   ]
+  }
+ },
+ {
+  "id": "m6-m-sanity",
+  "module": "m6",
+  "label": "lecture",
+  "prompt": "<p>A student finds that hydrogen's 3 → 2 transition emits light with λ = 6.57 × 10<sup>−9</sup> m. Is that reasonable?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Yes; it's a visible Balmer line.",
+    "[1] No; it's off by a factor of 100. The 3 → 2 line is about 657 nm = 6.57 × 10<sup>−7</sup> m, red light.",
+    "[2] No; 3 → 2 is an absorption, so there's no photon.",
+    "[3] Yes; all hydrogen lines are X-rays."
+   ]
+  }
+ },
+ {
+  "id": "m7-attempt",
+  "module": "m7",
+  "label": "lecture",
+  "prompt": "<p>A slow (“thermal”) neutron, m = 1.675 × 10<sup>−27</sup> kg, moves at 2.20 × 10<sup>3</sup> m/s. What is its de Broglie wavelength?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit (type the unit too)"
+  }
+ },
+ {
+  "id": "m7-p1",
+  "module": "m7",
+  "label": "lecture",
+  "prompt": "<p>What is the de Broglie wavelength of an electron (m = 9.109 × 10<sup>−31</sup> kg) moving at 1.00 × 10<sup>6</sup> m/s?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "m7-p2",
+  "module": "m7",
+  "label": "lecture",
+  "prompt": "<p>How fast must an electron move to have a de Broglie wavelength of 0.100 nm?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "m7-p3",
+  "module": "m7",
+  "label": "lecture",
+  "prompt": "<p>A tennis ball (57.0 g) is served at 50.0 m/s. What is its de Broglie wavelength?</p>",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "m7-p4",
+  "module": "m7",
+  "label": "lecture",
+  "prompt": "<p>All moving at the same speed, which has the <strong>longest</strong> de Broglie wavelength?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] an electron",
+    "[1] a proton",
+    "[2] a helium atom",
+    "[3] a baseball"
+   ]
+  }
+ },
+ {
+  "id": "m7-p5",
+  "module": "m7",
+  "label": "lecture",
+  "prompt": "<p>According to de Broglie's picture, which of these could be a stable orbit around the nucleus?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] One where 2.25 wavelengths fit around the circumference",
+    "[1] One where exactly 3 wavelengths fit around the circumference",
+    "[2] One where 3.5 wavelengths fit around the circumference",
+    "[3] Any orbit, as long as the electron moves fast enough"
+   ]
+  }
+ },
+ {
+  "id": "m7-transfer",
+  "module": "m7",
+  "label": "lecture",
+  "prompt": "<p>An electron and a proton have the same de Broglie wavelength. How many times faster is the electron moving? Use the masses in kg from Day 2 p.22.</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m7-m-recognize",
+  "module": "m7",
+  "label": "lecture",
+  "prompt": "<p>“Find the wavelength of an α particle moving at 1.5 × 10<sup>7</sup> m/s.” Which equation?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] E = hc/λ",
+    "[1] λ = h/(mu)",
+    "[2] λν = c",
+    "[3] Balmer's formula"
+   ]
+  }
+ },
+ {
+  "id": "m7-m-sanity",
+  "module": "m7",
+  "label": "lecture",
+  "prompt": "<p>A student redoes the Day 4 p.12 example (electron at 4.05 × 10<sup>6</sup> m/s) and gets λ = 1.8 × 10<sup>−13</sup> m instead of 1.80 × 10<sup>−10</sup> m. What went wrong?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The mass was left in grams (9.10938 × 10<sup>−28</sup> g).",
+    "[1] The speed was in km/s.",
+    "[2] h was rounded to 6.626 × 10<sup>−34</sup>.",
+    "[3] Nothing; both answers are acceptable."
+   ]
+  }
+ },
+ {
+  "id": "m8-attempt",
+  "module": "m8",
+  "label": "lecture",
+  "prompt": "<p>For the n = 4 shell: (a) how many orbitals does it contain, and (b) how many electrons can it hold?</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) orbitals"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) electrons"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m8-p1",
+  "module": "m8",
+  "label": "lecture",
+  "prompt": "<p>Which set (n, ℓ, m<sub>ℓ</sub>, m<sub>s</sub>) is allowed?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] (2, 1, −1, +½)",
+    "[1] (3, 3, 0, −½)",
+    "[2] (4, 2, −3, +½)",
+    "[3] (1, 0, 0, 0)"
+   ]
+  }
+ },
+ {
+  "id": "m8-p2",
+  "module": "m8",
+  "label": "lecture",
+  "prompt": "<p>What is the maximum number of electrons in a 5f subshell?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m8-p3",
+  "module": "m8",
+  "label": "lecture",
+  "prompt": "<p>What is the subshell label for n = 4, ℓ = 2? (e.g., type <em>3p</em>)</p>",
+  "answer_format": {
+   "type": "text",
+   "kind": "text",
+   "placeholder": "e.g., 3p"
+  }
+ },
+ {
+  "id": "m8-p4",
+  "module": "m8",
+  "label": "lecture",
+  "prompt": "<p>Which quantum number sets an orbital's <strong>orientation</strong> in space?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] n",
+    "[1] ℓ",
+    "[2] m<sub>ℓ</sub>",
+    "[3] m<sub>s</sub>"
+   ]
+  }
+ },
+ {
+  "id": "m8-p5",
+  "module": "m8",
+  "label": "lecture",
+  "prompt": "<p>What does |Ψ|<sup>2</sup> represent?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The path the electron travels around the nucleus",
+    "[1] The probability density: where the electron is likely to be found",
+    "[2] The electron's charge",
+    "[3] Nothing physical"
+   ]
+  }
+ },
+ {
+  "id": "m8-transfer",
+  "module": "m8",
+  "label": "lecture",
+  "prompt": "<p>Imagine a universe where m<sub>s</sub> could take <em>three</em> values (−1, 0, +1), with every other rule unchanged. How many electrons could a p subshell hold?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m8-m-recognize",
+  "module": "m8",
+  "label": "lecture",
+  "prompt": "<p>“Could two electrons in the same atom both have n = 3, ℓ = 1, m<sub>ℓ</sub> = 0, m<sub>s</sub> = +½?” Which principle answers this?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Aufbau principle",
+    "[1] Hund's rule",
+    "[2] Pauli exclusion principle: no",
+    "[3] Bohr model: yes"
+   ]
+  }
+ },
+ {
+  "id": "m8-m-sanity",
+  "module": "m8",
+  "label": "lecture",
+  "prompt": "<p>A student's answer mentions a “2d orbital.” Is that possible?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Yes; it's a small d orbital.",
+    "[1] No; for n = 2, ℓ can only be 0 or 1 (s or p).",
+    "[2] Yes, but only in hydrogen.",
+    "[3] No; d orbitals don't exist."
+   ]
+  }
+ },
+ {
+  "id": "m9-attempt",
+  "module": "m9",
+  "label": "lecture",
+  "prompt": "<p>Look at the two 1s graphs from Day 5 p.17 (reproduced in Explore). Where is the electron density ψ<sup>2</sup> highest, and at what distance is the electron <em>most likely</em> to be found?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Both at the nucleus",
+    "[1] Both at 53 pm",
+    "[2] ψ² is highest at the nucleus; the most likely distance is 53 pm",
+    "[3] ψ² is highest at 53 pm; the most likely distance is the nucleus"
+   ]
+  }
+ },
+ {
+  "id": "m9-p1",
+  "module": "m9",
+  "label": "lecture",
+  "prompt": "<p>From the 3s radial distribution (Day 5 p.18, or the Explore panel): not counting r = 0, at how many distances does the probability 4πr<sup>2</sup>ψ<sup>2</sup> fall to zero?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m9-p2",
+  "module": "m9",
+  "label": "lecture",
+  "prompt": "<p>How many 3d orbitals are there?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m9-p3",
+  "module": "m9",
+  "label": "lecture",
+  "prompt": "<p>Which orbital has its most probable distance farthest from the nucleus?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] 1s",
+    "[1] 2s",
+    "[2] 3s",
+    "[3] They're all the same size."
+   ]
+  }
+ },
+ {
+  "id": "m9-p4",
+  "module": "m9",
+  "label": "lecture",
+  "prompt": "<p>In the n = 3 radial plots (Day 6 p.18), which orbital has electron density that penetrates closest to the nucleus?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] 3s",
+    "[1] 3p",
+    "[2] 3d",
+    "[3] All penetrate equally."
+   ]
+  }
+ },
+ {
+  "id": "m9-transfer",
+  "module": "m9",
+  "label": "lecture",
+  "prompt": "<p>The zeros in an s orbital's radial distribution are called nodes (a textbook term). Following the pattern 1s (0 zeros), 2s (1), 3s (2), how many should a 4s orbital have?</p>",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m9-m-recognize",
+  "module": "m9",
+  "label": "lecture",
+  "prompt": "<p>An orbital has two lobes pointing in opposite directions along one axis. Which type is it?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] s",
+    "[1] p",
+    "[2] d",
+    "[3] f"
+   ]
+  }
+ },
+ {
+  "id": "m9-m-sanity",
+  "module": "m9",
+  "label": "lecture",
+  "prompt": "<p>A classmate says “a 2p orbital holds 6 electrons.” What's the correction?</p>",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Correct as stated",
+    "[1] Each 2p orbital holds 2; the 2p <em>subshell</em> (three orbitals) holds 6.",
+    "[2] A 2p orbital holds 3 electrons.",
+    "[3] 2p orbitals hold 8 electrons."
+   ]
+  }
+ },
+ {
+  "id": "m10-attempt",
+  "module": "m10",
+  "label": "lecture",
+  "prompt": "<p>Write the ground-state electron configuration of sulfur (Z = 16), and give its number of unpaired electrons.</p>",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "config",
+     "species": "S",
+     "label": "configuration"
+    },
+    {
+     "type": "numeric",
+     "label": "unpaired electrons"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m10-p1",
+  "module": "m10",
+  "label": "lecture",
+  "prompt": "<p>Write the ground-state configuration of iron (Z = 26). You can use a noble-gas core, in either filling order or n order.</p>",
+  "answer_format": {
+   "type": "config",
+   "species": "Fe"
+  }
+ }
+]
