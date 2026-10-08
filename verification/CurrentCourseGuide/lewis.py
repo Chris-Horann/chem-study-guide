@@ -12,10 +12,11 @@ import math
 
 VALENCE = {"H": 1, "He": 2, "Li": 1, "Be": 2, "B": 3, "C": 4, "N": 5, "O": 6, "F": 7, "Ne": 8,
            "Na": 1, "Mg": 2, "Al": 3, "Si": 4, "P": 5, "S": 6, "Cl": 7, "Ar": 8, "K": 1, "Ca": 2,
-           "As": 5, "Se": 6, "Br": 7, "Kr": 8, "I": 7, "Xe": 8}
+           "As": 5, "Se": 6, "Br": 7, "Kr": 8, "I": 7, "Xe": 8,
+           "Ga": 3, "Ge": 4, "In": 3, "Sb": 5}      # Ga-Sb: Lewis symbols only (the dopants of Day 12 p.25 and m25)
 MINUS = "−"
 UNIT = 46                       # px per unit of bond length
-RDKIT_NO_VALENCE = {"BrF5"}     # hypervalent halogen: RDKit valence check skipped (see rdkit_check)
+RDKIT_NO_VALENCE = {"BrF5", "ClF3", "BrF3"}   # hypervalent halogens: RDKit valence check skipped (see rdkit_check)
 
 
 def sup_charge(q):
@@ -584,8 +585,206 @@ for n in range(2):
     add(S(f"C6H6-{n + 1}", "benzene, C₆H₆", "C<sub>6</sub>H<sub>6</sub>", atoms, ring + [(k, k + 6, 1) for k in range(6)], {},
           central=list(range(6)), source="textbook §4.5 Fig. 4.10, PDF p.205"))
 
+# ---------------------------------------------------------------- Day 9 and Chapter 5 structures (added 2026-10-06)
+def _around(cx, cy, r, angles):
+    """points at the given angles (degrees, 0 = right, 90 = up) around (cx, cy); y runs down the page."""
+    return [(cx + r * math.cos(math.radians(a)), cy - r * math.sin(math.radians(a))) for a in angles]
+
+
+def _star(sid, name, html_f, center, outer, angles, lp_center=0, lp_outer=3, charge=0, r=1.2, source="new example"):
+    """central atom + outer atoms at the given angles; every outer atom gets lp_outer lone pairs."""
+    pts = _around(1.3, 1.3, r, angles)
+    atoms = [(center, 1.3, 1.3)] + [(el, x, y) for el, (x, y) in zip(outer, pts)]
+    bonds = [(0, k, 1) for k in range(1, len(atoms))]
+    lp = {k: (0 if atoms[k][0] == "H" else lp_outer) for k in range(1, len(atoms))}
+    if lp_center:
+        lp[0] = lp_center
+    return add(S(sid, name, html_f, atoms, bonds, lp, charge=charge, central=[0], source=source))
+
+
+# Day 9 p.27: electron-deficient molecules
+_star("AlCl3", "aluminum chloride, AlCl₃ (molecule)", "AlCl<sub>3</sub>", "Al", ["Cl"] * 3, [90, 210, 330], source="Day 9 p.27")
+_star("BCl3", "boron trichloride, BCl₃", "BCl<sub>3</sub>", "B", ["Cl"] * 3, [90, 210, 330], source="Day 9 p.27")
+# Day 9 p.26 (Top Hat): three of the five phosphoric-acid structures have the right electron count (32);
+# options 4 and 5 (H on P; an H bonded to both P and O) are drawn ad hoc where they're used, since they're wrong.
+_P = [("P", 1.3, 1.3), ("O", 1.3, 0.05), ("O", 0.05, 1.3), ("O", 2.55, 1.3), ("O", 1.3, 2.55),
+      ("H", -0.95, 1.3), ("H", 3.55, 1.3), ("H", 1.3, 3.55)]
+_PB = [(0, 1), (0, 2), (0, 3), (0, 4), (2, 5), (3, 6), (4, 7)]
+add(S("H3PO4-t1", "phosphoric acid, H₃PO₄ (Top Hat structure 1)", "H<sub>3</sub>PO<sub>4</sub>", _P,
+      [(i, j, 2 if (i, j) == (0, 4) else 1) for i, j in _PB], {1: 3, 2: 2, 3: 2, 4: 1}, central=[0, 2, 3, 4], source="Day 9 p.26"))
+add(S("H3PO4-t2", "phosphoric acid, H₃PO₄ (Top Hat structure 2)", "H<sub>3</sub>PO<sub>4</sub>", _P,
+      [(i, j, 1) for i, j in _PB], {1: 3, 2: 2, 3: 2, 4: 2}, central=[0, 2, 3, 4], source="Day 9 p.26"))
+add(S("H3PO4-t3", "phosphoric acid, H₃PO₄ (Top Hat structure 3)", "H<sub>3</sub>PO<sub>4</sub>", _P,
+      [(i, j, 2 if (i, j) == (0, 1) else 1) for i, j in _PB], {1: 2, 2: 2, 3: 2, 4: 2}, central=[0, 2, 3, 4], source="Day 9 p.26"))
+# Day 10: VSEPR examples with no lone pairs on the central atom
+_star("CCl4", "carbon tetrachloride, CCl₄", "CCl<sub>4</sub>", "C", ["Cl"] * 4, [90, 180, 0, 270], source="Day 10 p.10–11")
+_star("CF4", "carbon tetrafluoride, CF₄", "CF<sub>4</sub>", "C", ["F"] * 4, [90, 180, 0, 270], source="Day 10 p.30")
+_star("PF5", "phosphorus pentafluoride, PF₅", "PF<sub>5</sub>", "P", ["F"] * 5, [90, 162, 18, 234, 306], source="Day 10 p.12")
+# textbook Table 5.1 (TB PDF p.240), Sample Ex. 5.3, and new examples with lone pairs on the central atom
+_star("SF4", "sulfur tetrafluoride, SF₄", "SF<sub>4</sub>", "S", ["F"] * 4, [90, 180, 0, 270], lp_center=1,
+      source="textbook §5.2 Sample Ex. 5.3, PDF p.242–243")
+_star("SCl4", "sulfur tetrachloride, SCl₄", "SCl<sub>4</sub>", "S", ["Cl"] * 4, [90, 180, 0, 270], lp_center=1,
+      source="textbook Table 5.1, PDF p.240")
+_star("ClF3", "chlorine trifluoride, ClF₃", "ClF<sub>3</sub>", "Cl", ["F"] * 3, [90, 0, 270], lp_center=2,
+      source="textbook §5.2 practice, PDF p.243")
+_star("BrF3", "bromine trifluoride, BrF₃", "BrF<sub>3</sub>", "Br", ["F"] * 3, [90, 0, 270], lp_center=2,
+      source="textbook Table 5.1, PDF p.240")
+add(S("XeF2", "xenon difluoride, XeF₂", "XeF<sub>2</sub>", [("F", 0, 0), ("Xe", 1.4, 0), ("F", 2.8, 0)],
+      [(0, 1, 1), (1, 2, 1)], {0: 3, 1: 3, 2: 3}, central=[1], source="textbook Table 5.1, PDF p.240"))
+_star("XeF4", "xenon tetrafluoride, XeF₄", "XeF<sub>4</sub>", "Xe", ["F"] * 4, [90, 180, 0, 270], lp_center=2,
+      source="textbook Table 5.1, PDF p.240")
+_star("IF5", "iodine pentafluoride, IF₅", "IF<sub>5</sub>", "I", ["F"] * 5, [90, 162, 18, 234, 306], lp_center=1,
+      source="textbook Table 5.1, PDF p.240")
+add(S("I3-", "triiodide ion, I₃⁻", "I<sub>3</sub><sup>−</sup>", [("I", 0, 0), ("I", 1.4, 0), ("I", 2.8, 0)],
+      [(0, 1, 1), (1, 2, 1)], {0: 3, 1: 3, 2: 3}, charge=-1, central=[1], source="new example"))
+_star("ICl4-", "tetrachloroiodate ion, ICl₄⁻", "ICl<sub>4</sub><sup>−</sup>", "I", ["Cl"] * 4, [90, 180, 0, 270], lp_center=2, charge=-1)
+for n, side in enumerate(("left", "right")):
+    o = (2, 1) if side == "left" else (1, 2)
+    add(S(f"SO2-{n + 1}", "sulfur dioxide, SO₂", "SO<sub>2</sub>", [("O", 0, 0.9), ("S", 1.05, 0.25), ("O", 2.1, 0.9)],
+          [(0, 1, o[0]), (1, 2, o[1])], {0: 3 - (o[0] - 1), 1: 1, 2: 3 - (o[1] - 1)}, central=[1],
+          source="textbook Table 5.1, PDF p.240 (two resonance forms)"))
+add(S("SO2-exp", "sulfur dioxide, SO₂ (two S=O)", "SO<sub>2</sub>", [("O", 0, 0.9), ("S", 1.05, 0.25), ("O", 2.1, 0.9)],
+      [(0, 1, 2), (1, 2, 2)], {0: 2, 1: 1, 2: 2}, central=[1], source="new example (expanded octet, Day 9 p.29)"))
+# polarity (Day 10 p.29-31; Day 11 p.7-8; textbook §5.3)
+add(S("CH2Cl2", "dichloromethane, CH₂Cl₂", "CH<sub>2</sub>Cl<sub>2</sub>",
+      [("C", 1, 1), ("H", 1, 0), ("H", 0, 1), ("Cl", 2, 1), ("Cl", 1, 2)], [(0, 1, 1), (0, 2, 1), (0, 3, 1), (0, 4, 1)],
+      {3: 3, 4: 3}, central=[0], source="textbook §5.3 Sample Ex. 5.4, PDF p.245–246"))
+_star("CCl3F", "trichlorofluoromethane, CCl₃F", "CCl<sub>3</sub>F", "C", ["F", "Cl", "Cl", "Cl"], [90, 180, 0, 270],
+      source="Day 11 p.7–8 (Table 5.2)")
+add(S("CH3Cl", "chloromethane, CH₃Cl", "CH<sub>3</sub>Cl", [("C", 1, 1), ("H", 1, 0), ("H", 0, 1), ("H", 1, 2), ("Cl", 2.1, 1)],
+      [(0, 1, 1), (0, 2, 1), (0, 3, 1), (0, 4, 1)], {4: 3}, central=[0], source="new example"))
+add(S("HF", "hydrogen fluoride, HF", "HF", [("H", 0, 0), ("F", 1.1, 0)], [(0, 1, 1)], {1: 3}, central=[],
+      source="Day 11 p.8 (Table 5.2)"))
+add(S("H2S", "hydrogen sulfide, H₂S", "H<sub>2</sub>S", [("S", 1, 0), ("H", 0, 0), ("H", 2, 0)],
+      [(0, 1, 1), (0, 2, 1)], {0: 2}, central=[0], source="textbook §5.3 Concept Test, PDF p.246"))
+add(S("OF2", "oxygen difluoride, OF₂", "OF<sub>2</sub>", [("O", 1, 0), ("F", 0, 0), ("F", 2, 0)],
+      [(0, 1, 1), (0, 2, 1)], {0: 2, 1: 3, 2: 3}, central=[0], source="new example"))
+add(S("NF3", "nitrogen trifluoride, NF₃", "NF<sub>3</sub>", [("N", 1, 0), ("F", 0, 0), ("F", 2, 0), ("F", 1, 1)],
+      [(0, 1, 1), (0, 2, 1), (0, 3, 1)], {0: 1, 1: 3, 2: 3, 3: 3}, central=[0], source="new example"))
+add(S("PH3", "phosphine, PH₃", "PH<sub>3</sub>", [("P", 1, 0), ("H", 0, 0), ("H", 2, 0), ("H", 1, 1)],
+      [(0, 1, 1), (0, 2, 1), (0, 3, 1)], {0: 1}, central=[0], source="textbook §5.4 practice, PDF p.252"))
+add(S("H3O+", "hydronium ion, H₃O⁺", "H<sub>3</sub>O<sup>+</sup>", [("O", 1, 0), ("H", 0, 0), ("H", 2, 0), ("H", 1, 1)],
+      [(0, 1, 1), (0, 2, 1), (0, 3, 1)], {0: 1}, charge=1, central=[0], source="new example"))
+# hybridization, sigma and pi (Day 11 p.17-26; textbook §5.4-5.5)
+add(S("N2H2", "diazene, N₂H₂", "N<sub>2</sub>H<sub>2</sub>", [("N", 1, 0.6), ("N", 2.2, 0.6), ("H", 0.3, -0.2), ("H", 2.9, 1.4)],
+      [(0, 1, 2), (0, 2, 1), (1, 3, 1)], {0: 1, 1: 1}, central=[0, 1], source="Day 11 p.22"))
+add(S("acrolein", "acrolein, CH₂=CH–CH=O", "C<sub>3</sub>H<sub>4</sub>O",
+      [("C", 1.0, 1.0), ("C", 2.1, 0.4), ("C", 3.2, 1.0), ("O", 4.3, 0.4), ("H", 0.2, 0.35), ("H", 0.2, 1.65), ("H", 2.1, -0.65), ("H", 3.2, 2.05)],
+      [(0, 1, 2), (1, 2, 1), (2, 3, 2), (0, 4, 1), (0, 5, 1), (1, 6, 1), (2, 7, 1)], {3: 2}, central=[0, 1, 2],
+      source="Day 11 p.26; textbook §5.5, PDF p.254"))
+add(S("CH3CN", "acetonitrile, CH₃CN", "CH<sub>3</sub>CN",
+      [("C", 1, 1), ("H", 1, 0), ("H", 0, 1), ("H", 1, 2), ("C", 2.2, 1), ("N", 3.4, 1)],
+      [(0, 1, 1), (0, 2, 1), (0, 3, 1), (0, 4, 1), (4, 5, 3)], {5: 1}, central=[0, 4], source="new example"))
+add(S("allene", "allene (propadiene), H₂C=C=CH₂", "C<sub>3</sub>H<sub>4</sub>",
+      [("C", 0.9, 0.8), ("C", 2.1, 0.8), ("C", 3.3, 0.8), ("H", 0.2, 0.1), ("H", 0.2, 1.5), ("H", 4.0, 0.1), ("H", 4.0, 1.5)],
+      [(0, 1, 2), (1, 2, 2), (0, 3, 1), (0, 4, 1), (2, 5, 1), (2, 6, 1)], {}, central=[0, 1, 2], source="new example"))
+add(S("C2H6", "ethane, C₂H₆", "C<sub>2</sub>H<sub>6</sub>",
+      [("C", 1, 1), ("C", 2.2, 1), ("H", 1, 0), ("H", 0, 1), ("H", 1, 2), ("H", 2.2, 0), ("H", 3.2, 1), ("H", 2.2, 2)],
+      [(0, 1, 1), (0, 2, 1), (0, 3, 1), (0, 4, 1), (1, 5, 1), (1, 6, 1), (1, 7, 1)], {}, central=[0, 1], source="new example"))
+add(S("HCOOH", "formic acid, HCOOH", "HCOOH",
+      [("C", 1.2, 1.0), ("H", 1.2, -0.1), ("O", 0.1, 1.6), ("O", 2.3, 1.6), ("H", 3.3, 1.6)],
+      [(0, 1, 1), (0, 2, 2), (0, 3, 1), (3, 4, 1)], {2: 2, 3: 2}, central=[0, 3], source="new example"))
+
+# ---------------------------------------------------------------- per-author blocks (Extension 3, 2026-10-06)
+# Each author adds structures only inside its own block, plus their ids to NON_OCTET_EXTRA (octet not complete
+# on purpose) and EXPECT_EXTRA (independent SMILES and/or formal charges), so edits never touch the same lines.
+NON_OCTET_EXTRA, EXPECT_EXTRA = set(), {}
+# ==== block A (Day 9 Ch. 4 revision) start
+# Day 9 p.15-18: the lecture's polar-bond examples (H-Cl under the battery; Cl2 on the potential-map scale)
+add(S("HCl", "hydrogen chloride, HCl", "HCl", [("H", 0, 0), ("Cl", 1.25, 0)], [(0, 1, 1)], {1: 3}, central=[],
+      source="Day 9 p.15–18"))
+add(S("Cl2", "chlorine, Cl₂", "Cl<sub>2</sub>", [("Cl", 0, 0), ("Cl", 1.4, 0)], [(0, 1, 1)], {0: 3, 1: 3}, central=[],
+      source="Day 9 p.16–18"))
+# a new odd-electron example for t4-8 (Day 9 p.28: "radicals" or "free radicals")
+add(S("CH3-rad", "methyl radical, CH₃", "CH<sub>3</sub>", [("C", 1, 1), ("H", 0, 1), ("H", 2, 1), ("H", 1, 2)],
+      [(0, 1, 1), (0, 2, 1), (0, 3, 1)], {}, rad={0: 1}, central=[0], source="new example"))
+NON_OCTET_EXTRA |= {"CH3-rad"}
+EXPECT_EXTRA.update({"HCl": ("Cl", [0, 0]), "Cl2": ("ClCl", [0, 0]), "CH3-rad": ("[CH3]", [0, 0, 0, 0])})
+# ==== block A end
+# ==== block B (Ch. 5 §5.1-5.3) start
+# new examples for the VSEPR and polarity problems (problem_bank_i.py); none is a Ch. 5 textbook example or exercise
+add(S("COCl2", "phosgene, COCl₂", "COCl<sub>2</sub>", [("C", 1.2, 1.0), ("O", 1.2, -0.2), ("Cl", 0.1, 1.65), ("Cl", 2.3, 1.65)],
+      [(0, 1, 2), (0, 2, 1), (0, 3, 1)], {1: 2, 2: 3, 3: 3}, central=[0], source="new example"))
+add(S("NH2-", "amide ion, NH₂⁻", "NH<sub>2</sub><sup>−</sup>", [("N", 1, 0), ("H", 0, 0), ("H", 2, 0)],
+      [(0, 1, 1), (0, 2, 1)], {0: 2}, charge=-1, central=[0], source="new example"))
+_star("SeF4", "selenium tetrafluoride, SeF₄", "SeF<sub>4</sub>", "Se", ["F"] * 4, [90, 180, 0, 270], lp_center=1)
+add(S("SF5Cl", "sulfur chloride pentafluoride, SF₅Cl", "SF<sub>5</sub>Cl",
+      [("S", 1.2, 1.2), ("Cl", 1.2, 0), ("F", 1.2, 2.4), ("F", 0, 0.6), ("F", 2.4, 0.6), ("F", 0, 1.8), ("F", 2.4, 1.8)],
+      [(0, k, 1) for k in range(1, 7)], {k: 3 for k in range(1, 7)}, central=[0], source="new example"))
+add(S("SeF6", "selenium hexafluoride, SeF₆", "SeF<sub>6</sub>",
+      [("Se", 1.2, 1.2), ("F", 1.2, 0), ("F", 1.2, 2.4), ("F", 0, 0.6), ("F", 2.4, 0.6), ("F", 0, 1.8), ("F", 2.4, 1.8)],
+      [(0, k, 1) for k in range(1, 7)], {k: 3 for k in range(1, 7)}, central=[0], source="new example"))
+_star("AlCl4-", "tetrachloroaluminate ion, AlCl₄⁻", "AlCl<sub>4</sub><sup>−</sup>", "Al", ["Cl"] * 4, [90, 180, 0, 270], charge=-1)
+_star("BrF4-", "tetrafluorobromate ion, BrF₄⁻", "BrF<sub>4</sub><sup>−</sup>", "Br", ["F"] * 4, [90, 180, 0, 270], lp_center=2, charge=-1)
+_star("ClF5", "chlorine pentafluoride, ClF₅", "ClF<sub>5</sub>", "Cl", ["F"] * 5, [90, 162, 18, 234, 306], lp_center=1)
+add(S("KrF2", "krypton difluoride, KrF₂", "KrF<sub>2</sub>", [("F", 0, 0), ("Kr", 1.4, 0), ("F", 2.8, 0)],
+      [(0, 1, 1), (1, 2, 1)], {0: 3, 1: 3, 2: 3}, central=[1], source="new example"))
+add(S("PF3", "phosphorus trifluoride, PF₃", "PF<sub>3</sub>", [("P", 1, 0), ("F", 0, 0), ("F", 2, 0), ("F", 1, 1)],
+      [(0, 1, 1), (0, 2, 1), (0, 3, 1)], {0: 1, 1: 3, 2: 3, 3: 3}, central=[0], source="new example"))
+add(S("H2Se", "hydrogen selenide, H₂Se", "H<sub>2</sub>Se", [("Se", 1, 0), ("H", 0, 0), ("H", 2, 0)],
+      [(0, 1, 1), (0, 2, 1)], {0: 2}, central=[0], source="new example"))
+add(S("BH4-", "tetrahydroborate (borohydride) ion, BH₄⁻", "BH<sub>4</sub><sup>−</sup>",
+      [("B", 1, 1), ("H", 0, 1), ("H", 2, 1), ("H", 1, 0), ("H", 1, 2)], [(0, 1, 1), (0, 2, 1), (0, 3, 1), (0, 4, 1)], {},
+      charge=-1, central=[0], source="new example"))
+add(S("CH3F", "fluoromethane, CH₃F", "CH<sub>3</sub>F", [("C", 1, 1), ("H", 1, 0), ("H", 0, 1), ("H", 1, 2), ("F", 2.1, 1)],
+      [(0, 1, 1), (0, 2, 1), (0, 3, 1), (0, 4, 1)], {4: 3}, central=[0], source="new example"))
+add(S("CH2F2", "difluoromethane, CH₂F₂", "CH<sub>2</sub>F<sub>2</sub>",
+      [("C", 1, 1), ("H", 1, 0), ("H", 0, 1), ("F", 2, 1), ("F", 1, 2)], [(0, 1, 1), (0, 2, 1), (0, 3, 1), (0, 4, 1)],
+      {3: 3, 4: 3}, central=[0], source="new example"))
+add(S("CHF3", "trifluoromethane, CHF₃", "CHF<sub>3</sub>",
+      [("C", 1, 1), ("F", 0, 1), ("F", 2, 1), ("H", 1, 0), ("F", 1, 2)], [(0, 1, 1), (0, 2, 1), (0, 3, 1), (0, 4, 1)],
+      {1: 3, 2: 3, 4: 3}, central=[0], source="new example"))
+NON_OCTET_EXTRA |= {"SeF4", "SF5Cl", "SeF6", "BrF4-", "ClF5", "KrF2"}
+RDKIT_NO_VALENCE |= {"BrF4-", "ClF5", "KrF2"}     # hypervalent Br⁻, Cl, and Kr: RDKit's valence table has none
+EXPECT_EXTRA.update({"COCl2": ("O=C(Cl)Cl", [0, 0, 0, 0]), "NH2-": ("[NH2-]", [-1, 0, 0]),
+                     "SeF4": (None, [0] * 5), "SF5Cl": ("FS(F)(F)(F)(F)Cl", [0] * 7), "SeF6": (None, [0] * 7),
+                     "AlCl4-": ("Cl[Al-](Cl)(Cl)Cl", [-1, 0, 0, 0, 0]), "BrF4-": (None, [-1, 0, 0, 0, 0]),
+                     "ClF5": (None, [0] * 6), "KrF2": (None, [0, 0, 0]), "PF3": ("FP(F)F", [0] * 4),
+                     "H2Se": ("[SeH2]", [0, 0, 0]), "BH4-": ("[BH4-]", [-1, 0, 0, 0, 0]), "CH3F": ("CF", None),
+                     "CH2F2": ("FCF", None), "CHF3": ("FC(F)F", None)})
+# ==== block B end
+# ==== block C (Ch. 5 §5.4-5.5) start
+# m24 transfer problem: CH3-N=C=O (sp3 C, sp2 N, sp C, sp2 O), drawn with N=C=O straight as an sp carbon requires
+add(S("CH3NCO", "methyl isocyanate, CH₃–N=C=O", "CH<sub>3</sub>NCO",
+      [("C", 1.0, 1.0), ("N", 2.1, 0.4), ("C", 3.3, 0.4), ("O", 4.5, 0.4), ("H", 0.2, 0.35), ("H", 0.2, 1.65), ("H", 1.0, 2.0)],
+      [(0, 1, 1), (1, 2, 2), (2, 3, 2), (0, 4, 1), (0, 5, 1), (0, 6, 1)], {1: 1, 3: 2}, central=[0, 1, 2], source="new example"))
+EXPECT_EXTRA["CH3NCO"] = ("CN=C=O", [0] * 7)
+# m24 attempt: methanimine H2C=NH, formaldehyde's N analog (sp2 C, sp2 N with its lone pair)
+add(S("CH2NH", "methanimine, H₂C=NH", "CH<sub>2</sub>NH",
+      [("C", 1.0, 0.6), ("N", 2.2, 0.6), ("H", 0.3, -0.2), ("H", 0.3, 1.4), ("H", 2.9, 1.4)],
+      [(0, 1, 2), (0, 2, 1), (0, 3, 1), (1, 4, 1)], {1: 1}, central=[0, 1], source="new example"))
+EXPECT_EXTRA["CH2NH"] = ("C=N", [0] * 5)
+# ==== block C end
+# ==== block D (Ch. 5 §5.6-5.7) start
+# §5.6 chirality: the textbook's chiral/achiral pair (Fig. 5.40) and a new example with a stereocenter (C2)
+_star("CHBrClF", "bromochlorofluoromethane, CHBrClF", "CHBrClF", "C", ["H", "Br", "Cl", "F"], [90, 180, 0, 270],
+      source="textbook §5.6 Fig. 5.40, PDF p.257")
+_star("CHBr2Cl", "dibromochloromethane, CHBr₂Cl", "CHBr<sub>2</sub>Cl", "C", ["H", "Br", "Cl", "Br"], [90, 180, 0, 270],
+      source="textbook §5.6 Fig. 5.40, PDF p.257")
+add(S("2-butanol", "2-butanol, CH₃CH(OH)CH₂CH₃", "C<sub>4</sub>H<sub>10</sub>O",
+      [("C", 1.0, 1.2), ("C", 2.2, 1.2), ("C", 3.4, 1.2), ("C", 4.6, 1.2), ("O", 2.2, 0.0), ("H", 2.2, -1.0), ("H", 2.2, 2.2),
+       ("H", 0.0, 1.2), ("H", 1.0, 0.2), ("H", 1.0, 2.2), ("H", 3.4, 0.2), ("H", 3.4, 2.2), ("H", 5.6, 1.2), ("H", 4.6, 0.2),
+       ("H", 4.6, 2.2)],
+      [(0, 1, 1), (1, 2, 1), (2, 3, 1), (1, 4, 1), (4, 5, 1), (1, 6, 1), (0, 7, 1), (0, 8, 1), (0, 9, 1), (2, 10, 1),
+       (2, 11, 1), (3, 12, 1), (3, 13, 1), (3, 14, 1)], {4: 2}, central=[0, 1, 2, 3, 4], source="new example"))
+# §5.7: a diatomic ion whose MO bond order matches its Lewis structure (new example, the t5-7 transfer)
+add(S("CN-", "cyanide ion, CN⁻", "CN<sup>−</sup>", [("C", 0, 0), ("N", 1.2, 0)], [(0, 1, 3)], {0: 1, 1: 1}, charge=-1,
+      central=[], source="new example"))
+EXPECT_EXTRA.update({
+    "CHBrClF": ("FC(Cl)Br", [0] * 5), "CHBr2Cl": ("ClC(Br)Br", [0] * 5), "2-butanol": ("CCC(C)O", [0] * 15),
+    "CN-": ("[C-]#N", [-1, 0]),
+})
+# ==== block D end
+# ==== block E (integration, mixed review) start
+add(S("NCl3", "nitrogen trichloride, NCl₃", "NCl<sub>3</sub>", [("N", 1, 0), ("Cl", 0, 0), ("Cl", 2, 0), ("Cl", 1, 1)],
+      [(0, 1, 1), (0, 2, 1), (0, 3, 1)], {0: 1, 1: 3, 2: 3, 3: 3}, central=[0], source="new example"))
+EXPECT_EXTRA["NCl3"] = ("ClN(Cl)Cl", [0, 0, 0, 0])
+# ==== block E end
+
 # structures whose octets are deliberately not all complete
-NON_OCTET = {"BF3", "BeCl2", "NO", "NO2-rad1", "NO2-rad2", "PCl5", "SF6", "SO4-exp", "PO4-exp", "H2SO4", "SO3-exp", "BrF5"}
+NON_OCTET = {"BF3", "BeCl2", "NO", "NO2-rad1", "NO2-rad2", "PCl5", "SF6", "SO4-exp", "PO4-exp", "H2SO4", "SO3-exp", "BrF5",
+             "AlCl3", "BCl3", "H3PO4-t1", "H3PO4-t3", "PF5", "SF4", "SCl4", "ClF3", "BrF3", "XeF2", "XeF4", "IF5", "I3-",
+             "ICl4-", "SO2-exp"} | NON_OCTET_EXTRA
 
 # What each structure should look like, independently of the definitions above: RDKit canonical SMILES and
 # formal charges (textbook values where the textbook prints them).
@@ -602,7 +801,21 @@ EXPECT = {
     "CH3COO-1": ("CC(=O)[O-]", None), "CH3COO-2": ("CC(=O)[O-]", None),
     "HOCl": ("OCl", [0, 0, 0]), "CS2": ("S=C=S", [0, 0, 0]), "CS2-alt": (None, [1, 0, -1]),
     "N2H4": ("NN", None), "BrF5": (None, [0, 0, 0, 0, 0, 0]),
+    # Day 9 and Ch. 5 additions: connectivity from SMILES written independently of the definitions above
+    "AlCl3": ("Cl[Al](Cl)Cl", [0, 0, 0, 0]), "BCl3": ("ClB(Cl)Cl", [0, 0, 0, 0]),
+    "H3PO4-t1": (None, [0, -1, 0, 0, 1, 0, 0, 0]), "H3PO4-t2": (None, [1, -1, 0, 0, 0, 0, 0, 0]),
+    "H3PO4-t3": ("O=P(O)(O)O", [0, 0, 0, 0, 0, 0, 0, 0]),
+    "CCl4": ("ClC(Cl)(Cl)Cl", None), "CF4": ("FC(F)(F)F", None), "PF5": (None, [0] * 6),
+    "SF4": (None, [0] * 5), "SCl4": (None, [0] * 5), "ClF3": (None, [0] * 4), "BrF3": (None, [0] * 4),
+    "XeF2": (None, [0, 0, 0]), "XeF4": (None, [0] * 5), "IF5": (None, [0] * 6),
+    "I3-": (None, [0, -1, 0]), "ICl4-": (None, [-1, 0, 0, 0, 0]),
+    "SO2-1": ("O=[S+][O-]", [0, 1, -1]), "SO2-2": ("O=[S+][O-]", [-1, 1, 0]), "SO2-exp": ("O=S=O", [0, 0, 0]),
+    "CH2Cl2": ("ClCCl", None), "CCl3F": ("FC(Cl)(Cl)Cl", None), "CH3Cl": ("CCl", None), "HF": ("F", None),
+    "H2S": ("S", None), "OF2": ("FOF", None), "NF3": ("FN(F)F", None), "PH3": ("P", None), "H3O+": ("[OH3+]", [1, 0, 0, 0]),
+    "N2H2": ("N=N", None), "acrolein": ("C=CC=O", None), "CH3CN": ("CC#N", None), "allene": ("C=C=C", None),
+    "C2H6": ("CC", None), "HCOOH": ("O=CO", None),
 }
+EXPECT.update(EXPECT_EXTRA)
 
 
 def check_all(verbose=True):

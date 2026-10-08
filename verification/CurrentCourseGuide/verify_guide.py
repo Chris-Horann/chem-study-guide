@@ -15,6 +15,8 @@ Writes verification/CurrentCourseGuide/verification_report.md with these section
   5. Notation lint of every visible string (index.html and problem text; optionally a rendered-DOM dump)
   6. Citations: lecture page ranges, textbook printed/PDF offsets, scope ranges, topic labels
   7. Structure: ids, data-testids, stage sets, required problem kinds
+  8. Chapter 5: explorer data vs. the slides and textbook (Table 5.2, stated angles, the Day 10 p.26 table, MO orders,
+     hybrid and σ/π presets vs. RDKit), and each Ch. 5 bank's independent check script (check_problem_bank_i-l.py)
 Exit status 1 if a hard check fails. A key disagreement counts as a failure until it is adjudicated
 in ADJUDICATED below, with the reason.
 
@@ -42,11 +44,11 @@ BOHR_J = 2.178e-18       # J            Day 4 p.10
 COULOMB = 2.31e-19       # J nm         Day 7 p.15
 BALMER_NM = 364.56       # nm           Day 3 p.21
 RH_TEXTBOOK = 1.0974e7   # 1/m          textbook PDF p.130
-LECTURE_PAGES = {1: 20, 2: 31, 3: 21, 4: 18, 5: 20, 6: 26, 7: 21, 8: 30}   # physical PDF pages per Day
-TEXTBOOK_OFFSET = 34     # printed = PDF - 34 in Ch. 1-4
+LECTURE_PAGES = {1: 20, 2: 31, 3: 21, 4: 18, 5: 20, 6: 26, 7: 21, 8: 30, 9: 30, 10: 31, 11: 27, 12: 25}   # physical PDF pages per Day
+TEXTBOOK_OFFSET = 34     # printed = PDF - 34 in Ch. 1-5
 # textbook PDF pages inside the guide's scope (SOURCE_SCOPE.md): front matter/TOC, chapter
 # openers, sections, and chapter summaries; end-of-chapter problems are excluded
-TEXTBOOK_SCOPE = [(3, 9), (36, 72), (80, 108), (118, 168), (178, 220)]
+TEXTBOOK_SCOPE = [(3, 9), (36, 72), (80, 108), (118, 168), (178, 220), (230, 278), (918, 921)]   # last: Ch. 18 §18.4-18.5 (Day 12)
 
 # ------------------------------------------------------------------ independent references
 # First ionization energies and electron affinities, kJ/mol, from Wolfram ElementData (NIST ASD /
@@ -98,6 +100,9 @@ REVIEWED_GIVEAWAYS = {
     "m14-p3": "coincidence (2026-09-25): KCl's two-body Coulomb energy per mole (d = 0.319 nm) rounds to -436 kJ/mol, "
               "the same number as the H-H bond energy on Day 8 p.11, a different quantity; the student must still "
               "compute it, and the solution points out the match",
+    "m23-p8": "applies the module's own relationship (2026-10-06): the student must first find the hybridization of species "
+              "that are not on the page (CS2, CO3 2-, NH4+), then the angle that goes with it; 109.5° is the sp3 angle being "
+              "taught (Day 11 p.24), not a looked-up answer",
 }
 
 
@@ -391,6 +396,8 @@ def compare_answer(spec, got):
     """Return (agree: bool, key_str, got_str)."""
     t = spec.get("type")
     if t == "multi":
+        if isinstance(got, dict) and all(str(k).isdigit() for k in got):      # {"0": ..., "1": ...} (batch 13 on)
+            got = [got[k] for k in sorted(got, key=int)]
         if not isinstance(got, list) or len(got) != len(spec["parts"]):
             return False, "parts", json.dumps(got, ensure_ascii=False)[:80]
         res = [compare_answer(p, g) for p, g in zip(spec["parts"], got)]
@@ -440,7 +447,8 @@ def check_blind(R, D, blind_dir):
         return 0
     answers = {}
     # merged answers_N.json per batch; fall back to the answers_N_partKK.json chunks
-    files = sorted(glob.glob(os.path.join(blind_dir, "answers_[0-9].json"))) or sorted(glob.glob(os.path.join(blind_dir, "answers_*_part*.json")))
+    files = (sorted(f for f in glob.glob(os.path.join(blind_dir, "answers_*.json")) if re.fullmatch(r"answers_\d+\.json", os.path.basename(f)))
+             or sorted(glob.glob(os.path.join(blind_dir, "answers_*_part*.json"))))
     for f in files:
         try:
             for a in json.load(open(f, encoding="utf-8")):
@@ -631,7 +639,7 @@ def check_notation(R, D, dom_file):
 
 
 # ================================================================== 6. citations and labels
-DAY_RUN = re.compile(r"Day\s?(\d)((?:(?:\s|,\s?|;\s?)(?:p|pp)\.\s?\d+(?:\s?[–-]\s?\d+)?)+)")
+DAY_RUN = re.compile(r"Day\s?(\d{1,2})((?:(?:\s|,\s?|;\s?)(?:p|pp)\.\s?\d+(?:\s?[–-]\s?\d+)?)+)")
 PDF_REF = re.compile(r"PDF\s(?:p|pp)?\.?\s?(\d+)(?:\s?[–-]\s?(\d+))?(?:,?\s?\(?printed\s(?:p|pp)?\.?\s?(\d+)(?:\s?[–-]\s?(\d+))?)?")
 PRINTED_FIRST = re.compile(r"printed\spp?\.\s?(\d+)(?:\s?[–-]\s?(\d+))?\s\(PDF\s(\d+)(?:\s?[–-]\s?(\d+))?\)")
 
@@ -814,6 +822,107 @@ def check_structure(R, D, dom_file):
     return bad
 
 
+
+# ================================================================== 8. Chapter 5 chemistry
+# Values retyped from the slides and the textbook (not imported from ch5_data.py or the banks)
+CH5_TABLE_52 = {"HF": 1.82, "H2O": 1.85, "NH3": 1.47, "CHCl3": 1.01, "CCl3F": 0.45}            # Day 11 p.8 (Table 5.2)
+CH5_ANGLES = {"O3": 117.0, "NH3": 107.0, "H2O": 104.5, "CH2O": 118.0, "BrF5": 85.0}              # Day 10 p.13-19; TB PDF p.242
+CH5_PROF_TABLE = [  # Day 10 p.26, as printed
+    (2, "Linear", 0, "Linear"), (3, "Trigonal planar", 0, "Trigonal planar"), (3, "Trigonal planar", 1, "Bent"),
+    (4, "Tetrahedral", 0, "Tetrahedral"), (4, "Tetrahedral", 1, "Trigonal pyramidal"), (4, "Tetrahedral", 2, "Bent"),
+    (5, "Trigonal bipyramidal", 0, "Trigonal bipyramidal"), (5, "Trigonal bipyramidal", 1, "See-saw"),
+    (5, "Trigonal bipyramidal", 2, "T-shaped"), (6, "Octahedral", 0, "Octahedral"), (6, "Octahedral", 1, "Square pyramidal"),
+    (6, "Octahedral", 2, "Square planar"), (6, "Octahedral", 3, "T-shaped")]
+CH5_MO_ORDERS = {  # textbook Figs. 5.45, 5.49, 5.52 (increasing energy)
+    "1s": ["σ1s", "σ*1s"],
+    "low": ["σ2s", "σ*2s", "π2p", "σ2p", "π*2p", "σ*2p"],      # Li2-N2 (Z <= 7)
+    "high": ["σ2s", "σ*2s", "σ2p", "π2p", "π*2p", "σ*2p"],     # O2-Ne2 and NO
+}
+CH5_SCRIPTS = ["check_problem_bank_i.py", "check_problem_bank_j.py", "check_problem_bank_k.py", "check_problem_bank_l.py"]
+
+
+def check_ch5(R, D):
+    R.h("8. Chapter 5 chemistry")
+    import subprocess
+    bad = 0
+    G = D.get("ch5")
+    if not G:
+        R.fail("GUIDE_DATA has no ch5 block")
+        return 1
+    dip = {m["key"]: m for m in G["dipoles"]}
+    wrong = [k for k, v in CH5_TABLE_52.items() if dip.get(k, {}).get("mu") != v]
+    R.p(f"- Table 5.2 dipole moments in the dipoles explorer vs. the slide (Day 11 p.8): " + ("all 5 match." if not wrong else "MISMATCH " + ", ".join(wrong)))
+    bad += len(wrong)
+    pre = {p_["key"]: p_ for p_ in G["vsepr"]["presets"]}
+    wrong = [k for k, v in CH5_ANGLES.items() if pre.get(k, {}).get("angle") != v]
+    R.p(f"- Stated bond angles drawn by the VSEPR presets (O₃ 117°, NH₃ 107°, H₂O 104.5°, CH₂O 118°, BrF₅ 85°): " + ("all match." if not wrong else "MISMATCH " + ", ".join(wrong)))
+    bad += len(wrong)
+    for p_ in G["vsepr"]["presets"]:
+        if len(p_["ligands"]) + p_["lp"] != p_["sn"]:
+            bad += 1
+            R.fail(f"VSEPR preset {p_['key']}: atoms + lone pairs != SN")
+    rows = [tuple(r[:4]) for r in G["vsepr"]["profTable"]]
+    ok_tab = rows == CH5_PROF_TABLE
+    R.p("- The professor's summary table (Day 10 p.26), as reproduced in the explorer and toolkit: " + ("matches the slide row for row." if ok_tab else "DIFFERS from the slide"))
+    bad += 0 if ok_tab else 1
+    orders = {k: [o[0] for o in v] for k, v in G["mo"]["orders"].items()}
+    ok_mo = orders == CH5_MO_ORDERS
+    R.p("- MO orders in the MO explorer vs. the textbook (Figs. 5.45, 5.49, 5.52): " + ("match." if ok_mo else f"DIFFER: {orders}"))
+    bad += 0 if ok_mo else 1
+    types = {sp["key"]: sp["order"] for sp in G["mo"]["species"]}
+    want_types = {"H2": "1s", "He2": "1s", "Li2": "low", "Be2": "low", "B2": "low", "C2": "low", "N2": "low",
+                  "O2": "high", "F2": "high", "Ne2": "high", "NO": "high"}
+    bad += 0 if types == want_types else 1
+    R.p("- Order assigned to each species (Z ≤ 7 → π₂p below σ₂p; O₂–Ne₂ and NO → σ₂p below π₂p): " + ("correct for all 11." if types == want_types else f"WRONG: {types}"))
+    # hybrid presets: electrons conserved, one hybrid per electron domain
+    hb = []
+    for h in G["hybrid"]:
+        if h["s"] + h["p"] != 2 * h["lp"] + len(h["sigma"]) + len(h["pi"]) or h["sn"] != len(h["sigma"]) + h["lp"]:
+            hb.append(h["key"])
+    R.p(f"- Hybrid-orbital presets ({len(G['hybrid'])}): valence electrons = 2 × lone pairs + σ + π and SN = σ bonds + lone pairs for "
+        + ("every one." if not hb else "all but " + ", ".join(hb)))
+    bad += len(hb)
+    # σ/π presets against RDKit hybridization (the course rule: SN 2 sp, 3 sp2, 4 sp3)
+    try:
+        from rdkit import Chem
+        smiles = {"CH2O": "C=O", "N2H2": "N=N", "C2H2": "C#C", "C2H4": "C=C", "CO2": "O=C=O", "HCN": "C#N", "N2": "N#N",
+                  "acrolein": "C=CC=O", "allene": "C=C=C", "CH3CN": "CC#N", "HCOOH": "OC=O", "C6H6": "C1=CC=CC=C1", "C2H6": "CC"}
+        mism = []
+        for s_ in G["sigmaPi"]:
+            m = Chem.AddHs(Chem.MolFromSmiles(smiles[s_["key"]]))
+            Chem.Kekulize(m, clearAromaticFlags=True)               # benzene: count one Kekule structure's double bonds
+            n_sig = m.GetNumBonds()
+            n_pi = sum(int(b.GetBondTypeAsDouble()) - 1 for b in m.GetBonds())
+            got_s = len(s_["bonds"])
+            got_p = sum(b[2] - 1 for b in s_["bonds"])
+            if (n_sig, n_pi) != (got_s, got_p):
+                mism.append(f"{s_['key']} σ/π {got_s}/{got_p} vs RDKit {n_sig}/{n_pi}")
+            rd = {str(a.GetHybridization()).lower() for a in m.GetAtoms() if a.GetSymbol() != "H"}
+            for a in s_["atoms"]:
+                if a["hyb"] not in rd and not (s_["key"] == "HCOOH" and a["desc"] == "O of O–H"):
+                    mism.append(f"{s_['key']} {a['desc']}: {a['hyb']} not among RDKit's {sorted(rd)}")
+        R.p(f"- σ and π counts of the {len(G['sigmaPi'])} σ/π presets vs. RDKit, and each listed atom's hybridization: "
+            + ("all agree (formic acid's O–H oxygen: the course rule gives sp³; RDKit calls it sp² because of conjugation, "
+               "and the explorer says so in a background note)." if not mism else "; ".join(mism)))
+        bad += len(mism)
+    except ImportError:
+        R.warn("RDKit not available: σ/π presets not cross-checked")
+    # each bank's independent check script
+    for sc in CH5_SCRIPTS:
+        path = os.path.join(HERE, sc)
+        if not os.path.exists(path):
+            R.fail(f"{sc} missing")
+            bad += 1
+            continue
+        r = subprocess.run([sys.executable, path], capture_output=True, text=True, encoding="utf-8", cwd=HERE,
+                           env=dict(os.environ, PYTHONIOENCODING="utf-8"))
+        tail = (r.stdout.strip().splitlines() or [""])[-1]
+        R.p(f"- `{sc}`: " + ("passed" if r.returncode == 0 else "FAILED") + f" ({tail[:160]})")
+        if r.returncode != 0:
+            bad += 1
+            R.fail(f"{sc} failed: {tail[:200]}")
+    return bad
+
 # ================================================================== main
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
@@ -836,6 +945,7 @@ def main():
         "notation": check_notation(R, D, args.dom),
         "citations": check_citations(R, D),
         "structure": check_structure(R, D, args.dom),
+        "chapter 5": check_ch5(R, D),
     }
     R.lines.insert(3, "")
     R.lines.insert(4, "**Summary:** " + ", ".join(f"{k} {'ok' if not v else str(v) + ' issue(s)'}" for k, v in counts.items())

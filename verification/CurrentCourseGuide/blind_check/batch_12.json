@@ -1,0 +1,738 @@
+[
+ {
+  "id": "t5-6-p2",
+  "module": "t5-6",
+  "label": "preview",
+  "prompt": "Match each term with its textbook definition.",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] isomers",
+    "[1] stereoisomers",
+    "[2] enantiomers",
+    "[3] racemic mixture"
+   ],
+   "options": [
+    "rac: equal amounts of the two mirror-image forms of a compound",
+    "stereo: same formula and same bonds, different arrangement of the atoms in space",
+    "enan: a pair of molecules that are nonsuperimposable mirror images",
+    "iso: same chemical formula, different molecular structures"
+   ]
+  }
+ },
+ {
+  "id": "t5-6-p3",
+  "module": "t5-6",
+  "label": "preview",
+  "prompt": "Which of these molecules is chiral?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] CHCl<sub>2</sub>I",
+    "[1] CH<sub>2</sub>FI",
+    "[2] CF<sub>2</sub>ClBr",
+    "[3] CHFClI"
+   ]
+  }
+ },
+ {
+  "id": "t5-6-p4",
+  "module": "t5-6",
+  "label": "preview",
+  "prompt": "A company tests the two enantiomers of a new drug. One binds tightly to its target protein; its mirror image barely binds at all. The two have the same formula, the same bonds, and the same polarity. What explains the difference?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] One enantiomer is polar and the other isn't.",
+    "[1] The binding site is built from chiral molecules, so only one mirror-image shape fits it, as a left glove fits only a left hand.",
+    "[2] The two enantiomers must differ by an atom somewhere.",
+    "[3] It can't be the molecules: one of the samples must be impure."
+   ]
+  }
+ },
+ {
+  "id": "t5-6-p5",
+  "module": "t5-6",
+  "label": "preview",
+  "prompt": "Classify each molecule as chiral or achiral.",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] glyceraldehyde, HOCH<sub>2</sub>–CH(OH)–CHO",
+    "[1] glycerol, HOCH<sub>2</sub>–CH(OH)–CH<sub>2</sub>OH",
+    "[2] 1-phenylethanol, C<sub>6</sub>H<sub>5</sub>–CH(OH)–CH<sub>3</sub>",
+    "[3] 2-propanol, CH<sub>3</sub>CH(OH)CH<sub>3</sub>",
+    "[4] bromochloromethane, CH<sub>2</sub>BrCl"
+   ],
+   "options": [
+    "achiral: achiral",
+    "chiral: chiral"
+   ]
+  }
+ },
+ {
+  "id": "t5-6-p6",
+  "module": "t5-6",
+  "label": "preview",
+  "prompt": "Day 10 p.6 calls the spearmint compound “R(−) carvone” and the caraway compound “S(+) carvone.” (a) What does the (−) tell you? (b) What does a 50 : 50 mixture of the two do to plane-polarized light?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] It's the less stable of the two forms.",
+      "[1] The compound rotates the plane of polarized light counterclockwise, as a polarimeter shows.",
+      "[2] The molecule carries a negative charge.",
+      "[3] It rotates light to the right, because R means right."
+     ],
+     "label": "(a) the (−)"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] It rotates the light half as far as pure (−)-carvone does.",
+      "[1] It rotates the light clockwise, because the (+) form wins.",
+      "[2] It rotates the light twice as far.",
+      "[3] It doesn't rotate the light at all."
+     ],
+     "label": "(b) a 50 : 50 mixture"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t5-6-p7",
+  "module": "t5-6",
+  "label": "preview",
+  "prompt": "The circled carbon in carvone (Day 10 p.6) is bonded to an H atom, to a –C(CH<sub>3</sub>)=CH<sub>2</sub> group, and to two ring –CH<sub>2</sub>– groups. Why do the two ring –CH<sub>2</sub>– groups count as different groups?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] They don't: the circled carbon isn't really a stereocenter.",
+    "[1] One –CH<sub>2</sub>– points in front of the ring and the other behind it.",
+    "[2] One of the two carbons has a lone pair.",
+    "[3] Going around the ring one way from the circled carbon leads to the C=C double bond; going the other way leads to the C=O group."
+   ]
+  }
+ },
+ {
+  "id": "t5-6-p8",
+  "module": "t5-6",
+  "label": "preview",
+  "prompt": "Pseudoephedrine, a decongestant in some cold medicines, is C<sub>6</sub>H<sub>5</sub>–CH(OH)–CH(CH<sub>3</sub>)–NH–CH<sub>3</sub>, where C<sub>6</sub>H<sub>5</sub> is a benzene ring. How many stereocenters does it have?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t5-6-transfer",
+  "module": "t5-6",
+  "label": "preview",
+  "prompt": "Limonene, C<sub>10</sub>H<sub>16</sub>, gives orange peel much of its smell. Its structure is carvone's (Day 10 p.6) with the ring's C=O group replaced by a CH<sub>2</sub> group. (a) Is the ring carbon that carries the –C(CH<sub>3</sub>)=CH<sub>2</sub> group still a stereocenter? (b) A sample labeled “racemic limonene” is placed in a polarimeter. What happens to the plane of polarized light?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] No: a carbon in a ring can't be a stereocenter.",
+      "[1] Yes, and so is every other ring carbon.",
+      "[2] Yes: around the ring one way, a single CH<sub>2</sub> leads to the C=C; the other way, two CH<sub>2</sub> groups come first, so the ring branches still differ.",
+      "[3] No: without the C=O, its two ring –CH<sub>2</sub>– branches are identical."
+     ],
+     "label": "(a) still a stereocenter?"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] Nothing: equal amounts of the two enantiomers rotate it equally in opposite directions.",
+      "[1] It rotates clockwise, because one enantiomer is the orange-peel form.",
+      "[2] It rotates twice as far as one enantiomer would."
+     ],
+     "label": "(b) racemic limonene"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t5-6-m-recognize",
+  "module": "t5-6",
+  "label": "preview",
+  "prompt": "Which feature is the most common sign that a molecule is chiral?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] A carbon atom in a ring.",
+    "[1] A polar bond.",
+    "[2] An sp<sup>3</sup> carbon bonded to four different atoms or groups.",
+    "[3] A carbon–carbon double bond."
+   ]
+  }
+ },
+ {
+  "id": "t5-6-m-sanity",
+  "module": "t5-6",
+  "label": "preview",
+  "prompt": "A student concludes that a flat molecule in which every carbon atom is sp<sup>2</sup>, such as styrene, C<sub>6</sub>H<sub>5</sub>–CH=CH<sub>2</sub>, is chiral. Why can't that be right?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] A planar molecule's mirror image can always be superimposed on it, and it has no sp<sup>3</sup> carbon to be a stereocenter.",
+    "[1] It can be right: any molecule with a C=C double bond is chiral.",
+    "[2] It can be right: only measuring optical rotation can decide chirality.",
+    "[3] It's chiral only if the ring is a benzene ring."
+   ]
+  }
+ },
+ {
+  "id": "t5-7-attempt",
+  "module": "t5-7",
+  "label": "preview",
+  "prompt": "Nitrogen monofluoride, NF, is a short-lived molecule. The textbook orders the MOs of a molecule made of two different period-2 atoms as it does for NO: from the bottom up, σ<sub>2s</sub>, σ*<sub>2s</sub>, σ<sub>2p</sub>, π<sub>2p</sub> (a set of two orbitals), π*<sub>2p</sub> (a set of two), σ*<sub>2p</sub>. Fill in NF's valence electrons. (a) What is the bond order? (b) How many electrons are unpaired? (c) Is NF paramagnetic or diamagnetic?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) bond order"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) unpaired electrons"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] paramagnetic",
+      "[1] diamagnetic"
+     ],
+     "label": "(c) magnetism"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t5-7-p1",
+  "module": "t5-7",
+  "label": "lecture",
+  "prompt": "On Day 11 p.27, liquid oxygen poured between the poles of a magnet stays there. What does that tell you about O<sub>2</sub> molecules?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] They are ions.",
+    "[1] They contain a triple bond.",
+    "[2] They have unpaired electrons.",
+    "[3] They are polar."
+   ]
+  }
+ },
+ {
+  "id": "t5-7-p2",
+  "module": "t5-7",
+  "label": "preview",
+  "prompt": "These species use only the σ<sub>1s</sub> and σ*<sub>1s</sub> molecular orbitals. Find the bond order of (a) the helium hydride ion, HeH<sup>+</sup>; (b) H<sub>2</sub><sup>2−</sup>; and (c) an H<sub>2</sub> molecule that has absorbed a photon, which moved one of its electrons from σ<sub>1s</sub> up to σ*<sub>1s</sub>. Enter numbers.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) HeH<sup>+</sup>"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) H<sub>2</sub><sup>2−</sup>"
+    },
+    {
+     "type": "numeric",
+     "label": "(c) H<sub>2</sub> after the photon"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t5-7-p3",
+  "module": "t5-7",
+  "label": "lecture",
+  "prompt": "The lecture's Lewis structure of O<sub>2</sub> (Day 8 p.20) is [drawing: Lewis structure of oxygen, O₂: left O–right O double bond, 2 lone pairs on the left O, 2 lone pairs on the right O] How many unpaired electrons does it show?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t5-7-p4",
+  "module": "t5-7",
+  "label": "preview",
+  "prompt": "Fill the valence MO diagram of each species and match it with its bond order. Use π<sub>2p</sub> below σ<sub>2p</sub> for Li<sub>2</sub> through N<sub>2</sub> and their ions; use σ<sub>2p</sub> below π<sub>2p</sub> for O<sub>2</sub> through Ne<sub>2</sub>, their ions, and molecules made of two different atoms.",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] Li<sub>2</sub><sup>2−</sup>",
+    "[1] Be<sub>2</sub><sup>2+</sup>",
+    "[2] F<sub>2</sub><sup>2+</sup>",
+    "[3] Ne<sub>2</sub><sup>2+</sup>",
+    "[4] BN<sup>−</sup>"
+   ],
+   "options": [
+    "bo0: 0",
+    "bo0.5: 0.5",
+    "bo1: 1",
+    "bo1.5: 1.5",
+    "bo2: 2",
+    "bo2.5: 2.5",
+    "bo3: 3"
+   ]
+  }
+ },
+ {
+  "id": "t5-7-p5",
+  "module": "t5-7",
+  "label": "preview",
+  "prompt": "Classify each species as paramagnetic or diamagnetic. For the molecules made of two different atoms, use σ<sub>2p</sub> below π<sub>2p</sub>.",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] BF",
+    "[1] CO<sup>−</sup>",
+    "[2] He<sub>2</sub><sup>2+</sup>",
+    "[3] OF"
+   ],
+   "options": [
+    "dia: diamagnetic",
+    "para: paramagnetic"
+   ]
+  }
+ },
+ {
+  "id": "t5-7-p6",
+  "module": "t5-7",
+  "label": "preview",
+  "prompt": "Adding or removing electrons can raise or lower a bond order. Which change raises it?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Ne<sub>2</sub><sup>2+</sup> → Ne<sub>2</sub>",
+    "[1] Be<sub>2</sub><sup>2+</sup> → Be<sub>2</sub>",
+    "[2] NF → NF<sup>+</sup>",
+    "[3] BF → BF<sup>−</sup>"
+   ]
+  }
+ },
+ {
+  "id": "t5-7-p7",
+  "module": "t5-7",
+  "label": "preview",
+  "prompt": "Carbon monofluoride, CF, is a reactive molecule with 11 valence electrons, the same count as NO. Using the order σ<sub>2s</sub>, σ*<sub>2s</sub>, σ<sub>2p</sub>, π<sub>2p</sub>, π*<sub>2p</sub>, σ*<sub>2p</sub>, find (a) the bond order of CF and (b) the bond order of the CF<sup>+</sup> ion. Enter numbers. (c) Is CF paramagnetic or diamagnetic?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) CF"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) CF<sup>+</sup>"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] paramagnetic",
+      "[1] diamagnetic"
+     ],
+     "label": "(c) CF"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t5-7-p8",
+  "module": "t5-7",
+  "label": "preview",
+  "prompt": "Rank these species by O–F bond length.",
+  "answer_format": {
+   "type": "order",
+   "direction": "longest (1) to shortest (3)",
+   "items": [
+    "ofp: OF<sup>+</sup>",
+    "of: OF",
+    "ofm: OF<sup>−</sup>"
+   ]
+  }
+ },
+ {
+  "id": "t5-7-p9",
+  "module": "t5-7",
+  "label": "preview",
+  "prompt": "For which species would switching between the two energy orders (π<sub>2p</sub> below σ<sub>2p</sub>, or σ<sub>2p</sub> below π<sub>2p</sub>) change the predicted magnetism?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] He<sub>2</sub><sup>2+</sup>",
+    "[1] Be<sub>2</sub><sup>2−</sup>",
+    "[2] CO<sup>−</sup>",
+    "[3] Ne<sub>2</sub><sup>2+</sup>"
+   ]
+  }
+ },
+ {
+  "id": "t5-7-p10",
+  "module": "t5-7",
+  "label": "preview",
+  "prompt": "Apply the textbook's MO picture of ozone to the nitrite ion, NO<sub>2</sub><sup>−</sup>, which has the same 18 valence electrons. Start from two N–O σ bonds and five lone pairs (one on N, two on each O): 14 electrons. The other 4 go into three MOs made from one p orbital on each atom: a bonding π, a nonbonding n, and an antibonding π*. (a) What is the average N–O bond order? (b) On average, how many lone pairs does each O carry? Enter numbers.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) average N–O bond order"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) lone pairs on each O"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t5-7-transfer",
+  "module": "t5-7",
+  "label": "preview",
+  "prompt": "The cyanide ion, CN<sup>−</sup>, is a heteronuclear diatomic like NO. (a) How many valence electrons go into its molecular orbitals? (b) What is its bond order? (c) Is it paramagnetic or diamagnetic? (d) Which neutral molecule has the same number of valence electrons and the same bond order?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) valence electrons"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) bond order"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] paramagnetic",
+      "[1] diamagnetic"
+     ],
+     "label": "(c) magnetism"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] C<sub>2</sub>",
+      "[1] N<sub>2</sub>",
+      "[2] O<sub>2</sub>",
+      "[3] NO"
+     ],
+     "label": "(d) same count and bond order"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t5-7-m-recognize",
+  "module": "t5-7",
+  "label": "lecture",
+  "prompt": "Which question calls for molecular orbital theory rather than a Lewis structure, VSEPR, or hybridization?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Is O<sub>2</sub> attracted to a magnet?",
+    "[1] What is the shape of a water molecule?",
+    "[2] How many bonds does a carbon atom usually form?",
+    "[3] Which orbitals overlap to form the C–H bonds in CH<sub>4</sub>?"
+   ]
+  }
+ },
+ {
+  "id": "t5-7-m-sanity",
+  "module": "t5-7",
+  "label": "preview",
+  "prompt": "A classmate fills an MO diagram and gets a bond order of −0.5 for a diatomic species. What does that tell you?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] There's a mistake: filling from the bottom up puts electrons into each bonding orbital before its antibonding partner, so a bond order can't be negative.",
+    "[1] The species exists, but its bond is very weak.",
+    "[2] The species must be an anion.",
+    "[3] The two atoms are held together by an ionic bond instead."
+   ]
+  }
+ },
+ {
+  "id": "x48",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "What is the molecular geometry of nitrogen trichloride, NCl<sub>3</sub>?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] tetrahedral",
+    "[1] T-shaped",
+    "[2] trigonal pyramidal",
+    "[3] trigonal planar"
+   ]
+  }
+ },
+ {
+  "id": "x49",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "Which molecule is polar?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] SiF<sub>4</sub>",
+    "[1] BeCl<sub>2</sub>",
+    "[2] SO<sub>3</sub>",
+    "[3] CH<sub>2</sub>O"
+   ]
+  }
+ },
+ {
+  "id": "x50",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "What is the hybridization of the central O atom in ozone, O<sub>3</sub>?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] sp<sup>3</sup>",
+    "[1] sp",
+    "[2] sp<sup>2</sup>"
+   ]
+  }
+ },
+ {
+  "id": "x51",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "Vinylacetylene, HC≡C–CH=CH<sub>2</sub>, was once the starting material for a synthetic rubber. How many σ bonds and how many π bonds does it have?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "σ bonds"
+    },
+    {
+     "type": "numeric",
+     "label": "π bonds"
+    }
+   ]
+  }
+ },
+ {
+  "id": "x52",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "Ozone has two Lewis structures, O=O–O and O–O=O. Which statement about the real molecule is correct?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Both O–O bonds are 128 pm long, between a typical O–O bond (148 pm) and O=O bond (121 pm).",
+    "[1] One O–O bond is 121 pm and the other is 148 pm, as one Lewis structure shows.",
+    "[2] The molecule switches back and forth between the two structures.",
+    "[3] Both bonds are double bonds, 121 pm."
+   ]
+  }
+ },
+ {
+  "id": "x53",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "Which of these is a free radical?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] SO<sub>2</sub>",
+    "[1] O<sub>3</sub>",
+    "[2] CO<sub>2</sub>",
+    "[3] NO<sub>2</sub>"
+   ]
+  }
+ },
+ {
+  "id": "x54",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "In which molecule does the central atom have more than eight valence electrons around it?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] SF<sub>6</sub>",
+    "[1] NF<sub>3</sub>",
+    "[2] CF<sub>4</sub>",
+    "[3] OF<sub>2</sub>"
+   ]
+  }
+ },
+ {
+  "id": "x55",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "Which molecule is linear?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] CO<sub>2</sub>",
+    "[1] SO<sub>2</sub>",
+    "[2] H<sub>2</sub>O",
+    "[3] O<sub>3</sub>"
+   ]
+  }
+ },
+ {
+  "id": "x56",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "Ozone and water are both bent. Which has the larger bond angle, and why?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] O<sub>3</sub>: O atoms are bigger than H atoms, so they push apart.",
+    "[1] O<sub>3</sub>: its central atom has SN 3 (trigonal planar electron pairs), while water's O has SN 4.",
+    "[2] Neither: both are bent, so their angles are the same.",
+    "[3] H<sub>2</sub>O: its O–H bonds are shorter, so the H atoms spread out more."
+   ]
+  }
+ },
+ {
+  "id": "x57",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "Carbonyl sulfide (O=C=S) and carbon disulfide (S=C=S) are both linear. Which is polar?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] both",
+    "[1] neither: linear molecules are always nonpolar",
+    "[2] O=C=S only",
+    "[3] S=C=S only"
+   ]
+  }
+ },
+ {
+  "id": "x58",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "Which compound is chiral?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] CH<sub>3</sub>CH<sub>2</sub>CH(CH<sub>3</sub>)CH<sub>2</sub>CH<sub>3</sub>",
+    "[1] CH<sub>3</sub>CH(CH<sub>3</sub>)CH<sub>2</sub>CH<sub>3</sub>",
+    "[2] CH<sub>3</sub>CHCl<sub>2</sub>",
+    "[3] CH<sub>3</sub>CH<sub>2</sub>CH(CH<sub>3</sub>)CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub>"
+   ]
+  }
+ },
+ {
+  "id": "x59",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "Adding two electrons to a molecule can strengthen or break its bond. Which bond gets stronger: B<sub>2</sub> → B<sub>2</sub><sup>2−</sup>, or F<sub>2</sub> → F<sub>2</sub><sup>2−</sup>?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] F<sub>2</sub> → F<sub>2</sub><sup>2−</sup> only",
+    "[1] both",
+    "[2] neither: adding electrons always weakens a bond",
+    "[3] B<sub>2</sub> → B<sub>2</sub><sup>2−</sup> only"
+   ]
+  }
+ },
+ {
+  "id": "x60",
+  "module": "mixed",
+  "label": "preview",
+  "prompt": "Using the molecular orbital order that applies to C<sub>2</sub>, what are its bond order and magnetism?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] bond order 2, paramagnetic",
+    "[1] bond order 4, diamagnetic",
+    "[2] bond order 1, paramagnetic",
+    "[3] bond order 2, diamagnetic"
+   ]
+  }
+ },
+ {
+  "id": "x61",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "Which orbitals overlap to form each C–H bond in ethylene, C<sub>2</sub>H<sub>4</sub>?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] an unhybridized C 2p orbital and an H 1s orbital",
+    "[1] a C sp<sup>2</sup> hybrid and an H sp<sup>2</sup> hybrid",
+    "[2] a C sp<sup>2</sup> hybrid and an H 1s orbital",
+    "[3] a C sp<sup>3</sup> hybrid and an H 1s orbital"
+   ]
+  }
+ },
+ {
+  "id": "x62",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "Which bond is the most polar?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] N–H",
+    "[1] C–Cl",
+    "[2] C–H",
+    "[3] O–H"
+   ]
+  }
+ },
+ {
+  "id": "x63",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "Iodine pentafluoride, IF<sub>5</sub>: [drawing: Lewis structure of iodine pentafluoride, IF₅: I–upper F single bond, I–upper left F single bond, I–upper right F single bond, I–lower left F single bond, I–lower right F single bond, 1 lone pair on I, 3 lone pairs on the upper F, 3 lone pairs on the upper left F, 3 lone pairs on the upper right F, 3 lone pairs on the lower left F, 3 lone pairs on the lower right F] Give (a) its electron-pair geometry and (b) its molecular geometry.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] trigonal bipyramidal",
+      "[1] square pyramidal",
+      "[2] tetrahedral",
+      "[3] octahedral"
+     ],
+     "label": "(a) electron-pair geometry"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] square planar",
+      "[1] square pyramidal",
+      "[2] trigonal bipyramidal",
+      "[3] seesaw"
+     ],
+     "label": "(b) molecular geometry"
+    }
+   ]
+  }
+ },
+ {
+  "id": "x64",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "Acetic acid is CH<sub>3</sub>COOH, with a C=O double bond on the second carbon. Which carbon is sp<sup>2</sup>-hybridized?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] both carbons",
+    "[1] neither: carbon is always sp<sup>3</sup>",
+    "[2] the carbon of COOH",
+    "[3] the carbon of CH<sub>3</sub>"
+   ]
+  }
+ }
+]

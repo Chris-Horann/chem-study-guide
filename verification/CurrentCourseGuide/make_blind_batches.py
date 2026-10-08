@@ -1,11 +1,12 @@
 """Write blind-check batches for problems that have no blind answer yet.
 
-    py -3.11 verification/CurrentCourseGuide/make_blind_batches.py [--start 7] [--size 37]
+    py -3.11 verification/CurrentCourseGuide/make_blind_batches.py [--start 10] [--size 38]
 
 Each batch_N.json holds prompts and answer formats only (no keys, hints, or solutions). Lewis-structure drawings
 are replaced by their screen-reader descriptions, so a text-only solver sees what a screen-reader user hears.
 course_data_ch4.json adds the Ch. 4 tables a student has: the polyatomic-ion table (provided on exams, Day 8 p.8),
-Table 4.3 prefixes, Table 4.6, and the textbook's electronegativity values."""
+Table 4.3 prefixes, Table 4.6, and the textbook's electronegativity values. course_data_ch5.json adds the Ch. 5 tables
+on the slides (the Day 10 p.26 VSEPR summary, Table 5.2, Table 5.3) and the textbook's MO orders."""
 import argparse
 import glob
 import json
@@ -54,8 +55,8 @@ def fmt(spec):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--start", type=int, default=7)
-    ap.add_argument("--size", type=int, default=37)
+    ap.add_argument("--start", type=int, default=10)
+    ap.add_argument("--size", type=int, default=38)
     a = ap.parse_args()
     bank = json.load(open(os.path.join(HERE, "problem_bank.json"), encoding="utf-8"))
     done = set()
@@ -67,7 +68,6 @@ def main():
     n = 0
     for k in range(0, len(items), a.size):
         num = a.start + n
-        assert num <= 9, "verify_guide.py reads answers_[0-9].json: use fewer, larger batches"
         json.dump(items[k:k + a.size], open(os.path.join(BLIND, f"batch_{num}.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         print(f"batch_{num}.json: {len(items[k:k + a.size])} problems")
         n += 1
@@ -94,6 +94,28 @@ def main():
     }
     json.dump(data, open(os.path.join(BLIND, "course_data_ch4.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("course_data_ch4.json written")
+
+    import ch5_data
+    data5 = {
+        "VSEPR_summary_table_Day10_p26": [{"electron_domains": r[0], "electron_pair_geometry": r[1], "lone_pairs": r[2],
+                                           "molecular_geometry": r[3], "ideal_bond_angles": r[4]} for r in ch5_data.PROF_TABLE],
+        "VSEPR_notes": ["Steric number = atoms bonded to the central atom + lone pairs on it (Day 10 p.9; textbook Eq. 5.1).",
+                        "SN 5: lone pairs go in equatorial positions (Day 10 p.22-23); SN 5 with 3 lone pairs is linear (Day 10 p.23).",
+                        "SN 6 with 2 lone pairs: the lone pairs sit opposite each other (Day 10 p.25).",
+                        "Measured angles: O3 117 deg, NH3 107 deg, H2O 104.5 deg, H-C-H in CH2O about 118 deg (Day 10 p.13-19)."],
+        "dipole_moments_debye_Table_5_2_Day11_p8": {"HF": 1.82, "H2O": 1.85, "NH3": 1.47, "CHCl3": 1.01, "CCl3F": 0.45},
+        "hybridization_by_steric_number_Table_5_3_Day11_p24": {"2": "sp (180 deg)", "3": "sp2 (120 deg)", "4": "sp3 (109.5 deg)"},
+        "hybrid_rules_Day11_p20": ["Each electron domain on the central atom requires one hybrid orbital.",
+                                   "sigma bonds: head-on overlap of hybrid orbitals; hydrogen uses its 1s orbital.",
+                                   "pi bonds: side-to-side overlap of unhybridized p orbitals.",
+                                   "Lone pairs always reside in hybrid orbitals."],
+        "MO_orders_textbook_increasing_energy": {"H2, He2": "sigma1s < sigma*1s",
+                                                  "Li2 to N2 (Z <= 7)": "sigma2s < sigma*2s < pi2p (2 orbitals) < sigma2p < pi*2p (2) < sigma*2p",
+                                                  "O2 to Ne2, and NO": "sigma2s < sigma*2s < sigma2p < pi2p (2) < pi*2p (2) < sigma*2p"},
+        "bond_order_Eq_5_2": "bond order = 1/2 (bonding electrons - antibonding electrons)",
+    }
+    json.dump(data5, open(os.path.join(BLIND, "course_data_ch5.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print("course_data_ch5.json written")
 
 
 if __name__ == "__main__":

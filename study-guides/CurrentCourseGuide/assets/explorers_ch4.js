@@ -317,8 +317,8 @@
   mount.resonance = function (host, D) {
     var R = D.resonance, st = { key: "O3", avg: false };
     var ui = U.shell(host, { title: "Explorer: resonance structures and their average",
-      intro: "Compare the valid structures of one species, then switch to their average. What happens to the bonds that trade places?",
-      source: "Source: ozone's two structures, Day 8 p.30 (lecture). Resonance, ↔, and averaged bonds: textbook preview §4.5 (PDF p.203–206); bond lengths from Table 4.6 (PDF p.207). The dashed-bond drawing of the average is this guide's convention (background)." });
+      intro: "Compare the valid structures of one species, then switch to their average, the resonance hybrid. What happens to the bonds that trade places?",
+      source: "Source: ozone (Day 8 p.30; Day 9 p.6–10) and benzene (Day 9 p.12–13) are the lecture's examples: structures “in resonance” are interconverted “by just moving electrons” (Day 9 p.8), and the real molecule is “an average of the two” (Day 9 p.9). Nitrate, carbonate, and the numerical bond orders are textbook preview (§4.5–4.6, PDF p.203–208). Bond lengths: Table 4.6 (Day 9 p.14). The slide draws the hybrid with dashed partial bonds and lone-pair dots (Day 9 p.10); this guide's drawing adds bond-order numbers and leaves out the dots." });
     U.select(ui.controls, { label: "Species", testid: "res-species", value: st.key, options: R.map(function (r) { return [r.key, r.label + (r.tag === "lecture" ? "  (lecture)" : "")]; }), onChange: function (v) { st.key = v; draw(); } });
     U.radios(ui.controls, { label: "Show", testid: "res-view", value: "all", options: [["all", "the resonance structures"], ["avg", "their average"]], onChange: function (v) { st.avg = v === "avg"; draw(); } });
     function draw() {
@@ -341,7 +341,7 @@
     var PAIRS = [["C–C", "C", "C"], ["C–N", "C", "N"], ["C–O", "C", "O"], ["N–N", "N", "N"], ["N–O", "N", "O"], ["O–O", "O", "O"], ["S–O", "S", "O"]];
     var ui = U.shell(host, { title: "Explorer: bond order, length, and strength",
       intro: "Pick a pair of atoms and compare its single, double, and triple bonds. Then place a resonance-averaged bond on the same axes.",
-      source: "Source: textbook preview, §4.6 and Table 4.6 (PDF p.206–208). Ozone's 128 pm (PDF p.203) and carbonate's 129 pm (PDF p.208) are the textbook's measured values." });
+      source: "Source: Table 4.6 (Day 9 p.14, the textbook's table, PDF p.207) and outcome 7, “Describe how bond order, bond energy, and bond length are related” (Day 9 p.5). Ozone's measured 128 pm is on Day 9 p.7. Carbonate's 129 pm and the numerical bond orders of resonance-averaged bonds are textbook preview (§4.6, PDF p.206–208)." });
     U.select(ui.controls, { label: "Atom pair", testid: "bond-pair", value: st.pair, options: PAIRS.map(function (p) { return [p[0], p[0]]; }), onChange: function (v) { st.pair = v; st.mark = ""; draw(); } });
     U.radios(ui.controls, { label: "Show", testid: "bond-metric", value: st.metric, options: [["pm", "bond length (pm)"], ["kj", "bond energy (kJ/mol)"]], onChange: function (v) { st.metric = v; draw(); } });
     var markSel = U.select(ui.controls, { label: "Add a resonance-averaged bond", testid: "bond-mark", value: st.mark, options: [["", "none"]].concat(R.map(function (r) { return [r.key, r.label + " (" + r.pair[0] + ", order " + C.boText(r.avg) + ")"]; })), onChange: function (v) {
@@ -384,8 +384,8 @@
   mount.formalCharge = function (host, D) {
     var F = D.fcSets, chi = D.chi, st = { key: "N2O", i: 0, show: false };
     var ui = U.shell(host, { title: "Explorer: formal charges and the best structure",
-      intro: "Work out each atom's formal charge from the table, then reveal it. For a set of structures, see which one the textbook's criteria pick, and why.",
-      source: "Source: textbook preview, §4.7 (Eq. 4.2 and the three criteria, PDF p.209–211) and §4.8 (sulfate, phosphate, sulfuric acid, PDF p.215–216)." });
+      intro: "Work out each atom's formal charge with the four steps (Day 9 p.22), then reveal it. For a set of structures, see which one the rules on Day 9 p.23 pick, and why. Phosphoric acid is the Day 9 p.26 Top Hat question (structures 1–3; P is in row 3, so it may exceed an octet, Day 9 p.29).",
+      source: "Source: Day 9 p.19–26 (the N₂O exercise, the four steps and four rules, the phosphoric-acid Top Hat) and Day 9 p.30 (sulfate). The verdict applies rules 1–3; rule 4, the sum check, is in the readout. Carbon dioxide, phosphate, and sulfuric acid are textbook examples (§4.7–4.8, PDF p.211–216)." });
     U.select(ui.controls, { label: "Species", testid: "fc-set", value: st.key, options: F.map(function (f) { return [f.key, f.label]; }), onChange: function (v) { st.key = v; st.i = 0; build(); } });
     var box = el("div"); ui.controls.appendChild(box);
     var cb = U.checkbox(ui.controls, { label: "Reveal the formal charges", testid: "fc-reveal", value: false, onChange: function (v) { st.show = v; draw(); } });
@@ -408,7 +408,7 @@
       var sum = s.atoms.reduce(function (t, a) { return t + C.fcOf(a); }, 0), verdict = "";
       if (f.structs.length > 1 && st.show) {
         var b = C.fcBest(f.structs, chi), why = ["", "every formal charge is 0 (criterion 1)", "its formal charges are closest to zero (criterion 2)", "it ties on criterion 2, and its negative formal charge sits on the more electronegative atom (criterion 3)"][b.criterion];
-        verdict = " Best of the set: <strong>" + f.labels[b.best] + "</strong>, because " + why + "." + (st.key === "SO4" || st.key === "PO4" ? " (The central atom exceeds an octet: allowed for period 3, §4.8. The textbook adds that the real bonding averages both kinds of structure, PDF p.215.)" : st.key === "N2O" ? " The textbook's reality check: the real N–N bond lies between structures A and B (PDF p.210–211)." : "");
+        verdict = " Best of the set: <strong>" + f.labels[b.best] + "</strong>, because " + why + "." + (st.key === "SO4" || st.key === "PO4" ? " (The central atom exceeds an octet: allowed for period 3, §4.8. The textbook adds that the real bonding averages both kinds of structure, PDF p.215.)" : st.key === "H3PO4" ? " (Structure 3 gives P ten valence electrons, an expanded octet, and makes every formal charge 0: “An expanded shell produces a structure whose atoms' formal charges are closer to zero” (Day 9 p.29). The Top Hat slide gives no answer; this pick is ours, by the slide's rules.)" : st.key === "N2O" ? " The textbook's reality check: the real N–N bond lies between structures A and B (PDF p.210–211)." : "");
       }
       ui.readout.innerHTML = (st.show ? "Formal charges add up to " + fcText(sum) + (s.charge ? ", the ion's charge." : ", as they must for a neutral molecule.") : "Compute each atom's FC from the table, then check it with “Reveal the formal charges.”") + verdict;
       U.kvSet(ui.kv, [["Species", f.label], ["Structure", f.labels[st.i]], ["Valence electrons", s.total], ["Sum of FC", st.show ? fcText(sum) : "?"]]);
@@ -421,8 +421,8 @@
   mount.octet = function (host, D) {
     var O = D.octet, st = { id: "NO" };
     var ui = U.shell(host, { title: "Explorer: when the octet rule bends",
-      intro: "Pick a species. The bars count the valence electrons around each atom; the line marks the octet (2 for H).",
-      source: "Source: textbook preview, §4.8 (PDF p.212–216). NH₃ (Day 8 p.23), CH₄, and CO₂ are ordinary octet molecules for comparison." });
+      intro: "Pick a species. The bars count the valence electrons around each atom; the line marks the octet (2 for H, which “forms duets,” Day 9 p.27).",
+      source: "Source: Day 9 p.27–30: electron-deficient BeCl₂, BCl₃, and AlCl₃; the radicals NO and NO₂; expanded octets in PCl₅, SF₆, and SO₄²⁻ (“hypervalency… is not well understood”). Phosphate and sulfuric acid are textbook §4.8 examples (PDF p.215–216). NH₃ (Day 8 p.23), CH₄, and CO₂ are ordinary octet molecules for comparison." });
     U.select(ui.controls, { label: "Species", testid: "oct-species", value: st.id, options: O.map(function (o) { return [o.id, o.name.replace(/ \(.*\)$/, "")]; }), onChange: function (v) { st.id = v; draw(); } });
     function draw() {
       var o = O.filter(function (x) { return x.id === st.id; })[0], W = 520, H = 230, n = o.atoms.length, bw = Math.min(46, (W - 80) / n - 8);
@@ -439,9 +439,9 @@
           "<text class='tick' x='" + (x + bw / 2).toFixed(1) + "' y='" + (f.ys(0) + 16).toFixed(1) + "' text-anchor='middle'>" + a[0] + "</text></g>";
       });
       var odd = o.total % 2 === 1, central = o.central.length ? o.atoms[o.central[0]] : o.atoms[0], cz = central[6];
-      var verdict = odd ? "Odd electron count (" + o.total + "): one electron must stay unpaired, so this is a <strong>free radical</strong>. The less electronegative atom takes the incomplete octet (PDF p.212–214)."
-        : cz < 8 && central[0] !== "H" ? "<strong>Electron-deficient</strong>: " + central[0] + " has only " + cz + " valence electrons. Be, B, and Al tend to form such molecules (PDF p.212)."
-          : cz > 8 ? "<strong>More than an octet</strong>: " + central[0] + " (period 3) holds " + cz + ". The textbook allows this for Z &gt; 12 with F, O, or Cl partners, or when it brings formal charges closer to zero (PDF p.214)."
+      var verdict = odd ? "Odd electron count (" + o.total + "): one electron must stay unpaired, so this is a <strong>free radical</strong> (Day 9 p.28). The less electronegative atom takes the incomplete octet (textbook PDF p.212–214)."
+        : cz < 8 && central[0] !== "H" ? "<strong>Electron-deficient</strong>: " + central[0] + " has only " + cz + " valence electrons. “Be, B, and Al form electron-deficient molecules” (Day 9 p.27; textbook PDF p.212)."
+          : cz > 8 ? "<strong>More than an octet</strong>: " + central[0] + " (period 3) holds " + cz + ": an expanded octet, possible for nonmetals “in the third row and below”, with F, O, or Cl partners, and when it brings formal charges closer to zero (Day 9 p.29; the textbook's Z &gt; 12 rule, PDF p.214)."
             : "Every atom has its octet (H: 2). No exception here.";
       ui.view.innerHTML = "<div class='lw-row'>" + o.svg + "</div>" + U.svgWrap(W, H, "Electrons around each atom in " + o.name + ": " + o.atoms.map(function (a) { return a[0] + " " + a[6]; }).join(", "), f.axes + g) +
         "<p class='xp-caption'>Green: exactly 8 (2 for H). Red with ▼: fewer. Purple with ▲: more.</p>";

@@ -1,0 +1,126 @@
+[
+ {
+  "id": "m21-p9",
+  "module": "m21",
+  "label": "preview",
+  "prompt": "Work out the shapes of the ions TeF<sub>5</sub><sup>−</sup> and ICl<sub>4</sub><sup>−</sup> from their Lewis structures (Te is in group 16, I in group 17). Then predict how the angles between neighboring outer atoms, ideally 90°, compare with 90°: (a) the F–Te–F angles in TeF<sub>5</sub><sup>−</sup>; (b) the Cl–I–Cl angles in ICl<sub>4</sub><sup>−</sup>.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] larger than 90°",
+      "[1] exactly 90°",
+      "[2] smaller than 90°"
+     ],
+     "label": "(a) TeF<sub>5</sub><sup>−</sup>: angles between neighboring F atoms"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] larger than 90°",
+      "[1] exactly 90°",
+      "[2] smaller than 90°"
+     ],
+     "label": "(b) ICl<sub>4</sub><sup>−</sup>: angles between neighboring Cl atoms"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m23-p5",
+  "module": "m23",
+  "label": "lecture",
+  "prompt": "Day 11 p.16 hybridizes the O atom in water. Do the same for the O atom in methanol, CH<sub>3</sub>OH, which is bonded to the C and to one H. [drawing: Lewis structure of methanol, CH₃OH: C–left H single bond, C–upper left H single bond, C–lower left H single bond, C–O single bond, O–right H single bond, 2 lone pairs on O] (a) What is O's steric number? (b) How many of O's sp<sup>3</sup> hybrids hold a lone pair? (c) How many hold one electron, ready to form a σ bond? (d) How many electrons are in O's four sp<sup>3</sup> hybrids altogether?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) steric number of O"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) hybrids with a lone pair"
+    },
+    {
+     "type": "numeric",
+     "label": "(c) hybrids with one electron"
+    },
+    {
+     "type": "numeric",
+     "label": "(d) electrons in the four hybrids"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m24-p3",
+  "module": "m24",
+  "label": "lecture",
+  "prompt": "The nitrite ion, NO<sub>2</sub><sup>−</sup>, is on the polyatomic-ion table (Day 8 p.8). Here is one of its two resonance structures: [drawing: Lewis structure of nitrite ion, NO₂⁻: left O–N double bond, N–right O single bond, 2 lone pairs on the left O, 1 lone pair on N, 3 lone pairs on the right O; overall charge 1−] (a) What is the hybridization of the N? (b) Which orbital holds the N's lone pair?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] sp",
+      "[1] sp<sup>2</sup>",
+      "[2] sp<sup>3</sup>"
+     ],
+     "label": "(a) hybridization of the N"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] the unhybridized 2p orbital",
+      "[1] the 2s orbital",
+      "[2] an sp<sup>3</sup> hybrid orbital",
+      "[3] an sp<sup>2</sup> hybrid orbital"
+     ],
+     "label": "(b) the N's lone pair is in"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t4-5-attempt",
+  "module": "t4-5",
+  "label": "lecture",
+  "prompt": "The nitrite ion, NO<sub>2</sub><sup>−</sup> (on the polyatomic-ion table, Day 8 p.8), has N bonded to both O atoms. (a) How many equivalent Lewis structures can you draw for it? (b) The real ion is an average of its structures, as ozone is (Day 9 p.9). On average, how many shared pairs does each N–O bond have? (The textbook calls this number the bond order, PDF p.206.) Enter a decimal.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) equivalent structures"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) average shared pairs per N–O bond"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t4-5-transfer",
+  "module": "t4-5",
+  "label": "lecture",
+  "prompt": "In the formate ion, HCO<sub>2</sub><sup>−</sup>, C is bonded to H and to both O atoms. (a) How many equivalent resonance structures does it have? (b) On average, how many shared pairs does each C–O bond have (the textbook's bond order)? Enter a decimal.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) structures"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) shared pairs per C–O bond"
+    }
+   ]
+  }
+ }
+]

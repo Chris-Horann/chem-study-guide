@@ -1,0 +1,33 @@
+{
+ "lecture_Day12": {
+  "MO_rule_p7": "Take all the valence atomic orbitals of the atoms and redistribute them over the whole molecule; one molecular orbital comes out for every atomic orbital put in.",
+  "HOMO_LUMO_p11": "HOMO = highest occupied molecular orbital; LUMO = lowest unoccupied molecular orbital.",
+  "Na2_Na4_p19_21": "Na2: one filled MO below the 3s level and one empty MO above it (the HOMO-LUMO gap). Na4: four MOs from 3s, two filled, two empty; 'As we add more and more atoms (and electrons) to the MO diagram, the HOMO-LUMO gap gets smaller quickly.'",
+  "NaN_ZnN_p22_23": "Na_N: the 3s MOs form a band, lower half occupied, upper half empty (partially filled valence band), overlapping the empty 3p band. Zn_N: the 4s band is filled (valence band) and overlaps the empty 4p band (conduction band).",
+  "conductor_rule_p18": "Any material with a partially filled valence band or a filled valence band that overlaps with an empty conduction band is an electrical conductor. Any material with a large enough band gap acts as an insulator. And then there are the metalloids...",
+  "band_sketch_p24": "Insulator (diamond): filled band, large gap, empty band. Conductor (zinc): filled band touching an empty band. Conductor (sodium): band filled only in its lower part. Semiconductor (silicon): filled band, small gap, empty band. 'T up' (silicon heated): a strip of electrons at the bottom of the upper band and empty strip at the top of the lower band; same gap.",
+  "doping_p25": "Pure Si: valence band, gap Eg, conduction band; Lewis symbol of Si with 4 dots. n-type: 'Phosphorus donor level' just below the conduction band; P has 5 dots. p-type: 'Gallium acceptor level' just above the valence band, with + marks (holes) at the top of the valence band; Ga has 3 dots.",
+  "metalloids_p16": [
+   "B",
+   "Si",
+   "Ge",
+   "As",
+   "Sb",
+   "Te",
+   "At"
+  ],
+  "metals_p17": "Metals: malleable, ductile, lustrous, heat and electricity conductors, relatively large densities, high melting points, solids except Hg, tend to form cations."
+ },
+ "textbook_preview_18_5_PDF920": {
+  "Si_band_gap": "106 kJ/mol at 25 C",
+  "P_donor_level": "about 4 kJ/mol below the Si conduction band",
+  "Ga_acceptor_level": "about 7 kJ/mol above the Si valence band",
+  "holes": "valence electrons that move into the acceptor level leave positively charged holes; electrons migrating between holes carry current (p-type)"
+ },
+ "constants": {
+  "h": "6.626e-34 J s",
+  "c": "2.998e8 m/s",
+  "N_A": "6.022e23 /mol",
+  "visible_range_Day2_p29": "400-750 nm"
+ }
+}

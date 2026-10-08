@@ -6,14 +6,15 @@ merge new sources into existing concepts instead of appending per-file dumps.
 Homework analysis lives in `HOMEWORK_INDEX.md`; textbook locations live in
 `TEXTBOOK_MAP.md`.
 
-**Status:** INGESTED — Day 1–8 lecture slides (187 PDF pages), every page
-visually inspected at 220 DPI, with 300–400 DPI zooms wherever notation was
-small or the text layer was garbled. No lecture notes, review sheets, homework,
-or image files have been supplied yet. Last updated 2026-09-25 (Day 8).
+**Status:** INGESTED — Day 1–11 lecture slides (275 PDF pages: Day 1–8 187,
+Day 9 30, Day 10 31, Day 11 27), every page visually inspected at 220 DPI, with
+300–400 DPI zooms wherever notation was small or the text layer was garbled. No
+lecture notes, review sheets, homework, or image files have been supplied yet.
+Last updated 2026-10-05 (Day 9–11).
 
 **Citation key:** `Day N p.X` = `materials/lectures/Day N Lecture Slides.pdf`,
 physical PDF page X (one slide per page). `TB PDF p.X (printed Y)` = the Gilbert
-textbook PDF (see `TEXTBOOK_MAP.md`; printed = PDF − 34 in Ch. 1–4). "Top Hat" =
+textbook PDF (see `TEXTBOOK_MAP.md`; printed = PDF − 34 in Ch. 1–5). "Top Hat" =
 an in-class clicker question; its text is known only when it is on the slide.
 Non-content slides (announcements, "Representation Matters", generic Top Hat
 instructions) are summarized in `COURSE.md`, not here.
@@ -176,6 +177,7 @@ Ordered as taught. The unit groupings match `COURSE_MAP.md`.
 - [SOURCE-DERIVED] Grey (de-emphasized) items: 1.2 COAST: A Framework for Solving Problems; 1.9 Analyzing Experimental Results; 2.6 Mass Spectrometry; Ch. 2 outcome 7 (mass spectra) (Day 1 p.6, p.16–17).
 - [SOURCE-DERIVED] The Ch. 2 italic topics match what the professor delegates: "RAMP UP has lots more to say about the periodic table, isotopes, ions, nuclide symbols, etc." (Day 2 p.24).
 - [INFERRED] Formatting key: bold = lectured that day; italic = assigned outside lecture (RAMP UP); grey = not covered. [UNCERTAIN] The slides never state this key; confirm with the syllabus or professor.
+- [SOURCE-DERIVED] "Ramp Up IS on this exam" (Day 10 p.2; Day 11 p.2), so the RAMP UP topics named on Day 2 p.24 (periodic table, isotopes, ions, nuclide symbols) are on Midterm 1. [INFERRED] The other italic Ch. 1–2 topics (sig figs, unit conversion, moles) are probably RAMP UP too, but the slides only list the Day 2 p.24 ones.
 - [SOURCE-DERIVED] Later lectures use these skills without teaching them: g → kg and 1 J = 1 kg·m²/s² in the de Broglie examples (Day 4 p.11–14); significant figures in every worked answer (Day 1 p.11; Day 4 p.12, p.14); kJ/mol quantities (Day 7 p.9–17), which presuppose the mole.
 
 ---
@@ -273,7 +275,8 @@ Ordered as taught. The unit groupings match `COURSE_MAP.md`.
 - [VERIFICATION] The neutron's mass in kg is printed 1.67483 × 10⁻²⁷ (Day 2 p.22), but the textbook's Table 2.1 prints 1.67493 × 10⁻²⁷ kg (TB PDF p.87, printed 53), and 1.00866 u × 1.66054 × 10⁻²⁷ kg/u = 1.67493 × 10⁻²⁷ kg. Slide typo → COURSE.md Discrepancies.
 - [CLARIFICATION] "6 protons + 6 neutrons = 12 amu" counts mass numbers. The table's free-particle masses sum to 12.0956 amu (12.0989 with 6 electrons), more than the defined 12 amu of a ¹²C atom; the difference is nuclear binding energy (mass–energy, Day 1 p.15). [VERIFICATION: Python]
 - [CLARIFICATION] Terminology: the professor says "amu"; the textbook says "unified atomic mass unit (u)" = dalton (TB PDF p.86) → TEXTBOOK_MAP Convention differences.
-- [UNCERTAIN] What RAMP UP is (platform, module, or reading) and whether its topics are examinable are not stated in the slides.
+- [UNCERTAIN] What RAMP UP is (platform, module, or reading) is not stated in the slides.
+- [SUPPORTED EMPHASIS] Exam status, resolved by an explicit instructor statement repeated in two lectures: "Reminder: Ramp Up IS on this exam, and you get extra credit in this class based on how much Ramp Up you do before next Thursday" (Day 10 p.2; Day 11 p.2), i.e., Midterm 1.
 
 ---
 
@@ -626,6 +629,9 @@ Ordered as taught. The unit groupings match `COURSE_MAP.md`.
 ### Common mistakes flagged
 - [INFERRED] Reading ψ² (largest at r = 0) as the most likely distance; Day 5 p.17 shows both plots, and 4πr²ψ² peaks at 53 pm.
 
+### Connections
+- Used later in: radial distributions explain penetration (Day 6 p.12, p.18); orbital overlap in valence bond theory: two H 1s spheres form a σ bond (Day 11 p.10), and carbon's 2s sphere and 2p lobes (Day 11 p.11) are mixed into hybrid orbitals (Day 11 p.12–16); side-by-side p overlap makes π bonds (Day 11 p.17–23).
+
 ### Uncertainties and discrepancies
 - [CLARIFICATION] The three p orbitals match the three m_ℓ values *by count*; p_x and p_y are combinations of the m_ℓ = ±1 solutions, not one-to-one matches ("corresponding to," Day 5 p.19).
 
@@ -713,7 +719,7 @@ Ordered as taught. The unit groupings match `COURSE_MAP.md`.
 - [INFERRED] Pairing two electrons in one p box before every p box has one; drawing the unpaired electrons with opposite spins.
 
 ### Connections
-- Used later in: [INFERRED] the O → O⁺ orbital diagram for ionization energy (Day 7 p.9) and nitrogen's circled electron affinity (Day 7 p.11); the slides do not explain either in words.
+- Used later in: [INFERRED] the O → O⁺ orbital diagram for ionization energy (Day 7 p.9) and nitrogen's circled electron affinity (Day 7 p.11); the slides do not explain either in words. [SOURCE-DERIVED] Box diagrams return in valence bond theory: carbon's ground state "only has **two** unpaired electrons" (Day 11 p.11), and the hybridization diagrams fill sp³, sp², and sp boxes one electron at a time before pairing (Day 11 p.13–23). [INFERRED] Unpaired electrons also underlie O₂'s paramagnetism (Day 11 p.27).
 
 ## Filling Order beyond n = 2 (4s before 3d) and Exceptions to the Filling Rules
 
@@ -876,7 +882,7 @@ Ordered as taught. The unit groupings match `COURSE_MAP.md`.
 
 ---
 
-# Unit D — Chemical Bonding (Ch. 4; Day 7 p.12–21)
+# Unit D — Chemical Bonding (Ch. 4; Day 7 p.12 – Day 9 p.30)
 
 ## Primary Types of Chemical Bonds (Ionic, Covalent, Metallic)
 
@@ -890,6 +896,7 @@ Ordered as taught. The unit groupings match `COURSE_MAP.md`.
 - [SOURCE-DERIVED] "2. Covalent bonds: Exist between non-metals, and are defined by shared electrons which are highly localized. H₂" (Day 7 p.14)
 - [SOURCE-DERIVED] "3. Metallic bonds: Exist between metal atoms, and are defined by shared electrons which are highly mobile. Cu" (Day 7 p.14)
 - [SOURCE-DERIVED] "Metallic Bonds: Atoms in metallic solids are held together by a “sea” of mobile electrons that flows freely among all the atoms in a piece of metal. In a block of copper metal, there is no experimental evidence for any two atoms being “bonded”. Each copper atom shares its valence electrons with ALL its neighbors. This begins to account for the conductivity of metals, but that's all we'll say here in Chapter 4." (Day 8 p.14, beside a cube of Cu atoms)
+- [SOURCE-DERIVED] Picked up again on Day 12: metals are "Heat and electricity conductors" (p.17), explained with bands built from MO diagrams (p.18–24); see Band Theory (Unit F).
 - [SOURCE-DERIVED] Textbook Table 4.1, "Types of Chemical Bonds", shown on the slide (Day 8 p.15). Elements involved: ionic "Metals and nonmetals"; covalent "Nonmetals and metalloids"; metallic "Metals". Electron distribution: "Transferred", "Shared", "Delocalized". Particulate views: a K⁺/Cl⁻ lattice, Br₂ molecules, a Cu lattice. Macroscopic views: white salt crystals, orange-brown bromine in a bottle, a spool of copper wire.
 
 ### Three representations
@@ -905,11 +912,11 @@ Ordered as taught. The unit groupings match `COURSE_MAP.md`.
 - [INFERRED] Metal + nonmetal → ionic; nonmetal + nonmetal → covalent; a metal alone → metallic (from the slide's "between…" wording and examples).
 
 ### Connections
-- Used later in: Coulombic potential energy explains the ionic bond (Day 7 p.15).
+- Used later in: Coulombic potential energy explains the ionic bond (Day 7 p.15); electronegativity places the bond types on one scale, nonpolar covalent → polar covalent → ionic (Day 9 p.16–18); valence bond theory reuses the H–H curve, "We talked about this already in the context of the H-H potential energy surface" (Day 11 p.9).
 
 ### Uncertainties and discrepancies
 - [SOURCE-DERIVED] Two phrasings now appear in the slides: "Covalent bonds: Exist between non-metals… highly localized" and metallic "highly mobile" (Day 7 p.14), and Table 4.1's "Nonmetals and metalloids" and "Delocalized" (Day 8 p.15; textbook TB PDF p.184). They don't conflict: the table also counts metalloids → COURSE.md glossary.
-- [UNCERTAIN] Electronegativity (textbook §4.2) is partly bolded on Day 7 p.12 ("…and **Bonding**") but has no slide content yet, and Ch. 4 outcome 3 (bond polarity from electronegativity) is not bold (Day 7 p.13).
+- [SOURCE-DERIVED] Resolved on Day 9: electronegativity is now lectured (Day 9 p.15–18), the word "**Electronegativity**" is bold in the §4.2 title, and Ch. 4 outcome 3 is bold (Day 9 p.4–5). See **Electronegativity and Bond Polarity**.
 
 ## Electrostatic (Coulombic) Potential Energy
 
@@ -1154,10 +1161,10 @@ Ordered as taught. The unit groupings match `COURSE_MAP.md`.
 
 ## Lewis Structures of Molecular Compounds
 
-**Sources:** Day 8 p.19–26, p.28–30
-**Unit / lecture order:** Day 8, §4.4, the last topic of the deck
+**Sources:** Day 8 p.19–26, p.28–30; Day 9 p.6, p.19–20
+**Unit / lecture order:** Day 8, §4.4, the last topic of the deck; Day 9 repeats the ozone exercise and adds N₂O
 **Prerequisites:** Lewis symbols and the octet rule; bonding capacity
-**Emphasis evidence:** "**more than one pair of electrons**", "A double bond!", "A triple bond!" printed bold (Day 8 p.20); §4.4 bold and outcome 5 bold (Day 8 p.4–5). [SUPPORTED EMPHASIS] The five steps appear word for word on seven slides (Day 8 p.21, 22, 23, 25, 28, 29, 30), with "**bonding capacity**" bold each time.
+**Emphasis evidence:** "**more than one pair of electrons**", "A double bond!", "A triple bond!" printed bold (Day 8 p.20); §4.4 bold and outcome 5 bold (Day 8 p.4–5; again Day 9 p.4–5). [SUPPORTED EMPHASIS] The five steps appear word for word on nine slides across two lectures (Day 8 p.21, 22, 23, 25, 28, 29, 30; Day 9 p.6, p.19), with "**bonding capacity**" bold each time.
 
 ### Definitions and terminology
 - [SOURCE-DERIVED] "In a fluorine, F₂, molecule, each F atom shares one electron to attain an octet." The figure shows :F: (three pairs) with one single dot, plus the mirror-image F; arrows point to the two single electrons, "Electrons to share" (Day 8 p.19; © 2012 Pearson figure).
@@ -1180,14 +1187,16 @@ Ordered as taught. The unit groupings match `COURSE_MAP.md`.
 
 ### Worked examples
 - (Day 8 p.22–23) Ammonia, NH₃: N 1 × 5 = 5, H 3 × 1 = 3, "Valence electrons in NH₃ 8". The skeleton has N in the center with three N–H single bonds, drawn T-shaped; the leftover 2 electrons go on N as a lone pair.
-- [UNCERTAIN] Day 8 p.23 carries a callout in the PDF's text layer that is hidden in the rendered slide (black text beneath another text box; probably revealed by animation in class): "Note that a Lewis structure is a two-dimensional representation. We'll see later that ammonia is tetrahedral, but Lewis structures can't tell us that!" [CLARIFICATION] ammonia's four electron groups point to the corners of a tetrahedron, and its atoms form a trigonal pyramid. Molecular shape comes later (textbook Ch. 5, not yet mapped).
+- [UNCERTAIN] Day 8 p.23 carries a callout in the PDF's text layer that is hidden in the rendered slide (black text beneath another text box; probably revealed by animation in class): "Note that a Lewis structure is a two-dimensional representation. We'll see later that ammonia is tetrahedral, but Lewis structures can't tell us that!" [SOURCE-DERIVED] Resolved on Day 10: ammonia's *electron-pair* geometry is tetrahedral and its *molecular* geometry trigonal pyramidal, 107° (Day 10 p.16–18). [INFERRED] The callout's "tetrahedral" means the electron-pair geometry.
 - (Day 8 p.24–25) "That was pretty easy, right? Let's try another one." C₂H₂: "Historical name: acetylene; Systematic name: ethyne". C 2 × 4 = 8, H 2 × 1 = 2, "TOTAL: 10". The skeleton H–C–C–H becomes H–C≡C–H.
 - (Day 8 p.28–30) Ozone, O₃: O 3 × 6 = 18. The skeleton O–O–O (p.28) gets three lone pairs on each end O, then one lone pair on the central O (p.29), which leaves the central O with only 6 electrons. The final slide shows two bent structures, O=O–O and O–O=O: the double-bonded end O has two lone pairs, the central O one, and the single-bonded end O three (p.30).
-- [VERIFICATION] RDKit and `tools/chemistry_verify.py electrons`: NH₃ 8, C₂H₂ 10, and O₃ 18 valence electrons. Every atom in the final structures has an octet (H has 2). In each O₃ structure the formal charges are −1 (single-bonded O), +1 (central), and 0; formal charge (§4.7) is not bold on Day 8 p.4 [CLARIFICATION].
+- [VERIFICATION] RDKit and `tools/chemistry_verify.py electrons`: NH₃ 8, C₂H₂ 10, and O₃ 18 valence electrons. Every atom in the final structures has an octet (H has 2). In each O₃ structure the formal charges are −1 (single-bonded O), +1 (central), and 0; formal charge (§4.7) is not bold on Day 8 p.4 [CLARIFICATION] but is taught on Day 9 (see **Formal Charge**).
+- (Day 9 p.6) "Practice Exercise: Ozone, O₃" repeated with the two final structures beside the five steps, to open Day 9's resonance lesson.
+- (Day 9 p.19–20) "Practice Exercise: N₂O": step-1 table N 2 × 5 = 10, O 1 × 6 = 6, "TOTAL: 16"; skeleton N–N–O. After step 3 the central N has only 4 electrons (p.20, row 2); three complete structures follow: :N≡N–Ö:, :N̈–N≡O:, and N=N=O with two lone pairs on each end atom. Choosing among them needs formal charge (Day 9 p.21–24).
 
 ### Professor explanations, models, and diagrams
 - [SOURCE-DERIVED] "Further Considerations: That was pretty easy, right? So why is this ever difficult? Sometimes it is **impossible** for every atom to have an octet. Sometimes it is possible to draw more than one perfectly valid Lewis structure. We'll need to learn some new chemistry to help us resolve these situations: Electronegativity, Formal Charge, **Resonance**" (Day 8 p.26; only "impossible" and "Resonance" are bold). The slide shows the finished NH₃ and C₂H₂ structures.
-- [INFERRED] The two O₃ structures (Day 8 p.30) are the "more than one perfectly valid Lewis structure" case, i.e., resonance (§4.6, bold on Day 8 p.4). The slides don't use the word "resonance" for O₃ yet, and no ↔ arrow is drawn.
+- [SOURCE-DERIVED] Confirmed on Day 9: the two O₃ structures (Day 8 p.30) are "in resonance" (Day 9 p.8) and are joined by ↔ (Day 9 p.9). The announced topics (electronegativity, formal charge, resonance) are all taught on Day 9, along with the octet exceptions ("impossible for every atom to have an octet").
 
 ### Recognition cues
 - [INFERRED] "Draw the Lewis structure of …" → the five steps. H is never central (bonding capacity 1); with C present, C is central (4 bonds, "memorize", Day 8 p.18). If the electron count comes out short of octets, add a multiple bond.
@@ -1196,7 +1205,7 @@ Ordered as taught. The unit groupings match `COURSE_MAP.md`.
 - [INFERRED] Skipping step 1's electron count (the table exists for this); putting H in the middle; giving H lone pairs; stopping at step 5 with a central atom that has only 6 electrons (the O₃ stage on p.29); forgetting that the two O₃ structures are equally valid.
 
 ### Connections
-- Builds on: Lewis symbols and bonding capacity (Day 8 p.16–18); covalent bonds as shared electrons (Day 7 p.14); allotropes, which introduce O₃ (Day 8 p.27). Used later in (announced): electronegativity, formal charge, and resonance (Day 8 p.26).
+- Builds on: Lewis symbols and bonding capacity (Day 8 p.16–18); covalent bonds as shared electrons (Day 7 p.14); allotropes, which introduce O₃ (Day 8 p.27). Used later in: resonance (Day 9 p.6–13), formal charge (Day 9 p.19–26), and the octet exceptions (Day 9 p.27–30), as announced on Day 8 p.26; VSEPR, which needs "a valid Lewis structure!" (Day 10 p.8); valence bond theory, which "reconcile[s]" Lewis structures with orbitals (Day 11 p.9).
 
 ## Allotropes: O₂ and O₃
 
@@ -1214,7 +1223,566 @@ Ordered as taught. The unit groupings match `COURSE_MAP.md`.
 - Symbolic: [VERIFICATION] O₂ → 2 O and O₂ + O → O₃ balance (`tools/chemistry_verify.py check`).
 
 ### Connections
-- Builds on: the Representation Matters slide: Molina and Rowland predicted "that CFCs might lead to the destruction of the ozone layer" (Day 8 p.2). Used later in: the ozone Lewis structure (Day 8 p.28–30).
+- Builds on: the Representation Matters slide: Molina and Rowland predicted "that CFCs might lead to the destruction of the ozone layer" (Day 8 p.2). Used later in: the ozone Lewis structure (Day 8 p.28–30); resonance (Day 9 p.6–10); the bent, 117° shape of a central atom with one lone pair (Day 10 p.14–15).
+
+## Resonance
+
+**Sources:** Day 9 p.6–13 (and Day 9 p.2, Representation Matters; Day 10 p.14–15; Day 11 p.26)
+**Unit / lecture order:** Day 9 ("Advanced Lewis Structures", Day 9 p.1), right after the ozone practice exercise is repeated
+**Prerequisites:** Lewis structures (five steps); allotropes (O₃); typical single vs. double bond lengths
+**Emphasis evidence:** §4.6 Resonance bold (Day 8 p.4; Day 9 p.4) and "**Resonance**" bold as the announced next topic (Day 8 p.26); outcome 6 ("Draw resonance structures and use formal charges to evaluate their relative importance") fully bold on Day 9 p.5, where Day 8 p.5 bolded only its first half; the key phrases "**neither structure alone is correct**", "**in between**", "**average**", "**better**", "**more stable**" are bold (Day 9 p.9–10). Five slides on ozone (Day 9 p.6–10) and two on benzene (p.12–13); the Representation Matters slide (Kathleen Lonsdale and benzene's equal C–C bonds, Day 9 p.2) introduces the same idea.
+
+### Definitions and terminology
+- [SOURCE-DERIVED] "These structures are **equivalent**. That does **not** mean they are **the same**. But we can transform one of these structures into the other **by only moving electrons.** When two (or more) structures can be interconverted by just moving electrons, we say they are "in resonance," and each of them is a "resonance structure."" (Day 9 p.8)
+- [SOURCE-DERIVED] "Importantly, **neither structure alone is correct**. The molecule is NOT "changing" back and forth between these two structures. Rather, it is ALWAYS somewhere **in between**. An **average** of the two." (Day 9 p.9–10)
+- [SOURCE-DERIVED] "An even **better** way to draw this structure is as the "resonance hybrid", where we use dashed lines to indicate partial bonds. We say that those electrons are "delocalized". For reasons beyond the scope of this class, molecules with delocalized electrons are **more stable** than they would be otherwise." (Day 9 p.10)
+
+### Equations and relationships
+- [SOURCE-DERIVED] The evidence: "Which of these structures is correct? Interestingly, the answer turns out to be "neither." In ozone, O₃, the bond length between **each** two oxygen atoms is 128 pm. A typical O—O bond is 148 pm. A typical O=O bond is 121 pm. The bonds in ozone are somewhere in between." Reference molecules are drawn beside the numbers: O=O (O₂, 121 pm, blue) and H–O–O–H (H₂O₂, 148 pm, red) (Day 9 p.7). The same values are in Table 4.6 (Day 9 p.14) and the textbook (TB PDF p.203, p.206).
+
+### Three representations
+- Macroscopic: [SOURCE-DERIVED] measured bond lengths (O₃, Day 9 p.7); benzene's C–C bonds, all "the same length, and … somewhere between a single and a double bond", found by Lonsdale's crystallography in 1929 (Day 9 p.2); benzene "doesn't **behave** as though it has double bonds – its chemistry is fundamentally different than any alkenes" (Day 9 p.13).
+- Symbolic: [SOURCE-DERIVED] resonance structures joined by the double-headed arrow ↔ (Day 9 p.9, p.13); red curved arrows showing which electron pairs move, with a plain → between the two structures (Day 9 p.9); the hybrid drawn with solid + dashed lines (Day 9 p.10, p.13) and benzene as a hexagon with an inscribed circle (Day 9 p.13).
+- Particulate: [SOURCE-DERIVED] the moving electrons are "delocalized" (Day 9 p.10). [INFERRED] Every O₃ molecule is the same hybrid at every instant; nothing flips between forms (the slide's "NOT 'changing' back and forth").
+
+### Professor explanations, models, and diagrams
+- [SOURCE-DERIVED] Curved arrows (Day 9 p.9): two red arrows turn O=O–O into O–O=O. One moves the second pair of the double bond onto the left terminal O; the other moves a lone pair of the right terminal O into the O–O bond. Below, the same two structures are joined by ↔.
+- [SOURCE-DERIVED] The O₃ resonance hybrid (Day 9 p.10, 300-dpi crop): bent, each O–O drawn as a solid + a dashed line, one lone pair on the central O, and five dots on each terminal O (the average of its 6 and 4).
+- [SOURCE-DERIVED] Analogy cartoon: "rhinoceros = [ dragon ↔ unicorn ]" (Day 9 p.11, credited to chim.lu; no text). [INFERRED] The real animal (the hybrid) is not a dragon one moment and a unicorn the next; it is described as a blend of two imaginary creatures (the resonance structures).
+- [SOURCE-DERIVED] Benzene (Day 9 p.12–13): its formula, C₆H₆, was known in the mid-1800s, "but with the chemistry we knew at the time, we couldn't draw any structures that made any sense." Kekulé (in 1865 or so, "inspired by a dream he had of a snake devouring its own tail") proposed a ring of alternating single and double bonds that was "*nearly* correct." Slide p.13 shows the two Kekulé structures (↔), then two hybrid drawings: dashed partial bonds, and the circle.
+
+### Worked examples
+- (Day 9 p.6–10) Ozone. The Day 8 answer (two structures, Day 9 p.6) → "neither" (p.7) → "in resonance" (p.8) → curved arrows and ↔ (p.9) → the hybrid (p.10).
+- [VERIFICATION] Each O₃ structure has formal charges 0 (double-bonded O), +1 (central O), −1 (single-bonded O), sum 0, 18 valence electrons (RDKit). Averaged over the two structures, each terminal O is −½ and each O–O bond order is 1.5 (Python). [CLARIFICATION: the textbook states the bond order 1.5, "neither 1 nor 2" (TB PDF p.206); the slides say only "in between".]
+
+### Recognition cues
+- [INFERRED] Two or more valid Lewis structures in which the atoms stay put and only electrons (lone pairs, multiple bonds) move → resonance. If atoms move, the structures are different molecules, not resonance structures.
+- [INFERRED] An atom with a double bond to one atom and a single bond to another atom of the same element (the central O of O₃; N in NO₂; S in SO₄²⁻, Day 9 p.28–30) → look for equivalent resonance structures. [CLARIFICATION: the textbook gives this test, "having both single and double bonds to two or more atoms of the same element" (TB PDF p.205).]
+
+### Common mistakes flagged
+- [SOURCE-DERIVED] The slide's own warning: the molecule "is NOT 'changing' back and forth between these two structures" (Day 9 p.9).
+- [INFERRED] Reading "equivalent" as "the same picture" (Day 9 p.8 separates the two); moving atoms instead of electrons; using ↔ for a reaction or ⇌ for resonance; expecting O₃ to have one 121 pm bond and one 148 pm bond.
+
+### Connections
+- Builds on: the ozone Lewis structures (Day 8 p.28–30; Day 9 p.6); typical bond lengths (Day 9 p.7, p.14). Used later in: formal charge, which ranks non-equivalent resonance structures (Day 9 p.24 table, "the resonance structures of N₂O"); NO₂ and SO₄²⁻ among the octet exceptions (Day 9 p.28–30); the ozone VSEPR example, whose two resonance structures give one geometry (Day 10 p.14–15); benzene's delocalized π cloud in valence bond theory (Day 11 p.26).
+
+### Uncertainties and discrepancies
+- [SOURCE-DERIVED] Scope: why delocalization stabilizes a molecule is "beyond the scope of this class" (Day 9 p.10). [CLARIFICATION: the textbook's reason is that delocalization lowers the electrons' potential energy, "resonance stabilization" (TB PDF p.204).]
+- [CLARIFICATION] Lonsdale's 1929 crystal structure was of hexamethylbenzene, C₆(CH₃)₆, which showed a flat ring with equal C–C bonds; the slide says "benzene" (Day 9 p.2). History detail on a non-content slide.
+
+## The Lengths and Strengths of Covalent Bonds
+
+**Sources:** Day 9 p.7, p.14; Day 8 p.11 (the H–H curve)
+**Unit / lecture order:** Day 9, between benzene resonance and electronegativity
+**Prerequisites:** single, double, and triple bonds in Lewis structures; the covalent H–H energy curve
+**Emphasis evidence:** §4.5 "The Lengths and Strengths of Covalent Bonds" bold (Day 8 p.4; Day 9 p.4); Ch. 4 outcome 7 ("Describe how bond order, bond energy, and bond length are related") bold on Day 9 p.5 and on no earlier day; four groups of rows boxed in red on Table 4.6 (Day 9 p.14).
+
+### Definitions and terminology
+- [SOURCE-DERIVED] The slides define none of the three terms: "bond order", "bond energy", and "bond length" appear only in outcome 7 (Day 9 p.5) and in Table 4.6's column headings "Bond Length (pm)" and "Bond Energy (kJ/mol)" (Day 9 p.14). [CLARIFICATION: textbook definitions: bond order is the number of bonds between two atoms, 1 for a single bond, 2 for a double, 3 for a triple (TB PDF p.206); bond energy is the energy needed to break one mole of a specific covalent bond in the gas phase (TB PDF p.185), always positive (TB PDF p.208).]
+
+### Equations and relationships
+- [SOURCE-DERIVED] Table 4.6 "Average Lengths and Energies of Selected Covalent Bonds", the textbook's table as an image (Day 9 p.14 = TB PDF p.207), in pm / kJ/mol: C–C 154/348, C=C 134/614, C≡C 120/839 · C–N 147/293, C=N 127/615, C≡N 116/891 · C–O 143/358, C=O 123/743ᵃ, C≡O 113/1072 · C–H 110/413 · C–F 133/485 · C–Cl 177/328 · N–H 104/391 · N–N 147/163, N=N 124/418, N≡N 110/945 · N–O 136/201, N=O 122/607, N≡O 106/678 · O–O 148/146, O=O 121/498 · O–H 96/463 · S–O 151/265, S=O 143/523 · S–S 204/266 · S–H 134/347 · H–H 74/436 · H–F 92/567 · H–Cl 127/431 · H–Br 141/366 · H–I 161/299 · F–F 143/155 · Cl–Cl 200/243 · Br–Br 228/193 · I–I 266/151. Footnote: "ᵃThe bond energy of the C—O bond in CO₂ is 799 kJ/mol." 35 rows.
+- [SUPPORTED EMPHASIS] Red boxes (annotation, Day 9 p.14) surround exactly four groups: C–C/C=C/C≡C; C–O/C=O/C≡O; O–O/O=O; F–F/Cl–Cl/Br–Br/I–I. [INFERRED] Each carbon and oxygen group shows that a higher bond order means a shorter and stronger bond. The halogen group shows length growing down the group (143 → 266 pm) while energy does not fall smoothly (F–F 155 < Cl–Cl 243 kJ/mol). The slide does not say why each group is boxed.
+- [SOURCE-DERIVED] H–H: the 74 pm minimum and −436 kJ/mol depth of the Day 8 p.11 curve equal Table 4.6's H–H row, 74 pm and 436 kJ/mol (Day 9 p.14). [INFERRED: bond length is the curve's minimum position; bond energy is the depth of the well, reported as a positive number.]
+
+### Three representations
+- Macroscopic: [SOURCE-DERIVED] the measured quantities in Table 4.6, average bond lengths (pm) and bond energies (kJ/mol) (Day 9 p.14).
+- Symbolic: [SOURCE-DERIVED] bond lines –, =, ≡ in Table 4.6's Bond column (Day 9 p.14).
+- Particulate: [INFERRED] more shared pairs between two nuclei pull them closer and take more energy to separate.
+
+### Worked examples
+- (Day 9 p.7) O₃'s 128 pm falls between O–O 148 and O=O 121 pm, the evidence for resonance.
+- [VERIFICATION] Python: O₃ bond order = 3 bonding pairs / 2 bonds = 1.5. Doubling is not additive: C=C 614 < 2 × 348 = 696 kJ/mol; C≡C 839 < 3 × 348 = 1044 kJ/mol.
+
+### Recognition cues
+- [INFERRED] "Rank these bonds by length or by strength", "which C–O bond is shortest?", "what does an intermediate bond length tell you?" → bond order first (from the Lewis structure, averaged over resonance structures), then Table 4.6.
+
+### Common mistakes flagged
+- [INFERRED] Expecting a double bond to be twice as strong as a single bond; expecting bond energy to fall steadily down a group (F–F is weaker than Cl–Cl); mixing up "longer" with "stronger" (they run opposite for a given pair of atoms).
+
+### Connections
+- Builds on: the covalent H–H curve (Day 8 p.11). Used in: the resonance evidence (Day 9 p.7). [CLARIFICATION] Valence bond theory's σ + π picture of multiple bonds (Day 11 p.17–23) is the usual explanation for why a double bond is less than twice a single bond; the slides don't connect the two.
+
+### Uncertainties and discrepancies
+- [CLARIFICATION] "Table 4.6" is the same number in the supplied 3rd edition (TB PDF p.207), unlike Day 8's "Table 4.5" polyatomic ions (the book's Table 4.4).
+- [UNCERTAIN] Whether Table 4.6 is given on exams or must be recalled is not stated (compare the explicit polyatomic-ion policy, Day 8 p.8).
+
+## Electronegativity and Bond Polarity
+
+**Sources:** Day 9 p.15–18; Day 10 p.27 (repeated)
+**Unit / lecture order:** Day 9, after Table 4.6; the "Polar Bonds" slide is repeated to open the polarity part of Day 10
+**Prerequisites:** covalent vs. ionic bonds; periodic trends (ionization energy, electron affinity)
+**Emphasis evidence:** "4.2 **Electronegativity** and Bonding" (the word bold, Day 9 p.4); Ch. 4 outcome 3 ("Predict the polarity of covalent bonds on the basis of differences in the electronegativity between the bonded atoms") bold on Day 9 p.5, after being plain on Day 7 p.13 and Day 8 p.5; "**electronegativity,**" bold (Day 9 p.17); the battery figure in two lectures (Day 9 p.15; Day 10 p.27) and the electrostatic-potential figure on two slides (Day 9 p.16, p.18).
+
+### Definitions and terminology
+- [SOURCE-DERIVED] "Even when G.N. Lewis was developing the rules for his Lewis structures, he was aware that the electrons in covalent bonds didn't have to be shared **equally**. In many (most?) covalent bonds, one of the atoms has more of the electron density." (Day 9 p.15)
+- [SOURCE-DERIVED] "To describe the polarity of bonds, we will introduce the concept of **electronegativity,** given the symbol χ." (Day 9 p.17). The slides give no further definition. [CLARIFICATION: the textbook: "a relative measure of an atom’s ability to attract electrons to itself within a bond" (margin definition; the body text on PDF p.186: "an atom’s tendency to attract electrons toward itself within a chemical bond") (TB PDF p.187).]
+
+### Equations and relationships
+- [SOURCE-DERIVED] Bond classes by electronegativity difference (Day 9 p.18): "Δχ ≤ 0.4 nonpolar covalent · 0.4 < Δχ < 2.0 polar covalent · Δχ ≥ 2.0 ionic", with "χ of Cl = 3.0 · χ of H = 2.1 · χ of Na = 0.9" beside the Cl₂, HCl, and NaCl maps. [VERIFICATION: Cl₂ Δχ = 0, nonpolar; HCl 3.0 − 2.1 = 0.9, polar covalent; NaCl 3.0 − 0.9 = 2.1, ionic (Python).] The textbook uses the same thresholds (TB PDF p.186).
+- [SOURCE-DERIVED] Electronegativity values (Day 9 p.17; the textbook's Fig. 4.5 as 3-D bars, 300-dpi crop): H 2.1 · Li 1.1, Be 1.5, B 2.0, C 2.5, N 3.0, O 3.5, F 4.0 · Na 0.9, Mg 1.2, Al 1.5, Si 1.8, P 2.1, S 2.5, Cl 3.0 · K 0.8, Ca 1.0, Sc 1.3, Ti 1.5, V 1.6, Cr 1.6, Mn 1.5, Fe 1.8, Co 1.8, Ni 1.8, Cu 1.9, Zn 1.6, Ga 1.6, Ge 1.8, As 2.0, Se 2.4, Br 2.8 · Rb 0.8, Sr 1.0, Y 1.2, Zr 1.4, Nb 1.6, Mo 1.8, Tc 1.9, Ru 2.2, Rh 2.2, Pd 2.2, Ag 1.9, Cd 1.7, In 1.7, Sn 1.8, Sb 1.9, Te 2.1, I 2.5 · Cs 0.7, Ba 0.9, La 1.1, Hf 1.3, Ta 1.5, W 1.7, Re 1.9, Os 2.2, Ir 2.2, Pt 2.2, Au 2.4, Hg 1.9, Tl 1.8, Pb 1.9, Bi 1.9, Po 2.0, At 2.2 · Fr 0.7, Ra 0.9, Ac 1.1. No values for the noble gases.
+
+### Three representations
+- Macroscopic: [SOURCE-DERIVED] a battery with a + end and a − end, the analogy for a polar bond's δ+ and δ− ends (Day 9 p.15; Day 10 p.27).
+- Symbolic: [SOURCE-DERIVED] δ+ and δ− labels; a crossed arrow over H–Cl with the + tail at H and the arrowhead at Cl (Day 9 p.15); Δχ values.
+- Particulate: [SOURCE-DERIVED] electrostatic potential maps (Day 9 p.16, p.18) on a color scale from dark blue "1+" ("100% ionic") through "δ+", green-yellow "0" ("Nonpolar covalent"), and "δ−" to red "1−" ("100% ionic"): (a) Cl₂, "Nonpolar covalent: even charge distribution"; (b) HCl, "Polar covalent: uneven charge distribution" (greener at H, orange at Cl); (c) NaCl, "Ionic: complete transfer of electron" (Na⁺ blue, Cl⁻ red).
+
+### Professor explanations, models, and diagrams
+- [INFERRED] One color scale for all three maps puts the bond types on a single continuum: ionic bonding is the extreme of unequal sharing. The slides show this (Day 9 p.16, p.18) without saying it.
+
+### Recognition cues
+- [INFERRED] "Classify this bond as nonpolar covalent, polar covalent, or ionic", "which bond is most polar?", "which end is δ−?" → look up both χ values, subtract, and compare with 0.4 and 2.0; the more electronegative atom is δ−, and the arrowhead points to it.
+
+### Common mistakes flagged
+- [INFERRED] Pointing the arrow toward the δ+ end (this course: the arrowhead is at δ−, Day 9 p.15); treating the 0.4 and 2.0 cutoffs as sharp boundaries [CLARIFICATION: the textbook: "those cutoff values are more like guidelines than strict limits" (TB PDF p.186)]; assuming metal + nonmetal always means Δχ ≥ 2.0.
+
+### Connections
+- Builds on: covalent vs. ionic bonds (Day 7 p.14). [INFERRED] χ follows the IE₁ trend, rising across a row and falling down a group (Day 7 p.9); the slides don't make the comparison [CLARIFICATION: the textbook does, Fig. 4.6, TB PDF p.187]. Used later in: formal-charge rule 3, negative charges on "the more/most electronegative element" (Day 9 p.23); expanded octets around "strongly electronegative elements (F, O, and Cl)" (Day 9 p.29); polar molecules, with Δχ quoted for each bond (Day 10 p.27–31).
+
+### Uncertainties and discrepancies
+- [SOURCE-DERIVED] Li is 1.1 here (Day 9 p.17), as in the textbook's Fig. 4.5; many other tables list 1.0 (already logged in COURSE.md Discrepancies).
+- [UNCERTAIN] Whether an electronegativity table is provided on exams is not stated.
+
+## Formal Charge
+
+**Sources:** Day 9 p.19–26, p.28, p.30
+**Unit / lecture order:** Day 9, after electronegativity
+**Prerequisites:** Lewis structures (five steps); valence-electron counts; electronegativity (rule 3)
+**Emphasis evidence:** §4.7 "Formal Charge: Choosing among Lewis Structures" bold on Day 9 p.4 (plain on Day 8 p.4); outcome 6 fully bold (Day 9 p.5); "**formal charge**" and "**each atom:**" bold (Day 9 p.22); the FC equation on two slides (p.22, p.25); two Top Hat slides (p.25, and p.26, "a GREAT practice question").
+
+### Definitions and terminology
+- [SOURCE-DERIVED] "To choose between them, we will introduce the idea of **formal charge**, which is a comparison of how many electrons the atoms have in the compound to how many they had as free atoms. For **each atom:** 1. Determine the number of valence electrons in the free atom. 2. Count the number of electrons in lone pairs on the atom in the structure. 3. Count the number of electrons in bonds to the atom and divide that number by 2. 4. Sum the results of 2 and 3 and subtract from the number determined in step 1." (Day 9 p.22)
+
+### Equations and relationships
+- [SOURCE-DERIVED] FC = (number of valence e⁻) − [number of unshared e⁻ + ½(number of e⁻ in bonding pairs)], with the three terms colored blue, red, and green (Day 9 p.22, p.25; the textbook's Eq. 4.2, TB PDF p.209). The Day 9 p.24 table writes it FC = valence − [lone pair + ½ (shared)].
+
+### Procedures, shortcuts, assumptions, warnings
+- [SOURCE-DERIVED] "When choosing between multiple Lewis structures: 1. The best structure is the one in which the formal charge on each atom is zero. 2. If no such structure can be drawn, the best structure is the one where most of the atoms have formal charges equal to zero or as close to zero as possible. 3. Any negative formal charges should be on the atom(s) of the more/most electronegative element. 4. If you've done it right, the sum of the formal charges will be the charge on the molecule/ion." (Day 9 p.23)
+- [SOURCE-DERIVED] Formal charges are written in red next to the atoms: "+1", "−1", "0", "+2" (Day 9 p.28, p.30).
+
+### Three representations
+- Symbolic: [SOURCE-DERIVED] the FC bookkeeping table (Day 9 p.24) and red FC labels on structures (Day 9 p.28, p.30).
+- Particulate: [INFERRED] a formal charge compares an atom's share of the electrons (its lone pairs plus half of each shared pair) with the free atom's valence count; it is bookkeeping, not a measured charge.
+
+### Worked examples
+- (Day 9 p.19–24) N₂O. Step 1 table: N 2 × 5 = 10, O 1 × 6 = 6, "TOTAL: 16"; skeleton N–N–O (p.19). After step 3 the central N has only 4 electrons; three complete structures follow (p.20): A :N≡N–Ö:, B N=N=O with two lone pairs on each end atom, C :N̈–N≡O: (each counts to 16). "These structures are **not equivalent!** Which of them is "right"? Well, again, the answer is "none of them"… But one of them is better than the other two, and **closer** to the real structure." (p.21). The textbook's table "Formal charge calculations for the resonance structures of N₂O" is shown with its cells blank for class (p.24): "Which is the **worst** structure? Which is the best?" No answers on the slides. Reference values from the textbook's filled table (TB PDF p.210), [VERIFICATION] RDKit and Python, in N, N, O order: A 0, +1, −1; B −1, +1, 0; C −2, +1, +1, each summing to 0. Best: A (A and B tie on rule 2; A has the −1 on O, the more electronegative atom: rule 3, as the textbook argues on TB PDF p.210). Worst: C (a −2, and +1 on O).
+- [SUPPORTED EMPHASIS] Top Hat, prepared but not asked: "We didn't have time for this one, but it's a GREAT practice question. Choose the **best** Lewis structure for phosphoric acid." (Day 9 p.26; 400-dpi crops). Five structures: (1) a P=O to an OH oxygen, with the top O single-bonded and three lone pairs; (2) four P–O single bonds; (3) one P=O to the terminal O and three P–O–H; (4) an H bonded directly to P; (5) an H bonded to both P and O. No answer on the slide. Reference answer: (3). [VERIFICATION, RDKit and Python: H₃PO₄ has 32 valence electrons. (3) has 32, every formal charge 0, and 10 electrons on P (an expanded octet, which row-3 P may have, Day 9 p.29). (2) has 32 and all octets, but P +1 and the terminal O −1. (1) has 32 but O +1 and another O −1. (4) and (5) draw 34 electrons, and (5) gives H four electrons.]
+- [SOURCE-DERIVED] NO₂ (Day 9 p.28) and SO₄²⁻ (Day 9 p.30) carry red formal charges; see **Exceptions to the Octet Rule**.
+- [SOURCE-DERIVED] The Day 9 p.25 Top Hat question is not in the PDF; only the FC equation is on the slide.
+
+### Recognition cues
+- [INFERRED] "Which Lewis structure is best (most important)?", "assign formal charges", or several valid structures that differ in atom order or bond placement → formal charge, then the four rules.
+
+### Common mistakes flagged
+- [INFERRED] Giving each atom both electrons of every bond (that is the octet count, not the formal charge); treating formal charge as the real charge or as an oxidation number; skipping rule 4's sum check; preferring a structure whose negative charge sits on the less electronegative atom (N₂O structure B).
+- [SOURCE-DERIVED] The best structure is still not the real one: "the answer is 'none of them'" (Day 9 p.21). [CLARIFICATION: the textbook says the real N–N bond lies between structures A and B (TB PDF p.210).]
+
+### Connections
+- Builds on: Lewis structures; resonance (the Day 9 p.24 table calls the N₂O structures resonance structures); electronegativity (rule 3). Used later in: expanded octets, which make formal charges "closer to zero" (Day 9 p.29–30).
+
+### Uncertainties and discrepancies
+- [CLARIFICATION] Same method as the textbook's three criteria (TB PDF p.210). Rule 2 drops the textbook's clause "or if the structure is that of a polyatomic ion"; the slide's rule 4 (FCs sum to the charge) is stated in the textbook's text rather than in its list.
+- [INFERRED] Day 9 p.21 calls the three N₂O structures "not equivalent", and the p.24 table calls them "resonance structures"; by the p.8 definition (interconvertible "by just moving electrons") they are, so non-equivalent structures can also be resonance structures, contributing unequally.
+
+## Exceptions to the Octet Rule
+
+**Sources:** Day 9 p.27–30 (announced on Day 8 p.26)
+**Unit / lecture order:** Day 9, the end of the deck and of the Ch. 4 lectures
+**Prerequisites:** Lewis structures; bonding capacity; formal charge; electronegativity
+**Emphasis evidence:** §4.8 bold (Day 9 p.4); the title on three slides (p.27–29); "**odd number**", "**unpaired**", "**expanded octets**", "**hypervalency**" bold (p.28–29); announced on Day 8: "Sometimes it is **impossible** for every atom to have an octet" (Day 8 p.26).
+
+### Definitions and terminology
+- [SOURCE-DERIVED] "Not all atoms have a complete octet when forming covalent bonds. •H forms duets. •Be, B, and Al form *electron-deficient* molecules." (Day 9 p.27)
+- [SOURCE-DERIVED] "Some species have an **odd number** of electrons, which forces some of them to be **unpaired.** These species are called "radicals" or "free radicals," and they are very reactive." (Day 9 p.28)
+- [SOURCE-DERIVED] "Atoms of nonmetals in the third row and below can have **expanded octets**. Examples: PCl₅, SF₆ , SO₄²⁻. This is called **hypervalency**, and it is not well understood. Atoms will expand their octet when they bond with strongly electronegative elements (F, O, and Cl). An expanded shell produces a structure whose atoms' formal charges are closer to zero." (Day 9 p.29)
+
+### Three representations
+- Symbolic: [SOURCE-DERIVED] Cl–Be–Cl (4 electrons on Be), BCl₃ and AlCl₃ (6 on B and Al), each Cl with three lone pairs (Day 9 p.27); NO with an unpaired dot on N (p.28); NO₂'s two structures with formal charges and ↔ (p.28); [SO₄]²⁻ in square brackets with the charge outside (p.30); PCl₅ and SF₆ with three lone pairs on every halogen (p.30).
+- Particulate: [INFERRED] an odd electron count leaves one electron without a partner, which is why radicals react so readily. Free radicals return on the Day 11 Representation Matters slide (Rebecca Gerschman: "free radicals cause cell death and aging", Day 11 p.3).
+- Macroscopic: [CLARIFICATION] NO and NO₂ come from car exhaust and drive photochemical smog (TB PDF p.212).
+
+### Worked examples
+- (Day 9 p.28) NO: N=O; N carries one lone pair and one unpaired electron (7 electrons), O two lone pairs. NO₂: O=N–O ↔ O–N=O with formal charges 0, +1, −1 in red and the odd electron on N. [VERIFICATION: NO 11 and NO₂ 17 valence electrons; RDKit gives FCs 0/0 for NO and 0/+1/−1 for NO₂, one radical electron each.]
+- (Day 9 p.30) SO₄²⁻: with four S–O single bonds every atom has an octet, but S is +2 and each O −1. Two red curved arrows turn two O lone pairs into S=O bonds (→): S 0, the two double-bonded O 0, the two single-bonded O −1, sum −2 (the ion's charge), and S now has 12 electrons. [VERIFICATION: 32 valence electrons; RDKit FCs S +2 / O −1 ×4 vs. S 0 / O 0, 0, −1, −1.]
+- (Day 9 p.30) PCl₅ (10 electrons on P) and SF₆ (12 on S), all formal charges 0. [VERIFICATION: 40 and 48 valence electrons (`tools/chemistry_verify.py electrons`).]
+
+### Recognition cues
+- [INFERRED] Be, B, or Al as the central atom → may stop short of an octet. An odd valence-electron total → a radical; the odd electron goes on the atom left with fewer than eight (N in NO and NO₂). A central atom from row 3 or below bonded to F, O, or Cl, with more bonds than its bonding capacity or octet-only formal charges far from zero → expanded octet.
+
+### Common mistakes flagged
+- [INFERRED] Expanding the octet of a row-2 atom (C, N, O, F never exceed eight); forcing an octet on B with a B=F double bond; trying to give every atom in NO eight electrons.
+
+### Connections
+- Builds on: formal charge (p.29, "closer to zero"); electronegativity (F, O, Cl). Used later in: [INFERRED] the VSEPR examples BF₃ (SN 3), PF₅ (SN 5), and SF₆ (SN 6) are an electron-deficient molecule and two expanded octets (Day 10 p.10, p.12; SF₆ appears on both days); [INFERRED] unpaired electrons return with O₂'s paramagnetism (Day 11 p.27).
+
+### Uncertainties and discrepancies
+- [SOURCE-DERIVED] "hypervalency… is not well understood" (Day 9 p.29); no mechanism is taught. [CLARIFICATION: the textbook says studies show "d orbitals contribute little to the bonding" (TB PDF p.214), and its Ch. 5 explains SN > 4 without expanded octets (TB PDF p.271–273).]
+- [CLARIFICATION] The textbook prefers the same two-S=O SO₄²⁻ structure by formal charge but adds that experiment suggests the real bonding averages both kinds of structure (TB PDF p.215).
+
+---
+
+# Unit E — Bonding Theories: Explaining Molecular Geometry (Ch. 5; Day 10 p.4 – Day 11 p.27)
+
+Ch. 5 section bolding: Day 10 p.4 bolds §5.1–5.3; Day 11 p.4 bolds §5.3–5.5. §5.6 (Chirality) and §5.7 (MO theory) are bold on neither day. Outcomes: Day 10 p.5 bolds 1–2; Day 11 p.5 bolds 2–3; outcomes 4 (MO) and 5 (IR, greenhouse) are bold on neither. Unlike Ch. 4, the slides' Ch. 5 section numbers and titles match the supplied textbook (see `TEXTBOOK_MAP.md`).
+
+## Molecular Shape and Biological Activity: Chiral Molecules
+
+**Sources:** Day 10 p.3, p.6
+**Unit / lecture order:** Day 10, opening Ch. 5
+**Prerequisites:** Lewis structures
+**Emphasis evidence:** §5.1 bold on Day 10 p.4 (plain on Day 11 p.4); "**chiral**" bold (Day 10 p.6); the Representation Matters slide bolds "**three-dimensional structure affects biological activity**" (Lloyd Noel Ferguson, Day 10 p.3). No professor outcome mentions chirality (Day 10 p.5), and §5.6 Chirality is bold on neither day.
+
+### Definitions and terminology
+- [SOURCE-DERIVED] "Molecular geometries are clearly more complicated than Lewis structures. One example is the existence of **chiral** molecules, like R(-) and S(+) carvone" (Day 10 p.6). "Chiral" is not defined on the slides. [CLARIFICATION: the textbook: "a molecule that is not superimposable on its mirror image" (TB PDF p.256).]
+
+### Three representations
+- Macroscopic: [SOURCE-DERIVED] photos of spearmint tea and caraway-seed bread (Day 10 p.6): the two carvones smell and taste different. Ferguson "studied *taste*, and how very similar molecules can produce very different tastes" (Day 10 p.3).
+- Symbolic: [SOURCE-DERIVED] "(+)-Carvone (caraway)" and "(−)-Carvone (spearmint)", drawn with a hashed and a solid wedge at one ring carbon, which is circled in red in both drawings; a condensed structural formula of carvone (Day 10 p.6).
+- Particulate: [INFERRED] the two molecules have the same atoms, bonds, and Lewis structure but are mirror images, so the flat Lewis structure cannot tell them apart.
+
+### Connections
+- Builds on: Lewis structures, which this slide says are not enough (Day 10 p.6–7). Used later in: [INFERRED] §5.6 Chirality and Molecular Recognition, listed but not bold (Day 10 p.4; Day 11 p.4).
+
+### Uncertainties and discrepancies
+- [UNCERTAIN] Whether chirality (identifying stereocenters, R/S or (+)/(−) labels) is examinable: one motivating slide only, §5.6 not bold, and no outcome; the textbook's Ch. 5 has a chirality outcome (LO4, TB PDF p.232) that the slides' list leaves out.
+- [CLARIFICATION] R/S (configuration) and (+)/(−) (direction of optical rotation) are separate labels; the slide pairs them correctly: (R)-(−)-carvone is spearmint and (S)-(+)-carvone is caraway.
+
+## VSEPR Theory: Steric Number and Central Atoms with No Lone Pairs
+
+**Sources:** Day 10 p.7–13
+**Unit / lecture order:** Day 10 (title "VSEPR; Polar bonds and polar molecules", Day 10 p.1)
+**Prerequisites:** a valid Lewis structure (including the octet exceptions: BF₃, PF₅, SF₆)
+**Emphasis evidence:** §5.2 bold (Day 10 p.4); Ch. 5 outcome 1 ("Use VSEPR theory and the concept of steric number to predict the bond angles in molecules and the shapes of molecules with one central atom") bold on Day 10 p.5; "**repulsion**", "**electron-pair geometry**", and "**molecular geometry**" bold (Day 10 p.8); named in the lecture title (Day 10 p.1).
+
+### Definitions and terminology
+- [SOURCE-DERIVED] "Valence-shell electron-pair **repulsion** theory is based on the principle that electrons have negative charge and repel one another. It assumes that pairs of electrons are arranged about central atoms in ways that minimize repulsions between the pairs. To predict molecular shape, we start with an **electron-pair geometry** which describes the relative position in three-dimensional space of all the bonding and lone pairs of electrons. From there, we can predict a **molecular geometry** which describes the relative positions of the atoms in a molecule. To predict molecular geometry, you must know electron-pair geometry… and to know the electron-pair geometry, you must have a valid Lewis structure!" (Day 10 p.8)
+- [SOURCE-DERIVED] "Steric Number: how many regions of high electron density surround the central atom / Or / In how many *directions* are there electrons?" (Day 10 p.9). The summary table calls these "Electron Domains" (Day 10 p.26), and the hybridization slides speak of "every electron domain" (Day 11 p.12, p.20). [CLARIFICATION: the textbook instead counts SN = (atoms bonded to the central atom) + (lone pairs on the central atom), Eq. 5.1 (TB PDF p.234); the counts agree, since a double or triple bond is one region and one bonded atom.]
+- [SOURCE-DERIVED] "*Sometimes* Lewis structures are enough…" (Day 10 p.7): CO₂'s Lewis structure O=C=O matches its linear, 180° shape; CH₄'s flat Lewis cross does not show its real 109.5° angles (ball-and-stick models, a textbook figure).
+
+### Equations and relationships
+- [SOURCE-DERIVED] No lone pairs on the central atom (Day 10 p.9–12): SN 2 linear, 180° (CO₂) · SN 3 trigonal planar, 120° (BF₃) · SN 4 tetrahedral, 109.5° (CCl₄) · SN 5 trigonal bipyramidal, 90° and 120° (PF₅) · SN 6 octahedral, 90° (SF₆). Generic drawings label these MX₂ … MX₆ (Day 10 p.9).
+- [VERIFICATION] The tetrahedral angle is arccos(−⅓) = 109.47° (Python).
+
+### Three representations
+- Symbolic: [SOURCE-DERIVED] Lewis structure → ball-and-stick model → wedge-and-dash drawing with the angle marked → polyhedron (tetrahedron, trigonal bipyramid, octahedron) (Day 10 p.10–12). [CLARIFICATION: textbook convention: a solid wedge points toward the viewer, a dashed wedge into the page, a plain line lies in the page (TB PDF p.236).]
+- Particulate: [SOURCE-DERIVED] electron pairs around the central atom repel and spread as far apart as possible (Day 10 p.8).
+- Macroscopic: [INFERRED] measured bond angles (180°, 120°, 109.5°) are the observable check on the model.
+
+### Professor explanations, models, and diagrams
+- [SOURCE-DERIVED] "How do double bonds affect these predictions? Double bonds consist of MORE electrons than single bonds, so they repel the other electrons more strongly. Consider formaldehyde: What would you predict the H-C-H bond angle to be? It's about 118°" (Day 10 p.13; H₂C=O Lewis structure). [INFERRED] So a double bond counts as one region for the steric number, but it squeezes the other angles below the ideal 120°.
+
+### Worked examples
+- (Day 10 p.10) CO₂ SN 2 linear; BF₃ SN 3 trigonal planar (B has 6 electrons, Day 9 p.27); CCl₄ SN 4 tetrahedral. (p.12) PF₅ SN 5 trigonal bipyramidal; SF₆ SN 6 octahedral. (p.13) Formaldehyde SN 3, H–C–H about 118°.
+- [VERIFICATION] RDKit MMFF geometry: CH₄ H–C–H 109.5°, CH₂O H–C–H 115.5° (a force-field check that the angle falls below 120°, not a reference value).
+
+### Recognition cues
+- [INFERRED] "Predict the shape / bond angle / electron-pair geometry" → Lewis structure → count the regions on the central atom (each lone pair and each single, double, or triple bond is one region) → SN → geometry.
+
+### Common mistakes flagged
+- [SOURCE-DERIVED] Skipping the Lewis structure: "you must have a valid Lewis structure!" (Day 10 p.8).
+- [INFERRED] Counting a double or triple bond as two or three regions; reading angles off the flat Lewis drawing (CH₄'s cross looks like 90°, Day 10 p.7).
+
+### Connections
+- Builds on: Lewis structures (Day 10 p.7–8); [INFERRED] the octet exceptions supply the SN 3, 5, and 6 examples (BF₃, PF₅, SF₆; Day 9 p.27–30). Used later in: central atoms with lone pairs (Day 10 p.14–26); the polarity of CO₂ and CF₄ (Day 10 p.29–30); hybridization, where "the number of hybridized orbitals equals the steric number" (Day 11 p.12).
+
+### Uncertainties and discrepancies
+- [CLARIFICATION] Formaldehyde's measured H–C–H angle is about 116.5°. The slide's "about 118°" (Day 10 p.13) agrees with the textbook, whose H–C=O angles "about 1° larger" than 120° imply 118° (TB PDF p.237). Both are below 120°, which is the point.
+
+## VSEPR: Central Atoms with Lone Pairs (Electron-Pair vs. Molecular Geometry)
+
+**Sources:** Day 10 p.14–26
+**Unit / lecture order:** Day 10
+**Prerequisites:** VSEPR with no lone pairs; ozone's resonance structures
+**Emphasis evidence:** outcome 1 bold (Day 10 p.5); "**atoms only**" bold twice (p.14, p.16); a "Note:" warning (p.19); two Top Hat slides (p.17, p.21); a summary table built for the course (p.26).
+
+### Definitions and terminology
+- [SOURCE-DERIVED] "Remember that the molecular geometry describes relative positions of **atoms only**" (Day 10 p.14, p.16). Lone pairs are called "nonbonding pair[s]" (p.14, p.16, p.19).
+
+### Equations and relationships
+- [SOURCE-DERIVED] Summary table (Day 10 p.26, a plain professor-made table): Number of Electron Domains | Electron Pair Geometry | # of Lone Pairs | Molecular Geometry | Ideal Bond Angles. 2 Linear: 0 Linear; 180° · 3 Trigonal planar: 0 Trigonal planar, 1 Bent; 120° · 4 Tetrahedral: 0 Tetrahedral, 1 Trigonal pyramidal, 2 Bent; 109.5° · 5 Trigonal bipyramidal: 0 Trigonal bipyramidal, 1 See-saw, 2 T-shaped; "120° AND 90°" · 6 Octahedral: 0 Octahedral, 1 Square pyramidal, 2 Square planar, 3 T-shaped; 90°.
+
+### Worked examples
+- (Day 10 p.14–15) Ozone: "SN = 3 with two atoms and one nonbonding pair predicts trigonal planar arrangement… SN = 3 and two atoms predicts angular ("**bent**") molecular geometry." Figures: both resonance structures with a lone-pair lobe on the central O → "(a) Electron-pair geometry = trigonal planar" and "(b) Molecular geometry = bent"; a large lone-pair lobe pushes the two bonding-pair lobes together: "O—O—O bond angle = 117°".
+- (Day 10 p.16–18) Ammonia: "SN = 4 with three atoms and one nonbonding pair predicts tetrahedral arrangement… SN = 4 and three atoms predicts **trigonal pyramidal** geometry." Figures: (a) Lewis structure → (b) tetrahedral electron-pair geometry → (c) trigonal pyramidal molecular geometry, 107° (p.18).
+- (Day 10 p.19) Water: "SN = 4 with **two** atoms and **two** nonbonding pairs predicts tetrahedral arrangement. SN = 4 and two atoms predicts **bent** geometry. Note: the same geometry NAME as for ozone, but not the same bond angle!" Figure (c): "Bent (angular) molecular geometry", 104.5°.
+- (Day 10 p.20–23) SN 5: "Now things get more interesting… If we replace an atom in the trigonal bipyramid with a lone pair, will it occupy an axial or an equatorial position?" (p.20; AB₅ drawn with axial B_a and equatorial B_e, 90° and 120° marked). The answer slides (p.22–23, figures only) put every lone pair in an equatorial position: one lone pair → "Seesaw molecular geometry" (after "(b) Rotated 90° about horizontal axis"); two → T-shaped; three → linear. [CLARIFICATION: the textbook's reason: an equatorial lone pair has two neighbors at 90°, an axial one would have three, and repulsion grows as the angle shrinks (TB PDF p.241).]
+- (Day 10 p.24–25) SN 6: "Consider a molecule with SN = 6 but with a lone pair. Weirdly, all of the positions are now equivalent again. It doesn't matter which position we replace with the lone pair!" → square pyramidal. "But now consider a molecule with SN = 6 but with TWO lone pairs… Now things are again not equivalent!" → the two lone pairs sit opposite each other → square planar.
+- [SOURCE-DERIVED] The Top Hat questions on Day 10 p.17 (after the ammonia build-up) and p.21 (after the axial-or-equatorial question) are not in the PDF.
+- [VERIFICATION] RDKit MMFF geometry: NH₃ 106.0°, H₂O 104.0°, ordered as on the slides (109.5° > 107° > 104.5°). A force-field check of the trend, not reference values.
+
+### Three representations
+- Symbolic: [SOURCE-DERIVED] paired drawings, (a) electron-pair geometry with lone-pair lobes in place → (b)/(c) atoms only (Day 10 p.15–25).
+- Particulate: [SOURCE-DERIVED] the lone-pair lobe is drawn larger than the bonding-pair lobes and pushes them together (Day 10 p.15). [INFERRED] So lone pairs shrink the angles: 120° → 117° (O₃); 109.5° → 107° (NH₃) → 104.5° (H₂O).
+- Macroscopic: [INFERRED] the measured bond angles (117°, 107°, 104.5°) are the evidence for lone-pair repulsion.
+
+### Recognition cues
+- [INFERRED] Lone pairs on the central atom → name the electron-pair geometry from SN first, then the molecular geometry from the number of bonded atoms; the table's "ideal" angle is an upper limit, and real lone-pair angles are smaller.
+
+### Common mistakes flagged
+- [SOURCE-DERIVED] "the same geometry NAME as for ozone, but not the same bond angle!" (Day 10 p.19): bent O₃ (SN 3, about 117°) vs. bent H₂O (SN 4, 104.5°).
+- [INFERRED] Giving the electron-pair geometry when the molecular geometry is asked (NH₃ is trigonal pyramidal, not tetrahedral); putting an SN 5 lone pair axial; putting two SN 6 lone pairs at 90° instead of opposite each other.
+
+### Connections
+- Builds on: VSEPR without lone pairs (Day 10 p.9–13); ozone's resonance structures (Day 10 p.14–15). Used later in: polarity of bent H₂O (Day 10 p.31) and NH₃ (Day 11 p.8); sp³ hybrids holding the lone pairs of NH₃ and H₂O (Day 11 p.16).
+
+### Uncertainties and discrepancies
+- [SOURCE-DERIVED] The Day 10 p.26 table leaves out SN 5 with three lone pairs (linear), which p.23 shows, and includes SN 6 with three lone pairs (T-shaped), which no figure shows, so "T-shaped" appears twice. [CLARIFICATION: both are standard VSEPR results (AX₂E₃ linear, e.g. XeF₂; AX₃E₃ T-shaped). The textbook's Table 5.1 lists XeF₂ as linear and says of SN 6 with 3 or 4 lone pairs, "Although these geometries are possible, we will not encounter any molecules with them" (TB PDF p.240).] → COURSE.md Discrepancies.
+- [SOURCE-DERIVED] Spelling: "See-saw" in the table (p.26), "Seesaw" in the figure caption (p.22; also the textbook's spelling, TB PDF p.240–241).
+- [SOURCE-DERIVED] Resolves the Day 8 p.23 hidden callout ("We'll see later that ammonia is tetrahedral"): tetrahedral is ammonia's electron-pair geometry; its molecular geometry is trigonal pyramidal (Day 10 p.16–18). → COURSE.md Discrepancies updated.
+- [CLARIFICATION] The table's angle column gives the ideal (electron-pair) angles for every row: 109.5° for bent water although water's angle is 104.5° (p.19). The textbook's Table 5.1 writes "<109.5°" for those rows (TB PDF p.240).
+
+## Polar Molecules: Bond Dipoles and Molecular Dipole Moments
+
+**Sources:** Day 10 p.27–31; Day 11 p.6–8
+**Unit / lecture order:** end of Day 10, continued at the start of Day 11 (titles "VSEPR; Polar bonds and polar molecules", Day 10 p.1, and "Polar bonds and polar molecules; Valence bond theory and hybrid orbitals", Day 11 p.1)
+**Prerequisites:** electronegativity and bond polarity (Δχ); VSEPR molecular geometries
+**Emphasis evidence:** §5.3 bold on both days (Day 10 p.4; Day 11 p.4); outcome 2 ("Predict whether a substance is polar or nonpolar on the basis of its molecular structure") bold on both days (Day 10 p.5; Day 11 p.5); in two lecture titles; the H₂O slide shown in two lectures (Day 10 p.31; Day 11 p.6); "**molecule**" and "**not**" bold (Day 10 p.29–31).
+
+### Definitions and terminology
+- [SOURCE-DERIVED] CO₂: "Each BOND in CO₂ is polar (Δχ = 1.0) But the two dipole moments are perfectly opposed. The **molecule** is nonpolar!" (Day 10 p.29). CF₄: "Each BOND in CF₄ is polar (Δχ = 1.5!) But all four dipole moments are perfectly opposed. The **molecule** is nonpolar!" (p.30). H₂O: "Each BOND in H₂O is polar (Δχ = 1.4) But the dipole moments are **not** perfectly opposed. The **molecule** is polar!" (p.31; repeated Day 11 p.6).
+- [SOURCE-DERIVED] "Dipole moment" is used without a definition; the debye is the unit in Table 5.2 (Day 11 p.8). [CLARIFICATION: the textbook defines the dipole moment (μ) as "a measure of the degree to which a molecule aligns itself in an applied electric field; a quantitative expression of the polarity of a molecule", with 1 D = 3.34 × 10⁻³⁰ C·m, and gives no μ = Q × r equation (TB PDF p.244–245).]
+
+### Equations and relationships
+- [SOURCE-DERIVED] Table 5.2 "Permanent Dipole Moments of Several Polar Molecules" (Day 11 p.8; the same as the textbook's Table 5.2, TB PDF p.245): HF 1.82 D (toward F) · H₂O 1.85 D (toward O) · NH₃ 1.47 D (toward N) · CHCl₃ 1.01 D (toward the Cl atoms) · CCl₃F 0.45 D (toward F). Each structure is drawn with its bond-dipole arrows.
+- [VERIFICATION] The slides' Δχ values follow from the Day 9 p.17 table: C–O 3.5 − 2.5 = 1.0; C–F 4.0 − 2.5 = 1.5; O–H 3.5 − 2.1 = 1.4 (Python).
+
+### Three representations
+- Symbolic: [SOURCE-DERIVED] a red crossed arrow on each polar bond pointing to the more electronegative atom; for H₂O, the two bond arrows combine (⇒) into one net arrow toward O (Day 10 p.29–31).
+- Particulate: [SOURCE-DERIVED] electrostatic potential maps: CO₂ with the same color at both O ends, CF₄ uniform, H₂O red at O and blue-green at the H end (Day 10 p.29–31); CHCl₃ and CCl₃F (Day 11 p.7).
+- Macroscopic: [CLARIFICATION] a polar molecule lines up in an electric field, which is how a dipole moment is measured (textbook Fig. 5.19, TB PDF p.244).
+
+### Professor explanations, models, and diagrams
+- [SOURCE-DERIVED] "Polar Bonds" (Day 10 p.27) repeats the Day 9 p.15 H–Cl / battery picture before the molecules.
+- [SOURCE-DERIVED] CHCl₃ vs. CCl₃F (Day 11 p.7, figure only): both tetrahedral; CHCl₃ is drawn with three C–Cl dipoles and no C–H arrow; CCl₃F with three C–Cl dipoles plus a C–F dipole. Table 5.2 gives 1.01 vs. 0.45 D (Day 11 p.8). [INFERRED: the C–F dipole points away from the three Cl atoms, partly offsetting their net dipole. CLARIFICATION: the textbook treats C–H (Δχ 0.4) as essentially nonpolar, which is why no arrow is drawn (TB PDF p.245).]
+
+### Recognition cues
+- [INFERRED] "Is the molecule polar?" → Lewis structure → VSEPR shape → bond dipoles from Δχ → do they cancel by symmetry? Identical outer atoms arranged symmetrically with no lone pairs on the center (linear AX₂, trigonal planar AX₃, tetrahedral AX₄, trigonal bipyramidal AX₅, octahedral AX₆) → nonpolar even when every bond is polar. Bent or trigonal pyramidal shapes, or mixed outer atoms (CHCl₃, CCl₃F) → polar.
+
+### Common mistakes flagged
+- [SOURCE-DERIVED] Equating polar bonds with a polar molecule: CO₂ and CF₄ have polar bonds and are nonpolar (Day 10 p.29–30).
+- [INFERRED] Judging polarity from a flat Lewis drawing (H₂O drawn H–O–H in a line would look nonpolar); forgetting that the lone pairs bend H₂O so its dipoles cannot cancel.
+
+### Connections
+- Builds on: Δχ and the crossed arrow (Day 9 p.15–18; repeated Day 10 p.27); VSEPR shapes (Day 10 p.9–26).
+
+### Uncertainties and discrepancies
+- [UNCERTAIN] Whether dipole-moment values or the debye must be known: only Table 5.2 (Day 11 p.8) shows them, and no equation is given on the slides or in the textbook's Ch. 5.
+- [SOURCE-DERIVED] Day 11 p.7 has no visible title on the rendered slide; the text layer holds a hidden "Polar Molecules!" title.
+
+## Valence Bond Theory: Orbital Overlap and Sigma (σ) Bonds
+
+**Sources:** Day 11 p.9–11
+**Unit / lecture order:** Day 11
+**Prerequisites:** atomic orbital shapes (Day 5 p.17–20); electron configurations and orbital diagrams (Day 6); the covalent H–H energy curve (Day 8 p.11)
+**Emphasis evidence:** §5.4 bold (Day 11 p.4); outcome 3 ("Use atomic hybridization and valence bond theory to explain orbital overlap, bond angles, and molecular shape") bold on Day 11 p.5; named in the lecture title (Day 11 p.1); "**Valence bond theory**", "**half-filled orbitals**", "**sigma (σ) bond:**" bold (p.9–10); "**two**", "**four**", "**looks**" bold (p.11).
+
+### Definitions and terminology
+- [SOURCE-DERIVED] "VSEPR grew out of Lewis structures, which pre-date our understanding of atomic orbitals. Can we reconcile the two ideas? **Valence bond theory** (Linus Pauling, late 1920s) suggests that covalent bonds form when **half-filled orbitals** on different atoms overlap. The electrons in overlapping orbitals are attracted to the nuclei of both bonded atoms, increasing stability. We talked about this already in the context of the H-H potential energy surface." (Day 11 p.9, beside the Day 8 p.11 H–H curve: −436 kJ/mol at **74** pm)
+- [SOURCE-DERIVED] "In the new language of Valence Bond Theory, that overlap of H electron density leads to a **sigma (σ) bond:** A covalent bond in which the highest electron density lies between the two atoms along the bond axis" (Day 11 p.10; figure: H 1s + H 1s → "Overlap = σ bond").
+
+### Professor explanations, models, and diagrams
+- [SOURCE-DERIVED] The methane problem (Day 11 p.11): "But we pretty quickly run into trouble with this picture. Consider methane. Methane only has **two** unpaired electrons, so how can it make **four** sigma bonds? One suggestion is that it could promote an electron from 2s to 2p, producing four unpaired electrons. But that's not what methane **looks** like! We need four equivalent bonds pointing to the vertices of a tetrahedron!" Diagrams: carbon's ground state 1s² 2s² 2p² with two unpaired 2p electrons ("Electrons available to bond"); an excited state 2s¹ 2p³ ("Four electrons available to bond"); the four electrons drawn in a 2s sphere and the 2p_x, 2p_y, 2p_z lobes; CH₄ with "four single bonds".
+
+### Three representations
+- Particulate: [SOURCE-DERIVED] overlapping orbital lobes; σ density concentrated on the line between the nuclei (Day 11 p.10).
+- Symbolic: [SOURCE-DERIVED] orbital box diagrams on an energy axis (ground vs. excited carbon, Day 11 p.11).
+- Macroscopic: [INFERRED] the bond length and bond energy of H₂ (Day 8 p.11) are what the overlap picture explains.
+
+### Recognition cues
+- [INFERRED] "Which orbitals overlap to make this bond?", "is it a σ or a π bond?" → valence bond theory.
+
+### Common mistakes flagged
+- [SOURCE-DERIVED] The promoted-electron picture fails for CH₄ ("that's not what methane **looks** like!", Day 11 p.11). [INFERRED: it would give one bond from 2s and three mutually perpendicular bonds from 2p, not four equivalent tetrahedral bonds.]
+
+### Connections
+- Builds on: the H–H curve (Day 11 p.9 ↔ Day 8 p.11); orbital shapes (Day 5 p.17–20); carbon's configuration and Hund's rule (Day 6 p.16–17). Used later in: hybridization (Day 11 p.12–16).
+
+### Uncertainties and discrepancies
+- [SOURCE-DERIVED] Wording: "Methane only has two unpaired electrons" (Day 11 p.11) refers to the free carbon atom, as the slide's ground-state diagram shows; CH₄ itself has none.
+- [CLARIFICATION] The textbook never introduces promotion; it mixes carbon's filled 2s and half-filled 2p orbitals directly into four half-filled sp³ orbitals (TB PDF p.247–248). The slide raises promotion only to reject it.
+- [CLARIFICATION] Valence bond theory began with Heitler and London's H₂ calculation (1927) and was developed by Pauling and Slater; the slide credits Pauling, as the textbook does (TB PDF p.247). History detail.
+
+## Hybrid Orbitals (sp³, sp², sp) and Steric Number
+
+**Sources:** Day 11 p.12–16, p.18, p.20, p.22–25
+**Unit / lecture order:** Day 11
+**Prerequisites:** valence bond theory; steric number (VSEPR); orbital box diagrams
+**Emphasis evidence:** outcome 3 bold (Day 11 p.5); "**hybridization:**" and "**averaging**" bold (p.12); the rules slide (p.20); Table 5.3 under the title "Hybridization Based on Steric Number" (p.24).
+
+### Definitions and terminology
+- [SOURCE-DERIVED] "Pauling got around this by suggesting the idea of **hybridization:** The mixing of atomic orbitals to generate new sets of orbitals that are then available to form covalent bonds with other atoms. Because orbitals are "just" mathematical functions, you can do anything to them that you can do to any other math function – such as **averaging** them. We will need one hybridized orbital for every electron domain. That is, the number of hybridized orbitals equals the steric number of the atom." (Day 11 p.12)
+- [SOURCE-DERIVED] "Hybrid orbital theory accounts for molecular geometries and bonding. Each electron domain on the central atom requires one hybrid orbital. The number of valence atomic orbitals combined equals the number of hybrid orbitals created. σ bonds involve head-on overlap of hybrid orbitals. Exception: Hydrogen uses a 1s orbital to make bonds. π bonds always result from side-to-side overlap of unhybridized orbitals. Lone pairs always reside in hybrid orbitals." (Day 11 p.20)
+- [SOURCE-DERIVED] A hybrid orbital has a "Major lobe" and a "Minor lobe"; drawings usually show only the major lobe (Day 11 p.14, figure only).
+
+### Equations and relationships
+- [SOURCE-DERIVED] Table 5.3 "Summary of Hybridization Schemes and Orbital Orientations" (Day 11 p.24): Hybridization | Orientation of Hybrid Orbitals | Number of σ Bonds | Molecular Geometries | Angles between Hybrid Orbitals: sp — 2 — Linear — 180° · sp² — 3, 2 — Trigonal planar, Bent — 120°, <120° · sp³ — 4, 3, 2 — Tetrahedral, "Trigonal planar" [sic], Bent — 109.5°, <109.5°, <109.5°. The drawings show two sp lobes with two unhybridized p orbitals, three sp² lobes with one p, and four sp³ lobes.
+- [INFERRED from Day 11 p.12, p.24] SN 2 → sp, SN 3 → sp², SN 4 → sp³. The number of hybrids equals SN and equals the number of atomic orbitals mixed (s + p; s + 2p; s + 3p). The slides don't spell out the superscript rule.
+
+### Worked examples
+- (Day 11 p.13–15) CH₄: carbon's 2s [↑↓] and 2p [↑][↑][ ] "Hybridize" into four sp³ [↑][↑][↑][↑]: "The C in methane has a steric number of 4, so we want 4 hybridized orbitals." The four sp³ lobes, 109.5° apart, each overlap one H 1s.
+- (Day 11 p.16) NH₃: N 2s [↑↓] 2p [↑][↑][↑] → sp³ [↑↓][↑][↑][↑]; the filled sp³ holds the lone pair and three half-filled sp³ overlap H 1s. H₂O: O 2s [↑↓] 2p [↑↓][↑][↑] → sp³ [↑↓][↑↓][↑][↑]; two lone-pair sp³ lobes and two O–H σ bonds.
+- (Day 11 p.18, p.22–23) sp² C and O in formaldehyde, sp² N in diazene, sp C in acetylene; see **Pi (π) Bonds**.
+- [VERIFICATION] RDKit hybridization: CH₄ C sp³; NH₃ N sp³; H₂O O sp³; CH₂O C sp², O sp²; N₂H₂ N sp²; C₂H₂ C sp; C₂H₄ C sp²; CO₂ C sp. Each box diagram conserves the atom's valence electrons (C 4, N 5, O 6).
+
+### Recognition cues
+- [INFERRED] "What is the hybridization of the central atom?" → Lewis structure → SN → sp, sp², or sp³; "which orbital holds the lone pair?" → a hybrid orbital (Day 11 p.20).
+
+### Common mistakes flagged
+- [INFERRED] Using the number of bonded atoms instead of SN (NH₃ has three atoms but SN 4, sp³); hybridizing H (it uses 1s, Day 11 p.20); counting a π bond as needing a hybrid orbital.
+
+### Connections
+- Builds on: steric number (Day 10 p.9; "the number of hybridized orbitals equals the steric number", Day 11 p.12); the methane problem (Day 11 p.11). Used later in: π bonds (Day 11 p.17–26).
+
+### Uncertainties and discrepancies
+- [SOURCE-DERIVED] Table 5.3's sp³ row (Day 11 p.24, 400-dpi crop) labels the 3-σ-bond geometry "Trigonal planar". The supplied textbook's Table 5.3 says "Trigonal pyramidal" (TB PDF p.252), as do the professor's own slides (Day 10 p.18, p.26), and an sp³ atom with three bonds and a lone pair (NH₃, 107°) is trigonal pyramidal. The slide's table also differs from the supplied book's in layout (no Steric Number column; "<120°" and "<109.5°" entries), so it probably comes from another edition. → COURSE.md Discrepancies.
+- [SOURCE-DERIVED] No hybridization is given for SN 5 or 6: Table 5.3 stops at sp³, although PCl₅, PF₅, and SF₆ appear on Day 9 p.29–30 and Day 10 p.12. [CLARIFICATION: the textbook also stops at sp³ and explicitly sets aside the d-orbital (sp³d, sp³d²) explanation, treating SN > 4 with sp² + p or sp + 2p hybrids and three-center bonds of bond order ½ (TB PDF p.271–273).]
+- [INFERRED] The hybridization diagrams go straight from the ground-state boxes to the hybrids, with no promotion step (Day 11 p.13, p.18, p.23), consistent with p.11's rejection of promotion.
+
+## Pi (π) Bonds: Double and Triple Bonds and Molecules with Multiple "Central" Atoms
+
+**Sources:** Day 11 p.17–19, p.21–23, p.25–26
+**Unit / lecture order:** Day 11
+**Prerequisites:** hybrid orbitals; σ bonds; double and triple bonds in Lewis structures (Day 8 p.20, p.25)
+**Emphasis evidence:** §5.5 "Molecules with Multiple 'Central' Atoms" bold (Day 11 p.4); outcome 3 bold (Day 11 p.5); a Top Hat slide (p.21).
+
+### Definitions and terminology
+- [SOURCE-DERIVED] "Pauling was also able to explain those mysterious double bonds in our Lewis structures. Each double bond consists of a sigma bond AND a pi (π) bond: A covalent bond in which electron density is greatest above and below the bonding axis. To illustrate, let's look at formaldehyde." (Day 11 p.17)
+- [SOURCE-DERIVED] "π bonds always result from side-to-side overlap of unhybridized orbitals" (Day 11 p.20).
+
+### Worked examples
+- (Day 11 p.18–19) Formaldehyde, H₂C=O: C is sp² (three sp² [↑][↑][↑] + one unhybridized p [↑]); O is sp² (three sp² [↑↓][↑↓][↑] + one p [↑]). σ bonds: two H 1s–C sp² and one C sp²–O sp²; π: the side-by-side C p–O p overlap above and below the molecular plane; O's lone pairs in its two other sp² orbitals. The Lewis structure is color-coded: σ bonds green (both C–H and one line of C=O), the π bond blue (the second line of C=O).
+- (Day 11 p.22) Diazene, N₂H₂: each N is sp² (one sp² holding a lone pair, two bonding sp², one p); σ H 1s–N sp² and N sp²–N sp²; π from p–p. Lewis structure H–N=N–H, the H atoms on opposite sides (trans), one lone pair on each N.
+- (Day 11 p.23) Acetylene, C₂H₂: each C is sp ("Two sp hybrid orbitals" + "Two unhybridized p orbitals"); σ H 1s–C sp and C sp–C sp; "π bond (1)" and "π bond (2)" at right angles; H–C≡C–H. A triple bond is one σ + two π.
+- (Day 11 p.25, figure only) Ethylene, H₂C=CH₂: "Trigonal planar" at each C; the σ framework (C sp²–C sp² and H 1s–C sp²) and one π bond above and below the plane.
+- (Day 11 p.26, figure only) Acrolein CH₂=CH–CH=O; benzene's two Kekulé structures (↔) beside its delocalized π cloud above and below the ring; naphthalene, phenanthrene, anthracene, and benzo[a]pyrene.
+- [SOURCE-DERIVED] The Top Hat question on Day 11 p.21 is not in the PDF.
+- [VERIFICATION] RDKit σ/π counts: CH₂O 3 σ + 1 π; N₂H₂ 3 σ + 1 π; C₂H₂ 3 σ + 2 π; C₂H₄ 5 σ + 1 π; CO₂ 2 σ + 2 π.
+
+### Three representations
+- Particulate: [SOURCE-DERIVED] σ density on the bond axis (head-on overlap) vs. π density above and below it (side-by-side p overlap) (Day 11 p.17, p.19, p.23).
+- Symbolic: [SOURCE-DERIVED] bond lines color-coded σ (green) and π (blue) (Day 11 p.19, p.23).
+- Macroscopic: [CLARIFICATION] multiple bonds are shorter and stronger (Table 4.6, Day 9 p.14); the σ + π picture is the usual explanation.
+
+### Recognition cues
+- [INFERRED] Count bonds: every single bond is σ; a double bond is 1 σ + 1 π; a triple bond 1 σ + 2 π. An atom with one double bond is sp² (SN 3); one with a triple bond or two double bonds is sp (SN 2). With several interior ("central") atoms, find SN and hybridization for each in turn.
+
+### Common mistakes flagged
+- [INFERRED] Counting a double bond as two σ bonds; hybridizing the p orbital that forms the π bond; forgetting that diazene's lone pairs sit in sp² orbitals ("Lone pairs always reside in hybrid orbitals", Day 11 p.20).
+
+### Connections
+- Builds on: Lewis double and triple bonds (Day 8 p.20, p.25); hybridization (Day 11 p.12–16); formaldehyde's VSEPR angle (Day 10 p.13). Used later in: benzene's delocalized π electrons, the orbital picture of its resonance (Day 11 p.26 ↔ Day 9 p.12–13).
+
+### Uncertainties and discrepancies
+- [UNCERTAIN] Ethylene, acrolein, benzene, and the polycyclic aromatics (Day 11 p.25–26) are figures without text; what students should take from p.26 (delocalization? planarity?) is not stated. [CLARIFICATION: the textbook uses them for conjugation, delocalized π electrons, and aromatic compounds (TB PDF p.253–255).]
+
+## Molecular Orbital Theory: O₂ Paramagnetism, Bond Order, HOMO and LUMO
+
+**Sources:** Day 11 p.27; Day 12 p.4–13
+**Unit / lecture order:** announced on the last slide of Day 11; taught on Day 12 p.6–13, just before Ch. 18
+**Emphasis evidence:** "*paramagnetic*" italic and "ALL fail" in capitals (Day 11 p.27, repeated as Day 12 p.6). On Day 12, **§5.7 Molecular Orbital Theory is bold** in the Ch. 5 list while §5.6 Chirality is grey (p.4), and **outcome 4 is bold** (p.5): "Draw molecular orbital (MO) diagrams of small molecules and use MO theory to predict bond order and explain the magnetic properties and UV/visible spectra of molecular compounds". O₂'s two π*₂p electrons are circled in red on Fig. 5.50 (p.11). (On Day 10–11, §5.7 and outcome 4 were bold on neither day.)
+
+### Definitions and terminology
+- [SOURCE-DERIVED] "But wait, there's more! Diatomic oxygen (O₂) is *paramagnetic* – it is attracted to a magnetic field. Only molecules with unpaired electrons are paramagnetic. Lewis structures, VSEPR, and valence bond/hybridization theories ALL fail to predict this. So let's talk briefly about Molecular Orbital Theory" (Day 11 p.27; repeated as Day 12 p.6). Photo: liquid O₂ held between the poles of a magnet.
+- [SOURCE-DERIVED] "MO Theory takes the “scrambling” effect of valence bond/hybridization theory to the extreme: Let's take ALL the valence atomic orbitals from the individual atoms and redistribute them over the entire molecule! Just as with hybridization, we'll get one molecular orbital out for every atomic orbital that we put in. Let's start with the simplest of molecules, H2, and see how this works." (Day 12 p.7)
+- [SOURCE-DERIVED] "HOMO: Highest Occupied Molecular Orbital"; "LUMO: Lowest Unoccupied Molecular Orbital" (Day 12 p.11).
+- [SOURCE-DERIVED] The slides never use the word "diamagnetic"; the textbook defines it (TB PDF p.266).
+
+### Equations and relationships
+- [SOURCE-DERIVED] "Bond order = ½ [(number of bonding e⁻) – (number of antibonding e⁻)]" (Day 12 p.8, p.9); the textbook's Eq. 5.2 (TB PDF p.262).
+
+### Worked examples and figures
+- [SOURCE-DERIVED] H₂ (the textbook's Fig. 5.45): H 1s (↑) + H 1s (↓) → σ1s (↑↓, boxed in red, lower) and σ*1s (empty, higher), with dotted correlation lines; the σ1s picture is one oval of density spanning both nuclei, and σ*1s has two lobes with a "Node" between them (Day 12 p.8).
+- [SOURCE-DERIVED] H₂ (σ1s)², H₂⁻ (σ1s)²(σ*1s)¹, and He₂ (σ1s)²(σ*1s)² drawn side by side with the bond-order formula (Day 12 p.9). The bond orders are not printed. [VERIFICATION] ½(2 − 0) = 1, ½(2 − 1) = ½, ½(2 − 2) = 0 (Python, the same filling the guide's `problem_bank_k.py` uses).
+- [SOURCE-DERIVED] 2p combinations (the textbook's Fig. 5.48): 2pz + 2pz along the bond axis → σ2p (density between the nuclei) and σ*2p (a node); 2px and 2py side by side → two π2p and two π*2p (Day 12 p.10).
+- [SOURCE-DERIVED] The textbook's Fig. 5.50 (Day 12 p.11). Li₂–N₂, bottom to top: σ2s, σ*2s, π2p, σ2p, π*2p, σ*2p (π2p and σ2p labels in blue). O₂–Ne₂: σ2s, σ*2s, σ2p, π2p, π*2p, σ*2p. Bond orders printed: Li₂ 1, Be₂ 0, B₂ 1, C₂ 2, N₂ 3, O₂ 2, F₂ 1, Ne₂ 0. B₂ shows one electron in each π2p orbital and O₂ one in each π*2p orbital (circled in red). [VERIFICATION] all eight bond orders and the unpaired counts (B₂ 2, O₂ 2, the rest 0) re-derived by filling (`ch5_data.mo_ref`).
+- [SOURCE-DERIVED] "Top Hat Time!" (Day 12 p.12): the question is not in the PDF.
+- [SOURCE-DERIVED] "Theories of Bonding" (Day 12 p.13): "In Chapters 4 and 5 we have encountered several theories of bonding. Each has its own strengths and characteristics. Which to use depends upon the questions asked. Do we want to know about connectivity? Lewis structures are fine. Do we want to know about 3-D shape? VSEPR or VBT should work. Do we want to know about magnetic or spectroscopic properties? We're going to need to use MO".
+
+### Recognition cues
+- [INFERRED] "paramagnetic", "attracted to a magnet", "unpaired electrons", "bond order" of a diatomic or its ion, "HOMO/LUMO" → fill an MO diagram. Connectivity → Lewis; 3-D shape → VSEPR or VBT; magnetism or spectra → MO (Day 12 p.13).
+
+### Connections
+- Builds on: [INFERRED] O₂'s Lewis structure, O=O with every electron paired (Day 8 p.20), which is why Lewis theory "fails"; unpaired electrons in radicals (Day 9 p.28) and Hund's rule (Day 6 p.16). [SOURCE-DERIVED] the "scrambling" of hybridization and "one … orbital out for every atomic orbital … put in" (Day 12 p.7, recalling Day 11 p.12).
+- Used later in: [SOURCE-DERIVED] band theory, which starts from the MO diagrams of Na₂ and Na₄ and their HOMO–LUMO gap (Day 12 p.19–21; see Band Theory below).
+
+### Uncertainties and discrepancies
+- [UNCERTAIN] Whether MO theory is on Midterm 1 ("THURSDAY!", Day 12 p.2): the slides don't list exam topics. It was taught three days before the exam [INFERRED from the dates].
+- [UNCERTAIN] The Day 12 p.12 Top Hat question (not in the PDF).
+- [SOURCE-DERIVED] The slides show the two orders by molecule (Fig. 5.50) and never state a rule such as "Z ≤ 7"; the textbook gives the reason (2s–2p mixing, TB PDF p.266). Heteronuclear diatomics (NO, Fig. 5.52), the auroras, and ozone's π system are textbook only (TB PDF p.268–271).
+
+---
+
+# Unit F — The Solid State (Ch. 18, §18.4–18.5 only; Day 12 p.14–25)
+
+**Emphasis evidence (unit):** the Ch. 18 list on Day 12 p.14 bolds only **§18.4 Metallic Bonds and Conduction Bands** and **§18.5 Semiconductors**; §18.1–18.3 and §18.6–18.9 are plain. Outcome 3 is the only bold outcome (Day 12 p.15): "**Use band theory to explain the conductivity of metals and semiconductors**". Outcomes 1 (unit-cell dimensions vs. radii), 2 (densities), and 4 (classes of solids) are plain.
+
+## Metals, Metalloids, and Nonmetals: Properties of Metals
+
+**Sources:** Day 12 p.14–17
+**Unit / lecture order:** opens the Ch. 18 part of Day 12, after "Theories of Bonding" (p.13)
+**Emphasis evidence:** "Malleable", "Ductile", and "Heat and electricity conductors" are bold on p.17.
+
+### Definitions and terminology
+- [SOURCE-DERIVED] A periodic table colored by class, with no text: metals (tan), metalloids (green: B, Si, Ge, As, Sb, Te, At), nonmetals (blue) (Day 12 p.16).
+- [SOURCE-DERIVED] "Metals versus Nonmetals. Metals share the following characteristics: • **Malleable: can be formed into thin sheets** • **Ductile: can be pulled into thin wires** • Lustrous: have a shiny appearance • **Heat and electricity conductors** • Relatively large densities • Relatively high melting and boiling points • All are solids at room temperature except mercury, Hg • Tend to form cations • Very few colors: grey, silver, gold/copper" (Day 12 p.17; photo "Copper wiring").
+- [SOURCE-DERIVED] Textbook: malleability is "the ability to be shaped", ductility "the ability to be drawn out"; "One reason that metals have both malleability and ductility … is that the bonds between atoms in a solid are weak" (TB PDF p.918). Metalloids are a "staircase" of elements "that tend to have the physical properties of metals and the chemical properties of nonmetals"; they conduct worse than metals but better than nonmetals (TB PDF p.920).
+
+### Connections
+- Builds on: [SOURCE-DERIVED] the Ch. 4 electron sea, which "begins to account for the conductivity of metals, but that's all we'll say here in Chapter 4" (Day 8 p.14); metallic bonds, "shared electrons which are highly mobile" (Day 7 p.14). [INFERRED] "Tend to form cations" ↔ low ionization energies (Day 7 p.9–10).
+- Used later in: band theory (p.18–24) and semiconductors (p.18 "And then there are the metalloids…").
+
+## Band Theory: Conductors and Insulators
+
+**Sources:** Day 12 p.18–24; textbook §18.4 (TB PDF p.918–920)
+**Unit / lecture order:** Day 12 p.18 (the rule), p.19–23 (building bands from MO diagrams), p.24 (the professor's band sketch)
+**Emphasis evidence:** "**large enough band gap**" bold (p.18). The conductor rule appears three times: on p.18, and in boxes beside the Na_N (p.22) and Zn_N (p.23) figures, with the clause that applies to each figure in black and the other in grey. Outcome 3 bold (p.15).
+
+### Definitions and terminology
+- [SOURCE-DERIVED] "Insulators vs. Conductors. Any material with a partially filled valence band or a filled valence band that overlaps with an empty conduction band is an electrical conductor. Any material with a **large enough band gap** acts as an insulator. And then there are the metalloids…" (Day 12 p.18). The slide defines neither "band" nor "band gap" in words.
+- [SOURCE-DERIVED] Textbook margin definitions (TB PDF p.920–921): band theory "an extension of molecular orbital theory that describes bonding in solids"; valence band "a band of orbitals that are filled or partially filled by valence electrons"; conduction band "an unoccupied band higher in energy than a valence band in which electrons can migrate"; conductor "a material with partially filled valence bands or filled valence bands that overlap with empty conduction bands, leading to highly mobile electrons"; band gap (E_g) "the energy gap between the valence and conduction bands"; insulator "a material with a large energy gap between its valence and conduction bands".
+
+### Worked examples and figures
+- [SOURCE-DERIVED] "MO Theory: Na2" (p.19–20): Na 3s (↑) with the empty 3p (grey, dashed) above; Na₂ has one filled MO (↑↓) below the 3s level and one empty MO above it. p.20 circles both in red and adds a red double arrow, "HOMO-LUMO Gap".
+- [SOURCE-DERIVED] "MO Theory: Na4" (p.21): "As we add more and more atoms (and electrons) to the MO diagram, the HOMO-LUMO gap gets smaller *quickly*" / "Pretty soon, the words “HOMO” and “LUMO” begin to become meaningless." Na₄ has four MOs from the 3s orbitals, two filled and two empty, with HOMO and LUMO circled and a smaller red gap arrow; the 3p levels split above (grey).
+- [SOURCE-DERIVED] Na → Na₂ → Na₄ → Na_N (the textbook's Fig. 18.25, Day 12 p.22): the 3s levels merge into a band whose lower half is occupied (purple) and upper half empty (salmon), overlapping the empty 3p band (grey); "Valence band (partially filled)". Box: "Any material with a partially filled valence band [black] or a filled valence band that overlaps with an empty conduction band [grey] is an electrical conductor."
+- [SOURCE-DERIVED] Zn → Zn_N (the textbook's Fig. 18.26, Day 12 p.23): the 4s band is filled ("Valence band (filled)"), the 4p band empty ("Conduction band (empty)"), and the two "Overlap". The box shows the overlap clause in black.
+- [SOURCE-DERIVED] The professor's band sketch (p.24), energy axis "E" pointing up, filled band shading in blue: "Insulator (diamond)": a filled band, a large gap, an empty band. "Conductor (zinc)": a filled band touching an empty band. "Conductor (sodium)": a band filled in its lower part only, touching an empty band above. "Semiconductor (silicon)": a filled band and a small gap below an empty band. "T ↑": the same semiconductor with a strip of electrons at the bottom of the upper band and an empty strip at the top of the lower band.
+- [SOURCE-DERIVED] Textbook §18.4 (TB PDF p.918–919): in solid Na (body-centered cubic) each atom bonds to eight neighbors, so "sharing a limited number of valence electrons with many bonding partners makes the bond linking any two metal atoms relatively weak", which is why sodium can be cut with a knife; Na₂'s 3s orbitals give two MOs "above and below the initial value"; for a piece of solid Na "an equally enormous number of molecular orbitals" forms "a continuous band of energies with no gap between the occupied lower half and the empty upper half"; Zn's filled 4s band overlaps the empty 4p conduction band; "the two views of valence bands … are not mutually exclusive" (Zn's 4s and 4p can be treated as one partially filled band).
+- [SOURCE-DERIVED] Textbook Concept Test: "Use band theory to explain the electrical conductivity of magnesium metal" (TB PDF p.920); not in the lecture.
+
+### Recognition cues
+- [INFERRED] "conductor", "insulator", "band gap", "valence/conduction band", "why does a metal conduct" → band theory. One valence s electron per atom (Na) → a partially filled band; a filled valence s subshell (Zn) → conducts only because an empty band overlaps it.
+
+### Connections
+- Builds on: [SOURCE-DERIVED] MO theory: Day 12 p.19–21 title the band slides "MO Theory: Na2" and "MO Theory: Na4"; the textbook calls band theory "an extension of molecular orbital theory" (TB PDF p.918). [SOURCE-DERIVED] The textbook links back to the electron sea ("In Chapter 4, we described metal atoms “floating” in seas of mobile bonding electrons … a more sophisticated approach, called band theory, better explains", TB PDF p.918) ↔ Day 8 p.14. [SOURCE-DERIVED, textbook] Na [Ne]3s¹ and Zn [Ar]3d¹⁰4s² decide whether the valence band is half-filled or filled (TB PDF p.918–919) ↔ electron configurations (Day 6).
+- Used later in: semiconductors (Day 12 p.24–25).
+
+### Uncertainties and discrepancies
+- [UNCERTAIN] Whether Ch. 18 is on Midterm 1 (Thursday, Day 12 p.2): the slides don't list the exam's topics.
+- [SOURCE-DERIVED] The textbook gives NaCl's band gap as "6.8 × 10⁵ kJ/mol" (TB PDF p.920, checked on the render). [VERIFICATION] 6.8 × 10⁵ kJ/mol ÷ 96.485 kJ mol⁻¹ eV⁻¹ ≈ 7.0 × 10³ eV per electron, an X-ray energy, far beyond any electronic band gap. [CLARIFICATION] NaCl's measured gap is about 8.5–9 eV ≈ 8 × 10² kJ/mol; the printed value is probably 6.8 × 10⁵ J/mol (= 6.8 × 10² kJ/mol). Not on the slides. Logged in COURSE.md → Discrepancies.
+
+## Semiconductors and Doping
+
+**Sources:** Day 12 p.18, p.24–25; textbook §18.5 (TB PDF p.920–921)
+**Unit / lecture order:** the last slides of Day 12
+**Emphasis evidence:** §18.5 bold (p.14); outcome 3 bold (p.15).
+
+### Definitions and terminology
+- [SOURCE-DERIVED] "And then there are the metalloids…" (p.18); "Semiconductor (silicon)": a filled band below an empty one with a small gap; "T ↑": some electrons in the upper band and vacancies in the lower one (p.24).
+- [SOURCE-DERIVED] "Doping of Semiconductors" (p.25; the textbook's Fig. 18.27 without its caption): (a) Pure Si, conduction band over valence band with the gap labeled E_g, Lewis symbol ·Si· (4 dots); (b) n-type, a "Phosphorus donor level" just below the conduction band, ·Si· + ·P· (5 dots); (c) p-type, a "Gallium acceptor level" just above the valence band, with ⊕ marks along the top of the valence band, ·Si· + ·Ga· (3 dots).
+- [SOURCE-DERIVED] Textbook (TB PDF p.920–921): semiconductor "a material with electrical conductivity between that of metals and insulators that can be chemically altered to increase its electrical conductivity"; in metalloids the bands "do not overlap but instead are separated by an energy gap"; Si's band gap "106 kJ/mol at 25°C"; "only a few valence-band electrons in Si have enough energy to move to the conduction band"; doping replaces some Si atoms "with atoms of an element having a similar atomic radius but a different number of valence electrons" (the dopant); "doped semiconductors represent substitutional alloys"; P's extra electrons occupy a donor level "only about 4 kJ/mol below the Si conduction band" → n-type, "because the dopant donates negative charges (electrons)"; Ga makes an acceptor level "about 7 kJ/mol above the Si valence band", and valence electrons that move into it leave "positively charged “holes”" (⊕) → p-type; n-type semiconductor "containing an electron-rich dopant", p-type "an electron-poor dopant"; devices combine n- and p-type.
+- [SOURCE-DERIVED] Textbook-only extras on TB PDF p.921 (before the §18.6 heading): group 13–15 alloys such as GaAs (same average of 4 valence electrons per atom, larger band gaps; IR emission at 874 nm), AlGaAs₂ at 620 nm, LEDs (blue from InₓGa₁₋ₓN and GaN), CdS and CdSe; Concept Test: "Which element, Se or Sn, would form an n-type semiconductor with GaAs?" Not in the lecture.
+
+### Recognition cues
+- [INFERRED] A dopant with one more valence electron than the host (group 15 in Si) → n-type, donor level just below the conduction band; one fewer (group 13 in Si) → p-type, acceptor level just above the valence band, holes. "Heated semiconductor" → more electrons across the gap (p.24).
+
+### Connections
+- Builds on: [SOURCE-DERIVED] Lewis symbols, drawn on p.25 to count the dopants' valence electrons (↔ Day 8 p.16–17); the metalloids on the p.16 periodic table; the band gap (p.18).
+- [INFERRED] Thermal promotion across a gap ↔ the energy needed to move an electron to a higher level (Day 4 p.10; Day 12 p.24).
+
+### Uncertainties and discrepancies
+- [SOURCE-DERIVED] The slides give no energies; 106, 4, and 7 kJ/mol are the textbook's (TB PDF p.920). [CLARIFICATION] 106 kJ/mol ≈ 1.10 eV per electron; the usual room-temperature value for Si is 1.12 eV ≈ 108 kJ/mol (agreement within 2%).
+- [UNCERTAIN] What the ⊕ marks mean is not said on the slide (p.25); the textbook's caption calls them "positively charged holes" (TB PDF p.920).
 
 ---
 
@@ -1232,3 +1800,8 @@ One line per processed source: what it covered and which concepts it touched.
 | `lectures/Day 6 Lecture Slides.pdf` | 1–26 of 26 (p.17, 20 image-only) | Electron Configurations; Penetration/Shielding/Z_eff; Hund's Rule; Filling Order; Configurations of Ions; Atomic Radius | 2026-09-24 |
 | `lectures/Day 7 Lecture Slides.pdf` | 1–21 of 21 (p.10 image-only; p.15 text layer garbled) | Filling Exceptions; Atomic Radius; Ionic Radius; Ionization Energy; Electron Affinity; Types of Bonds; Coulombic Potential Energy; Lattice Energy; Ionic Formulas; Naming Binary Ionic Compounds | 2026-09-24 |
 | `lectures/Day 8 Lecture Slides.pdf` | 1–30 of 30 (p.11, 15, 27 image-only; p.23 has hidden text in the text layer; 400-dpi zooms of Tables 4.5 and the Lewis symbols) | Naming Binary Ionic Compounds (repeat); Transition-Metal Roman Numerals; Polyatomic Ions; Types of Bonds (H–H curve, metallic, Table 4.1); Lattice Energy (image resolved); Naming Covalent Compounds; Lewis Symbols and the Octet Rule; Lewis Structures; Allotropes | 2026-09-25 |
+| `lectures/Day 9 Lecture Slides.pdf` | 1–30 of 30 (p.11, 14, 16, 20, 30 image-only; p.24 a blanked textbook table; 300–400-dpi zooms of the O₃ hybrid, the electronegativity table, and the H₃PO₄ structures) | Lewis Structures (O₃ repeat, N₂O); Resonance; Lengths and Strengths of Covalent Bonds (Table 4.6); Electronegativity and Bond Polarity; Formal Charge; Exceptions to the Octet Rule; Allotropes (O₃) | 2026-10-05 |
+| `lectures/Day 10 Lecture Slides.pdf` | 1–31 of 31 (p.11 image-only; p.15, 22, 23 a title plus figures; p.17, 21 blank Top Hat slides; p.26 a professor-made table) | Molecular Shape and Biological Activity (chirality); VSEPR, no lone pairs; VSEPR with lone pairs; Electronegativity (Polar Bonds repeat); Polar Molecules; Lewis Structures (ammonia callout resolved); RAMP UP exam status | 2026-10-05 |
+| `lectures/Day 11 Lecture Slides.pdf` | 1–27 of 27 (p.7 title hidden; p.14–16, 18, 19, 25, 26 image-only; p.21 a blank Top Hat slide; 400-dpi zoom of Table 5.3's sp³ row) | Polar Molecules (repeat, Table 5.2); Valence Bond Theory and σ Bonds; Hybrid Orbitals; π Bonds and Multiple Central Atoms; MO Theory (announced); Types of Bonds (H–H curve reused) | 2026-10-05 |
+| `lectures/Day 12 Lecture Slides 430.pdf` | 1–25 of 25 (p.12 a blank Top Hat slide; p.16 a periodic table with no text; p.22, p.23, p.25 textbook figures; p.24 a professor-made band sketch) | MO Theory (now taught: H₂, H₂⁻, He₂, Fig. 5.48, Fig. 5.50, HOMO/LUMO, theories of bonding); Metals, Metalloids, and Nonmetals; Band Theory; Semiconductors and Doping; Midterm 1 announcements | 2026-10-06 |
+| textbook §18.4–18.5 (TB PDF p.918–921, printed 884–887) | text layer read; p.918–921 rendered and viewed (Figs. 18.25–18.27; the NaCl band-gap value) | Band Theory; Semiconductors and Doping; Metals (malleability, ductility) | 2026-10-06 |

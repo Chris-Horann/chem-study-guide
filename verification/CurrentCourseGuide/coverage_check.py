@@ -2,8 +2,9 @@
 
     py -3.11 verification/CurrentCourseGuide/coverage_check.py
 
-For every major concept of the in-scope sections (Gilbert Ch. 1-4; concept list from materials/TEXTBOOK_MAP.md
-"Textbook preview notes" and "Textbook notes: rest of Ch. 4", and materials/COURSE_INDEX.md),
+For every major concept of the in-scope sections (Gilbert Ch. 1-5; concept list from materials/TEXTBOOK_MAP.md
+"Textbook preview notes", "Textbook notes: rest of Ch. 4", and "Textbook notes: Ch. 5", materials/COURSE_INDEX.md,
+and the Day 9-11 lecture slides),
 search the guide's teaching text, problems, and explorer code, and report where it is taught.
 A concept counts as covered only if its own section's module (or the module that section maps to)
 mentions it; hits elsewhere are listed but don't count. Writes coverage_report.md next to this file.
@@ -25,6 +26,9 @@ OWNER = {
     "3.7": ["m9"], "3.8": ["m10"], "3.9": ["m11"], "3.10": ["m12"], "3.11": ["m13", "t3-11"], "3.12": ["m13"],
     "4.1": ["m14"], "4.2": ["t4-2"], "4.3": ["m15", "m16", "m17", "t4-3"], "4.4": ["m18", "m19"], "4.5": ["t4-5"],
     "4.6": ["t4-6"], "4.7": ["t4-7"], "4.8": ["t4-8"], "4.9": ["t4-9"],
+    "5.1": ["m20", "t5-6"], "5.2": ["m20", "m21"], "5.3": ["m22"], "5.4": ["m23", "m24"], "5.5": ["m24"],
+    "5.6": ["t5-6"], "5.7": ["t5-7"],
+    "18.4": ["m25"], "18.5": ["m25"],          # Ch. 18: only the two sections Day 12 teaches
 }
 # §4.3 subsections: each must be covered by its own module, not just by any §4.3 module
 SUB_OWNER = {"4.3 molecular": ["m17"], "4.3 transition": ["m16"], "4.3 polyatomic": ["m16"], "4.3 acids": ["t4-3"]}
@@ -232,6 +236,119 @@ CONCEPTS = [
     ("4.9", "greenhouse effect: absorb and re-emit in all directions", r"re-emit|reemit"),
     ("4.9", "N₂ and O₂ are IR-inactive", r"n<sub>2</sub> and o<sub>2</sub>"),
     ("4.9", "Earth's surface (287 K) emits infrared", r"287 k"),
+    # Day 9 lecture (Ch. 4 sections now taught)
+    ("4.2", "electronegativity, symbol χ, and the slide's χ table (Day 9 p.17)", r"χ"),
+    ("4.2", "Δχ guidelines 0.4 and 2.0 (Day 9 p.18)", r"2\.0"),
+    ("4.2", "polar bond: the battery analogy, δ+ and δ− (Day 9 p.15)", r"battery"),
+    ("4.2", "electrostatic potential maps (Day 9 p.16)", r"potential map|electrostatic potential"),
+    ("4.5", "curved arrows move electrons between resonance structures (Day 9 p.9)", r"curved arrow"),
+    ("4.5", "the molecule does not switch back and forth (Day 9 p.9)", r"back and forth"),
+    ("4.5", "resonance hybrid with dashed partial bonds (Day 9 p.10)", r"resonance hybrid|partial bond"),
+    ("4.5", "Kekulé's benzene (Day 9 p.12–13)", r"kekul"),
+    ("4.6", "Table 4.6 on the slide (Day 9 p.14)", r"day 9 p\.14"),
+    ("4.7", "the professor's four steps for formal charge (Day 9 p.22)", r"day 9 p\.22"),
+    ("4.7", "phosphoric acid Top Hat (Day 9 p.26)", r"phosphoric acid|h<sub>3</sub>po<sub>4</sub>"),
+    ("4.8", "hypervalency “not well understood” (Day 9 p.29)", r"hypervalen"),
+    ("4.8", "expanded octets give formal charges closer to zero (Day 9 p.29)", r"closer to zero"),
+    # Chapter 5 (Day 10-11 lecture; §5.6-5.7 mostly textbook preview)
+    ("5.1", "Lewis structures are flat; molecules are 3-D (Day 10 p.6–7)", r"flat|two-dimensional|2-d|3-d"),
+    ("5.1", "CO₂ 180° and CH₄ 109.5° vs. the Lewis drawing (Day 10 p.7)", r"109\.5"),
+    ("5.1", "molecular recognition (textbook)", r"molecular recognition"),
+    ("5.2", "VSEPR: electron pairs repel and spread out (Day 10 p.8)", r"repul"),
+    ("5.2", "electron-pair geometry vs. molecular geometry (Day 10 p.8)", r"electron-pair geometry"),
+    ("5.2", "steric number (Day 10 p.9)", r"steric number"),
+    ("5.2", "electron domains (Day 10 p.26)", r"electron domain"),
+    ("5.2", "trigonal bipyramidal: axial and equatorial positions", r"equatorial"),
+    ("5.2", "octahedral (SF₆)", r"octahedral"),
+    ("5.2", "double bonds repel more: formaldehyde about 118° (Day 10 p.13)", r"118"),
+    ("5.2", "ozone bent, 117° (Day 10 p.14–15)", r"117"),
+    ("5.2", "ammonia trigonal pyramidal, 107° (Day 10 p.16–18)", r"107"),
+    ("5.2", "water bent, 104.5° (Day 10 p.19)", r"104\.5"),
+    ("5.2", "SN 5 lone pairs equatorial: seesaw", r"seesaw|see-saw"),
+    ("5.2", "SN 5: T-shaped", r"t-shaped"),
+    ("5.2", "SN 6: square pyramidal (Day 10 p.24)", r"square pyramidal"),
+    ("5.2", "SN 6: square planar, lone pairs opposite (Day 10 p.25)", r"square planar"),
+    ("5.2", "the professor's summary table (Day 10 p.26)", r"day 10 p\.26"),
+    ("5.2", "repulsion ranking: lone pair > double bond > single bond (textbook)", r"lone pair.{0,80}(bonding pair|double bond)"),
+    ("5.2", "wedge-and-dash drawings (textbook)", r"wedge"),
+    ("5.2", "BrF₅'s 85° (textbook)", r"85°"),
+    ("5.3", "bond dipole (textbook term)", r"bond dipole"),
+    ("5.3", "bond dipoles add as vectors; they can cancel", r"cancel"),
+    ("5.3", "CO₂ and CF₄ nonpolar despite polar bonds (Day 10 p.29–30)", r"cf<sub>4</sub>"),
+    ("5.3", "water polar: dipoles not perfectly opposed (Day 10 p.31)", r"perfectly opposed"),
+    ("5.3", "dipole moment μ in debyes", r"debye"),
+    ("5.3", "Table 5.2 values (Day 11 p.8)", r"1\.85"),
+    ("5.3", "CHCl₃ vs. CCl₃F (Day 11 p.7)", r"ccl<sub>3</sub>f"),
+    ("5.3", "C–H essentially nonpolar (textbook)", r"essentially nonpolar"),
+    ("5.3", "polar molecules align in an electric field (textbook)", r"electric field"),
+    ("5.4", "valence bond theory (Day 11 p.9)", r"valence bond"),
+    ("5.4", "overlap of half-filled orbitals (Day 11 p.9)", r"half-filled"),
+    ("5.4", "σ bond: density between the nuclei, along the axis (Day 11 p.10)", r"σ bond"),
+    ("5.4", "the methane problem; promotion rejected (Day 11 p.11)", r"promot"),
+    ("5.4", "hybridization mixes (averages) orbitals (Day 11 p.12)", r"averag|mix"),
+    ("5.4", "number of hybrids = steric number (Day 11 p.12)", r"steric number"),
+    ("5.4", "sp³ hybrids (CH₄, NH₃, H₂O)", r"sp<sup>3</sup>"),
+    ("5.4", "sp² hybrids", r"sp<sup>2</sup>"),
+    ("5.4", "major and minor lobes (Day 11 p.14)", r"minor lobe|major lobe"),
+    ("5.4", "lone pairs reside in hybrid orbitals; H uses 1s (Day 11 p.20)", r"1s"),
+    ("5.4", "Table 5.3 (Day 11 p.24) and its sp³ row slip", r"table 5\.3"),
+    ("5.4", "π bond: side-to-side overlap of unhybridized p orbitals (Day 11 p.17, p.20)", r"side-to-side|side by side"),
+    ("5.5", "a double bond is one σ and one π bond (Day 11 p.17)", r"σ and (one )?π|σ bond and a π bond|one σ"),
+    ("5.5", "π density above and below the plane (Day 11 p.19)", r"above and below"),
+    ("5.5", "diazene, N₂H₂ (Day 11 p.22)", r"diazene"),
+    ("5.5", "acetylene: sp, two π bonds (Day 11 p.23)", r"acetylene"),
+    ("5.5", "ethylene: all six atoms in one plane (Day 11 p.25)", r"ethylene"),
+    ("5.5", "acrolein (Day 11 p.26)", r"acrolein"),
+    ("5.5", "benzene's delocalized π electrons (Day 11 p.26)", r"delocali"),
+    ("5.5", "conjugation (textbook)", r"conjugat"),
+    ("5.5", "aromatic compounds and PAHs (textbook)", r"aromatic|naphthalene|polycyclic"),
+    ("5.6", "carvone (Day 10 p.6)", r"carvone"),
+    ("5.6", "chiral: not superimposable on its mirror image", r"superimpos"),
+    ("5.6", "enantiomers", r"enantiomer"),
+    ("5.6", "stereocenter: four different groups", r"stereocenter|chiral carbon"),
+    ("5.6", "stereoisomers and isomers", r"stereoisomer"),
+    ("5.6", "optical activity: (+) clockwise, (−) counterclockwise", r"polarimeter|plane-polarized|counterclockwise"),
+    ("5.6", "racemic mixture", r"racemic"),
+    ("5.6", "chiral drugs (albuterol, dextro- and levomethorphan)", r"albuterol|methorphan"),
+    ("5.6", "planar molecules cannot be chiral", r"planar"),
+    ("5.7", "O₂ is paramagnetic (Day 11 p.27)", r"paramagnetic"),
+    ("5.7", "diamagnetic", r"diamagnetic"),
+    ("5.7", "molecular orbitals belong to the whole molecule", r"molecular orbital"),
+    ("5.7", "bonding vs. antibonding orbitals", r"antibonding"),
+    ("5.7", "bond order = ½(bonding − antibonding) (Eq. 5.2)", r"½"),
+    ("5.7", "He₂ does not exist", r"he<sub>2</sub>"),
+    ("5.7", "two MO orders: π₂p below σ₂p for Z ≤ 7", r"z ≤ 7|z &le; 7|li<sub>2</sub>"),
+    ("5.7", "Hund's rule fills the degenerate π* orbitals", r"hund"),
+    ("5.7", "NO: bond order 2.5", r"2\.5"),
+    ("5.7", "ions of O₂: bond orders and lengths", r"o<sub>2</sub><sup>"),
+    ("5.7", "auroras and Table 5.4 (textbook)", r"aurora"),
+    ("5.7", "ozone's delocalized π system: bond order 1.5 (textbook)", r"1\.5"),
+    ("5.7", "SN > 4 without expanded octets (textbook) vs. the slides' expanded octets", r"expand"),
+    ("5.7", "HOMO and LUMO (Day 12 p.11)", r"\bHOMO\b"),
+    ("5.7", "one MO out for every atomic orbital put in (Day 12 p.7)", r"one molecular orbital out for every atomic orbital|one MO (out )?for every atomic orbital"),
+    ("5.7", "which theory answers which question: Lewis, VSEPR/VBT, MO (Day 12 p.13)", r"Theories of Bonding"),
+    # Ch. 18 §18.4-18.5 (Day 12 p.14-25; textbook PDF p.918-921)
+    ("18.4", "properties of metals: malleable, ductile, conductors (Day 12 p.17)", r"malleable"),
+    ("18.4", "metalloids on the periodic table (Day 12 p.16)", r"metalloid"),
+    ("18.4", "one MO for every atomic orbital: N atoms give N MOs", r"one molecular orbital out for every atomic orbital"),
+    ("18.4", "Na₂ and Na₄: the HOMO–LUMO gap shrinks as atoms are added", r"homo.{0,3}lumo gap"),
+    ("18.4", "band theory, an extension of MO theory (textbook)", r"band theory"),
+    ("18.4", "valence band", r"valence band"),
+    ("18.4", "conduction band", r"conduction band"),
+    ("18.4", "conductor: a partially filled band, or a filled band overlapping an empty one", r"partially filled"),
+    ("18.4", "sodium: a half-filled 3s band overlapping the 3p band", r"3p"),
+    ("18.4", "zinc: a filled 4s band overlapping the empty 4p band", r"4p"),
+    ("18.4", "weak, diffuse metal–metal bonds; Na bcc with eight neighbors (textbook)", r"eight others|body-centered"),
+    ("18.5", "band gap, E_g", r"band gap"),
+    ("18.5", "insulator: a large enough band gap (diamond)", r"insulator"),
+    ("18.5", "semiconductor: a small gap (silicon)", r"semiconductor"),
+    ("18.5", "heating a semiconductor promotes more electrons (Day 12 p.24)", r"T ↑|heat"),
+    ("18.5", "Si band gap 106 kJ/mol (textbook)", r"106 kJ"),
+    ("18.5", "doping and dopants", r"dopant"),
+    ("18.5", "n-type: donor level just below the conduction band", r"donor level"),
+    ("18.5", "p-type: acceptor level just above the valence band", r"acceptor level"),
+    ("18.5", "holes (textbook)", r"\bholes?\b"),
+    ("18.5", "group 13–15 compound semiconductors and LEDs (textbook)", r"gaas|light-emitting"),
 ]
 
 
@@ -255,7 +372,7 @@ def main():
                          " ".join(p.get("hints", [])), json.dumps(p["answer"], ensure_ascii=False)])
         text[mid] = text.get(mid, "") + " " + blob
     ex = {}
-    for f in ("explorers.js", "explorers_preview.js", "explorers_ch4.js"):
+    for f in ("explorers.js", "explorers_preview.js", "explorers_ch4.js", "explorers_ch5.js", "explorers_ch18.js"):
         ex[f] = open(os.path.join(GUIDE, "assets", f), encoding="utf-8").read()
     rows, gaps = [], []
     for sec, concept, rx in CONCEPTS:

@@ -1,0 +1,967 @@
+[
+ {
+  "id": "t4-2-lec-battery",
+  "module": "t4-2",
+  "label": "lecture",
+  "prompt": "Day 9 p.15 sets an H–Cl bond under a battery: the H end lines up with the + terminal (δ+), the Cl end with the − terminal (δ−). Now take an H–Br bond (χ: H 2.1, Br 2.8; Day 9 p.17). Which description is right?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Br is the δ− end, like the battery's − terminal, and the crossed arrow points at Br.",
+    "[1] H is the δ− end, because the crossed arrow's + tail sits at Br.",
+    "[2] Neither end: H–Br is nonpolar.",
+    "[3] Both ends are δ−, since both atoms are nonmetals."
+   ]
+  }
+ },
+ {
+  "id": "t4-2-lec-cutoffs",
+  "module": "t4-2",
+  "label": "lecture",
+  "prompt": "The slide's cutoffs are Δχ ≤ 0.4 nonpolar covalent, 0.4 &lt; Δχ &lt; 2.0 polar covalent, and Δχ ≥ 2.0 ionic (Day 9 p.18). Classify each bond, watching the boundaries.",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] C–H",
+    "[1] S–Cl",
+    "[2] Ca–Cl",
+    "[3] N–Cl"
+   ],
+   "options": [
+    "np: nonpolar covalent",
+    "pc: polar covalent",
+    "io: ionic"
+   ]
+  }
+ },
+ {
+  "id": "t4-2-lec-beal",
+  "module": "t4-2",
+  "label": "lecture",
+  "prompt": "Day 9 p.27 draws BeCl<sub>2</sub> and AlCl<sub>3</sub> as molecules held together by shared pairs, although Be and Al are metals. (a) What is Δχ for an Al–Cl bond (Day 9 p.17)? (b) Classify the Al–Cl bond. (c) Does Δχ support drawing AlCl<sub>3</sub> with covalent bonds?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) Δχ(Al–Cl)"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] nonpolar covalent",
+      "[1] polar covalent",
+      "[2] ionic"
+     ],
+     "label": "(b) bond type"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] Yes: Δχ is below 2.0, so the electrons are shared, though unequally.",
+      "[1] No: a metal and a nonmetal always form an ionic bond."
+     ],
+     "label": "(c) covalent bonds?"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t4-5-lec-arrows",
+  "module": "t4-5",
+  "label": "lecture",
+  "prompt": "On Day 9 p.9 two red curved arrows turn the first ozone structure into the second: [drawing: Lewis structure of ozone, O₃ (double bond on the left): left O–central O double bond, central O–right O single bond, 2 lone pairs on the left O, 1 lone pair on the central O, 3 lone pairs on the right O] → [drawing: Lewis structure of ozone, O₃ (double bond on the right): left O–central O single bond, central O–right O double bond, 3 lone pairs on the left O, 1 lone pair on the central O, 2 lone pairs on the right O] What do the arrows move?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Electron pairs: one pair of the double bond becomes a lone pair on the left O, and a lone pair on the right O becomes a new shared pair with the central O.",
+    "[1] Atoms: the two end O atoms trade places.",
+    "[2] Single electrons: one electron jumps from each end O to the central O.",
+    "[3] The molecule itself: ozone switches from one structure to the other."
+   ]
+  }
+ },
+ {
+  "id": "t4-5-lec-benzene",
+  "module": "t4-5",
+  "label": "lecture",
+  "prompt": "Kekulé's benzene was a ring of alternating single and double bonds, “ nearly correct” (Day 9 p.12). Which statement describes the real molecule, according to Day 9 p.2 and p.13?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The ring flips rapidly between the two Kekulé structures.",
+    "[1] All six C–C bonds are double bonds.",
+    "[2] All six C–C bonds are identical, between a single and a double bond: benzene is a resonance hybrid, drawn with dashed partial bonds or a circle in the ring.",
+    "[3] Three short C=C bonds alternate with three long C–C bonds, as in one Kekulé structure."
+   ]
+  }
+ },
+ {
+  "id": "t4-5-lec-rhino",
+  "module": "t4-5",
+  "label": "lecture",
+  "prompt": "Day 9 p.11 is a cartoon with no words: rhinoceros = [dragon ↔ unicorn]. In the resonance analogy, what does the rhinoceros stand for?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The ↔ arrow.",
+    "[1] The resonance hybrid: one real thing, described as a blend of two imaginary pictures.",
+    "[2] One of the two resonance structures.",
+    "[3] An animal that is a dragon one moment and a unicorn the next."
+   ]
+  }
+ },
+ {
+  "id": "t4-5-lec-notres",
+  "module": "t4-5",
+  "label": "lecture",
+  "prompt": "Structures are “in resonance” when they “can be interconverted by just moving electrons” (Day 9 p.8). Which pair is not in resonance?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] [drawing: Lewis structure: C–upper O double bond, C–lower left O single bond, C–lower right O single bond, 2 lone pairs on the upper O, 3 lone pairs on the lower left O, 3 lone pairs on the lower right O; overall charge 2−] ↔ [drawing: Lewis structure: C–upper O single bond, C–lower left O double bond, C–lower right O single bond, 3 lone pairs on the upper O, 2 lone pairs on the lower left O, 3 lone pairs on the lower right O; overall charge 2−]",
+    "[1] [drawing: Lewis structure: H–C single bond, C–N triple bond, 1 lone pair on N] and [drawing: Lewis structure: H–N single bond, N–C triple bond, 1 lone pair on C]",
+    "[2] [drawing: Lewis structure: left O–N double bond, N–right O single bond, 2 lone pairs on the left O, 3 lone pairs on the right O, an unpaired electron on N] ↔ [drawing: Lewis structure: left O–N single bond, N–right O double bond, 3 lone pairs on the left O, 2 lone pairs on the right O, an unpaired electron on N]",
+    "[3] [drawing: Lewis structure: left N–central N triple bond, central N–O single bond, 1 lone pair on the left N, 3 lone pairs on O] ↔ [drawing: Lewis structure: left N–central N double bond, central N–O double bond, 2 lone pairs on the left N, 2 lone pairs on O]"
+   ]
+  }
+ },
+ {
+  "id": "t4-6-lec-boxes",
+  "module": "t4-6",
+  "label": "lecture",
+  "prompt": "Table 4.6 on Day 9 p.14 has red boxes around C–C/C=C/C≡C, C–O/C=O/C≡O, and O–O/O=O (and a fourth around the halogens). What pattern do the first three boxes show?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] More shared pairs, shorter and stronger bonds.",
+    "[1] More shared pairs, longer and stronger bonds.",
+    "[2] A triple bond is exactly three times as strong as a single bond.",
+    "[3] Bond order doesn't affect length; only the atoms do."
+   ]
+  }
+ },
+ {
+  "id": "t4-6-lec-co2",
+  "module": "t4-6",
+  "label": "lecture",
+  "prompt": "Table 4.6 gives 743 kJ/mol for a C=O bond, but its footnote gives 799 kJ/mol for the carbon–oxygen bonds in CO<sub>2</sub> (Day 9 p.14). What does the difference tell you about the table?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The table has an error.",
+    "[1] Bond energies can't be tabulated at all, because they depend on the molecule.",
+    "[2] Its values are averages over many compounds; the same kind of bond varies a little from one molecule to another.",
+    "[3] CO<sub>2</sub>'s carbon–oxygen bonds are triple bonds."
+   ]
+  }
+ },
+ {
+  "id": "t4-6-lec-halogens",
+  "module": "t4-6",
+  "label": "lecture",
+  "prompt": "The fourth red box on Day 9 p.14 holds the halogens: F–F, Cl–Cl, Br–Br, I–I. (a) Which of the four bonds is the longest? (b) Which is the strongest? (c) Is the shortest one also the strongest, as in the carbon boxes?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] F–F",
+      "[1] Cl–Cl",
+      "[2] Br–Br",
+      "[3] I–I"
+     ],
+     "label": "(a) longest"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] F–F",
+      "[1] Cl–Cl",
+      "[2] Br–Br",
+      "[3] I–I"
+     ],
+     "label": "(b) strongest"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] yes",
+      "[1] no"
+     ],
+     "label": "(c) shortest = strongest?"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t4-6-lec-oo-energy",
+  "module": "t4-6",
+  "label": "lecture",
+  "prompt": "Day 9 p.7 compares ozone's O–O bonds with those in H–O–O–H and O=O. Rank the O–O bonds of these three molecules by bond energy.",
+  "answer_format": {
+   "type": "order",
+   "direction": "strongest (1) to weakest (3)",
+   "items": [
+    "h2o2: H<sub>2</sub>O<sub>2</sub> (H–O–O–H)",
+    "o3: O<sub>3</sub>",
+    "o2: O<sub>2</sub>"
+   ]
+  }
+ },
+ {
+  "id": "t4-7-lec-meaning",
+  "module": "t4-7",
+  "label": "lecture",
+  "prompt": "On Day 9 p.30 each O of the all-single-bond sulfate structure is labeled −1: [drawing: Lewis structure of sulfate ion, SO₄²⁻ (octets only): S–upper O single bond, S–left O single bond, S–right O single bond, S–lower O single bond, 3 lone pairs on the upper O, 3 lone pairs on the left O, 3 lone pairs on the right O, 3 lone pairs on the lower O; overall charge 2−] By the definition on Day 9 p.22, what does that −1 mean?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The O has 7 lone-pair electrons.",
+    "[1] The O has one electron fewer than a free O atom.",
+    "[2] In this structure the O is assigned 7 electrons (6 in its lone pairs + half of the 2 it shares), one more than a free O atom's 6 valence electrons.",
+    "[3] The O has gained a whole electron from S, making a real O<sup>−</sup> ion."
+   ]
+  }
+ },
+ {
+  "id": "t4-7-lec-n2o",
+  "module": "t4-7",
+  "label": "lecture",
+  "prompt": "Day 9 p.24 shows the three N<sub>2</sub>O structures from p.20 and asks: “Which is the worst structure? Which is the best?” [drawing: Lewis structure of dinitrogen monoxide, N₂O (structure A): left N–central N triple bond, central N–O single bond, 1 lone pair on the left N, 3 lone pairs on O (A)][drawing: Lewis structure of dinitrogen monoxide, N₂O (structure B): left N–central N double bond, central N–O double bond, 2 lone pairs on the left N, 2 lone pairs on O (B)][drawing: Lewis structure of dinitrogen monoxide, N₂O (structure C): left N–central N single bond, central N–O triple bond, 3 lone pairs on the left N, 1 lone pair on O (C)] (a) What is the formal charge on the end N in structure C? (b) On the O in structure C? (c) Which structure is the worst? (d) Which is the best?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) FC on the end N in C"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) FC on the O in C"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] A",
+      "[1] B",
+      "[2] C"
+     ],
+     "label": "(c) worst"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] A",
+      "[1] B",
+      "[2] C"
+     ],
+     "label": "(d) best"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t4-7-tophat",
+  "module": "t4-7",
+  "label": "lecture",
+  "prompt": "“Choose the best Lewis structure for phosphoric acid” (Day 9 p.26). The five options are the slide's, numbered as on the slide.",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] [drawing: Lewis structure: P–upper O single bond, P–left O single bond, P–right O single bond, P–lower O double bond, left O–left H single bond, right O–right H single bond, lower O–lower H single bond, 3 lone pairs on the upper O, 2 lone pairs on the left O, 2 lone pairs on the right O, 1 lone pair on the lower O (1)]",
+    "[1] [drawing: Lewis structure: P–upper O single bond, P–left O single bond, P–right O single bond, P–lower O single bond, left O–left H single bond, right O–right H single bond, lower O–lower H single bond, 3 lone pairs on the upper O, 2 lone pairs on the left O, 2 lone pairs on the right O, 2 lone pairs on the lower O (2)]",
+    "[2] [drawing: Lewis structure: P–upper O double bond, P–left O single bond, P–right O single bond, P–lower O single bond, left O–left H single bond, right O–right H single bond, lower O–lower H single bond, 2 lone pairs on the upper O, 2 lone pairs on the left O, 2 lone pairs on the right O, 2 lone pairs on the lower O (3)]",
+    "[3] [drawing: Lewis structure: P–upper O single bond, P–left O single bond, P–right O single bond, P–lower O single bond, left O–left H single bond, lower O–lower H single bond, P–lower right H single bond, 3 lone pairs on the upper O, 2 lone pairs on the left O, 3 lone pairs on the right O, 2 lone pairs on the lower O (4)]",
+    "[4] [drawing: Lewis structure: P–upper O double bond, P–left O single bond, P–right H single bond, right H–right O single bond, P–lower O single bond, left O–left H single bond, lower O–lower H single bond, 2 lone pairs on the upper O, 2 lone pairs on the left O, 3 lone pairs on the right O, 2 lone pairs on the lower O (5)]"
+   ]
+  }
+ },
+ {
+  "id": "t4-7-lec-no2",
+  "module": "t4-7",
+  "label": "lecture",
+  "prompt": "On Day 9 p.28 the N of nitrogen dioxide carries a red “+1”: [drawing: Lewis structure of nitrogen dioxide, NO₂: left O–N double bond, N–right O single bond, 2 lone pairs on the left O, 3 lone pairs on the right O, an unpaired electron on N] Check it with the four steps. N has one unpaired electron, a double bond, and a single bond. What is its formal charge?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "t4-8-lec-so4",
+  "module": "t4-8",
+  "label": "lecture",
+  "prompt": "On Day 9 p.30 the professor redraws sulfate with two curved arrows: [drawing: Lewis structure of sulfate ion, SO₄²⁻ (octets only): S–upper O single bond, S–left O single bond, S–right O single bond, S–lower O single bond, 3 lone pairs on the upper O, 3 lone pairs on the left O, 3 lone pairs on the right O, 3 lone pairs on the lower O; overall charge 2−] → [drawing: Lewis structure of sulfate ion, SO₄²⁻ (two S=O): S–upper O double bond, S–left O single bond, S–right O single bond, S–lower O double bond, 2 lone pairs on the upper O, 3 lone pairs on the left O, 3 lone pairs on the right O, 2 lone pairs on the lower O; overall charge 2−] Why make the two S=O bonds, when the first structure already gives every atom an octet?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] To change the ion's charge from 2− to 0.",
+    "[1] Because S must always have 12 electrons.",
+    "[2] To bring the formal charges closer to zero: S goes from +2 to 0. S is a row-3 nonmetal bonded to O, so it may expand its octet.",
+    "[3] To give S an octet."
+   ]
+  }
+ },
+ {
+  "id": "t4-8-lec-hyper",
+  "module": "t4-8",
+  "label": "lecture",
+  "prompt": "The professor calls expanded octets “hypervalency” and says it “is not well understood” (Day 9 p.29). Which statement can you make from the slides?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Expanded octets are a drawing error to avoid.",
+    "[1] Nonmetals in the third row and below can be drawn with more than 8 electrons, especially when bonded to F, O, or Cl, and doing so can bring formal charges closer to zero.",
+    "[2] Any atom can exceed an octet if it's bonded to fluorine.",
+    "[3] S in SF<sub>6</sub> holds the extra electrons in its 3d orbitals."
+   ]
+  }
+ },
+ {
+  "id": "t4-8-lec-classify",
+  "module": "t4-8",
+  "label": "lecture",
+  "prompt": "Match each species with the octet exception it shows (Day 9 p.27–29).",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] BeF<sub>2</sub>",
+    "[1] AlBr<sub>3</sub>",
+    "[2] NO",
+    "[3] OH (the neutral molecule, not the OH<sup>−</sup> ion)",
+    "[4] SF<sub>4</sub>",
+    "[5] PCl<sub>5</sub>"
+   ],
+   "options": [
+    "def: electron-deficient (fewer than 8 on the central atom)",
+    "rad: odd number of electrons (free radical)",
+    "exp: expanded octet (more than 8)"
+   ]
+  }
+ },
+ {
+  "id": "t4-8-lec-ch3",
+  "module": "t4-8",
+  "label": "lecture",
+  "prompt": "The methyl radical, CH<sub>3</sub>, is a short-lived fragment in which C is bonded to three H atoms. (a) How many valence electrons does it have? (b) How many electrons surround C? (c) Which kind of octet exception is it?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) valence electrons"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) electrons around C"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] odd number of electrons: a free radical",
+      "[1] electron-deficient, like BCl<sub>3</sub>",
+      "[2] expanded octet"
+     ],
+     "label": "(c) exception"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t4-5-lec-no2hybrid",
+  "module": "t4-5",
+  "label": "lecture",
+  "prompt": "Day 9 p.28 joins the two structures of nitrogen dioxide with ↔: [drawing: Lewis structure of nitrogen dioxide, NO₂: left O–N double bond, N–right O single bond, 2 lone pairs on the left O, 3 lone pairs on the right O, an unpaired electron on N] ↔ [drawing: Lewis structure of nitrogen dioxide, NO₂: left O–N single bond, N–right O double bond, 3 lone pairs on the left O, 2 lone pairs on the right O, an unpaired electron on N] Draw its resonance hybrid the way Day 9 p.10 draws ozone's. (a) How many dots go on each O? (b) How many dots go on N? (c) How is each N–O bond drawn?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) dots on each O"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) dots on N"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] one double bond and one single bond",
+      "[1] one solid line plus one dashed line (a partial bond)",
+      "[2] a double bond",
+      "[3] a single bond"
+     ],
+     "label": "(c) each N–O bond"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m20-attempt",
+  "module": "m20",
+  "label": "lecture",
+  "prompt": "Hydrogen cyanide, HCN, has this Lewis structure: [drawing: Lewis structure of hydrogen cyanide, HCN: H–C single bond, C–N triple bond, 1 lone pair on N] (a) What is the steric number of the central C atom? (b) Predict the H–C–N bond angle.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) steric number of C"
+    },
+    {
+     "type": "numeric",
+     "unit_hint": "answer carries a unit",
+     "label": "(b) H–C–N angle"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m20-p1",
+  "module": "m20",
+  "label": "lecture",
+  "prompt": "Which description matches the lecture's steric number (Day 10 p.9)?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] How many valence electrons surround the central atom",
+    "[1] How many atoms are in the molecule",
+    "[2] How many regions of high electron density surround the central atom: in how many directions there are electrons",
+    "[3] How many bond lines the central atom has"
+   ]
+  }
+ },
+ {
+  "id": "m20-p2",
+  "module": "m20",
+  "label": "lecture",
+  "prompt": "Give the steric number of the central atom in each Lewis structure.",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] AlCl<sub>3</sub> [drawing: Lewis structure of aluminum chloride, AlCl₃ (molecule): Al–upper Cl single bond, Al–lower left Cl single bond, Al–lower right Cl single bond, 3 lone pairs on the upper Cl, 3 lone pairs on the lower left Cl, 3 lone pairs on the lower right Cl]",
+    "[1] AlCl<sub>4</sub><sup>−</sup> [drawing: Lewis structure of tetrachloroaluminate ion, AlCl₄⁻: Al–upper Cl single bond, Al–left Cl single bond, Al–right Cl single bond, Al–lower Cl single bond, 3 lone pairs on the upper Cl, 3 lone pairs on the left Cl, 3 lone pairs on the right Cl, 3 lone pairs on the lower Cl; overall charge 1−]",
+    "[2] NO<sub>2</sub><sup>+</sup> [drawing: Lewis structure of nitronium ion, NO₂⁺: left O–N double bond, N–right O double bond, 2 lone pairs on the left O, 2 lone pairs on the right O; overall charge 1+]",
+    "[3] PCl<sub>5</sub> [drawing: Lewis structure of phosphorus pentachloride, PCl₅: P–upper Cl single bond, P–upper left Cl single bond, P–upper right Cl single bond, P–lower left Cl single bond, P–lower right Cl single bond, 3 lone pairs on the upper Cl, 3 lone pairs on the upper left Cl, 3 lone pairs on the upper right Cl, 3 lone pairs on the lower left Cl, 3 lone pairs on the lower right Cl]",
+    "[4] SO<sub>4</sub><sup>2−</sup> [drawing: Lewis structure of sulfate ion, SO₄²⁻ (two S=O): S–upper O double bond, S–left O single bond, S–right O single bond, S–lower O double bond, 2 lone pairs on the upper O, 3 lone pairs on the left O, 3 lone pairs on the right O, 2 lone pairs on the lower O; overall charge 2−]"
+   ],
+   "options": [
+    "2: 2",
+    "3: 3",
+    "4: 4",
+    "5: 5",
+    "6: 6"
+   ]
+  }
+ },
+ {
+  "id": "m20-p3",
+  "module": "m20",
+  "label": "lecture",
+  "prompt": "The formate ion, HCO<sub>2</sub><sup>−</sup>, has two resonance structures: [drawing: Lewis structure of formate ion, HCO₂⁻: left O–C double bond, C–right O single bond, C–H single bond, 2 lone pairs on the left O, 3 lone pairs on the right O; overall charge 1−] ↔ [drawing: Lewis structure of formate ion, HCO₂⁻: left O–C single bond, C–right O double bond, C–H single bond, 3 lone pairs on the left O, 2 lone pairs on the right O; overall charge 1−] (a) What is C's steric number in the first structure? (b) In the second? (c) Predict the O–C–O bond angle.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) SN of C, first structure"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) SN of C, second structure"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] about 109.5°",
+      "[1] about 120° in one structure and about 109.5° in the other",
+      "[2] about 120°, the same for both structures",
+      "[3] 180°"
+     ],
+     "label": "(c) O–C–O angle"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m20-p4",
+  "module": "m20",
+  "label": "lecture",
+  "prompt": "PF<sub>5</sub> (Day 10 p.12) is trigonal bipyramidal, with two kinds of F positions, axial and equatorial (the terms on Day 10 p.20). (a) How many F atoms are axial? (b) What is the angle between an axial and an equatorial P–F bond? (c) Between two equatorial bonds? (d) Between the two axial bonds?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) axial F atoms"
+    },
+    {
+     "type": "numeric",
+     "unit_hint": "answer carries a unit",
+     "label": "(b) axial–equatorial angle"
+    },
+    {
+     "type": "numeric",
+     "unit_hint": "answer carries a unit",
+     "label": "(c) equatorial–equatorial angle"
+    },
+    {
+     "type": "numeric",
+     "unit_hint": "answer carries a unit",
+     "label": "(d) axial–axial angle"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m20-p5",
+  "module": "m20",
+  "label": "lecture",
+  "prompt": "Boron trichloride is one of the lecture's electron-deficient molecules: B ends up with only six valence electrons (Day 9 p.27). [drawing: Lewis structure of boron trichloride, BCl₃: B–upper Cl single bond, B–lower left Cl single bond, B–lower right Cl single bond, 3 lone pairs on the upper Cl, 3 lone pairs on the lower left Cl, 3 lone pairs on the lower right Cl] (a) What is B's steric number? (b) Name the molecular geometry. (c) Predict the Cl–B–Cl bond angle.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) steric number of B"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] T-shaped",
+      "[1] trigonal pyramidal",
+      "[2] trigonal planar",
+      "[3] tetrahedral"
+     ],
+     "label": "(b) molecular geometry"
+    },
+    {
+     "type": "numeric",
+     "unit_hint": "answer carries a unit",
+     "label": "(c) Cl–B–Cl angle"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m20-p6",
+  "module": "m20",
+  "label": "lecture",
+  "prompt": "Formaldehyde, H<sub>2</sub>C=O, is planar, and the lecture gives its H–C–H angle as “about 118°” (Day 10 p.13). (a) Which is larger, the H–C–H angle or each H–C=O angle? (b) The three angles around a planar atom add up to 360°. Estimate each H–C=O angle.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] all three are 120°",
+      "[1] the H–C–H angle",
+      "[2] each H–C=O angle"
+     ],
+     "label": "(a) the larger angle"
+    },
+    {
+     "type": "numeric",
+     "unit_hint": "answer carries a unit",
+     "label": "(b) each H–C=O angle"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m20-p7",
+  "module": "m20",
+  "label": "lecture",
+  "prompt": "A central atom has only single bonds, no lone pairs, and 10 electrons around it. (a) What is its steric number? (b) Name its electron-pair geometry. (c) Which of the lecture's molecules has a central atom like this?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) steric number"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] octahedral",
+      "[1] trigonal bipyramidal",
+      "[2] tetrahedral",
+      "[3] trigonal planar"
+     ],
+     "label": "(b) electron-pair geometry"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] PF<sub>5</sub>",
+      "[1] SF<sub>6</sub>",
+      "[2] BF<sub>3</sub>",
+      "[3] CCl<sub>4</sub>"
+     ],
+     "label": "(c) a lecture example"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m20-p8",
+  "module": "m20",
+  "label": "preview",
+  "prompt": "Day 10 p.11 draws CCl<sub>4</sub> with plain lines, a solid wedge, and a dashed wedge. In the textbook's convention, what does the solid wedge mean?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] a bond in the plane of the page",
+    "[1] a bond coming out of the page, toward you",
+    "[2] a double bond",
+    "[3] a bond going into the page, away from you"
+   ]
+  }
+ },
+ {
+  "id": "m20-transfer",
+  "module": "m20",
+  "label": "lecture",
+  "prompt": "Phosgene, COCl<sub>2</sub>, a toxic gas, has C bonded to O and to two Cl atoms. Draw its Lewis structure (24 valence electrons). (a) What is C's steric number? (b) Name the molecular geometry. (c) Is the Cl–C–Cl angle larger than, equal to, or smaller than 120°?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) steric number of C"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] trigonal planar",
+      "[1] tetrahedral",
+      "[2] trigonal pyramidal",
+      "[3] bent"
+     ],
+     "label": "(b) molecular geometry"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] larger than 120°",
+      "[1] equal to 120°",
+      "[2] smaller than 120°"
+     ],
+     "label": "(c) Cl–C–Cl compared with 120°"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m20-m-recognize",
+  "module": "m20",
+  "label": "lecture",
+  "prompt": "Which question can't be answered from a Lewis structure alone, so that you need VSEPR?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Which atoms is C bonded to in CH<sub>2</sub>O?",
+    "[1] How many lone pairs does the O in H<sub>2</sub>O have?",
+    "[2] What is the H–C–H bond angle in CH<sub>4</sub>?",
+    "[3] What is the formal charge on N in NH<sub>4</sub><sup>+</sup>?"
+   ]
+  }
+ },
+ {
+  "id": "m20-m-sanity",
+  "module": "m20",
+  "label": "lecture",
+  "prompt": "A classmate looks at CH<sub>4</sub>'s Lewis structure, a flat cross, and says the H–C–H angle must be 90°, since four bonds are “as far apart as possible” at the corners of a square. What's wrong?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] CH<sub>4</sub> is trigonal planar, so the angle is 120°.",
+    "[1] The angle is 180°, because opposite H atoms repel most.",
+    "[2] Nothing: 90° is as far apart as four bonds can get.",
+    "[3] In three dimensions the four regions get farther apart, at the corners of a tetrahedron, 109.5° apart; the flat drawing only shows connections."
+   ]
+  }
+ },
+ {
+  "id": "m21-attempt",
+  "module": "m21",
+  "label": "lecture",
+  "prompt": "The tetrafluorobromate ion, BrF<sub>4</sub><sup>−</sup>, has this Lewis structure: [drawing: Lewis structure of tetrafluorobromate ion, BrF₄⁻: Br–upper F single bond, Br–left F single bond, Br–right F single bond, Br–lower F single bond, 2 lone pairs on Br, 3 lone pairs on the upper F, 3 lone pairs on the left F, 3 lone pairs on the right F, 3 lone pairs on the lower F; overall charge 1−] (a) What is the steric number of Br? (b) Name the electron-pair geometry. (c) Name the molecular geometry.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) steric number of Br"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] square planar",
+      "[1] tetrahedral",
+      "[2] trigonal bipyramidal",
+      "[3] octahedral"
+     ],
+     "label": "(b) electron-pair geometry"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] seesaw",
+      "[1] square pyramidal",
+      "[2] square planar",
+      "[3] tetrahedral"
+     ],
+     "label": "(c) molecular geometry"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m21-p1",
+  "module": "m21",
+  "label": "lecture",
+  "prompt": "What does a molecular geometry describe?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] the positions of the lone pairs only",
+    "[1] the arrangement drawn in the Lewis structure",
+    "[2] the positions of all the bonding pairs and lone pairs",
+    "[3] the relative positions of the atoms only"
+   ]
+  }
+ },
+ {
+  "id": "m21-p2",
+  "module": "m21",
+  "label": "lecture",
+  "prompt": "In each of these species the central atom has a steric number of 4. Name each one's molecular geometry.",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] PF<sub>3</sub>",
+    "[1] H<sub>2</sub>Se",
+    "[2] H<sub>3</sub>O<sup>+</sup>",
+    "[3] OF<sub>2</sub>",
+    "[4] BH<sub>4</sub><sup>−</sup>"
+   ],
+   "options": [
+    "td: tetrahedral",
+    "tpy: trigonal pyramidal",
+    "bent: bent",
+    "tpl: trigonal planar",
+    "lin: linear"
+   ]
+  }
+ },
+ {
+  "id": "m21-p3",
+  "module": "m21",
+  "label": "lecture",
+  "prompt": "Rank these by H–N–H bond angle. In each, N has a steric number of 4.",
+  "answer_format": {
+   "type": "order",
+   "direction": "largest H–N–H angle (1) to smallest (3)",
+   "items": [
+    "nh4: NH<sub>4</sub><sup>+</sup>",
+    "nh3: NH<sub>3</sub>",
+    "nh2: NH<sub>2</sub><sup>−</sup> (amide ion)"
+   ]
+  }
+ },
+ {
+  "id": "m21-p4",
+  "module": "m21",
+  "label": "lecture",
+  "prompt": "Selenium tetrafluoride, SeF<sub>4</sub>: [drawing: Lewis structure of selenium tetrafluoride, SeF₄: Se–upper F single bond, Se–left F single bond, Se–right F single bond, Se–lower F single bond, 1 lone pair on Se, 3 lone pairs on the upper F, 3 lone pairs on the left F, 3 lone pairs on the right F, 3 lone pairs on the lower F] (a) What is Se's steric number? (b) Is the lone pair axial or equatorial? (c) Name the molecular geometry.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) steric number of Se"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] axial",
+      "[1] equatorial"
+     ],
+     "label": "(b) the lone pair's position"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] square planar",
+      "[1] seesaw",
+      "[2] trigonal pyramidal",
+      "[3] tetrahedral"
+     ],
+     "label": "(c) molecular geometry"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m21-p5",
+  "module": "m21",
+  "label": "lecture",
+  "prompt": "Chlorine pentafluoride, ClF<sub>5</sub>: [drawing: Lewis structure of chlorine pentafluoride, ClF₅: Cl–upper F single bond, Cl–upper left F single bond, Cl–upper right F single bond, Cl–lower left F single bond, Cl–lower right F single bond, 1 lone pair on Cl, 3 lone pairs on the upper F, 3 lone pairs on the upper left F, 3 lone pairs on the upper right F, 3 lone pairs on the lower left F, 3 lone pairs on the lower right F] (a) What is the steric number of Cl? (b) Does it matter which of the six positions the lone pair takes? (c) Name the molecular geometry.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) steric number of Cl"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] Yes: it must take an equatorial position.",
+      "[1] Yes: it must take an axial position.",
+      "[2] No: all six positions are equivalent."
+     ],
+     "label": "(b) the lone pair's position"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] square planar",
+      "[1] seesaw",
+      "[2] trigonal bipyramidal",
+      "[3] square pyramidal"
+     ],
+     "label": "(c) molecular geometry"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m21-p6",
+  "module": "m21",
+  "label": "lecture",
+  "prompt": "“If we replace an atom in the trigonal bipyramid with a lone pair, will it occupy an axial or an equatorial position?” (Day 10 p.20)",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] it depends on which atoms are bonded",
+    "[1] an axial position",
+    "[2] an equatorial position",
+    "[3] either one: all five positions are equivalent"
+   ]
+  }
+ },
+ {
+  "id": "m21-p7",
+  "module": "m21",
+  "label": "preview",
+  "prompt": "The textbook counts 90° contacts to explain the lecture's choice (PDF p.241). Apply it to SN 5 with two lone pairs in two arrangements: (i) both lone pairs equatorial; (ii) both lone pairs axial. Neither arrangement puts the two lone pairs 90° apart. (a) In (i), how many bonding pairs sit 90° from a lone pair, counting for both lone pairs? (b) In (ii)? (c) Which arrangement does VSEPR predict, and what shape results?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) 90° contacts, both lone pairs equatorial"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) 90° contacts, both lone pairs axial"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] (ii), giving a T-shaped molecule",
+      "[1] (ii), giving a trigonal planar molecule",
+      "[2] (i), giving a trigonal planar molecule",
+      "[3] (i), giving a T-shaped molecule"
+     ],
+     "label": "(c) the predicted arrangement"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m21-p8",
+  "module": "m21",
+  "label": "lecture",
+  "prompt": "Krypton difluoride, KrF<sub>2</sub>, one of the few compounds of krypton: [drawing: Lewis structure of krypton difluoride, KrF₂: left F–Kr single bond, Kr–right F single bond, 3 lone pairs on the left F, 3 lone pairs on Kr, 3 lone pairs on the right F] (a) What is the steric number of Kr? (b) Name the molecular geometry. (This is the case the Day 10 p.26 table leaves out.)",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) steric number of Kr"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] T-shaped",
+      "[1] linear",
+      "[2] trigonal planar",
+      "[3] bent"
+     ],
+     "label": "(b) molecular geometry"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m21-p9",
+  "module": "m21",
+  "label": "preview",
+  "prompt": "TeF<sub>5</sub><sup>−</sup> is square pyramidal, with one lone pair on Te, and ICl<sub>4</sub><sup>−</sup> is square planar, with two lone pairs on the iodine. Predict (a) the angle between TeF<sub>5</sub><sup>−</sup>'s axial F and an equatorial F; (b) the angle between neighboring Cl atoms in ICl<sub>4</sub><sup>−</sup>.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] larger than 90°",
+      "[1] exactly 90°",
+      "[2] smaller than 90°"
+     ],
+     "label": "(a) the square pyramid's axial–equatorial angle"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] larger than 90°",
+      "[1] exactly 90°",
+      "[2] smaller than 90°"
+     ],
+     "label": "(b) the square planar ion's Cl–I–Cl angle"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m21-transfer",
+  "module": "m21",
+  "label": "lecture",
+  "prompt": "The sulfite ion, SO<sub>3</sub><sup>2−</sup>, is on the polyatomic-ion table (Day 8 p.8–9). Here are two Lewis structures for it, one with octets only and one with an S=O double bond (an expanded octet, Day 9 p.29): [drawing: Lewis structure of sulfite ion, SO₃²⁻ (octets only): S–left O single bond, S–right O single bond, S–lower O single bond, 1 lone pair on S, 3 lone pairs on the left O, 3 lone pairs on the right O, 3 lone pairs on the lower O; overall charge 2−][drawing: Lewis structure of sulfite ion, SO₃²⁻ (one S=O): S–left O double bond, S–right O single bond, S–lower O single bond, 1 lone pair on S, 2 lone pairs on the left O, 3 lone pairs on the right O, 3 lone pairs on the lower O; overall charge 2−] (a) What is S's steric number in the first structure? (b) In the second? (c) Name the ion's molecular geometry.",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) SN of S, octet structure"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) SN of S, structure with S=O"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] trigonal pyramidal",
+      "[1] T-shaped",
+      "[2] trigonal planar",
+      "[3] tetrahedral"
+     ],
+     "label": "(c) molecular geometry"
+    }
+   ]
+  }
+ }
+]

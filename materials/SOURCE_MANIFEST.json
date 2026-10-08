@@ -1,7 +1,7 @@
 {
   "version": 2,
   "_about": "Maintained by tools/source_manifest.py (mark/forget). Do not hand-edit entries. Keys are project-relative POSIX paths under materials/. Entry fields: category, sha256, size, status (ingested|partial|mapped|skipped), processed_at, pages_done, page_count, page_hashes (non-textbook PDFs), render_dir, indexes, notes.",
-  "updated": "2026-09-25T11:11:35-04:00",
+  "updated": "2026-10-06T14:28:52-04:00",
   "sources": {
     "materials/lectures/Day 1 Lecture Slides.pdf": {
       "category": "lectures",
@@ -42,6 +42,155 @@
       ],
       "notes": [
         "2026-09-24: Course intro; laws of conservation of mass, definite and multiple proportions; Dalton atomic theory; conservation of energy and E=mc2; cathode ray tube intro. All 20 pages visually inspected."
+      ]
+    },
+    "materials/lectures/Day 10 Lecture Slides.pdf": {
+      "category": "lectures",
+      "sha256": "248cf7ca7bff306d91235722f957f12197be429c14efdc8fbac6f5599c9a097d",
+      "size": 1492685,
+      "status": "ingested",
+      "first_seen": "2026-10-05T17:30:56-04:00",
+      "processed_at": "2026-10-05T17:30:56-04:00",
+      "pages_done": "1-31",
+      "page_count": 31,
+      "page_hashes": [
+        "5a0a8531961e58df",
+        "0612582cc5e1757f",
+        "932ab12311d169f3",
+        "5f1a0ad17d85ded5",
+        "2c4555d5fcfe35e5",
+        "ec368096f26d056c",
+        "d76230cb6805d592",
+        "85e23085d6518648",
+        "da8ce85d68f7632b",
+        "ac97d139d0af10ce",
+        "1cb356514903c4c3",
+        "fc31e2264cf8bb56",
+        "015cdae00f723766",
+        "344468bdafa58199",
+        "6b3873b5e1ba237d",
+        "cbbcace0fc91a20e",
+        "b8bd329c19147a85",
+        "ecaceab1d214530b",
+        "d889f530befc49d0",
+        "372be747233e180a",
+        "b8bd329c19147a85",
+        "396dd6d8ceffbe38",
+        "5dd376e0d320fded",
+        "ffa081904c726cae",
+        "e8e576ac400a4526",
+        "af12105e8b6a026e",
+        "aff63b061087169e",
+        "56b961f79666eb47",
+        "f099069156e3ecf5",
+        "5b510e146cf69cf8",
+        "e6d80c8ec6b48b5f"
+      ],
+      "render_dir": "materials/lectures/Day 10 Lecture Slides_pages",
+      "indexes": [
+        "COURSE",
+        "COURSE_INDEX",
+        "COURSE_MAP",
+        "HOMEWORK_INDEX"
+      ],
+      "notes": [
+        "2026-10-05: 2026-10-05: Day 10 (31 pp.), VSEPR and polar molecules: exam review Tue, Ramp Up IS on this exam; Ch. 5 starts; chiral carvone; steric number; SN 2-6 geometries; formaldehyde ~118 deg; lone pairs (O3 117, NH3 107, H2O 104.5); SN 5 equatorial lone pairs; SN 6; professor's summary table; polar bonds; CO2/CF4 nonpolar, H2O polar. All 31 pages inspected."
+      ]
+    },
+    "materials/lectures/Day 11 Lecture Slides.pdf": {
+      "category": "lectures",
+      "sha256": "0ce66842818a7543d7d4b3d10ced3ce56d5ff11795d389a149684c724fe8dfb6",
+      "size": 1808326,
+      "status": "ingested",
+      "first_seen": "2026-10-05T17:30:57-04:00",
+      "processed_at": "2026-10-05T17:30:57-04:00",
+      "pages_done": "1-27",
+      "page_count": 27,
+      "page_hashes": [
+        "b3d3033820a21142",
+        "0612582cc5e1757f",
+        "26f752051ca55625",
+        "7ee8b96de5bfc9a6",
+        "b8efc579e3e5e078",
+        "d6e1abd45a4e0285",
+        "1bf99d949e5a65a4",
+        "e023e855459d68f2",
+        "4f6c4833e7bb467d",
+        "f72bfdc15a06d108",
+        "15f04f48c445153e",
+        "e69d1e61560f8370",
+        "f0d552b59c2005d7",
+        "87dccae66e93d0f9",
+        "a6b1532fa2355a39",
+        "221a94a0472f3a7c",
+        "f0314bb0621fd8a8",
+        "f59b3b6255fc3e05",
+        "69b3fbb2549aaaec",
+        "adabbcdfbffbda59",
+        "b8bd329c19147a85",
+        "8c653e30bd7e4831",
+        "ebadf4d26f2e4a75",
+        "0c12d27b69eb72fc",
+        "36d1ea8e9015dca3",
+        "77a5633e8b3a469c",
+        "10e0db2764f3b27e"
+      ],
+      "render_dir": "materials/lectures/Day 11 Lecture Slides_pages",
+      "indexes": [
+        "COURSE",
+        "COURSE_INDEX",
+        "COURSE_MAP",
+        "HOMEWORK_INDEX"
+      ],
+      "notes": [
+        "2026-10-05: 2026-10-05: Day 11 (27 pp.), polar molecules and valence bond theory: CHCl3 vs CCl3F; Table 5.2 dipole moments; VB theory and sigma bonds; methane problem; sp3 (CH4, NH3, H2O); pi bonds and sp2 (formaldehyde, diazene); sp (acetylene); hybrid rules; Table 5.3 (sp3/3 sigma mislabeled trigonal planar); ethylene, benzene, PAHs; O2 paramagnetism announces MO theory. All 27 pages inspected."
+      ]
+    },
+    "materials/lectures/Day 12 Lecture Slides 430.pdf": {
+      "category": "lectures",
+      "sha256": "4da3b3eea85a8df76e39875f62bcac776849d7a3c5c7274eff443a7eac3baebb",
+      "size": 1398787,
+      "status": "ingested",
+      "first_seen": "2026-10-06T14:28:51-04:00",
+      "processed_at": "2026-10-06T14:28:51-04:00",
+      "pages_done": "1-25",
+      "page_count": 25,
+      "page_hashes": [
+        "b9ec9600c8abd60d",
+        "8ff02f5bb8028968",
+        "60dcb560310087ac",
+        "069addb2793fd1a9",
+        "2fcd45eb088a8491",
+        "277b043804be2134",
+        "cb52a25be62ce444",
+        "1676a5be65202363",
+        "98cf956cfdda5b37",
+        "ce5cb59a156be30f",
+        "892adfa715c5807e",
+        "b8bd329c19147a85",
+        "207fd90058d11e55",
+        "58294eb3e862dfc2",
+        "e9baf706b88ff1d7",
+        "bcfb5ebf621f0d12",
+        "3c61ba48f4837d37",
+        "92fc400e54a19bcc",
+        "329da258acdbe89e",
+        "72bbdbd48b83a142",
+        "dfc59792c1f5d71f",
+        "c9f073f19bb23353",
+        "2b6d2b71a52abad9",
+        "41e3f3173c227360",
+        "d05f9109b235b3a6"
+      ],
+      "render_dir": "materials/lectures/Day 12 Lecture Slides 430_pages",
+      "indexes": [
+        "COURSE",
+        "COURSE_INDEX",
+        "COURSE_MAP",
+        "TEXTBOOK_MAP"
+      ],
+      "notes": [
+        "2026-10-06: Day 12: MO theory taught (H2, He2, Fig. 5.48, Fig. 5.50, HOMO/LUMO, theories of bonding); Ch. 18 §18.4-18.5: metals, band theory, conductors/insulators/semiconductors, doping; midterm THURSDAY"
       ]
     },
     "materials/lectures/Day 2 Lecture Slides.pdf": {
@@ -358,20 +507,74 @@
         "2026-09-25: Day 8 (30 pp.): midterm in two weeks; ionic naming incl. transition-metal Roman numerals and polyatomic ions (table provided on exams); covalent naming prefixes; H-H curve; metallic bonds; octet rule, Lewis symbols, bonding capacity; five-step Lewis structures (NH3, C2H2, O3); allotropes"
       ]
     },
+    "materials/lectures/Day 9 Lecture Slides.pdf": {
+      "category": "lectures",
+      "sha256": "1b4cdd38f985223fe9204b53dbbe11b4e93401aec65407aec9f8932a6fe662aa",
+      "size": 1378541,
+      "status": "ingested",
+      "first_seen": "2026-10-05T17:30:56-04:00",
+      "processed_at": "2026-10-05T17:30:56-04:00",
+      "pages_done": "1-30",
+      "page_count": 30,
+      "page_hashes": [
+        "a1ea995d54036e25",
+        "c9f43344a5446c91",
+        "7455190ef0f744a1",
+        "5c90c2f77261dd4c",
+        "9af97d9a0ed30e90",
+        "de9466173e131292",
+        "d21b64707e81921e",
+        "51e535838779904e",
+        "086c8bee7fff771e",
+        "de33f162b040e0f8",
+        "82de62d9a4ec5704",
+        "bc80c43c05b0714b",
+        "f5493d6fb3dd269b",
+        "8eb84b66e44233f2",
+        "65ed40d8c0138575",
+        "890bb46d7a5417b3",
+        "2fc17a6dab73543b",
+        "7403750a010feef6",
+        "0d72656a57ed45a4",
+        "7e09b37971ce80db",
+        "f2bbc3b512f7a89d",
+        "21f8e955bd8e81fa",
+        "b536d047003a8780",
+        "c4fd471e769167ba",
+        "59783cd6cf733211",
+        "0a51e39f50e3c5a0",
+        "e99760389b003e8e",
+        "72b39462350def48",
+        "415086117c7e7b79",
+        "a7b2314dfaf98895"
+      ],
+      "render_dir": "materials/lectures/Day 9 Lecture Slides_pages",
+      "indexes": [
+        "COURSE",
+        "COURSE_INDEX",
+        "COURSE_MAP",
+        "HOMEWORK_INDEX"
+      ],
+      "notes": [
+        "2026-10-05: 2026-10-05: Day 9 (30 pp.), Advanced Lewis Structures: midterm next Thursday; O3 resonance (128 vs 148/121 pm), curved arrows, hybrid; benzene/Kekule; Table 4.6; electronegativity (chi table, delta-chi cutoffs, ESP maps); formal charge (N2O, 4 steps, 4 rules, Top Hat H3PO4); octet exceptions (duets, Be/B/Al, radicals NO/NO2, expanded PCl5/SF6/SO4 2-). All 30 pages inspected."
+      ]
+    },
     "materials/textbook/Chemistry  An Atoms-Focused Approach, Third Edition (Thomas R. Gilbert) (z-library.sk, 1lib.sk, z-lib.sk)-compressed (1).pdf": {
       "category": "textbook",
       "sha256": "c2ce83cb90a82d2d9b714d7bf3e09db64357bb733ab3e2b0a27c4028383480ea",
       "size": 273847599,
       "status": "mapped",
       "first_seen": "2026-09-24T11:23:20-04:00",
-      "processed_at": "2026-09-25T11:11:35-04:00",
-      "pages_done": "3-9,36-73,80-110,118-168,178-220",
+      "processed_at": "2026-10-06T14:28:52-04:00",
+      "pages_done": "3-9,36-73,80-110,118-168,178-220,230-278,902,917-923",
       "page_count": 1328,
       "render_dir": "materials/textbook/Chemistry  An Atoms-Focused Approach, Third Edition (Thomas R. Gilbert) (z-library.sk, 1lib.sk, z-lib.sk)-compressed (1)_pages",
       "notes": [
         "2026-09-24: Day 1-7 topics mapped: 1.1, 1.5, 2.1-2.2 (Table 2.1), 3.1-3.12, 4.1, 4.3 (binary ionic). Printed = PDF - 34 (Ch.1-4). Rendered PDF 87, 156-158, 161, 184.",
         "2026-09-24: Ch.1-3 all sections + Ch.4 4.1-4.2 and 4.3 binary ionic (main group) read for CurrentCourseGuide (student-requested textbook-preview scope, 2026-09-24); end-of-chapter problems not processed",
-        "2026-09-25: Ch. 4 §4.5-4.9 and chapter summary read for the CurrentCourseGuide Ch. 4 extension (TEXTBOOK_MAP 'Textbook notes: rest of Ch. 4')"
+        "2026-09-25: Ch. 4 §4.5-4.9 and chapter summary read for the CurrentCourseGuide Ch. 4 extension (TEXTBOOK_MAP 'Textbook notes: rest of Ch. 4')",
+        "2026-10-05: 2026-10-05: Day 9-11 topics mapped: 4.2, 4.5-4.8 (rechecked PDF 186-187, 203-206, 209-212, 214-215), 4.9 for the Ch. 5 greenhouse outcome; 5.1-5.5, 5.7 opening. All of Ch. 5 read at the student's request (PDF 230-278 rendered and viewed; TEXTBOOK_MAP 'Textbook notes: Ch. 5'). Questions and Problems PDF 278-285 catalogued by heading only. Printed = PDF - 34 verified through Ch. 5.",
+        "2026-10-06: Ch. 18 §18.4-18.5 (PDF 918-921, printed 884-887) read for Day 12"
       ]
     }
   }

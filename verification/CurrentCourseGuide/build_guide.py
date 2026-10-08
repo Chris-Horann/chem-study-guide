@@ -33,234 +33,23 @@ import problem_bank_d                  # noqa: E402  Ch. 2 textbook preview
 import problem_bank_e                  # noqa: E402  Ch. 3-4 textbook preview + mixed x21-x35
 import problem_bank_f                  # noqa: E402  Ch. 4 naming, acids, Lewis symbols and structures (Day 8 + §4.3-4.4)
 import problem_bank_g                  # noqa: E402  Ch. 4 §4.5-4.9 + mixed x36-x47
+import problem_bank_h                  # noqa: E402  Day 9 lecture items for §4.2, §4.5-4.8
+import problem_bank_i                  # noqa: E402  Ch. 5 §5.1-5.3: VSEPR and polar molecules (Day 10-11)
+import problem_bank_j                  # noqa: E402  Ch. 5 §5.4-5.5: hybrid orbitals, sigma and pi bonds (Day 11)
+import problem_bank_k                  # noqa: E402  Ch. 5 §5.6-5.7: chirality, MO theory
+import problem_bank_l                  # noqa: E402  mixed review x48 onward
+import problem_bank_m                  # noqa: E402  Ch. 18 §18.4-18.5 (Day 12) + mixed x65-x66
 import ch4_data                        # noqa: E402  data for the Ch. 4 explorers
+import ch5_data                        # noqa: E402  data for the Ch. 5 explorers
+import ch18_data                       # noqa: E402  reference values for the Ch. 18 band explorer
 from problem_bank_a import PROBLEMS    # noqa: E402
+from modules_def import (BUILD_DATE, LAST_DAY, STORAGE_KEY, tbp, UNITS, MODULES, LABEL_TEXT, STAGES,  # noqa: E402
+                         MODULE_IDS, KINDS, ANSWER_TYPES)
+from bank_validate import validate     # noqa: E402
+from fragments import expand_drawings, module_page, fragment_problems   # noqa: E402
 
-BUILD_DATE = "2026-09-25"
-LAST_DAY = 8                           # latest lecture the guide's labels describe
-STORAGE_KEY = "chemstudy:CurrentCourseGuide"
-
-def tbp(a, b):
-    """textbook page range: 'printed a–b (PDF a+34–b+34)'"""
-    return f"printed pp. {a}–{b} (PDF {a + 34}–{b + 34})" if b != a else f"printed p. {a} (PDF {a + 34})"
-
-UNITS = [
-    {"id": "C1", "title": "Matter and Energy: An Atomic Perspective", "chapter": "Ch. 1",
-     "modules": ["m1", "t1-2", "t1-3", "t1-4", "t1-5", "t1-6", "t1-7", "t1-8", "t1-9"]},
-    {"id": "C2", "title": "Atoms, Ions, and Molecules", "chapter": "Ch. 2",
-     "modules": ["m2", "t2-2", "t2-3", "t2-4", "t2-5", "t2-6"]},
-    {"id": "C3", "title": "Atomic Structure", "chapter": "Ch. 3",
-     "modules": ["m3", "m4", "m5", "m6", "m7", "t3-5", "m8", "m9", "m10", "m11", "m12", "m13", "t3-11"]},
-    {"id": "C4", "title": "Chemical Bonding", "chapter": "Ch. 4",
-     "modules": ["m14", "t4-2", "m15", "m16", "m17", "t4-3", "m18", "m19", "t4-5", "t4-6", "t4-7", "t4-8", "t4-9"]},
-]
-# label: "lecture" = covered in lecture; "preview" = textbook preview; "lecture+preview" = lecture topic with a labeled preview part
-MODULES = [
-    {"id": "m1", "sec": "1.1", "title": "Atoms from mass laws", "short": "Mass laws", "label": "lecture+preview",
-     "sources": "Day 1 p.8–15", "textbook": "§1.1, " + tbp(4, 7), "prereqs": []},
-    {"id": "t1-2", "sec": "1.2", "title": "COAST: a framework for solving problems", "short": "COAST", "label": "preview",
-     "sources": "", "textbook": "§1.2, " + tbp(7, 8), "prereqs": []},
-    {"id": "t1-3", "sec": "1.3", "title": "Classes and properties of matter", "short": "Classes of matter", "label": "preview",
-     "sources": "", "textbook": "§1.3, " + tbp(8, 13), "prereqs": ["m1"]},
-    {"id": "t1-4", "sec": "1.4", "title": "States of matter", "short": "States of matter", "label": "preview",
-     "sources": "", "textbook": "§1.4, " + tbp(13, 16), "prereqs": ["t1-3"]},
-    {"id": "t1-5", "sec": "1.5", "title": "Forms of energy", "short": "Forms of energy", "label": "lecture+preview",
-     "sources": "Day 1 p.15", "textbook": "§1.5, " + tbp(16, 17), "prereqs": ["t1-4"]},
-    {"id": "t1-6", "sec": "1.6", "title": "Formulas and models", "short": "Formulas and models", "label": "preview",
-     "sources": "", "textbook": "§1.6, " + tbp(17, 19), "prereqs": ["m1"]},
-    {"id": "t1-7", "sec": "1.7", "title": "Measurements and significant figures", "short": "Significant figures", "label": "preview",
-     "sources": "", "textbook": "§1.7, " + tbp(19, 26), "prereqs": []},
-    {"id": "t1-8", "sec": "1.8", "title": "Unit conversions and dimensional analysis", "short": "Unit conversions", "label": "preview",
-     "sources": "", "textbook": "§1.8, " + tbp(26, 31), "prereqs": ["t1-7"]},
-    {"id": "t1-9", "sec": "1.9", "title": "Analyzing experimental results", "short": "Statistics", "label": "preview",
-     "sources": "", "textbook": "§1.9, " + tbp(31, 37), "prereqs": ["t1-7"]},
-    {"id": "m2", "sec": "2.1", "title": "Inside the atom", "short": "Inside the atom", "label": "lecture+preview",
-     "sources": "Day 1 p.16–20; Day 2 p.4–24", "textbook": "§2.1, " + tbp(48, 53), "prereqs": ["m1"]},
-    {"id": "t2-2", "sec": "2.2", "title": "Nuclides and their symbols", "short": "Nuclide symbols", "label": "lecture+preview",
-     "sources": "Day 2 p.22–23 (RAMP UP)", "textbook": "§2.2, " + tbp(53, 56), "prereqs": ["m2"]},
-    {"id": "t2-3", "sec": "2.3", "title": "Navigating the periodic table", "short": "Periodic table", "label": "lecture+preview",
-     "sources": "Day 2 p.24 (RAMP UP)", "textbook": "§2.3, " + tbp(56, 60), "prereqs": ["t2-2"]},
-    {"id": "t2-4", "sec": "2.4", "title": "Masses of atoms, ions, and molecules", "short": "Atomic mass", "label": "lecture+preview",
-     "sources": "Day 2 p.21–23 (RAMP UP)", "textbook": "§2.4, " + tbp(60, 64), "prereqs": ["t2-2"]},
-    {"id": "t2-5", "sec": "2.5", "title": "Moles and molar masses", "short": "Moles", "label": "preview",
-     "sources": "", "textbook": "§2.5, " + tbp(64, 70), "prereqs": ["t2-4", "t1-8"]},
-    {"id": "t2-6", "sec": "2.6", "title": "Mass spectrometry", "short": "Mass spectrometry", "label": "preview",
-     "sources": "", "textbook": "§2.6, " + tbp(70, 74), "prereqs": ["t2-4"]},
-    {"id": "m3", "sec": "3.1", "title": "Light: waves and photons", "short": "Light", "label": "lecture+preview",
-     "sources": "Day 2 p.25–30; Day 3 p.12, p.17", "textbook": "§3.1, " + tbp(86, 89), "prereqs": []},
-    {"id": "m4", "sec": "3.2", "title": "Atomic spectra", "short": "Spectra", "label": "lecture",
-     "sources": "Day 2 p.31; Day 3 p.7–11", "textbook": "§3.2, " + tbp(89, 90), "prereqs": ["m3"]},
-    {"id": "m5", "sec": "3.3", "title": "Quantized energy: Planck and the photoelectric effect", "short": "Photoelectric effect", "label": "lecture",
-     "sources": "Day 3 p.11–19", "textbook": "§3.3, " + tbp(90, 95), "prereqs": ["m3", "m4"]},
-    {"id": "m6", "sec": "3.4", "title": "Hydrogen's spectrum and the Bohr model", "short": "Bohr model", "label": "lecture",
-     "sources": "Day 3 p.21; Day 4 p.3, p.6–10", "textbook": "§3.4, " + tbp(95, 100), "prereqs": ["m4", "m5"]},
-    {"id": "m7", "sec": "3.5", "title": "Matter waves (de Broglie)", "short": "Matter waves", "label": "lecture",
-     "sources": "Day 4 p.11–17", "textbook": "§3.5, " + tbp(100, 103), "prereqs": ["m6"]},
-    {"id": "t3-5", "sec": "3.5", "title": "The Heisenberg uncertainty principle", "short": "Uncertainty principle", "label": "preview",
-     "sources": "", "textbook": "§3.5, " + tbp(103, 104), "prereqs": ["m7"]},
-    {"id": "m8", "sec": "3.6", "title": "Wavefunctions, quantum numbers, and Pauli", "short": "Quantum numbers", "label": "lecture",
-     "sources": "Day 4 p.18; Day 5 p.7–16", "textbook": "§3.6, " + tbp(104, 108), "prereqs": ["m6", "m7"]},
-    {"id": "m9", "sec": "3.7", "title": "Orbital shapes and radial distributions", "short": "Orbitals", "label": "lecture+preview",
-     "sources": "Day 5 p.17–20; Day 6 p.12, p.18", "textbook": "§3.7, " + tbp(108, 111), "prereqs": ["m8"]},
-    {"id": "m10", "sec": "3.8", "title": "Electron configurations", "short": "Configurations", "label": "lecture+preview",
-     "sources": "Day 6 p.6–20; Day 7 p.6", "textbook": "§3.8, " + tbp(111, 119), "prereqs": ["m8", "m9"]},
-    {"id": "m11", "sec": "3.9", "title": "Configurations of ions", "short": "Ion configurations", "label": "lecture",
-     "sources": "Day 6 p.21–23", "textbook": "§3.9, " + tbp(119, 122), "prereqs": ["m10"]},
-    {"id": "m12", "sec": "3.10", "title": "Atomic and ionic size", "short": "Size trends", "label": "lecture",
-     "sources": "Day 6 p.24–26; Day 7 p.5, p.7–8", "textbook": "§3.10, " + tbp(122, 125), "prereqs": ["m10", "m11"]},
-    {"id": "m13", "sec": "3.11–3.12", "title": "Ionization energy and electron affinity", "short": "IE and EA", "label": "lecture",
-     "sources": "Day 7 p.9–11", "textbook": "§3.11 (IE part), " + tbp(125, 128) + "; §3.12, " + tbp(130, 133), "prereqs": ["m6", "m10", "m12"]},
-    {"id": "t3-11", "sec": "3.11", "title": "Photoelectron spectroscopy", "short": "PES", "label": "preview",
-     "sources": "", "textbook": "§3.11 (PES part), " + tbp(128, 130), "prereqs": ["m13", "m5"]},
-    {"id": "m14", "sec": "4.1", "title": "Bonds, Coulomb energy, and lattices", "short": "Bonds and lattices", "label": "lecture+preview",
-     "sources": "Day 7 p.12–17; Day 8 p.11, p.14–15, p.18", "textbook": "§4.1, " + tbp(146, 151), "prereqs": ["m12", "m13"]},
-    {"id": "t4-2", "sec": "4.2", "title": "Electronegativity and polar bonds", "short": "Electronegativity", "label": "preview",
-     "sources": "", "textbook": "§4.2, " + tbp(151, 154), "prereqs": ["m14", "m13"]},
-    {"id": "m15", "sec": "4.3", "title": "Ionic formulas and names", "short": "Formulas and names", "label": "lecture",
-     "sources": "Day 7 p.18–21; Day 8 p.6", "textbook": "§4.3 (binary ionic, main group), " + tbp(155, 156), "prereqs": ["m11", "m14"]},
-    {"id": "m16", "sec": "4.3", "title": "Transition-metal ions and polyatomic ions", "short": "Metals and polyatomic ions", "label": "lecture+preview",
-     "sources": "Day 8 p.7–10", "textbook": "§4.3 (transition metals; polyatomic ions), " + tbp(156, 159), "prereqs": ["m15"]},
-    {"id": "m17", "sec": "4.3", "title": "Naming covalent compounds", "short": "Covalent names", "label": "lecture+preview",
-     "sources": "Day 8 p.12–13", "textbook": "§4.3 (binary molecular compounds), " + tbp(154, 155), "prereqs": ["m15", "m14"]},
-    {"id": "t4-3", "sec": "4.3", "title": "Naming acids", "short": "Acids", "label": "preview",
-     "sources": "", "textbook": "§4.3 (binary acids; oxoacids), " + tbp(159, 161), "prereqs": ["m16", "m17"]},
-    {"id": "m18", "sec": "4.4", "title": "Lewis symbols and the octet rule", "short": "Lewis symbols", "label": "lecture+preview",
-     "sources": "Day 8 p.16–18", "textbook": "§4.4 (Lewis symbols; ionic compounds), " + tbp(161, 163), "prereqs": ["m10", "m14"]},
-    {"id": "m19", "sec": "4.4", "title": "Lewis structures: the five steps", "short": "Lewis structures", "label": "lecture+preview",
-     "sources": "Day 8 p.19–26, p.28–30", "textbook": "§4.4 (five steps; double and triple bonds), " + tbp(163, 168), "prereqs": ["m18"]},
-    {"id": "t4-5", "sec": "4.5", "title": "Resonance", "short": "Resonance", "label": "lecture+preview",
-     "sources": "Day 8 p.26–30", "textbook": "§4.5, " + tbp(168, 172), "prereqs": ["m19"]},
-    {"id": "t4-6", "sec": "4.6", "title": "Bond lengths and strengths", "short": "Bond lengths", "label": "preview",
-     "sources": "", "textbook": "§4.6, " + tbp(172, 174), "prereqs": ["t4-5", "m14"]},
-    {"id": "t4-7", "sec": "4.7", "title": "Formal charge", "short": "Formal charge", "label": "preview",
-     "sources": "", "textbook": "§4.7, " + tbp(174, 178), "prereqs": ["m19", "t4-5", "t4-2"]},
-    {"id": "t4-8", "sec": "4.8", "title": "Exceptions to the octet rule", "short": "Octet exceptions", "label": "preview",
-     "sources": "", "textbook": "§4.8, " + tbp(178, 183), "prereqs": ["t4-7", "m19"]},
-    {"id": "t4-9", "sec": "4.9", "title": "Vibrating bonds and the greenhouse effect", "short": "Vibrating bonds", "label": "preview",
-     "sources": "", "textbook": "§4.9, " + tbp(183, 185), "prereqs": ["t4-2", "m3"]},
-]
-for i, m in enumerate(MODULES, 1):
-    m["n"] = i
-    m["unit"] = next(u["id"] for u in UNITS if m["id"] in u["modules"])
-assert [x for u in UNITS for x in u["modules"]] == [m["id"] for m in MODULES], "UNITS order must match MODULES"
-LABEL_TEXT = {"lecture": "Covered in lecture", "preview": "Textbook preview", "lecture+preview": "Lecture + preview"}
-STAGES = [["learn", "Learn"], ["understand", "Understand"], ["explore", "Explore"], ["attempt", "Attempt"],
-          ["compare", "Compare"], ["practice", "Practice"], ["master", "Master"]]
-MODULE_IDS = [m["id"] for m in MODULES]
-KINDS = {"attempt", "practice", "transfer", "mastery", "mixed"}
-ANSWER_TYPES = {"numeric", "choice", "multi", "order", "match", "text", "self", "config"}
-
-# ---------------------------------------------------------------- validation
-errors = []
-
-def err(pid, msg):
-    errors.append(f"{pid}: {msg}")
-
-def check_answer(pid, a, where="answer"):
-    t = a.get("type")
-    if t not in ANSWER_TYPES:
-        err(pid, f"{where}: unknown type {t!r}")
-        return
-    if t == "numeric":
-        v = a.get("value")
-        if not isinstance(v, (int, float)) or not math.isfinite(v):
-            err(pid, f"{where}: numeric value missing or not finite")
-        if a.get("askUnit") and not a.get("units"):
-            err(pid, f"{where}: askUnit without an accepted-unit list")
-        if "sigfigs" in a and not isinstance(a["sigfigs"], int):
-            err(pid, f"{where}: sigfigs must be an int")
-    elif t == "choice":
-        n_ok = sum(1 for o in a["options"] if o["correct"])
-        if n_ok != 1:
-            err(pid, f"{where}: {n_ok} correct options (need exactly 1)")
-        for o in a["options"]:
-            if not o.get("feedback"):
-                err(pid, f"{where}: option without feedback: {o['html'][:30]}")
-    elif t == "order":
-        keys = [it["key"] for it in a["items"]]
-        if sorted(keys) != sorted(a["answerOrder"]) or len(set(keys)) != len(keys):
-            err(pid, f"{where}: answerOrder is not a permutation of the item keys")
-    elif t == "match":
-        opts = {o["key"] for o in a["options"]}
-        for r in a["rows"]:
-            if r["answer"] not in opts:
-                err(pid, f"{where}: match row answer {r['answer']!r} not among options")
-    elif t == "text":
-        if not a.get("accepted"):
-            err(pid, f"{where}: text answer with no accepted list")
-    elif t == "config":
-        if sum(a["target"].values()) != a["electrons"]:
-            err(pid, f"{where}: config target sums to {sum(a['target'].values())}, electrons = {a['electrons']}")
-    elif t == "multi":
-        if not a.get("parts"):
-            err(pid, f"{where}: multi with no parts")
-        for k, part in enumerate(a["parts"]):
-            if not part.get("label"):
-                err(pid, f"{where}: part {k} has no label")
-            check_answer(pid, part, f"{where}.part{k}")
-    elif t == "self":
-        if not a.get("model"):
-            err(pid, f"{where}: self-rated item with no model answer")
-
-ids = [p["id"] for p in PROBLEMS]
-dups = sorted({i for i in ids if ids.count(i) > 1})
-if dups:
-    errors.append(f"duplicate problem ids: {dups}")
-for p in PROBLEMS:
-    pid = p["id"]
-    if not re.fullmatch(r"[a-z0-9-]+", pid):
-        err(pid, "id must be lowercase letters, digits, hyphens (used in data-testids)")
-    if p["module"] not in MODULE_IDS + ["mixed"]:
-        err(pid, f"unknown module {p['module']}")
-    if p["kind"] not in KINDS:
-        err(pid, f"unknown kind {p['kind']}")
-    if not p.get("source"):
-        err(pid, "missing source citation")
-    if not p.get("prompt"):
-        err(pid, "missing prompt")
-    check_answer(pid, p["answer"])
-    if p["answer"]["type"] != "self":
-        if not p.get("solution"):
-            err(pid, "missing solution")
-        hints = p.get("hints") or []
-        need = 4 if p["kind"] == "attempt" else 1
-        if p["answer"]["type"] in ("numeric", "multi", "config") and p["kind"] != "attempt":
-            need = 2
-        if len(hints) < need:
-            err(pid, f"{len(hints)} hints; need at least {need}")
-    if p["kind"] == "attempt":
-        c = p.get("compare") or {}
-        for k in ("wrong", "tempting", "fails"):
-            if not c.get(k):
-                err(pid, f"attempt compare missing {k!r}")
-    if p["kind"] == "mixed":
-        if not p.get("cue"):
-            err(pid, "mixed problem missing 'what gave it away' cue")
-        if p.get("home") not in MODULE_IDS:
-            err(pid, "mixed problem missing home module")
-    # topic label: explicit, else from the module (mixed: from the home module)
-    if "label" not in p:
-        mod = next((m for m in MODULES if m["id"] == (p.get("home") if p["module"] == "mixed" else p["module"])), None)
-        p["label"] = "preview" if (mod and mod["label"] == "preview") else "lecture"
-    if p["label"] not in ("lecture", "preview"):
-        err(pid, f"label must be lecture or preview, not {p['label']!r}")
-    if p["label"] == "preview" and "textbook" not in p.get("source", ""):
-        err(pid, "textbook-preview problem must cite a textbook section and page")
-    if p["label"] == "lecture" and not re.search(r"Day \d", p.get("source", "")):
-        err(pid, "lecture problem must cite a lecture slide")
-for m in MODULE_IDS:
-    kinds = [p["kind"] for p in PROBLEMS if p["module"] == m]
-    if kinds.count("attempt") != 1:
-        errors.append(f"{m}: needs exactly one attempt problem (has {kinds.count('attempt')})")
-    if kinds.count("practice") < 3:
-        errors.append(f"{m}: needs at least 3 practice problems")
-    if kinds.count("transfer") < 1:
-        errors.append(f"{m}: needs a transfer problem")
-    if not any(p["module"] == m and p["answer"]["type"] == "self" for p in PROBLEMS):
-        errors.append(f"{m}: needs a self-rated explain item")
-if sum(1 for p in PROBLEMS if p["kind"] == "mixed") < 15:
-    errors.append("mixed review needs at least 15 problems")
-
+# ---------------------------------------------------------------- validation (bank_validate.py)
+errors = validate(PROBLEMS, MODULES)
 if errors:
     print("BUILD FAILED: problem-bank validation errors")
     for e in errors:
@@ -412,7 +201,7 @@ def molecules():
     return out
 
 DATA = {
-    "meta": {"guide": "CurrentCourseGuide", "title": "Chem 1151 study guide: Gilbert Ch. 1–4 with Days 1–8", "built": BUILD_DATE, "lastDay": LAST_DAY,
+    "meta": {"guide": "CurrentCourseGuide", "title": "Chem 1151 study guide: Gilbert Ch. 1–5 and §18.4–18.5 with Days 1–12", "built": BUILD_DATE, "lastDay": LAST_DAY,
              "storageKey": STORAGE_KEY, "course": "Chem 1151 (Prof. Dransfield)"},
     "units": UNITS,
     "modules": MODULES,
@@ -458,6 +247,7 @@ DATA = {
     "periodicTable": periodic_table(),
     "molecules": molecules(),
     **ch4_data.build(problem_bank_g.BONDS),
+    **ch5_data.build(),
     "problems": PROBLEMS,
 }
 
@@ -556,57 +346,7 @@ def nav_html():
                      f"<span class='nav-title'>{label}</span>{extra}</a>")
     return "\n".join(parts)
 
-def module_page(m, body):
-    """Wrap a module fragment (stage divs only) in a header generated from MODULES, so labels
-    and citations come from one place."""
-    unit = next(u for u in UNITS if u["id"] == m["unit"])
-    chips = []
-    if m["label"] in ("lecture", "lecture+preview"):
-        chips.append(f"<span class='chip chip-lecture'>Covered in lecture: {html.escape(m['sources'])}</span>")
-    if m["label"] == "preview":
-        chips.append("<span class='chip chip-preview'>Textbook preview: not yet taught in lecture</span>")
-    if m["label"] == "lecture+preview":
-        chips.append("<span class='chip chip-preview'>Includes a boxed textbook preview</span>")
-    pre = [next(x for x in MODULES if x["id"] == q) for q in m["prereqs"]]
-    prereq = ("<p class='prereq'>Builds on: " + ", ".join(f"<a href='#{x['id']}'>§{x['sec']} {html.escape(x['title'])}</a>" for x in pre) + "</p>") if pre else ""
-    note = ""
-    if m["label"] == "preview":
-        note = ("<p class='preview-note'><span class='preview-label'>Textbook preview</span>Your professor hasn't taught this section in Days 1–" + str(LAST_DAY) + ". "
-                "Everything here comes from Gilbert " + html.escape(m["textbook"]) + ", so treat it as reading ahead; its exam status is unknown.</p>")
-    src_line = ("Lecture: " + html.escape(m["sources"]) + ". " if m["sources"] else "") + "Textbook: " + html.escape(m["textbook"]) + "."
-    return (f"<section class='page module' id='{m['id']}' data-module='{m['id']}' data-label='{m['label']}' aria-labelledby='{m['id']}-title' hidden>\n"
-            f"<header class='module-head'>\n<p class='kicker'>{unit['chapter']}; §{m['sec']}</p>\n"
-            f"<h1 id='{m['id']}-title' tabindex='-1'>{html.escape(m['title'])}</h1>\n"
-            f"<div class='chips'>{''.join(chips)}</div>\n{note}\n<p class='source'>{src_line}</p>\n{prereq}\n"
-            f"<div class='stage-tabs'></div>\n</header>\n{body}\n</section>")
-
 import lewis as LW                     # noqa: E402
-
-def expand_drawings(body):
-    """Fragment placeholders -> drawings from lewis.py, so every static structure is a checked one:
-    <!--LEWIS:id[:fc][:scale=0.8][:cap=text]-->   <!--SYM:El-->   <!--HYBRID:id1,id2[,...][:scale=0.8]-->"""
-    def lewis(m):
-        parts = m.group(1).split(":")
-        sid, kw = parts[0], {"tag": "span"}
-        for p_ in parts[1:]:
-            if p_ == "fc":
-                kw["show_fc"] = True
-            elif p_.startswith("scale="):
-                kw["scale"] = float(p_[6:])
-            elif p_.startswith("cap="):
-                kw["caption"] = p_[4:]
-        return LW.svg(LW.STRUCTS[sid], **kw)
-    def hybrid(m):
-        parts = m.group(1).split(":")
-        kw = {"tag": "span"}
-        for p_ in parts[1:]:
-            if p_.startswith("scale="):
-                kw["scale"] = float(p_[6:])
-        return LW.hybrid_svg([LW.STRUCTS[i] for i in parts[0].split(",")], **kw)
-    body = re.sub(r"<!--LEWIS:([^>]+?)-->", lewis, body)
-    body = re.sub(r"<!--SYM:([A-Za-z]+)-->", lambda m: LW.symbol_svg(m.group(1))[0], body)
-    body = re.sub(r"<!--HYBRID:([^>]+?)-->", hybrid, body)
-    return body
 
 def toolkit_ch4():
     """Ch. 4 reference tables for the toolkit, generated from ch4_data / Table 4.6."""
@@ -626,11 +366,43 @@ def toolkit_ch4():
             "<div><h3>Common polyatomic ions</h3><div class='table-wrap'><table class='data'><thead><tr><th scope='col'>Ion</th><th scope='col'>Name</th></tr></thead><tbody>" + ion_rows +
             "</tbody></table></div><p class='source'>Lecture, Day 8 p.8 (the slide's Table 4.5; the textbook's Table 4.4, PDF p.192). “You will be provided with a table like this on the exams, so you don't need to memorize them.”</p></div>\n"
             "<div><h3>Average bond lengths and energies (Table 4.6)</h3><div class='table-wrap'><table class='data'><thead><tr><th scope='col'>Bond</th><th scope='col'>Length (pm)</th><th scope='col'>Energy (kJ/mol)</th></tr></thead><tbody>" + b_rows +
-            "</tbody></table></div><p class='source'><span class='pill-label preview'>Textbook preview</span> §4.6, Table 4.6, PDF p.207 (printed 173). <sup>a</sup>The C=O bond energy in CO<sub>2</sub> is 799 kJ/mol (the table's footnote).</p></div>\n"
+            "</tbody></table></div><p class='source'>Lecture, Day 9 p.14 (the textbook's Table 4.6, PDF p.207, printed 173; the slide boxes the C–C, C–O, O–O, and halogen rows). <sup>a</sup>The C=O bond energy in CO<sub>2</sub> is 799 kJ/mol (the table's footnote).</p></div>\n"
+            "</div>\n")
+
+def toolkit_ch5():
+    """Ch. 5 reference tables for the toolkit, generated from ch5_data (the slides' tables and the textbook's)."""
+    vs = "".join(f"<tr><td>{sn}</td><td>{epg}</td><td>{lp}</td><td>{mg}</td><td>{ang}</td></tr>" for sn, epg, lp, mg, ang in ch5_data.PROF_TABLE)
+    t52 = "".join(f"<tr><td>{m[2]}</td><td>{m[10]:.2f}</td><td>{m[12]}</td></tr>" for k in ("HF", "H2O", "NH3", "CHCl3", "CCl3F")
+                  for m in ch5_data.DIPOLES if m[0] == k)                      # Table 5.2's row order
+    hy = ("<tr><td>2</td><td>sp</td><td>2</td><td>linear</td><td>180°</td></tr>"
+          "<tr><td>3</td><td>sp<sup>2</sup></td><td>3; 2</td><td>trigonal planar; bent</td><td>120°</td></tr>"
+          "<tr><td>4</td><td>sp<sup>3</sup></td><td>4; 3; 2</td><td>tetrahedral; trigonal pyramidal; bent</td><td>109.5°</td></tr>")
+    order = lambda k: " &lt; ".join(f"{n[:-2]}<sub>{n[-2:]}</sub>" for n, _, _ in ch5_data.MO_ORDERS[k])
+    return ("<h2>Chapter 5 reference tables</h2>\n"
+            "<div class='toolkit-grid'>\n"
+            "<div><h3>VSEPR summary (the professor's table)</h3><div class='table-wrap'><table class='data'><thead><tr><th scope='col'>Electron domains</th><th scope='col'>Electron-pair geometry</th><th scope='col'>Lone pairs</th><th scope='col'>Molecular geometry</th><th scope='col'>Ideal bond angles</th></tr></thead><tbody>" + vs +
+            "</tbody></table></div><p class='source'>Lecture, Day 10 p.26 (“See-saw” as printed). Not in the table but on Day 10 p.23: SN 5 with 3 lone pairs is linear (XeF<sub>2</sub>). The textbook says SN 6 with 3 lone pairs is possible but not met in practice (Table 5.1, PDF p.240). Lone pairs make real angles smaller than these ideal ones: NH<sub>3</sub> 107°, H<sub>2</sub>O 104.5°, O<sub>3</sub> 117° (Day 10 p.15–19).</p></div>\n"
+            "<div><h3>Permanent dipole moments (Table 5.2)</h3><div class='table-wrap'><table class='data'><thead><tr><th scope='col'>Molecule</th><th scope='col'>μ (D)</th><th scope='col'>Points</th></tr></thead><tbody>" + t52 +
+            "</tbody></table></div><p class='source'>Lecture, Day 11 p.8 (the textbook's Table 5.2, PDF p.245). CO<sub>2</sub>, CF<sub>4</sub>, and other molecules whose bond dipoles cancel have μ = 0 (Day 10 p.29–30).</p></div>\n"
+            "<div><h3>Hybridization by steric number (Table 5.3)</h3><div class='table-wrap'><table class='data'><thead><tr><th scope='col'>SN</th><th scope='col'>Hybrids</th><th scope='col'>σ bonds</th><th scope='col'>Molecular geometries</th><th scope='col'>Angle between hybrids</th></tr></thead><tbody>" + hy +
+            "</tbody></table></div><p class='source'>Lecture, Day 11 p.24 (the textbook's Table 5.3, PDF p.252). The slide's sp<sup>3</sup> row prints “Trigonal planar” for 3 σ bonds; the textbook's table and Day 10 p.18 say trigonal pyramidal. With lone pairs, the angles are less than the hybrids' angles.</p></div>\n"
+            "<div><h3>Valence MO order (§5.7)</h3><p>Li<sub>2</sub>–N<sub>2</sub>: " + order("low") + "</p><p>O<sub>2</sub>–Ne<sub>2</sub> and NO: " + order("high") + "</p>"
+            "<p>Bond order = ½[(bonding e<sup>−</sup>) − (antibonding e<sup>−</sup>)]; unpaired electrons → paramagnetic.</p>"
+            "<p class='source'><span class='pill-label preview'>Textbook preview</span> §5.7, Figs. 5.49–5.52 and Eq. 5.2 (PDF p.262–268). The lecture only raises O<sub>2</sub>'s magnetism (Day 11 p.27).</p></div>\n"
             "</div>\n")
 
 order = ["head.html", "start.html"] + [f"{m['id']}.html" for m in MODULES] + ["mixed.html", "toolkit.html", "scope.html", "foot.html"]
 missing = [f for f in order if not (SRC / f).exists()]
+frag_errors = []
+for m in MODULES:
+    f = SRC / (m["id"] + ".html")
+    if f.exists():
+        frag_errors += fragment_problems(m["id"], f.read_text(encoding="utf-8"))
+if frag_errors:
+    print("BUILD FAILED: fragment structure errors")
+    for e in frag_errors:
+        print("  -", e)
+    sys.exit(1)
 if missing:
     print("index.html not assembled; missing src fragments:", ", ".join(missing))
 else:
@@ -638,12 +410,12 @@ else:
     for f in order:
         body = expand_drawings((SRC / f).read_text(encoding="utf-8"))
         if f == "toolkit.html":
-            body = body.replace("<!--TOOLKIT_CH4-->", toolkit_ch4())
+            body = body.replace("<!--TOOLKIT_CH4-->", toolkit_ch4()).replace("<!--TOOLKIT_CH5-->", toolkit_ch5())
         mod = next((m for m in MODULES if f == m["id"] + ".html"), None)
         pieces.append(module_page(mod, body) if mod else body)
     page = "\n".join(pieces).replace("<!--NAV-->", nav_html())
     page = page.replace("<!--BUILD_DATE-->", BUILD_DATE)
-    leftover = re.findall(r"<!--(?:LEWIS|SYM|HYBRID|TOOLKIT_CH4)[^>]*-->", page)
+    leftover = re.findall(r"<!--(?:LEWIS|SYM|HYBRID|TOOLKIT_CH4|TOOLKIT_CH5)[^>]*-->", page)
     assert not leftover, leftover
     (GUIDE / "index.html").write_text(page, encoding="utf-8")
     print("index.html assembled from", len(order), "fragments")
@@ -661,6 +433,8 @@ exp = {
     "unpaired": {f"{z}:{q}": unpaired(ion_config(z, q)) for z, q in ((6, 0), (7, 0), (8, 0), (25, 0), (26, 3), (22, 2))},
     "naming": ch4_data.naming_expected(),
     "fcBest": ch4_data.FC_EXPECTED_BEST,
+    **ch5_data.expected(),
+    **ch18_data.expected(),
 }
 (HERE / "expected_values.json").write_text(json.dumps(exp, indent=1), encoding="utf-8")
 

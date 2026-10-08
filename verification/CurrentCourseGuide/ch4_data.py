@@ -186,13 +186,13 @@ def steps_data():
 # nitrite and formate are left out on purpose: they are the t4-5 attempt and transfer problems
 RES_SETS = [
     {"key": "O3", "ids": ["O3a", "O3b"], "label": "ozone, O₃", "tag": "lecture", "pair": ["O–O", "O=O"], "measured": 128,
-     "src": "Day 8 p.30 (two structures); textbook §4.5–4.6, PDF p.203, p.206 (128 pm)"},
+     "src": "Day 8 p.30; Day 9 p.6–10 (128 pm: Day 9 p.7); textbook §4.5–4.6, PDF p.203, p.206"},
     {"key": "NO3-", "ids": ["NO3-1", "NO3-2", "NO3-3"], "label": "nitrate ion, NO₃⁻", "tag": "textbook", "pair": ["N–O", "N=O"], "measured": None,
      "src": "textbook Sample Ex. 4.14, PDF p.204–205"},
     {"key": "CO3", "ids": ["CO3-1", "CO3-2", "CO3-3"], "label": "carbonate ion, CO₃²⁻", "tag": "textbook", "pair": ["C–O", "C=O"], "measured": 129,
      "src": "textbook Sample Ex. 4.15, PDF p.207–208 (129 pm)"},
-    {"key": "C6H6", "ids": ["C6H6-1", "C6H6-2"], "label": "benzene, C₆H₆", "tag": "textbook", "pair": ["C–C", "C=C"], "measured": None,
-     "src": "textbook Fig. 4.10, PDF p.205"},
+    {"key": "C6H6", "ids": ["C6H6-1", "C6H6-2"], "label": "benzene, C₆H₆", "tag": "lecture", "pair": ["C–C", "C=C"], "measured": None,
+     "src": "Day 9 p.12–13 (Kekulé structures and the hybrid; equal bonds, Day 9 p.2); textbook Fig. 4.10, PDF p.205"},
 ]
 
 
@@ -213,13 +213,15 @@ def resonance_data(bonds):
 
 # CO, SCN-, SO3 2-, OH-, NH4+, and O3 are left out on purpose: they are t4-7/t4-8 problems or mixed-review items
 FC_SETS = [
-    {"key": "N2O", "ids": ["N2O-A", "N2O-B", "N2O-C"], "labels": ["A", "B", "C"], "label": "dinitrogen monoxide, N₂O", "src": "textbook §4.7, PDF p.209–211 (worked table)"},
+    {"key": "N2O", "ids": ["N2O-A", "N2O-B", "N2O-C"], "labels": ["A", "B", "C"], "label": "dinitrogen monoxide, N₂O", "src": "Day 9 p.19–24; textbook §4.7, PDF p.209–211 (worked table)"},
+    {"key": "H3PO4", "ids": ["H3PO4-t1", "H3PO4-t2", "H3PO4-t3"], "labels": ["structure 1", "structure 2", "structure 3"],
+     "label": "phosphoric acid, H₃PO₄ (Top Hat, Day 9 p.26)", "src": "Day 9 p.26 (Top Hat structures 1–3; structures 4 and 5 draw 34 electrons, not 32)"},
+    {"key": "SO4", "ids": ["SO4-oct", "SO4-exp"], "labels": ["octets only", "two S=O"], "label": "sulfate ion, SO₄²⁻", "src": "Day 9 p.30; textbook §4.8, PDF p.215"},
     {"key": "CO2", "ids": ["CO2-alt2", "CO2", "CO2-alt1"], "labels": ["O–C≡O", "O=C=O", "O≡C–O"], "label": "carbon dioxide, CO₂", "src": "textbook Sample Ex. 4.16, PDF p.211–212"},
-    {"key": "SO4", "ids": ["SO4-oct", "SO4-exp"], "labels": ["octets only", "two S=O"], "label": "sulfate ion, SO₄²⁻", "src": "textbook §4.8, PDF p.215"},
     {"key": "PO4", "ids": ["PO4-oct", "PO4-exp"], "labels": ["octets only", "one P=O"], "label": "phosphate ion, PO₄³⁻", "src": "textbook Sample Ex. 4.18, PDF p.215–216"},
     {"key": "H2SO4", "ids": ["H2SO4"], "labels": ["two S=O"], "label": "sulfuric acid, H₂SO₄", "src": "textbook §4.8, PDF p.215"},
 ]
-FC_EXPECTED_BEST = {"N2O": 0, "CO2": 1, "SO4": 1, "PO4": 1}
+FC_EXPECTED_BEST = {"N2O": 0, "CO2": 1, "SO4": 1, "PO4": 1, "H3PO4": 2}
 
 
 def fc_data():
@@ -227,8 +229,8 @@ def fc_data():
 
 
 # BF3 and SO3 2- are left out on purpose: they are the t4-8 attempt and transfer problems
-OCTET_IDS = ["BeCl2", "NO", "NO2-rad1", "PCl5", "SF6", "SO4-exp", "PO4-exp", "H2SO4", "NH3", "CH4", "CO2"]
-PERIOD = {"H": 1, "Be": 2, "B": 2, "C": 2, "N": 2, "O": 2, "F": 2, "P": 3, "S": 3, "Cl": 3}
+OCTET_IDS = ["BeCl2", "BCl3", "AlCl3", "NO", "NO2-rad1", "PCl5", "SF6", "SO4-exp", "PO4-exp", "H2SO4", "NH3", "CH4", "CO2"]
+PERIOD = {"H": 1, "Be": 2, "B": 2, "C": 2, "N": 2, "O": 2, "F": 2, "Al": 3, "P": 3, "S": 3, "Cl": 3}
 
 
 def octet_data():

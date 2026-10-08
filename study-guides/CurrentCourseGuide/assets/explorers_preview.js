@@ -743,11 +743,11 @@
     var EN = D.electronegativity, syms = Object.keys(EN), st = { a: "H", b: "Cl" };
     var chi = function (sym) { return EN[sym].toFixed(1); };   // Fig. 4.5 prints one decimal (Cl 3.0)
     var ui = U.shell(host, { title: "Explorer: electronegativity and bond polarity",
-      intro: "Pick two elements. Δχ decides the bond type by the textbook's guidelines, and the more electronegative atom gets δ−.",
-      source: "Source: textbook §4.2, Fig. 4.5 values and the 0.4 / 2.0 guidelines (TB PDF p.186–187, printed 152–153), textbook preview." });
+      intro: "Pick two elements. Δχ places the bond on the slide's scale, and the more electronegative atom gets δ−, where the crossed arrow points (Day 9 p.15, p.18).",
+      source: "Source: the course's electronegativity table (Day 9 p.17, the textbook's Fig. 4.5 values) and the cutoffs Δχ ≤ 0.4 nonpolar covalent, 0.4 < Δχ < 2.0 polar covalent, Δχ ≥ 2.0 ionic (Day 9 p.18); the crossed arrow and δ+/δ− (Day 9 p.15; Day 10 p.27). The readout's caution that the cutoffs are “more like guidelines than strict limits” is the textbook's (PDF p.186, printed 152)." });
     var sA = U.select(ui.controls, { label: "First atom", testid: "pol-a", value: st.a, options: syms.map(function (s) { return [s, s + " (χ = " + chi(s) + ")"]; }), onChange: function (v) { st.a = v; draw(); } });
     var sB = U.select(ui.controls, { label: "Second atom", testid: "pol-b", value: st.b, options: syms.map(function (s) { return [s, s + " (χ = " + chi(s) + ")"]; }), onChange: function (v) { st.b = v; draw(); } });
-    U.presetButtons(ui, "pol", [["H–F", ["H", "F"]], ["C–H", ["C", "H"]], ["Na–Cl", ["Na", "Cl"]], ["Cl–Cl", ["Cl", "Cl"]], ["C–O", ["C", "O"]]], function (p) { st.a = p[0]; st.b = p[1]; sA.value = p[0]; sB.value = p[1]; draw(); });
+    U.presetButtons(ui, "pol", [["H–Cl", ["H", "Cl"]], ["C–H", ["C", "H"]], ["Na–Cl", ["Na", "Cl"]], ["Cl–Cl", ["Cl", "Cl"]], ["C–O", ["C", "O"]]], function (p) { st.a = p[0]; st.b = p[1]; sA.value = p[0]; sB.value = p[1]; draw(); });
     function draw() {
       var xa = EN[st.a], xb = EN[st.b], d = Math.round(Math.abs(xa - xb) * 100) / 100, cls = P.bondClass(d), W = 600, Hh = 200;
       var X0 = function (v) { return 40 + v / 3.4 * (W - 80); };

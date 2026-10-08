@@ -4,7 +4,7 @@ Working log for `/build-study-guide` → `study-guides/CurrentCourseGuide/`. Upd
 file after every milestone so a stopped session can resume without redoing work.
 **Do not regenerate anything marked DONE**; extend it.
 
-Last updated: 2026-09-25
+Last updated: 2026-10-06
 
 ## Requested scope (student, 2026-09-24, supersedes the Days-1–7-only scope)
 
@@ -126,3 +126,66 @@ renderer), `ch4_data.py` (explorer data + Python reference answers), `choice_ord
 Results: build OK (41 modules, 458 problems); node tests 1,210 + 91 + 82 + 156 pass; `lewis.py` errors: none;
 blind 417/417; `verify_guide.py --dom`: 0 failures, 0 warnings; coverage 201/201; browser pass at 1280 and 390 px.
 Details in the guide's VERIFICATION.md §1b. Not run, by request: `/audit-study-guide`.
+
+## Extension 3: Days 9–11 + all of Ch. 5 (2026-10-06)
+
+Request: `/ingest-course` "Put three new lecture slides cover all of chapter 5 as well from the book" (2026-10-05,
+done), then `/build-study-guide` with no arguments and "keep going". Read as: add Days 9–11 and every Ch. 5 section
+(material ahead of the lectures labeled textbook preview); relabel the Ch. 4 sections Day 9 teaches; keep every
+module, problem id, and the progress key. The build skill's last step, `/audit-study-guide`, runs after the build.
+
+| Section (printed; PDF) | Lecture coverage | Module | Status |
+|---|---|---|---|
+| §4.2 (151–154; 185–188) | Day 9 p.15–18; Day 10 p.27 | t4-2 (now L+P) | DONE (Fork A) |
+| §4.5 (168–172; 202–206) | Day 8 p.26–30; Day 9 p.6–13 | t4-5 (L+P) | DONE (Fork A) |
+| §4.6 (172–174; 206–208) | Day 8 p.11; Day 9 p.7, p.14 | t4-6 (now L+P) | DONE (Fork A) |
+| §4.7 (174–178; 208–212) | Day 9 p.19–26 | t4-7 (now L+P) | DONE (Fork A) |
+| §4.8 (178–183; 212–217) | Day 9 p.27–30 | t4-8 (now L+P) | DONE (Fork A) |
+| §4.9 (183–185; 217–219) | not taught | t4-9 (P) | source line updated |
+| §5.1–5.2, no lone pairs (198–203; 232–237) | Day 10 p.3, p.6–13 | m20 | DONE (Fork B) |
+| §5.2, lone pairs (203–209; 237–243) | Day 10 p.14–26 | m21 | DONE (Fork B) |
+| §5.3 (209–212; 243–246) | Day 10 p.27–31; Day 11 p.6–8 | m22 | DONE (Fork B) |
+| §5.4 (213–219; 247–253) | Day 11 p.9–16, p.20, p.24 | m23 | DONE (Fork C) |
+| §5.4–5.5 (217–221; 251–255) | Day 11 p.17–26 | m24 | DONE (Fork C) |
+| §5.6 (221–227; 255–261) | Day 10 p.3, p.6 (hook) | t5-6 (mostly P) | DONE (Fork D) |
+| §5.7 (227–239; 261–273) | Day 11 p.27 (hook) | t5-7 (mostly P) | DONE (Fork D) |
+| Ch. 5 Summary etc. (240–242; 274–276) | — | completeness check | DONE |
+| Ch. 5 Questions and Problems (243–251; 277–285) | — | not reproduced | excluded |
+
+How it was built: four forks wrote the module content in parallel from a common brief
+(`EXT3_BRIEF.md` in this folder: file ownership, problem and fragment conventions, notation, labels, explorer specs), each
+owning its own files. Infrastructure first: `modules_def.py` (units, modules, labels), `bank_validate.py`,
+`fragments.py`, `check_bank.py` (validate one bank and its fragments without a full build). The integrator wrote
+the Ch. 5 explorers (`assets/explorers_ch5.js`, data in `ch5_data.py`, tests in `test_explorers_ch5.js`), the mixed
+review x48–x64 (`problem_bank_l.py`, keys re-derived by `check_problem_bank_l.py`), the toolkit's Ch. 5 tables, the
+start page, SOURCE_SCOPE.md, and the Ch. 5 checks in `verify_guide.py` (§8) and `coverage_check.py`.
+
+New files: `problem_bank_h.py` (Day 9 lecture items for t4-2…t4-8), `problem_bank_i.py` (m20–m22), `problem_bank_j.py`
+(m23–m24), `problem_bank_k.py` (t5-6, t5-7), `problem_bank_l.py` (mixed), `check_problem_bank_h…l.py`, `ch5_data.py`,
+`modules_def.py`, `bank_validate.py`, `fragments.py`, `check_bank.py`, `test_explorers_ch5.js`,
+`drawings/o3_svgs.py` (the two hand-built ozone drawings in t4-5), `src/m20.html` … `src/t5-7.html`.
+
+Interruption 2026-10-06: all four forks stopped on a usage limit and were resumed from their transcripts; the
+local preview server was stopped by the system for low memory and not restarted (browser checks serve the files
+through Playwright request routing instead).
+
+Results (final build, 2026-10-06, after the audit and Day 12): build OK (49 modules, 607 problems, 66 mixed);
+`check_bank.py` no findings for banks f–m; `check_problem_bank_h…m.py` all pass; `lewis.py` 126 structures, errors none;
+node tests 1,550 + 91 + 82 + 157 + 384 + 56, all pass; `coverage_check.py` 311/311; `verify_guide.py --dom` (all 51
+explorers mounted) 0 failures, 0 warnings; blind record 557/557 agree (batches 1–14). The audit (Extension 3 sections
+only) and its fixes are in the guide's VERIFICATION.md, "Audit 2026-10-06"; the three auditors were also stopped
+once by a usage limit and resumed.
+
+## Day 12 + Ch. 18 §18.4–18.5 (2026-10-06)
+
+Student: "I also added day 12 lecture and also put down notes for 18.4-18.5, do this quick and just do these things,
+dont try to go through all of the other modules". Done:
+- Ingested `Day 12 Lecture Slides 430.pdf` (25 pages, all viewed): COURSE_INDEX (MO theory now taught; new Unit F:
+  metals, band theory, semiconductors and doping), COURSE.md (lecture row, announcements, bolding, terminology,
+  conventions, the NaCl band-gap discrepancy), COURSE_MAP (unit, chain 12, 8 edges, diagram), TEXTBOOK_MAP (§18.4–18.5
+  rows, Ch. 18 offset = 34 checked on four renders, notes); manifest: Day 12 ingested, textbook pages 902, 917–923 mapped.
+- Guide: unit C18 with module m25 (`src/m25.html`, `problem_bank_m.py` + `check_problem_bank_m.py`, explorer
+  `assets/explorers_ch18.js` + `ch18_data.py` + `test_explorers_ch18.js`), mixed x65–x66; t5-7's Day 12 MO content went
+  in through the audit; header, start page, and SOURCE_SCOPE updated. No other module was reworked.
+
+

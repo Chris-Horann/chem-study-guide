@@ -1,0 +1,260 @@
+[
+ {
+  "id": "t4-2-lec-battery",
+  "answer": 0,
+  "confidence": "high",
+  "note": "χ(Br) 2.8 > χ(H) 2.1 (Δχ 0.7), so Br is δ− and the crossed arrow runs from its + tail at H to its head at Br. Wording flag: if p.15 shows HCl turned in an applied field, a real dipole's δ+ H end points toward the − terminal, so 'H lines up with the + terminal' only works as a bond-is-like-a-battery analogy."
+ },
+ {
+  "id": "t4-2-lec-cutoffs",
+  "answer": {"0": "np", "1": "pc", "2": "io", "3": "np"},
+  "confidence": "high",
+  "note": "C–H 2.5 − 2.1 = 0.4 (≤ 0.4, nonpolar boundary); S–Cl 3.0 − 2.5 = 0.5, polar; Ca–Cl 3.0 − 1.0 = 2.0 (≥ 2.0, ionic boundary); N–Cl 3.0 − 3.0 = 0, nonpolar."
+ },
+ {
+  "id": "t4-2-lec-beal",
+  "answer": [{"value": 1.5, "unit": ""}, 1, 0],
+  "confidence": "high",
+  "note": "Δχ = 3.0 − 1.5 = 1.5, which falls between 0.4 and 2.0, so the bond is polar covalent. The electronegativity difference, not the metal/nonmetal label, is what supports drawing shared pairs."
+ },
+ {
+  "id": "t4-5-lec-arrows",
+  "answer": 0,
+  "confidence": "high",
+  "note": "Curved arrows move electron pairs only. The π pair of the left O=O becomes a lone pair on the left O, a lone pair on the right O becomes the new central O=right O π pair, and no atom moves."
+ },
+ {
+  "id": "t4-5-lec-benzene",
+  "answer": 2,
+  "confidence": "high",
+  "note": "Benzene is a resonance hybrid with six identical C–C bonds of order 1.5; it does not flip between the Kekulé structures. Cosmetic: the quote has a stray space, '“ nearly correct”'."
+ },
+ {
+  "id": "t4-5-lec-rhino",
+  "answer": 1,
+  "confidence": "high",
+  "note": "The rhinoceros is real but is described as a blend of two imaginary animals, just as the real hybrid is described by imaginary resonance structures. It is not a dragon one moment and a unicorn the next."
+ },
+ {
+  "id": "t4-5-lec-notres",
+  "answer": 1,
+  "confidence": "high",
+  "note": "HCN and HNC differ in which atom H is attached to, so an atom moved, not just electrons: they are isomers, not resonance structures. The carbonate, NO2 and N2O pairs differ only in electron placement and keep their electron counts (24, 17, 16)."
+ },
+ {
+  "id": "t4-6-lec-boxes",
+  "answer": 0,
+  "confidence": "high",
+  "note": "C–C/C=C/C≡C: 154/134/120 pm and 348/614/839 kJ/mol; C–O/C=O/C≡O: 143/123/113 pm and 358/743/1072; O–O/O=O: 148/121 pm and 146/498. More shared pairs means shorter and stronger bonds, but not in proportion (839 < 3 × 348)."
+ },
+ {
+  "id": "t4-6-lec-co2",
+  "answer": 2,
+  "confidence": "high",
+  "note": "Tabulated bond energies are averages over many compounds; CO2's 799 kJ/mol is a value for one molecule's bonds, which are still C=O double bonds."
+ },
+ {
+  "id": "t4-6-lec-halogens",
+  "answer": [3, 1, 1],
+  "confidence": "high",
+  "note": "Table 4.6: F–F 143 pm/155, Cl–Cl 200/243, Br–Br 228/193, I–I 266/151 kJ/mol. I–I is the longest and Cl–Cl the strongest, while the shortest (F–F) is one of the weakest, so short-means-strong breaks down here (lone-pair repulsion in the small F2 molecule)."
+ },
+ {
+  "id": "t4-6-lec-oo-energy",
+  "answer": ["o2", "o3", "h2o2"],
+  "confidence": "high",
+  "note": "O2 has bond order 2 (498 kJ/mol), ozone's resonance hybrid has 1.5 (in between), and H2O2 has an O–O single bond (146 kJ/mol)."
+ },
+ {
+  "id": "t4-7-lec-meaning",
+  "answer": 2,
+  "confidence": "high",
+  "note": "FC = 6 valence − (6 lone-pair electrons + ½ × 2 shared) = 6 − 7 = −1. It is a bookkeeping assignment of one extra electron, not a real O− ion."
+ },
+ {
+  "id": "t4-7-lec-n2o",
+  "answer": [{"value": -2, "unit": ""}, {"value": 1, "unit": ""}, 2, 0],
+  "confidence": "high",
+  "note": "In C the end N is 5 − 6 − 1 = −2, the central N +1, and O 6 − 2 − 3 = +1, so C is the worst. A (0, +1, −1) beats B (−1, +1, 0) because its negative formal charge sits on O, the more electronegative atom."
+ },
+ {
+  "id": "t4-7-tophat",
+  "answer": 2,
+  "confidence": "medium",
+  "note": "Slide structure (3) (one P=O, three P–OH, 32 e−) is the only option with every formal charge 0, so it is the best under the FC criterion and the expanded-octet treatment of row-3 atoms (Day 9 p.29–30). Ambiguity: the Top Hat comes before the expanded-octet slides, and if octets were meant to win, the answer would be (2) (index 1: P +1, O −1). Also, (1) puts +1 on an O with three bonds, and (4) and (5) as described have 34 electrons, with H on P or an H making two bonds."
+ },
+ {
+  "id": "t4-7-lec-no2",
+  "answer": {"value": 1, "unit": ""},
+  "confidence": "high",
+  "note": "FC(N) = 5 − 1 (unpaired electron) − ½(4 + 2) = +1, which matches the slide's red '+1'."
+ },
+ {
+  "id": "t4-8-lec-so4",
+  "answer": 2,
+  "confidence": "high",
+  "note": "The octet-only structure gives S +2 and every O −1; two S=O bonds make S 0 and leave −1 on only two O atoms (the ion is still 2−). As a row-3 atom, S may hold 12 electrons."
+ },
+ {
+  "id": "t4-8-lec-hyper",
+  "answer": 1,
+  "confidence": "high",
+  "note": "Row-3-and-below nonmetals may be drawn with expanded octets, especially when bonded to F, O or Cl, which can lower formal charges. The 3d-orbital mechanism is exactly what the professor calls 'not well understood', and row-2 atoms cannot expand."
+ },
+ {
+  "id": "t4-8-lec-classify",
+  "answer": {"0": "def", "1": "def", "2": "rad", "3": "rad", "4": "exp", "5": "exp"},
+  "confidence": "high",
+  "note": "BeF2 (Be has 4 e−) and AlBr3 (Al has 6 e−, as a monomer) are electron-deficient; NO (11 e−) and neutral OH (7 e−) are odd-electron radicals; SF4 and PCl5 (10 e− on the central atom) are expanded octets."
+ },
+ {
+  "id": "t4-8-lec-ch3",
+  "answer": [{"value": 7, "unit": ""}, {"value": 7, "unit": ""}, 0],
+  "confidence": "high",
+  "note": "4 + 3 × 1 = 7 valence electrons, and C has 3 bonding pairs plus 1 unpaired electron = 7. C is also short of 8, but the odd count is the defining exception, since no odd-electron species can give every atom an octet; option 1 is a partly true distractor."
+ },
+ {
+  "id": "t4-5-lec-no2hybrid",
+  "answer": [{"value": 5, "unit": ""}, {"value": 1, "unit": ""}, 1],
+  "confidence": "medium",
+  "note": "Averaged over the two structures, each O has 4 dots in one and 6 in the other (5 in the hybrid), N keeps its 1 unpaired electron in both, and each N–O has bond order 1.5 (solid + dashed); 2 × 3 + 1 + 2 × 5 = 17 e− checks. UNCERTAIN: I can't see how p.10 draws ozone's hybrid, and if it shows only the lone pairs common to both structures (the delocalized pair carried by the dashed bonds), the answer to (a) would be 4."
+ },
+ {
+  "id": "m20-attempt",
+  "answer": [{"value": 2, "unit": ""}, {"value": 180, "unit": "°"}],
+  "confidence": "high",
+  "note": "C has two electron regions (the single bond to H and the triple bond to N, no lone pairs), so SN 2: linear, 180°."
+ },
+ {
+  "id": "m20-p1",
+  "answer": 2,
+  "confidence": "high",
+  "note": "Steric number = atoms bonded + lone pairs on the central atom = the number of electron-density regions. A double or triple bond counts once, so it is not the number of bond lines."
+ },
+ {
+  "id": "m20-p2",
+  "answer": {"0": "3", "1": "4", "2": "2", "3": "5", "4": "4"},
+  "confidence": "high",
+  "note": "AlCl3: 3 atoms and 0 lone pairs = 3; AlCl4−: 4; NO2+: 2 atoms, no lone pair on N = 2; PCl5: 5; SO4 2− with two S=O: 4 atoms and 0 lone pairs = 4 (double bonds count once)."
+ },
+ {
+  "id": "m20-p3",
+  "answer": [{"value": 3, "unit": ""}, {"value": 3, "unit": ""}, 2],
+  "confidence": "high",
+  "note": "In both structures C has 3 attached atoms and no lone pairs (SN 3), so the angle is about 120°, and the real ion is the hybrid. The measured O–C–O in formate is somewhat above 120°, but 'about 120°' is the VSEPR answer."
+ },
+ {
+  "id": "m20-p4",
+  "answer": [{"value": 2, "unit": ""}, {"value": 90, "unit": "°"}, {"value": 120, "unit": "°"}, {"value": 180, "unit": "°"}],
+  "confidence": "high",
+  "note": "A trigonal bipyramid has 2 axial F atoms; the axial–equatorial angle is 90°, equatorial–equatorial 120°, and axial–axial 180°."
+ },
+ {
+  "id": "m20-p5",
+  "answer": [{"value": 3, "unit": ""}, 2, {"value": 120, "unit": "°"}],
+  "confidence": "high",
+  "note": "B has 3 bonded Cl atoms and no lone pairs, so SN 3: trigonal planar, 120°."
+ },
+ {
+  "id": "m20-p6",
+  "answer": [2, {"value": 121, "unit": "°"}],
+  "confidence": "high",
+  "note": "The C=O double bond's larger electron region squeezes H–C–H to 118°, so each H–C=O angle = (360 − 118)/2 = 121°."
+ },
+ {
+  "id": "m20-p7",
+  "answer": [{"value": 5, "unit": ""}, 1, 0],
+  "confidence": "high",
+  "note": "10 electrons in single bonds only = 5 bonding pairs, so SN 5: trigonal bipyramidal, as in PF5 (SF6 has 6, BF3 3, CCl4 4)."
+ },
+ {
+  "id": "m20-p8",
+  "answer": 1,
+  "confidence": "high",
+  "note": "A solid wedge is a bond toward the viewer (out of the page), a dashed wedge goes into the page, and a plain line lies in the plane."
+ },
+ {
+  "id": "m20-transfer",
+  "answer": [{"value": 3, "unit": ""}, 0, 2],
+  "confidence": "high",
+  "note": "O=CCl2 with all formal charges 0 (24 e−) has 3 regions on C, so it is trigonal planar. The C=O double bond's larger region squeezes Cl–C–Cl below 120°, as with CH2O's 118°."
+ },
+ {
+  "id": "m20-m-recognize",
+  "answer": 2,
+  "confidence": "high",
+  "note": "Connectivity, lone pairs and formal charge come straight from a Lewis structure; a bond angle needs the 3-D arrangement that VSEPR predicts."
+ },
+ {
+  "id": "m20-m-sanity",
+  "answer": 3,
+  "confidence": "high",
+  "note": "A Lewis structure shows 2-D connectivity only. In 3-D, four regions get farthest apart at the corners of a tetrahedron, 109.5° apart, which is larger than 90°."
+ },
+ {
+  "id": "m21-attempt",
+  "answer": [{"value": 6, "unit": ""}, 3, 2],
+  "confidence": "high",
+  "note": "Br has 4 F and 2 lone pairs, so SN 6: octahedral electron-pair geometry. The lone pairs sit opposite each other, giving square planar (36 e− checks)."
+ },
+ {
+  "id": "m21-p1",
+  "answer": 3,
+  "confidence": "high",
+  "note": "Molecular geometry names the arrangement of the atoms only; the electron-pair geometry also includes the lone pairs."
+ },
+ {
+  "id": "m21-p2",
+  "answer": {"0": "tpy", "1": "bent", "2": "tpy", "3": "bent", "4": "td"},
+  "confidence": "high",
+  "note": "PF3 and H3O+: 3 atoms + 1 lone pair = trigonal pyramidal; H2Se and OF2: 2 atoms + 2 lone pairs = bent; BH4−: 4 atoms, 0 lone pairs = tetrahedral."
+ },
+ {
+  "id": "m21-p3",
+  "answer": ["nh4", "nh3", "nh2"],
+  "confidence": "high",
+  "note": "N has 0, 1 and 2 lone pairs; lone pairs repel more and compress the H–N–H angle: 109.5° (NH4+) > 107° (NH3) > about 104–105° (NH2−)."
+ },
+ {
+  "id": "m21-p4",
+  "answer": [{"value": 5, "unit": ""}, 1, 1],
+  "confidence": "high",
+  "note": "Se has 4 F and 1 lone pair, so SN 5. The lone pair goes equatorial (fewer 90° contacts), giving a seesaw (34 e− checks)."
+ },
+ {
+  "id": "m21-p5",
+  "answer": [{"value": 6, "unit": ""}, 2, 3],
+  "confidence": "high",
+  "note": "Cl has 5 F and 1 lone pair, so SN 6. All six octahedral positions are equivalent, and one lone pair gives a square pyramid (42 e− checks)."
+ },
+ {
+  "id": "m21-p6",
+  "answer": 2,
+  "confidence": "high",
+  "note": "Equatorial, because there the lone pair is 90° from only 2 bonding pairs instead of 3 (Day 10 p.22–23)."
+ },
+ {
+  "id": "m21-p7",
+  "answer": [{"value": 4, "unit": ""}, {"value": 6, "unit": ""}, 3],
+  "confidence": "high",
+  "note": "(i) Each equatorial lone pair is 90° from the 2 axial bonding pairs: 2 + 2 = 4. (ii) Each axial lone pair is 90° from all 3 equatorial bonding pairs: 3 + 3 = 6. Fewer contacts favours (i), with atoms at both axial sites and one equatorial site: T-shaped. Wording: 'how many bonding pairs … counting for both lone pairs' could also be read as distinct bonding pairs (2 and 3); I followed the label '90° contacts' and summed per lone pair."
+ },
+ {
+  "id": "m21-p8",
+  "answer": [{"value": 5, "unit": ""}, 1],
+  "confidence": "high",
+  "note": "Kr has 2 F and 3 lone pairs, so SN 5. The three lone pairs fill the equatorial sites and leave the two F atoms axial, 180° apart: linear (22 e− checks)."
+ },
+ {
+  "id": "m21-p9",
+  "answer": [2, 1],
+  "confidence": "high",
+  "note": "In the square pyramid the lone pair sits opposite the axial F and pushes the four basal ('equatorial') F atoms up toward it, so the axial–equatorial angle is below 90°. In ICl4− the two lone pairs sit opposite each other and their pushes cancel, so Cl–I–Cl stays exactly 90°."
+ },
+ {
+  "id": "m21-transfer",
+  "answer": [{"value": 4, "unit": ""}, {"value": 4, "unit": ""}, 0],
+  "confidence": "high",
+  "note": "In both structures S has 3 O atoms and 1 lone pair, so SN 4 (a double bond counts as one region): trigonal pyramidal. Both structures have 26 e−."
+ }
+]

@@ -1,0 +1,199 @@
+[
+ {
+  "id": "m25-attempt",
+  "module": "m25",
+  "label": "",
+  "prompt": "Beryllium, [He]2s<sup>2</sup>, is a metal and conducts electricity. Picture a small cluster of 10 Be atoms whose 2s orbitals combine into molecular orbitals. (a) How many MOs do the ten 2s orbitals form? (b) How many of those MOs are filled in the ground state? (c) Which statement explains why solid beryllium conducts?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) MOs from the 2s orbitals"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) filled MOs"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] Its 2s band is full, but an empty band made from the 2p orbitals overlaps it, so electrons can move into empty orbitals.",
+      "[1] Its 2s band is half filled, like sodium's.",
+      "[2] A full band conducts best, because it has the most electrons.",
+      "[3] Be atoms lose their 2s electrons, and the Be<sup>2+</sup> ions carry the current."
+     ],
+     "label": "(c) why Be conducts"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m25-p1",
+  "module": "m25",
+  "label": "",
+  "prompt": "Potassium, [Ar]4s<sup>1</sup>, has one valence electron per atom. In a cluster of 12 K atoms, the 4s orbitals combine into molecular orbitals. How many of those MOs are empty in the ground state?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ },
+ {
+  "id": "m25-p2",
+  "module": "m25",
+  "label": "",
+  "prompt": "Compare a cluster of 6 sodium atoms with a cluster of 60. Which has the smaller HOMO–LUMO gap?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The 6-atom cluster: fewer electrons means less repulsion, so its levels are closer together.",
+    "[1] Neither: the gap is fixed by the energy of the Na 3s orbital.",
+    "[2] The 60-atom cluster, because each of its MOs holds more electrons.",
+    "[3] The 60-atom cluster: it has ten times as many MOs from its 3s orbitals, spread over nearly the same range of energies, so neighboring levels are closer."
+   ]
+  }
+ },
+ {
+  "id": "m25-p3",
+  "module": "m25",
+  "label": "",
+  "prompt": "Use each band description to classify the solid.",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] Lithium, [He]2s<sup>1</sup>: its 2s band is half filled",
+    "[1] Calcium, [Ar]4s<sup>2</sup>: its filled 4s band overlaps an empty band above it",
+    "[2] Germanium: a filled valence band, then a small gap, then an empty band",
+    "[3] Quartz (SiO<sub>2</sub>): a filled valence band, then a large gap, then an empty band"
+   ],
+   "options": [
+    "cond: conductor",
+    "semi: semiconductor",
+    "ins: insulator"
+   ]
+  }
+ },
+ {
+  "id": "m25-p4",
+  "module": "m25",
+  "label": "",
+  "prompt": "A piece of pure silicon is warmed from room temperature to 100 °C. What happens to its electrical conductivity, and why?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] It doesn't change: the number of valence electrons is fixed.",
+    "[1] It decreases, because heated electrons fall back into the filled band.",
+    "[2] It increases: more electrons have enough energy to jump the gap into the empty band, and they leave vacancies in the filled band.",
+    "[3] It increases, because heating closes the band gap and silicon becomes a metal."
+   ]
+  }
+ },
+ {
+  "id": "m25-p5",
+  "module": "m25",
+  "label": "",
+  "prompt": "A small amount of arsenic (As, group 15) replaces some of the atoms in a silicon crystal. Which description is right?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Neither: arsenic is a metalloid like silicon, so nothing changes.",
+    "[1] n-type: each As atom brings one more valence electron than the Si it replaces, and those extra electrons sit in a donor level just below the conduction band.",
+    "[2] p-type: arsenic has more electrons, so it pulls electrons out of silicon's valence band.",
+    "[3] n-type: each As atom takes an electron from silicon, leaving a negative charge behind."
+   ]
+  }
+ },
+ {
+  "id": "m25-p6",
+  "module": "m25",
+  "label": "preview",
+  "prompt": "Boron (group 13) is added in small amounts to silicon. How does the boron-doped silicon carry a current?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Boron's extra valence electron moves up into the conduction band.",
+    "[1] The boron atoms become positive ions that move through the crystal and carry the charge.",
+    "[2] The acceptor level lies just below the conduction band, so its electrons jump into the conduction band.",
+    "[3] Valence-band electrons move up into the boron acceptor level, leaving positive holes in the valence band; electrons hopping into those holes let charge move."
+   ]
+  }
+ },
+ {
+  "id": "m25-p7",
+  "module": "m25",
+  "label": "preview",
+  "prompt": "Order these electron jumps by the energy they need, smallest first.",
+  "answer_format": {
+   "type": "order",
+   "direction": "smallest (1) to largest (4)",
+   "items": [
+    "donor: an electron in a phosphorus donor level moving up into silicon's conduction band",
+    "acceptor: a silicon valence electron moving up into a gallium acceptor level",
+    "gapSi: a valence electron in pure silicon crossing the band gap",
+    "gapC: a valence electron in diamond crossing its band gap"
+   ]
+  }
+ },
+ {
+  "id": "m25-transfer",
+  "module": "m25",
+  "label": "preview",
+  "prompt": "Silicon solar cells run on light. A photon can lift an electron from silicon's valence band into its conduction band only if it supplies at least the band-gap energy, 106 kJ/mol (the textbook's value). What is the longest wavelength of light that can do this? Give the answer in nm.",
+  "answer_format": {
+   "type": "numeric",
+   "unit_hint": "answer carries a unit"
+  }
+ },
+ {
+  "id": "m25-m-recognize",
+  "module": "m25",
+  "label": "",
+  "prompt": "Which question calls for band theory rather than a Lewis structure, VSEPR, or the MO diagram of a single molecule?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] What is the shape of a silane molecule, SiH<sub>4</sub>?",
+    "[1] Is an O<sub>2</sub> molecule paramagnetic?",
+    "[2] How many bonds does a silicon atom usually form?",
+    "[3] Why does a copper wire conduct electricity while a diamond does not?"
+   ]
+  }
+ },
+ {
+  "id": "m25-m-sanity",
+  "module": "m25",
+  "label": "",
+  "prompt": "A classmate writes: “The 3s orbitals of 100 sodium atoms form 50 molecular orbitals.” What's wrong?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] It should be 200, because each 3s orbital splits into a bonding and an antibonding MO.",
+    "[1] MOs come one per atomic orbital, so 100 3s orbitals give 100 MOs. Fifty is how many of them the 100 electrons fill.",
+    "[2] Nothing: two electrons per MO, so 100 electrons need 50 MOs."
+   ]
+  }
+ },
+ {
+  "id": "x65",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "A trace of antimony (Sb) is added to germanium. What kind of material results?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] an insulator",
+    "[1] a metal, because antimony is a metal",
+    "[2] an n-type semiconductor",
+    "[3] a p-type semiconductor"
+   ]
+  }
+ },
+ {
+  "id": "x66",
+  "module": "mixed",
+  "label": "lecture",
+  "prompt": "Twenty sodium atoms combine all of their valence orbitals, the 3s and the three 3p orbitals of each atom, into molecular orbitals. How many MOs form?",
+  "answer_format": {
+   "type": "numeric"
+  }
+ }
+]

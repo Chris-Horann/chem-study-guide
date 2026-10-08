@@ -1,0 +1,975 @@
+[
+ {
+  "id": "m21-m-recognize",
+  "module": "m21",
+  "label": "lecture",
+  "prompt": "Which pair of molecules has the same molecular geometry but different electron-pair geometries?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] CO<sub>2</sub> and XeF<sub>2</sub>",
+    "[1] H<sub>2</sub>O and H<sub>2</sub>S",
+    "[2] NH<sub>3</sub> and BF<sub>3</sub>",
+    "[3] CH<sub>4</sub> and XeF<sub>4</sub>"
+   ]
+  }
+ },
+ {
+  "id": "m21-m-sanity",
+  "module": "m21",
+  "label": "lecture",
+  "prompt": "A student reports the F–O–F angle in OF<sub>2</sub> as 125°, reasoning that O's two lone pairs push the F atoms apart. Is that reasonable?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Yes: lone pairs repel bonding pairs, so the angle opens past 120°.",
+    "[1] No: OF<sub>2</sub> is linear, 180°.",
+    "[2] No: O has SN 4, so the ideal angle is 109.5°, and lone pairs push the bonding pairs together, making the angle smaller than 109.5°, not larger.",
+    "[3] Yes: F atoms are big, so they need a wide angle."
+   ]
+  }
+ },
+ {
+  "id": "m22-attempt",
+  "module": "m22",
+  "label": "lecture",
+  "prompt": "Phosphorus trichloride, PCl<sub>3</sub>: [drawing: Lewis structure of phosphorus trichloride, PCl₃: P–left Cl single bond, P–right Cl single bond, P–lower Cl single bond, 1 lone pair on P, 3 lone pairs on the left Cl, 3 lone pairs on the right Cl, 3 lone pairs on the lower Cl] (a) Name its molecular geometry. (b) Is the molecule polar or nonpolar? (χ: P 2.1, Cl 3.0; Day 9 p.17)",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] tetrahedral",
+      "[1] T-shaped",
+      "[2] trigonal planar",
+      "[3] trigonal pyramidal"
+     ],
+     "label": "(a) molecular geometry"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] nonpolar",
+      "[1] polar"
+     ],
+     "label": "(b) polar or nonpolar"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m22-p1",
+  "module": "m22",
+  "label": "lecture",
+  "prompt": "Which statement about polar bonds and polar molecules is correct?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] A molecule with polar bonds is nonpolar if its bond dipoles cancel.",
+    "[1] A molecule with polar bonds is always polar.",
+    "[2] A molecule is polar whenever its central atom is less electronegative than its outer atoms.",
+    "[3] Only ionic compounds can be polar."
+   ]
+  }
+ },
+ {
+  "id": "m22-p2",
+  "module": "m22",
+  "label": "lecture",
+  "prompt": "Classify each molecule as polar or nonpolar.",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] BF<sub>3</sub>",
+    "[1] NF<sub>3</sub>",
+    "[2] SF<sub>6</sub>",
+    "[3] OF<sub>2</sub>",
+    "[4] XeF<sub>2</sub>"
+   ],
+   "options": [
+    "polar: polar",
+    "nonpolar: nonpolar"
+   ]
+  }
+ },
+ {
+  "id": "m22-p3",
+  "module": "m22",
+  "label": "lecture",
+  "prompt": "Replace the H atoms of methane with F atoms one at a time. Which of these molecules are polar?",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] CH<sub>4</sub>",
+    "[1] CH<sub>3</sub>F",
+    "[2] CH<sub>2</sub>F<sub>2</sub>",
+    "[3] CHF<sub>3</sub>",
+    "[4] CF<sub>4</sub>"
+   ],
+   "options": [
+    "polar: polar",
+    "nonpolar: nonpolar"
+   ]
+  }
+ },
+ {
+  "id": "m22-p4",
+  "module": "m22",
+  "label": "lecture",
+  "prompt": "Which way does the net dipole point in (a) chloromethane, CH<sub>3</sub>Cl, and (b) difluoromethane, CH<sub>2</sub>F<sub>2</sub>? Both are tetrahedral. (χ: H 2.1, C 2.5, F 4.0, Cl 3.0; Day 9 p.17)",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] toward the Cl atom",
+      "[1] no net dipole: the bond dipoles cancel",
+      "[2] toward the three H atoms"
+     ],
+     "label": "(a) chloromethane"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] no net dipole: the bond dipoles cancel",
+      "[1] toward the F atoms, along the line that bisects the F–C–F angle",
+      "[2] toward the H atoms"
+     ],
+     "label": "(b) difluoromethane"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m22-p5",
+  "module": "m22",
+  "label": "lecture",
+  "prompt": "PCl<sub>5</sub> has five polar P–Cl bonds (Δχ = 0.9), yet it's nonpolar. Why?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The three equatorial dipoles, 120° apart in a plane, cancel one another, and the two axial dipoles point in opposite directions and cancel each other.",
+    "[1] P–Cl bonds are nonpolar.",
+    "[2] The axial dipoles cancel the equatorial ones.",
+    "[3] The lone pairs on the Cl atoms cancel the bond dipoles."
+   ]
+  }
+ },
+ {
+  "id": "m22-p6",
+  "module": "m22",
+  "label": "lecture",
+  "prompt": "Use Table 5.2 (Day 11 p.8) and the course χ values (Day 9 p.17). (a) Which bond is more polar, H–F or O–H? (b) Which molecule has the larger dipole moment, HF or H<sub>2</sub>O? (c) How can both answers be true?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] O–H (Δχ 1.4)",
+      "[1] H–F (Δχ 1.9)"
+     ],
+     "label": "(a) the more polar bond"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] HF (1.82 D)",
+      "[1] H<sub>2</sub>O (1.85 D)"
+     ],
+     "label": "(b) the larger dipole moment"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] Table 5.2 must be wrong, since H–F is the more polar bond.",
+      "[1] A dipole moment belongs to the whole molecule: water's two O–H dipoles add, because the molecule is bent, and its lone pairs contribute too.",
+      "[2] O is more electronegative than F.",
+      "[3] Water's bond dipoles cancel, so its dipole moment comes from something else."
+     ],
+     "label": "(c) why both are true"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m22-p7",
+  "module": "m22",
+  "label": "lecture",
+  "prompt": "Selenium forms SeF<sub>4</sub> (seesaw, one lone pair on Se) and SeF<sub>6</sub> (octahedral, no lone pairs). Both have polar Se–F bonds. Which is polar?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] both",
+    "[1] neither",
+    "[2] SeF<sub>4</sub> only",
+    "[3] SeF<sub>6</sub> only"
+   ]
+  }
+ },
+ {
+  "id": "m22-p8",
+  "module": "m22",
+  "label": "lecture",
+  "prompt": "HF's dipole moment is 1.82 D (Table 5.2, Day 11 p.8). Is the dipole moment of HCl larger or smaller, and why? (χ: H 2.1, F 4.0, Cl 3.0; Day 9 p.17)",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Larger: Cl is a bigger atom, so its charges are farther apart.",
+    "[1] The same: both are polar bonds between H and a halogen.",
+    "[2] Smaller: Cl is less electronegative than F, so the shared pair is pulled less far from H (Δχ 0.9 vs. 1.9).",
+    "[3] Zero: HCl is nonpolar."
+   ]
+  }
+ },
+ {
+  "id": "m22-p9",
+  "module": "m22",
+  "label": "preview",
+  "prompt": "(a) Gaseous HF molecules point every which way until an electric field is switched on between two charged plates; then they line up (textbook Fig. 5.19). How do water molecules line up in the field? (b) Express water's dipole moment, 1.85 D, in coulomb-meters (1 D = 3.34 × 10<sup>−30</sup> C·m).",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] randomly, whether the field is on or off",
+      "[1] not at all: water is neutral overall",
+      "[2] with the H end toward the positive plate",
+      "[3] with the O end toward the positive plate"
+     ],
+     "label": "(a) water in the field"
+    },
+    {
+     "type": "numeric",
+     "unit_hint": "answer carries a unit",
+     "label": "(b) dipole moment"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m22-transfer",
+  "module": "m22",
+  "label": "lecture",
+  "prompt": "SF<sub>6</sub> is nonpolar. In SF<sub>5</sub>Cl one F is replaced by Cl, and S still has no lone pairs. (a) Name the molecular geometry. (b) Is SF<sub>5</sub>Cl polar? (χ: S 2.5, F 4.0, Cl 3.0)",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] octahedral",
+      "[1] seesaw",
+      "[2] square pyramidal",
+      "[3] trigonal bipyramidal"
+     ],
+     "label": "(a) molecular geometry"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] nonpolar",
+      "[1] polar"
+     ],
+     "label": "(b) polar or nonpolar"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m22-m-recognize",
+  "module": "m22",
+  "label": "lecture",
+  "prompt": "Which description guarantees that a molecule's bond dipoles cancel?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The central atom is the least electronegative atom.",
+    "[1] Every bond in the molecule is polar.",
+    "[2] The central atom has at least one lone pair.",
+    "[3] All the outer atoms are the same element, and the central atom has no lone pairs."
+   ]
+  }
+ },
+ {
+  "id": "m22-m-sanity",
+  "module": "m22",
+  "label": "lecture",
+  "prompt": "A student adds Δχ-weighted bond arrows and predicts that CCl<sub>3</sub>F (C–F Δχ 1.5, opposite three C–Cl at 0.5) has a larger dipole moment than CHCl<sub>3</sub>. Table 5.2 says 0.45 D for CCl<sub>3</sub>F and 1.01 D for CHCl<sub>3</sub> (Day 11 p.8). What should the student conclude?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The C–H bond in CHCl<sub>3</sub> is the most polar bond in either molecule.",
+    "[1] Table 5.2 must have the two values switched.",
+    "[2] CCl<sub>3</sub>F is actually nonpolar.",
+    "[3] Δχ arrows predict directions and whether dipoles cancel, not the sizes of molecular dipoles; in CCl<sub>3</sub>F the C–F and C–Cl dipoles point opposite ways and nearly cancel."
+   ]
+  }
+ },
+ {
+  "id": "m23-attempt",
+  "module": "m23",
+  "label": "lecture",
+  "prompt": "Day 11 p.16 builds NH<sub>3</sub> and H<sub>2</sub>O from hybrid orbitals. Do the same for the hydronium ion, H<sub>3</sub>O<sup>+</sup>. [drawing: Lewis structure of hydronium ion, H₃O⁺: O–left H single bond, O–right H single bond, O–lower H single bond, 1 lone pair on O; overall charge 1+] (a) What is the steric number of O? (b) What is O's hybridization? (c) How many electrons does O put into its hybrid orbitals? (d) How many of those hybrids hold a lone pair? (e) Which orbitals overlap head-on to make each O–H σ bond?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) steric number of O"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] sp",
+      "[1] sp<sup>2</sup>",
+      "[2] sp<sup>3</sup>",
+      "[3] none: O bonds with three half-filled 2p orbitals"
+     ],
+     "label": "(b) hybridization of O"
+    },
+    {
+     "type": "numeric",
+     "label": "(c) electrons in O's hybrids"
+    },
+    {
+     "type": "numeric",
+     "label": "(d) hybrids holding a lone pair"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] an O sp<sup>3</sup> hybrid and an H sp<sup>3</sup> hybrid",
+      "[1] an O sp<sup>3</sup> hybrid holding a lone pair and an H 1s orbital",
+      "[2] an O sp<sup>3</sup> hybrid and an H 1s orbital",
+      "[3] an O 2p orbital and an H 1s orbital"
+     ],
+     "label": "(e) each O–H σ bond is the overlap of"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m23-p1",
+  "module": "m23",
+  "label": "lecture",
+  "prompt": "Day 11 p.10 introduces the σ bond, and p.15 builds methane from four of them. (a) Which description fits a σ bond? (b) In CH<sub>4</sub>, which orbitals overlap to make each C–H σ bond?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] a covalent bond with its highest electron density between the two atoms, along the bond axis",
+      "[1] a covalent bond with its electron density greatest above and below the bond axis",
+      "[2] a bond in which one atom gives an electron to the other",
+      "[3] a bond that only two H atoms can form"
+     ],
+     "label": "(a) a σ bond is"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] a C 2p orbital and an H 1s orbital, for all four bonds",
+      "[1] a C 2s orbital for one bond and C 2p orbitals for the other three",
+      "[2] a C sp<sup>3</sup> hybrid and an H sp<sup>3</sup> hybrid",
+      "[3] a C sp<sup>3</sup> hybrid and an H 1s orbital"
+     ],
+     "label": "(b) each C–H bond in CH<sub>4</sub> is the overlap of"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m23-p2",
+  "module": "m23",
+  "label": "lecture",
+  "prompt": "A second-period atom has a steric number of 3. (a) How many hybrid orbitals does it form? (b) How many of its 2p orbitals are left unhybridized?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) hybrid orbitals"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) unhybridized 2p orbitals"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m23-p3",
+  "module": "m23",
+  "label": "lecture",
+  "prompt": "Day 11 p.11: “Methane only has two unpaired electrons, so how can it make four sigma bonds? One suggestion is that it could promote an electron from 2s to 2p, producing four unpaired electrons. But that's not what methane looks like!” What's wrong with the promotion picture?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Promotion would turn carbon into an ion.",
+    "[1] Its four unpaired electrons would sit in one 2s and three 2p orbitals, so the four C–H bonds wouldn't all be alike, and three of them would be 90° apart. Methane has four equivalent bonds pointing to the corners of a tetrahedron.",
+    "[2] Promoting an electron takes energy, so it can't happen.",
+    "[3] Carbon's ground state already has four unpaired electrons, so no promotion is needed."
+   ]
+  }
+ },
+ {
+  "id": "m23-p4",
+  "module": "m23",
+  "label": "lecture",
+  "prompt": "Which statement breaks one of the rules on Day 11 p.20?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Each H in CH<sub>4</sub> uses its 1s orbital to make its σ bond.",
+    "[1] An atom with SN 3 combines three atomic orbitals into three hybrid orbitals.",
+    "[2] A σ bond forms by head-on overlap of hybrid orbitals.",
+    "[3] The lone pair on N in NH<sub>3</sub> sits in an unhybridized 2p orbital."
+   ]
+  }
+ },
+ {
+  "id": "m23-p5",
+  "module": "m23",
+  "label": "lecture",
+  "prompt": "Day 11 p.16 also hybridizes the O atom in water, H<sub>2</sub>O. (a) What is O's steric number? (b) How many of O's sp<sup>3</sup> hybrids hold a lone pair? (c) How many hold one electron, ready to form a σ bond? (d) How many electrons are in O's four sp<sup>3</sup> hybrids altogether?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) steric number of O"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) hybrids with a lone pair"
+    },
+    {
+     "type": "numeric",
+     "label": "(c) hybrids with one electron"
+    },
+    {
+     "type": "numeric",
+     "label": "(d) electrons in the four hybrids"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m23-p6",
+  "module": "m23",
+  "label": "lecture",
+  "prompt": "Give the hybridization of the central atom in each species. All of them have only single bonds, so count bonded atoms plus lone pairs.",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] CH<sub>4</sub>",
+    "[1] NH<sub>4</sub><sup>+</sup>",
+    "[2] NF<sub>3</sub>",
+    "[3] PCl<sub>3</sub>",
+    "[4] BF<sub>3</sub>",
+    "[5] BeCl<sub>2</sub>"
+   ],
+   "options": [
+    "sp: sp",
+    "sp2: sp²",
+    "sp3: sp³"
+   ]
+  }
+ },
+ {
+  "id": "m23-p7",
+  "module": "m23",
+  "label": "lecture",
+  "prompt": "A double or triple bond counts as one electron domain: CO<sub>2</sub>, with two double bonds, has SN 2 (Day 10 p.10). Give the hybridization of each atom. Four of them sit in ions from the polyatomic-ion table (Day 8 p.8); for an ion with resonance structures, any one of its structures gives the count.",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] the C in CS<sub>2</sub>",
+    "[1] the N in NO<sub>3</sub><sup>−</sup>",
+    "[2] the C in SCN<sup>−</sup>",
+    "[3] the S in SO<sub>3</sub><sup>2−</sup>",
+    "[4] the O in HOCl",
+    "[5] the C in CO<sub>3</sub><sup>2−</sup>",
+    "[6] the O in CH<sub>2</sub>O"
+   ],
+   "options": [
+    "sp: sp",
+    "sp2: sp²",
+    "sp3: sp³"
+   ]
+  }
+ },
+ {
+  "id": "m23-p8",
+  "module": "m23",
+  "label": "lecture",
+  "prompt": "Each central atom here has no lone pairs, so its bond angles are the angles between its hybrid orbitals. Work out each atom's hybridization, then match each angle.",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] the S–C–S angle in CS<sub>2</sub>",
+    "[1] the O–C–O angle in CO<sub>3</sub><sup>2−</sup>",
+    "[2] the H–N–H angle in NH<sub>4</sub><sup>+</sup>",
+    "[3] the angle between the two unhybridized p orbitals on the C of CS<sub>2</sub>"
+   ],
+   "options": [
+    "a180: 180°",
+    "a120: 120°",
+    "a109: 109.5°",
+    "a90: 90°"
+   ]
+  }
+ },
+ {
+  "id": "m23-p9",
+  "module": "m23",
+  "label": "preview",
+  "prompt": "The textbook compares the energies of different hybrid orbitals on the same atom. Which is lower in energy, an sp<sup>2</sup> or an sp<sup>3</sup> hybrid, and why?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] sp<sup>2</sup>, because sp<sup>2</sup> hybrids hold more lone pairs",
+    "[1] sp<sup>2</sup>, because only two p orbitals are mixed with the s orbital",
+    "[2] sp<sup>3</sup>, because more orbitals are mixed",
+    "[3] Neither: both are averages of the same 2s and 2p orbitals, so their energies are equal"
+   ]
+  }
+ },
+ {
+  "id": "m23-transfer",
+  "module": "m23",
+  "label": "lecture",
+  "prompt": "Carbon has two common solid forms. In diamond , every C atom is bonded to four other C atoms that sit at the corners of a tetrahedron around it. In graphite , every C atom is bonded to three other C atoms in a flat sheet of hexagons. (a) What is the hybridization of C in diamond? (b) In graphite? (c) What C–C–C angle do you predict within a graphite sheet? (d) How many of each graphite C atom's four valence electrons are left in an unhybridized p orbital?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] sp",
+      "[1] sp<sup>2</sup>",
+      "[2] sp<sup>3</sup>"
+     ],
+     "label": "(a) C in diamond"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] sp",
+      "[1] sp<sup>2</sup>",
+      "[2] sp<sup>3</sup>"
+     ],
+     "label": "(b) C in graphite"
+    },
+    {
+     "type": "numeric",
+     "unit_hint": "answer carries a unit",
+     "label": "(c) C–C–C angle in a sheet"
+    },
+    {
+     "type": "numeric",
+     "label": "(d) electrons left in the unhybridized p orbital"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m23-m-recognize",
+  "module": "m23",
+  "label": "lecture",
+  "prompt": "Which clue tells you that an atom is sp<sup>2</sup> hybridized?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] It has exactly three electron domains (SN 3): bonded atoms plus lone pairs, with a double bond counting once.",
+    "[1] It has a double bond.",
+    "[2] It's bonded to three atoms.",
+    "[3] It has one lone pair."
+   ]
+  }
+ },
+ {
+  "id": "m23-m-sanity",
+  "module": "m23",
+  "label": "lecture",
+  "prompt": "Day 11 p.24's Table 5.3 lists, for sp<sup>3</sup> with 3 σ bonds, the molecular geometry “Trigonal planar” with angles “&lt;109.5°”. A classmate concludes from it that NH<sub>3</sub> is flat. What's right?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] NH<sub>3</sub> is tetrahedral.",
+    "[1] NH<sub>3</sub> is bent.",
+    "[2] NH<sub>3</sub> is trigonal pyramidal: with sp<sup>3</sup> N, the three H atoms sit on three corners of a tetrahedron and the lone pair on the fourth. That row's label disagrees with Day 10 p.18 and p.26 and with the textbook's own Table 5.3.",
+    "[3] NH<sub>3</sub> is trigonal planar, as the table says."
+   ]
+  }
+ },
+ {
+  "id": "m24-attempt",
+  "module": "m24",
+  "label": "lecture",
+  "prompt": "Methanimine, H<sub>2</sub>C=NH, is formaldehyde with an N–H in place of the O. Work out its bonding the way the lecture works formaldehyde (Day 11 p.17–19). [drawing: Lewis structure of methanimine, H₂C=NH: C–N double bond, C–upper left H single bond, C–lower left H single bond, N–lower right H single bond, 1 lone pair on N] (a) How many σ bonds does it have? (b) How many π bonds? (c) What is the hybridization of the C? (d) Of the N? (e) Which orbitals form the π bond?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) σ bonds"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) π bonds"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] sp",
+      "[1] sp<sup>2</sup>",
+      "[2] sp<sup>3</sup>"
+     ],
+     "label": "(c) hybridization of the C"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] sp",
+      "[1] sp<sup>2</sup>",
+      "[2] sp<sup>3</sup>"
+     ],
+     "label": "(d) hybridization of the N"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] overlap of N's lone-pair hybrid with the C",
+      "[1] side-to-side overlap of two sp<sup>2</sup> hybrids",
+      "[2] side-to-side overlap of the unhybridized 2p orbitals on C and N",
+      "[3] head-on overlap of an sp<sup>2</sup> hybrid on C with one on N"
+     ],
+     "label": "(e) the π bond forms from"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m24-p1",
+  "module": "m24",
+  "label": "lecture",
+  "prompt": "Which description fits a π bond (Day 11 p.17)?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] A covalent bond with its electron density greatest above and below the bonding axis",
+    "[1] A covalent bond with its highest electron density between the two atoms, along the bond axis",
+    "[2] Two bonds, one above and one below the bond axis",
+    "[3] A bond formed by head-on overlap of two hybrid orbitals"
+   ]
+  }
+ },
+ {
+  "id": "m24-p2",
+  "module": "m24",
+  "label": "lecture",
+  "prompt": "Acetylene, H–C≡C–H (Day 11 p.23). (a) How many σ bonds? (b) How many π bonds? (c) What is the hybridization of each C?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) σ bonds"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) π bonds"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] sp",
+      "[1] sp<sup>2</sup>",
+      "[2] sp<sup>3</sup>"
+     ],
+     "label": "(c) hybridization of each C"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m24-p3",
+  "module": "m24",
+  "label": "lecture",
+  "prompt": "Diazene, N<sub>2</sub>H<sub>2</sub> (Day 11 p.22): [drawing: Lewis structure of diazene, N₂H₂: left N–right N double bond, left N–upper left H single bond, right N–lower right H single bond, 1 lone pair on the left N, 1 lone pair on the right N] (a) What is the hybridization of each N? (b) Which orbital holds each N's lone pair?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "choice",
+     "options": [
+      "[0] sp",
+      "[1] sp<sup>2</sup>",
+      "[2] sp<sup>3</sup>"
+     ],
+     "label": "(a) hybridization of each N"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] the unhybridized 2p orbital",
+      "[1] the 2s orbital",
+      "[2] an sp<sup>3</sup> hybrid orbital",
+      "[3] an sp<sup>2</sup> hybrid orbital"
+     ],
+     "label": "(b) each N's lone pair is in"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m24-p4",
+  "module": "m24",
+  "label": "lecture",
+  "prompt": "Count the σ and π bonds in each molecule. N<sub>2</sub>O is drawn as the structure that formal charge favors (the Day 9 p.19–24 example). [drawing: Lewis structure of dinitrogen monoxide, N₂O (structure A): left N–central N triple bond, central N–O single bond, 1 lone pair on the left N, 3 lone pairs on O][drawing: Lewis structure of formic acid, HCOOH: C–upper H single bond, C–left O double bond, C–right O single bond, right O–right H single bond, 2 lone pairs on the left O, 2 lone pairs on the right O][drawing: Lewis structure of hydrazine, N₂H₄: left N–right N single bond, left N–upper left H single bond, left N–lower left H single bond, right N–upper right H single bond, right N–lower right H single bond, 1 lone pair on the left N, 1 lone pair on the right N]",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "N<sub>2</sub>O: σ bonds"
+    },
+    {
+     "type": "numeric",
+     "label": "N<sub>2</sub>O: π bonds"
+    },
+    {
+     "type": "numeric",
+     "label": "HCOOH: σ bonds"
+    },
+    {
+     "type": "numeric",
+     "label": "HCOOH: π bonds"
+    },
+    {
+     "type": "numeric",
+     "label": "N<sub>2</sub>H<sub>4</sub>: σ bonds"
+    },
+    {
+     "type": "numeric",
+     "label": "N<sub>2</sub>H<sub>4</sub>: π bonds"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m24-p5",
+  "module": "m24",
+  "label": "lecture",
+  "prompt": "Day 11 p.26 shows acrolein and benzene without comment. Count their σ and π bonds (for benzene, use either structure with alternating double bonds). [drawing: Lewis structure of acrolein, CH₂=CH–CH=O: lower left C–left C double bond, left C–lower right C single bond, lower right C–O double bond, lower left C–upper left H single bond, lower left C–lower left H single bond, left C–upper left H single bond, lower right C–lower right H single bond, 2 lone pairs on O][drawing: Lewis structure of benzene, C₆H₆: a ring of six C atoms with alternating single and double bonds, one H bonded to each C]",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "acrolein: σ bonds"
+    },
+    {
+     "type": "numeric",
+     "label": "acrolein: π bonds"
+    },
+    {
+     "type": "numeric",
+     "label": "benzene: σ bonds"
+    },
+    {
+     "type": "numeric",
+     "label": "benzene: π bonds"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m24-p6",
+  "module": "m24",
+  "label": "lecture",
+  "prompt": "A molecule with several “central” atoms: give each atom's hybridization, one atom at a time. [drawing: Lewis structure of acetonitrile, CH₃CN: left C–upper left H single bond, left C–left H single bond, left C–lower left H single bond, left C–middle C single bond, middle C–N triple bond, 1 lone pair on N][drawing: Lewis structure of formic acid, HCOOH: C–upper H single bond, C–left O double bond, C–right O single bond, right O–right H single bond, 2 lone pairs on the left O, 2 lone pairs on the right O][drawing: Lewis structure of allene (propadiene), H₂C=C=CH₂: left C–middle C double bond, middle C–right C double bond, left C–upper left H single bond, left C–lower left H single bond, right C–upper right H single bond, right C–lower right H single bond]",
+  "answer_format": {
+   "type": "match",
+   "rows": [
+    "[0] CH<sub>3</sub>CN: the CH<sub>3</sub> carbon",
+    "[1] CH<sub>3</sub>CN: the carbon bonded to N",
+    "[2] CH<sub>3</sub>CN: the N",
+    "[3] HCOOH: the C",
+    "[4] HCOOH: the O double-bonded to C",
+    "[5] allene, H<sub>2</sub>C=C=CH<sub>2</sub>: an end carbon",
+    "[6] allene: the middle carbon"
+   ],
+   "options": [
+    "sp: sp",
+    "sp2: sp²",
+    "sp3: sp³"
+   ]
+  }
+ },
+ {
+  "id": "m24-p7",
+  "module": "m24",
+  "label": "lecture",
+  "prompt": "Which atoms of ethylene, H<sub>2</sub>C=CH<sub>2</sub>, lie in one plane?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] None: each carbon is tetrahedral",
+    "[1] All six atoms",
+    "[2] Only the two C atoms; the H atoms point above and below them",
+    "[3] The two C atoms and two of the H atoms; the other CH<sub>2</sub> group is twisted 90°"
+   ]
+  }
+ },
+ {
+  "id": "m24-p8",
+  "module": "m24",
+  "label": "preview",
+  "prompt": "Allene, H<sub>2</sub>C=C=CH<sub>2</sub>, has an sp middle carbon that makes a π bond to each end carbon. The textbook's CO<sub>2</sub> example shows that the two π bonds of an sp atom lie at 90° to each other (Sample Ex. 5.5, PDF p.252). What does that mean for allene's two CH<sub>2</sub> groups? [drawing: Lewis structure of allene (propadiene), H₂C=C=CH₂: left C–middle C double bond, middle C–right C double bond, left C–upper left H single bond, left C–lower left H single bond, right C–upper right H single bond, right C–lower right H single bond]",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] They lie in the same plane, like the two CH<sub>2</sub> halves of ethylene.",
+    "[1] Each CH<sub>2</sub> group can turn freely, so their planes keep changing.",
+    "[2] They're at 120° to each other, like the bonds around an sp<sup>2</sup> carbon.",
+    "[3] They lie in perpendicular planes: each CH<sub>2</sub> plane is perpendicular to the p orbital its π bond uses, and those two p orbitals on the middle carbon are 90° apart."
+   ]
+  }
+ },
+ {
+  "id": "m24-p9",
+  "module": "m24",
+  "label": "preview",
+  "prompt": "The textbook defines conjugation as “alternating single and multiple bonds in molecular compounds in which adjacent atoms have unhybridized p orbitals,” and says that the π electrons in such molecules are delocalized (PDF p.254). Over how many carbon atoms can the π electrons spread in each of these chains?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) CH<sub>2</sub>=CH–CH=CH–CH<sub>3</sub>"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) CH<sub>2</sub>=CH–CH<sub>2</sub>–CH=CH<sub>2</sub>"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m24-transfer",
+  "module": "m24",
+  "label": "lecture",
+  "prompt": "Methyl isocyanate, CH<sub>3</sub>–N=C=O, has three “central” atoms in a row. [drawing: Lewis structure of methyl isocyanate, CH₃–N=C=O: lower left C–N single bond, N–right C double bond, right C–O double bond, lower left C–left H single bond, lower left C–lower left H single bond, lower left C–lower left H single bond, 1 lone pair on N, 2 lone pairs on O] (a) How many σ bonds does it have? (b) How many π bonds? (c) What is the hybridization of the N? (d) Of the C bonded to O? (e) What N=C=O bond angle do you predict?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) σ bonds"
+    },
+    {
+     "type": "numeric",
+     "label": "(b) π bonds"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] sp",
+      "[1] sp<sup>2</sup>",
+      "[2] sp<sup>3</sup>"
+     ],
+     "label": "(c) the N"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] sp",
+      "[1] sp<sup>2</sup>",
+      "[2] sp<sup>3</sup>"
+     ],
+     "label": "(d) the C bonded to O"
+    },
+    {
+     "type": "numeric",
+     "unit_hint": "answer carries a unit",
+     "label": "(e) N=C=O angle"
+    }
+   ]
+  }
+ },
+ {
+  "id": "m24-m-recognize",
+  "module": "m24",
+  "label": "lecture",
+  "prompt": "Which atom cannot take part in a π bond?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] The O of CH<sub>2</sub>O",
+    "[1] The CH<sub>3</sub> carbon of CH<sub>3</sub>CN",
+    "[2] The N of CH<sub>3</sub>CN",
+    "[3] The C of CH<sub>2</sub>O"
+   ]
+  }
+ },
+ {
+  "id": "m24-m-sanity",
+  "module": "m24",
+  "label": "lecture",
+  "prompt": "A classmate says the triple bond in carbon monoxide, C≡O, is three σ bonds, all along the C–O axis. What's wrong with that? [drawing: Lewis structure of carbon monoxide, CO: C–O triple bond, 1 lone pair on C, 1 lone pair on O]",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Only one pair of orbitals can overlap head-on along the axis between two atoms. The other two shared pairs come from side-to-side overlap of unhybridized p orbitals: one σ + two π.",
+    "[1] Nothing: three shared pairs are three σ bonds.",
+    "[2] It's three π bonds.",
+    "[3] CO has a double bond, not a triple bond."
+   ]
+  }
+ },
+ {
+  "id": "t5-6-attempt",
+  "module": "t5-6",
+  "label": "preview",
+  "prompt": "2-Butanol, CH<sub>3</sub>CH(OH)CH<sub>2</sub>CH<sub>3</sub>, is a chain of four carbon atoms with an OH group on the second carbon. (a) How many stereocenters (chiral carbon atoms) does it have? (b) Is 2-butanol chiral?",
+  "answer_format": {
+   "type": "multi",
+   "parts": [
+    {
+     "type": "numeric",
+     "label": "(a) stereocenters"
+    },
+    {
+     "type": "choice",
+     "options": [
+      "[0] yes",
+      "[1] no"
+     ],
+     "label": "(b) chiral?"
+    }
+   ]
+  }
+ },
+ {
+  "id": "t5-6-p1",
+  "module": "t5-6",
+  "label": "lecture",
+  "prompt": "On Day 10 p.6, the professor's example of chiral molecules is “R(−) and S(+) carvone”: one smells of spearmint, the other of caraway. What is different about the two molecules?",
+  "answer_format": {
+   "type": "choice",
+   "options": [
+    "[0] Only the 3-D arrangement of the groups at one carbon (the circled one); the formula and the bonds are the same.",
+    "[1] Their molecular formulas.",
+    "[2] Which atoms are bonded to which.",
+    "[3] One has a C=O double bond and the other doesn't."
+   ]
+  }
+ }
+]

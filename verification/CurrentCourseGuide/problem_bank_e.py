@@ -1,4 +1,5 @@
-"""Problem bank E: Chapter 3–4 TEXTBOOK-PREVIEW modules (t3-5 Heisenberg, t3-11 PES, t4-2 electronegativity),
+"""Problem bank E: Chapter 3–4 TEXTBOOK-PREVIEW modules (t3-5 Heisenberg, t3-11 PES; t4-2 electronegativity, taught on
+Day 9 and relabeled lecture on 2026-10-06),
 preview items inside lecture modules (m3, m10, m14), and mixed-review problems x21–x35."""
 import math
 from guide_common import *
@@ -220,86 +221,94 @@ P(id="t3-11-m-sanity", module="t3-11", kind="mastery", level="Sanity check",
   solution="<p>One s orbital holds at most 2 electrons (Day 5 p.15), so the maximum height for an s peak is 2.</p>", source=tb("3.11", 163) + "; Day 5 p.15")
 
 # =====================================================================================
-# t4-2 Electronegativity, unequal sharing, polar bonds (§4.2, TB PDF p.185–188)
+# t4-2 Electronegativity and polar bonds (lecture: Day 9 p.15–18, Day 10 p.27; textbook §4.2, TB PDF p.185–188)
+# Relabeled 2026-10-06: Day 9 teaches χ, Δχ, and the cutoffs; only the χ–IE₁ comparison (m-explain) stays preview.
 # =====================================================================================
 EN = ELECTRONEGATIVITY
 def dchi(a, b):
     return round(abs(EN[a] - EN[b]), 2)
 
-P(id="t4-2-attempt", module="t4-2", kind="attempt", level="Guided attempt",
-  prompt="<p>Consider the H–F bond (χ: H 2.1, F 4.0; textbook Fig. 4.5). (a) What is Δχ? (b) Classify the bond. (c) Which atom carries the partial negative charge (δ−)?</p>",
-  answer={"type": "multi", "parts": [
-      {"label": "(a) Δχ", **num_ans(dchi("H", "F"), sf=2, tol=0.001)},
-      {"label": "(b) bond type", **choice(("nonpolar covalent", False, "Δχ is well above 0.4."), ("polar covalent", True, "0.4 < 1.9 < 2.0."), ("ionic", False, "Δχ must be at least 2.0 for ionic, by the textbook's guideline."))},
-      {"label": "(c) δ− atom", **choice(("H", False, "H is less electronegative."), ("F", True, "The more electronegative atom pulls the shared pair toward itself."))}]},
-  hints=["Electronegativity is an atom's pull on the shared electrons in a bond (textbook §4.2).",
-         "Δχ = |4.0 − 2.1|.",
-         "Guidelines: Δχ ≤ 0.4 nonpolar covalent; between 0.4 and 2.0 polar covalent; ≥ 2.0 ionic.",
-         "The shared pair sits closer to the higher-χ atom, which becomes δ−."],
-  solution=f"<p>(a) Δχ = 4.0 − 2.1 = <strong>{dchi('H', 'F')}</strong>. (b) <strong>Polar covalent</strong> (0.4 < 1.9 < 2.0). (c) <strong>F</strong> is δ− and H is δ+: H<sup>δ+</sup>–F<sup>δ−</sup>, with the crossed arrow pointing toward F.</p>",
-  compare={"wrong": "<p>“Δχ = 1.9 is almost 2, so H–F is ionic, with H<sup>+</sup> and F<sup>−</sup>.”</p>",
-           "tempting": "1.9 is close to the cutoff, and F is famously “electron-hungry.”",
-           "fails": "Below 2.0 the textbook calls the bond polar covalent: the pair is shared unequally, not transferred, so there are partial charges (δ+, δ−), not full ones. The cutoffs are “more like guidelines than strict limits.”"},
-  source=tb("4.2", 186, 187))
+add(id="t4-2-attempt", module="t4-2", kind="attempt", level="Guided attempt",
+    prompt="<p>Consider the H–F bond (χ: H 2.1, F 4.0; Day 9 p.17). (a) What is Δχ? (b) Classify the bond. (c) Which atom carries the partial negative charge (δ−)?</p>",
+    answer={"type": "multi", "parts": [
+        {"label": "(a) Δχ", **num_ans(dchi("H", "F"), sf=2, tol=0.001)},
+        {"label": "(b) bond type", **choice(("nonpolar covalent", False, "Δχ is well above 0.4."), ("polar covalent", True, "0.4 &lt; 1.9 &lt; 2.0."),
+                                             ("ionic", False, "Ionic starts at Δχ ≥ 2.0 on the slide's scale (Day 9 p.18)."))},
+        {"label": "(c) δ− atom", **choice(("H", False, "H is less electronegative."),
+                                          ("F", True, "The more electronegative atom has more of the electron density, so it's the δ− end."))}]},
+    hints=["Electronegativity, χ, is the course's way “to describe the polarity of bonds” (Day 9 p.17): in a polar bond, “one of the atoms has more of the electron density” (Day 9 p.15).",
+           "Δχ = |4.0 − 2.1|.",
+           "The slide's cutoffs (Day 9 p.18): Δχ ≤ 0.4 nonpolar covalent; 0.4 &lt; Δχ &lt; 2.0 polar covalent; Δχ ≥ 2.0 ionic.",
+           "The shared pair sits closer to the higher-χ atom, which becomes δ−: the battery's − end on Day 9 p.15."],
+    solution=f"<p>(a) Δχ = 4.0 − 2.1 = <strong>{dchi('H', 'F')}</strong>. (b) <strong>Polar covalent</strong> (0.4 &lt; 1.9 &lt; 2.0). (c) <strong>F</strong> is δ− and H is δ+: H<sup>δ+</sup>–F<sup>δ−</sup>, "
+             "with the crossed arrow's + tail at H and its head at F, as for H–Cl on Day 9 p.15.</p>",
+    compare={"wrong": "<p>“Δχ = 1.9 is almost 2, so H–F is ionic, with H<sup>+</sup> and F<sup>−</sup>.”</p>",
+             "tempting": "1.9 is close to the cutoff, and F is famously “electron-hungry.”",
+             "fails": "On the slide's scale ionic starts at Δχ ≥ 2.0 (Day 9 p.18), so 1.9 is polar covalent: the pair is shared unequally, not transferred. That gives partial charges (δ+, δ−), "
+                      "like HCl's potential map, not full charges like NaCl's (Day 9 p.16). The textbook adds that the cutoffs are “more like guidelines than strict limits” (PDF p.186): a value this close to 2.0 means a very polar bond."},
+    source="Day 9 p.15–18; " + tb("4.2", 186, 187))
 
-P(id="t4-2-p1", module="t4-2", kind="practice", level="Standard",
-  prompt="<p>Rank these bonds from most polar (1) to least polar (4): C–H, N–H, O–H, F–H.</p>",
-  answer=order_ans([("CH", "C–H"), ("NH", "N–H"), ("OH", "O–H"), ("FH", "F–H")], ["FH", "OH", "NH", "CH"], "most polar (1) to least polar (4)"),
-  hints=["Compute Δχ for each bond with H (2.1).", "C 2.5, N 3.0, O 3.5, F 4.0."],
-  solution=f"<p>Δχ: F–H {dchi('F', 'H')} > O–H {dchi('O', 'H')} > N–H {dchi('N', 'H')} > C–H {dchi('C', 'H')}. So <strong>F–H > O–H > N–H > C–H</strong>. (C–H, at 0.4, counts as essentially nonpolar.)</p>",
-  source=tb("4.2", 186, 187))
+add(id="t4-2-p1", module="t4-2", kind="practice", level="Standard",
+    prompt="<p>Rank these bonds from most polar (1) to least polar (4): C–H, N–H, O–H, F–H.</p>",
+    answer=order_ans([("CH", "C–H"), ("NH", "N–H"), ("OH", "O–H"), ("FH", "F–H")], ["FH", "OH", "NH", "CH"], "most polar (1) to least polar (4)"),
+    hints=["Compute Δχ for each bond with H (2.1), using the course's table (Day 9 p.17).", "C 2.5, N 3.0, O 3.5, F 4.0."],
+    solution=f"<p>Δχ: F–H {dchi('F', 'H')} > O–H {dchi('O', 'H')} > N–H {dchi('N', 'H')} > C–H {dchi('C', 'H')}. So <strong>F–H > O–H > N–H > C–H</strong>. "
+             "(C–H, at 0.4, is nonpolar covalent on the slide's scale, which puts Δχ ≤ 0.4 in that class, Day 9 p.18.)</p>",
+    source="Day 9 p.17–18; " + tb("4.2", 186, 187))
 
 pairs = [("Cl", "Cl"), ("C", "O"), ("K", "Cl"), ("P", "H")]
 cls = {"nonpolar covalent": "np", "polar covalent": "pc", "ionic": "io"}
-P(id="t4-2-p2", module="t4-2", kind="practice", level="Standard",
-  prompt="<p>Classify each bond using Δχ and the textbook's guidelines.</p>",
-  answer={"type": "match",
-          "rows": [{"html": f"{a}–{b}", "answer": cls[bond_class(dchi(a, b))]} for a, b in pairs],
-          "options": [{"key": "np", "html": "nonpolar covalent"}, {"key": "pc", "html": "polar covalent"}, {"key": "io", "html": "ionic"}]},
-  hints=["Δχ for each pair from Fig. 4.5.", "Cl–Cl 0; C–O 1.0; K–Cl 2.2; P–H 0."],
-  solution="<p>" + "; ".join(f"{a}–{b}: Δχ = {dchi(a, b)} → <strong>{bond_class(dchi(a, b))}</strong>" for a, b in pairs) + ". P–H is a reminder that Δχ, not the element types, decides.</p>",
-  source=tb("4.2", 186, 187))
+add(id="t4-2-p2", module="t4-2", kind="practice", level="Standard",
+    prompt="<p>Classify each bond using Δχ and the slide's cutoffs (Day 9 p.18).</p>",
+    answer={"type": "match",
+            "rows": [{"html": f"{a}–{b}", "answer": cls[bond_class(dchi(a, b))]} for a, b in pairs],
+            "options": [{"key": "np", "html": "nonpolar covalent"}, {"key": "pc", "html": "polar covalent"}, {"key": "io", "html": "ionic"}]},
+    hints=["Δχ for each pair from the course's table (Day 9 p.17).", "Cl–Cl 0; C–O 1.0; K–Cl 2.2; P–H 0."],
+    solution="<p>" + "; ".join(f"{a}–{b}: Δχ = {dchi(a, b)} → <strong>{bond_class(dchi(a, b))}</strong>" for a, b in pairs) + ". P–H is a reminder that Δχ, not the element types, decides.</p>",
+    source="Day 9 p.17–18; " + tb("4.2", 186, 187))
 
-P(id="t4-2-p3", module="t4-2", kind="practice", level="Warm-up",
-  prompt="<p>Which element is the most electronegative?</p>",
-  answer=choice(("N", False, "3.0"), ("P", False, "2.1"), ("O", True, "Right: 3.5, the highest of the four."), ("S", False, "2.5")),
-  hints=["χ rises across a row and falls down a group."],
-  solution="<p><strong>O</strong> (3.5): upper right, next to F.</p>", source=tb("4.2", 186, 187))
+add(id="t4-2-p3", module="t4-2", kind="practice", level="Warm-up",
+    prompt="<p>Which element is the most electronegative?</p>",
+    answer=choice(("N", False, "3.0"), ("P", False, "2.1"), ("O", True, "Right: 3.5, the highest of the four."), ("S", False, "2.5")),
+    hints=["Look them up on the course's table (Day 9 p.17): the tallest bars are at the upper right, next to F."],
+    solution="<p><strong>O</strong> (3.5): upper right, next to F (Day 9 p.17).</p>", source="Day 9 p.17; " + tb("4.2", 186, 187))
 
-P(id="t4-2-p4", module="t4-2", kind="practice", level="Standard",
-  prompt="<p>In a C–Cl bond, which atom is δ+?</p>",
-  answer=choice(("C", True, "Right: C 2.5 < Cl 3.0, so the shared pair shifts toward Cl."), ("Cl", False, "Cl is more electronegative, so it's δ−."), ("neither", False, "Δχ = 0.5 is polar."), ("both", False, "One end is + and the other −.")),
-  hints=["The less electronegative atom loses some of its share of the electrons."],
-  solution="<p><strong>C</strong> is δ+ and Cl is δ−: C<sup>δ+</sup>–Cl<sup>δ−</sup> (Δχ = 0.5).</p>", source=tb("4.2", 186, 187))
+add(id="t4-2-p4", module="t4-2", kind="practice", level="Standard",
+    prompt="<p>In a C–Cl bond, which atom is δ+?</p>",
+    answer=choice(("C", True, "Right: C 2.5 &lt; Cl 3.0, so the shared pair shifts toward Cl."), ("Cl", False, "Cl is more electronegative, so it's δ−."),
+                  ("neither", False, "Δχ = 0.5 is polar (0.4 &lt; Δχ &lt; 2.0)."), ("both", False, "One end is + and the other −, like a battery's two terminals (Day 9 p.15).")),
+    hints=["The less electronegative atom ends up with less of the electron density (Day 9 p.15)."],
+    solution="<p><strong>C</strong> is δ+ and Cl is δ−: C<sup>δ+</sup>–Cl<sup>δ−</sup> (Δχ = 0.5).</p>", source="Day 9 p.15, p.17–18; " + tb("4.2", 186, 187))
 
-P(id="t4-2-transfer", module="t4-2", kind="transfer", level="Transfer",
-  prompt="<p><span class='tag-conn'>Connects to Module 14</span> Calculate Δχ for Mg and O. Is that consistent with the lattice energy of MgO on Day 7 p.17?</p>",
-  answer={"type": "multi", "parts": [
-      {"label": "Δχ", **num_ans(dchi("Mg", "O"), sf=2, tol=0.001)},
-      {"label": "consistent?", **choice(("Yes: Δχ ≥ 2.0 means ionic, and MgO has a large (very negative) lattice energy.", True, "Right."),
-                                        ("No: MgO should be covalent.", False, "Δχ = 2.3 is above the ionic guideline."))}]},
-  hints=["χ(Mg) = 1.2, χ(O) = 3.5.", "Compare with 2.0."],
-  solution=f"<p>Δχ = 3.5 − 1.2 = <strong>{dchi('Mg', 'O')}</strong> ≥ 2.0 → ionic, matching the Mg<sup>2+</sup>O<sup>2−</sup> lattice with U = −3791 kJ/mol (Day 7 p.17, covered in lecture).</p>",
-  source=tb("4.2", 186, 187) + "; Day 7 p.17")
+add(id="t4-2-transfer", module="t4-2", kind="transfer", level="Transfer",
+    prompt="<p><span class='tag-conn'>Connects to Module 14</span> Calculate Δχ for Mg and O. Is that consistent with the lattice energy of MgO on Day 7 p.17?</p>",
+    answer={"type": "multi", "parts": [
+        {"label": "Δχ", **num_ans(dchi("Mg", "O"), sf=2, tol=0.001)},
+        {"label": "consistent?", **choice(("Yes: Δχ ≥ 2.0 means ionic, and MgO has a large (very negative) lattice energy.", True, "Right."),
+                                          ("No: MgO should be covalent.", False, "Δχ = 2.3 is above the ionic cutoff, Δχ ≥ 2.0 (Day 9 p.18)."))}]},
+    hints=["χ(Mg) = 1.2, χ(O) = 3.5 (Day 9 p.17).", "Compare with 2.0."],
+    solution=f"<p>Δχ = 3.5 − 1.2 = <strong>{dchi('Mg', 'O')}</strong> ≥ 2.0 → ionic on the slide's scale (Day 9 p.18), matching the Mg<sup>2+</sup>O<sup>2−</sup> lattice with U = −3791 kJ/mol (Day 7 p.17).</p>",
+    source="Day 9 p.17–18; Day 7 p.17; " + tb("4.2", 186, 187))
 
 P(id="t4-2-m-explain", module="t4-2", kind="mastery", level="Explain",
   prompt="<p>Why does electronegativity follow the same periodic trends as first ionization energy?</p>",
   answer={"type": "self", "model": "<p>Both measure how strongly a nucleus attracts outer electrons. Across a row, Z<sub>eff</sub> rises and atoms shrink, so the nucleus holds its own valence electrons more tightly (higher IE₁, Day 7 p.9) and pulls harder on shared bonding electrons (higher χ). "
-                                   "Down a group, valence electrons are farther out and more shielded, so both decrease (textbook §4.2, Fig. 4.6).</p>"},
-  hints=[], solution="", source=tb("4.2", 186, 187) + "; Day 7 p.9")
+                                   "Down a group, valence electrons are farther out and more shielded, so both decrease (textbook §4.2, Fig. 4.6). The course's χ table shows the result (Day 9 p.17); the comparison with IE₁ is the textbook's.</p>"},
+  hints=[], solution="", source=tb("4.2", 186, 187) + "; Day 7 p.9; Day 9 p.17")
 
-P(id="t4-2-m-recognize", module="t4-2", kind="mastery", level="Recognize",
-  prompt="<p>“Is the bond between these two atoms polar?” What do you calculate?</p>",
-  answer=choice(("the sum of their atomic masses", False, "Mass doesn't matter."), ("Δχ, their electronegativity difference", True, "Right."), ("E<sub>el</sub>", False, "That's for ion pairs with known charges."), ("their IE₁ difference", False, "Related, but the textbook's criterion is Δχ.")),
-  hints=["Bond polarity depends on …"],
-  solution="<p><strong>Δχ</strong>, compared with the guidelines 0.4 and 2.0.</p>", source=tb("4.2", 186))
+add(id="t4-2-m-recognize", module="t4-2", kind="mastery", level="Recognize",
+    prompt="<p>“Is the bond between these two atoms polar?” What do you calculate?</p>",
+    answer=choice(("the sum of their atomic masses", False, "Mass doesn't matter."), ("Δχ, their electronegativity difference", True, "Right (Day 9 p.18)."),
+                  ("E<sub>el</sub>", False, "That's for ion pairs with known charges."), ("their IE₁ difference", False, "Related, but the course's measure of bond polarity is Δχ (Day 9 p.17–18).")),
+    hints=["Bond polarity depends on …"],
+    solution="<p><strong>Δχ</strong>, compared with the cutoffs 0.4 and 2.0 (Day 9 p.18).</p>", source="Day 9 p.17–18; " + tb("4.2", 186))
 
-P(id="t4-2-m-sanity", module="t4-2", kind="mastery", level="Sanity check",
-  prompt="<p>A student says the Br–Br bond is polar with Δχ = 2.8. What's wrong?</p>",
-  answer=choice(("Nothing", False, "Two identical atoms can't differ in χ."), ("Δχ for two identical atoms is 0: Br–Br is nonpolar covalent (2.8 is Br's own χ).", True, "Right."),
-                ("Br–Br is ionic.", False, "No."), ("χ(Br) is 4.0.", False, "That's F.")),
-  hints=["Δ means difference."],
-  solution="<p>Δχ = 2.8 − 2.8 = <strong>0</strong>: a nonpolar covalent bond (like Cl<sub>2</sub> in the textbook's Fig. 4.4).</p>", source=tb("4.2", 186))
+add(id="t4-2-m-sanity", module="t4-2", kind="mastery", level="Sanity check",
+    prompt="<p>A student says the Br–Br bond is polar with Δχ = 2.8. What's wrong?</p>",
+    answer=choice(("Nothing", False, "Two identical atoms can't differ in χ."), ("Δχ for two identical atoms is 0: Br–Br is nonpolar covalent (2.8 is Br's own χ).", True, "Right."),
+                  ("Br–Br is ionic.", False, "No."), ("χ(Br) is 4.0.", False, "That's F.")),
+    hints=["Δ means difference."],
+    solution="<p>Δχ = 2.8 − 2.8 = <strong>0</strong>: a nonpolar covalent bond, like the even charge distribution of Cl<sub>2</sub> on Day 9 p.16.</p>", source="Day 9 p.16–18; " + tb("4.2", 186))
 
 # =====================================================================================
 # Mixed review additions x21–x35 (lecture + textbook preview; unlabeled until answered)

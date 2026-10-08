@@ -1,0 +1,32 @@
+[
+ {
+  "id": "m21-p9",
+  "answer": [2, 1],
+  "confidence": "high",
+  "note": "TeF5- has 42 valence e-, so Te carries 1 lone pair (SN 6, square pyramidal). That lone pair pushes the four basal F toward the apical F, so the F(ap)-Te-F(bas) angles fall below 90 deg, and the tilted basal F also give cis basal-basal angles just under 90 deg (numpy: 84.8 deg ap-bas gives 89.5 deg bas-bas). ICl4- has 36 e-, so I carries 2 lone pairs placed opposite each other (SN 6, square planar). Their pushes cancel by symmetry, so the angles are exactly 90 deg."
+ },
+ {
+  "id": "m23-p5",
+  "answer": [4, 2, 2, 6],
+  "confidence": "high",
+  "note": "The methanol O is bonded to 2 atoms (C, H) and has 2 lone pairs: SN 4, sp3 (RDKit agrees). Its 6 valence electrons fill the four sp3 hybrids as 2 lone-pair hybrids (2 e- each) plus 2 singly occupied hybrids that form the sigma bonds to C and H: 2x2 + 2x1 = 6 e-."
+ },
+ {
+  "id": "m24-p3",
+  "answer": [1, 3],
+  "confidence": "high",
+  "note": "The N in NO2- has 2 bonded O + 1 lone pair: SN 3, sp2 (RDKit agrees). Course rule Day 11 p.20: lone pairs reside in hybrid orbitals, so the N lone pair is in an sp2 hybrid. The unhybridized 2p forms the pi bond to O."
+ },
+ {
+  "id": "t4-5-attempt",
+  "answer": [2, 1.5],
+  "confidence": "high",
+  "note": "NO2- (18 e-) has 2 equivalent structures, O=N-O(-) and (-)O-N=O, with a lone pair on N. Three shared pairs over two N-O bonds give an average of 1.5. RDKit ResonanceMolSupplier finds 2 structures and an average bond order of 1.5 for each N-O bond."
+ },
+ {
+  "id": "t4-5-transfer",
+  "answer": [2, 1.5],
+  "confidence": "high",
+  "note": "HCO2- (18 e-) is H-C(=O)-O(-) with the double bond on either O, so 2 equivalent structures. Three shared pairs over two C-O bonds give 1.5 each. RDKit finds 2 resonance structures with an average C-O bond order of 1.5."
+ }
+]
